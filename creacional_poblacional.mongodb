@@ -13,194 +13,1406 @@ use('PetroFAI');
 // db.createCollection('Trabaja')
 // db.createCollection('Almacena_Tipo')
 
-db.Provincia.insertMany(
-    [
-    {
-    "_id": "63794a848f89d447eaf65121",
-    "nombre": "Oneida",
-    "ciudad": [
-      {
-        "codigo_postal": 2268,
-        "nombre": "Marshall Islands"
-      },
-      {
-        "codigo_postal": 6463,
-        "nombre": "Puerto Rico"
-      },
-      {
-        "codigo_postal": 835,
-        "nombre": "Iowa"
-      },
-      {
-        "codigo_postal": 9416,
-        "nombre": "New York"
-      },
-      {
-        "codigo_postal": 4085,
-        "nombre": "Oklahoma"
-      }
-    ]
-  },
-  {
-    "_id": "63794a8421dd1cf244169e73",
-    "nombre": "Interlochen",
-    "ciudad": [
-      {
-        "codigo_postal": 5120,
-        "nombre": "Palau"
-      },
-      {
-        "codigo_postal": 8195,
-        "nombre": "American Samoa"
-      },
-      {
-        "codigo_postal": 186,
-        "nombre": "Oregon"
-      }
-    ]
-  },
-  {
-    "_id": "63794a84f2bf6a4e2854d40e",
-    "nombre": "Wakulla",
-    "ciudad": [
-      {
-        "codigo_postal": 3505,
-        "nombre": "Connecticut"
-      },
-      {
-        "codigo_postal": 1904,
-        "nombre": "Virginia"
-      }
-    ]
-  },
-  {
-    "_id": "63794a8428c52c9b719c1b75",
-    "nombre": "Snyderville",
-    "ciudad": [
-      {
-        "codigo_postal": 9869,
-        "nombre": "South Dakota"
-      },
-      {
-        "codigo_postal": 4514,
-        "nombre": "Guam"
-      },
-      {
-        "codigo_postal": 5394,
-        "nombre": "California"
-      }
-    ]
-  },
-  {
-    "_id": "63794a8415924f333a142c9d",
-    "nombre": "Emory",
-    "ciudad": [
-      {
-        "codigo_postal": 7756,
-        "nombre": "Pennsylvania"
-      },
-      {
-        "codigo_postal": 4112,
-        "nombre": "Massachusetts"
-      }
-    ]
-  },
-  {
-    "_id": "63794a842bf131ef1e0ccf19",
-    "nombre": "Blanford",
-    "ciudad": [
-      {
-        "codigo_postal": 8723,
-        "nombre": "Arkansas"
-      }
-    ]
-  },
-  {
-    "_id": "63794a84219803efbc58e340",
-    "nombre": "Santel",
-    "ciudad": [
-      {
-        "codigo_postal": 9333,
-        "nombre": "South Carolina"
-      },
-      {
-        "codigo_postal": 7365,
-        "nombre": "Wisconsin"
-      },
-      {
-        "codigo_postal": 7447,
-        "nombre": "Kansas"
-      }
-    ]
-  },
-  {
-    "_id": "63794a8459f38a4101d36533",
-    "nombre": "Munjor",
-    "ciudad": [
-      {
-        "codigo_postal": 8558,
-        "nombre": "Texas"
-      },
-      {
-        "codigo_postal": 2881,
-        "nombre": "Arizona"
-      },
-      {
-        "codigo_postal": 7279,
-        "nombre": "Federated States Of Micronesia"
-      },
-      {
-        "codigo_postal": 5595,
-        "nombre": "Nebraska"
-      },
-      {
-        "codigo_postal": 4540,
-        "nombre": "Montana"
-      }
-    ]
-  },
-  {
-    "_id": "63794a844bccf658b53c749c",
-    "nombre": "Carbonville",
-    "ciudad": [
-      {
-        "codigo_postal": 3899,
-        "nombre": "Idaho"
-      },
-      {
-        "codigo_postal": 2285,
-        "nombre": "Delaware"
-      }
-    ]
-  },
-  {
-    "_id": "63794a840ad7fe360da6ebb6",
-    "nombre": "Hiko",
-    "ciudad": [
-      {
-        "codigo_postal": 4510,
-        "nombre": "Florida"
-      },
-      {
-        "codigo_postal": 7634,
-        "nombre": "Northern Mariana Islands"
-      },
-      {
-        "codigo_postal": 1692,
-        "nombre": "Ohio"
-      },
-      {
-        "codigo_postal": 9523,
-        "nombre": "New Hampshire"
-      },
-      {
-        "codigo_postal": 2816,
-        "nombre": "New Mexico"
-      }
-    ]
-  }
-]
-)
+// db.Provincia.insertMany(
+//     [
+//     {
+//     "_id": "63794a848f89d447eaf65121",
+//     "nombre": "Oneida",
+//     "ciudad": [
+//       {
+//         "codigo_postal": 2268,
+//         "nombre": "Marshall Islands"
+//       },
+//       {
+//         "codigo_postal": 6463,
+//         "nombre": "Puerto Rico"
+//       },
+//       {
+//         "codigo_postal": 835,
+//         "nombre": "Iowa"
+//       },
+//       {
+//         "codigo_postal": 9416,
+//         "nombre": "New York"
+//       },
+//       {
+//         "codigo_postal": 4085,
+//         "nombre": "Oklahoma"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63794a8421dd1cf244169e73",
+//     "nombre": "Interlochen",
+//     "ciudad": [
+//       {
+//         "codigo_postal": 5120,
+//         "nombre": "Palau"
+//       },
+//       {
+//         "codigo_postal": 8195,
+//         "nombre": "American Samoa"
+//       },
+//       {
+//         "codigo_postal": 186,
+//         "nombre": "Oregon"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63794a84f2bf6a4e2854d40e",
+//     "nombre": "Wakulla",
+//     "ciudad": [
+//       {
+//         "codigo_postal": 3505,
+//         "nombre": "Connecticut"
+//       },
+//       {
+//         "codigo_postal": 1904,
+//         "nombre": "Virginia"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63794a8428c52c9b719c1b75",
+//     "nombre": "Snyderville",
+//     "ciudad": [
+//       {
+//         "codigo_postal": 9869,
+//         "nombre": "South Dakota"
+//       },
+//       {
+//         "codigo_postal": 4514,
+//         "nombre": "Guam"
+//       },
+//       {
+//         "codigo_postal": 5394,
+//         "nombre": "California"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63794a8415924f333a142c9d",
+//     "nombre": "Emory",
+//     "ciudad": [
+//       {
+//         "codigo_postal": 7756,
+//         "nombre": "Pennsylvania"
+//       },
+//       {
+//         "codigo_postal": 4112,
+//         "nombre": "Massachusetts"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63794a842bf131ef1e0ccf19",
+//     "nombre": "Blanford",
+//     "ciudad": [
+//       {
+//         "codigo_postal": 8723,
+//         "nombre": "Arkansas"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63794a84219803efbc58e340",
+//     "nombre": "Santel",
+//     "ciudad": [
+//       {
+//         "codigo_postal": 9333,
+//         "nombre": "South Carolina"
+//       },
+//       {
+//         "codigo_postal": 7365,
+//         "nombre": "Wisconsin"
+//       },
+//       {
+//         "codigo_postal": 7447,
+//         "nombre": "Kansas"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63794a8459f38a4101d36533",
+//     "nombre": "Munjor",
+//     "ciudad": [
+//       {
+//         "codigo_postal": 8558,
+//         "nombre": "Texas"
+//       },
+//       {
+//         "codigo_postal": 2881,
+//         "nombre": "Arizona"
+//       },
+//       {
+//         "codigo_postal": 7279,
+//         "nombre": "Federated States Of Micronesia"
+//       },
+//       {
+//         "codigo_postal": 5595,
+//         "nombre": "Nebraska"
+//       },
+//       {
+//         "codigo_postal": 4540,
+//         "nombre": "Montana"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63794a844bccf658b53c749c",
+//     "nombre": "Carbonville",
+//     "ciudad": [
+//       {
+//         "codigo_postal": 3899,
+//         "nombre": "Idaho"
+//       },
+//       {
+//         "codigo_postal": 2285,
+//         "nombre": "Delaware"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63794a840ad7fe360da6ebb6",
+//     "nombre": "Hiko",
+//     "ciudad": [
+//       {
+//         "codigo_postal": 4510,
+//         "nombre": "Florida"
+//       },
+//       {
+//         "codigo_postal": 7634,
+//         "nombre": "Northern Mariana Islands"
+//       },
+//       {
+//         "codigo_postal": 1692,
+//         "nombre": "Ohio"
+//       },
+//       {
+//         "codigo_postal": 9523,
+//         "nombre": "New Hampshire"
+//       },
+//       {
+//         "codigo_postal": 2816,
+//         "nombre": "New Mexico"
+//       }
+//     ]
+//   }
+// ]
+// )
 
+//Inserción en personal
 
+// db.Personal.insertMany([
+//   {
+//     "_id": "637e87f088f192c39f6e2e78",
+//     "numero_documento": 19293828,
+//     "tipo_documento": "DNI",
+//     "nombre": "Mercedes",
+//     "apellido": "Blevins",
+//     "estado_civil": "soltero/a",
+//     "legajo": 436,
+//     "fecha_ingreso": "31-07-2011",
+//     "fecha_baja": "24-12-1996",
+//     "fecha_nacimiento": "04-03-2020",
+//     "domicilio": "641 Berry Street",
+//     "es_encargado": true,
+//     "codigo_postal": 7365,
+//     "asistencia": [
+//       {
+//         "fecha": "25-06-2013",
+//         "hora_entrada": "11:50",
+//         "hora_salida": "06:29",
+//         "nombre_actividad": "occaecat minim nisi eiusmod"
+//       },
+//       {
+//         "fecha": "04-07-2021",
+//         "hora_entrada": "07:45",
+//         "hora_salida": "07:27",
+//         "nombre_actividad": "irure aute anim cillum"
+//       },
+//       {
+//         "fecha": "30-01-2017",
+//         "hora_entrada": "07:02",
+//         "hora_salida": "06:10",
+//         "nombre_actividad": "incididunt adipisicing anim elit"
+//       },
+//       {
+//         "fecha": "27-04-1999",
+//         "hora_entrada": "01:25",
+//         "hora_salida": "05:13",
+//         "nombre_actividad": "do eu consequat deserunt"
+//       },
+//       {
+//         "fecha": "15-08-1999",
+//         "hora_entrada": "10:36",
+//         "hora_salida": "04:02",
+//         "nombre_actividad": "cupidatat duis ad nisi"
+//       },
+//       {
+//         "fecha": "12-06-1994",
+//         "hora_entrada": "12:49",
+//         "hora_salida": "01:14",
+//         "nombre_actividad": "ipsum aliquip aute nisi"
+//       }
+//     ],
+//     "actividad": [],
+//     "titulo_universitario": [
+//       {
+//         "nombre_titulo": "nulla occaecat ipsum"
+//       },
+//       {
+//         "nombre_titulo": "irure et ut"
+//       }
+//     ],
+//     "turno": [
+//       {
+//         "hora_ingreso": "02:54",
+//         "hora_salida": "12:04",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "19-05-2022",
+//         "fecha_baja": "23-08-2022"
+//       },
+//       {
+//         "hora_ingreso": "12:40",
+//         "hora_salida": "05:22",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "14-10-2022",
+//         "fecha_baja": "15-11-2022"
+//       },
+//       {
+//         "hora_ingreso": "07:26",
+//         "hora_salida": "05:44",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "23-04-2022",
+//         "fecha_baja": "27-03-2022"
+//       },
+//       {
+//         "hora_ingreso": "04:05",
+//         "hora_salida": "04:53",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "24-09-2022",
+//         "fecha_baja": "28-10-2022"
+//       },
+//       {
+//         "hora_ingreso": "09:42",
+//         "hora_salida": "12:15",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "08-09-2022",
+//         "fecha_baja": "03-10-2022"
+//       },
+//       {
+//         "hora_ingreso": "08:50",
+//         "hora_salida": "12:25",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "10-07-2022",
+//         "fecha_baja": "31-05-2022"
+//       },
+//       {
+//         "hora_ingreso": "04:36",
+//         "hora_salida": "10:19",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "15-01-2022",
+//         "fecha_baja": "15-07-2022"
+//       },
+//       {
+//         "hora_ingreso": "10:20",
+//         "hora_salida": "08:12",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "03-11-2022",
+//         "fecha_baja": "04-04-2022"
+//       },
+//       {
+//         "hora_ingreso": "07:24",
+//         "hora_salida": "05:06",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "24-09-2022",
+//         "fecha_baja": "20-03-2022"
+//       },
+//       {
+//         "hora_ingreso": "11:06",
+//         "hora_salida": "05:20",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "25-07-2022",
+//         "fecha_baja": "29-05-2022"
+//       }
+//     ],
+//     "certificado": [
+//       {
+//         "cantidad_dias": 1,
+//         "descripcion": "Do fugiat aliqua magna duis ea Lorem.",
+//         "fecha_inicio": "05-11-2022"
+//       },
+//       {
+//         "cantidad_dias": 6,
+//         "descripcion": "Ipsum commodo voluptate occaecat esse in cillum sunt incididunt.",
+//         "fecha_inicio": "01-06-2022"
+//       },
+//       {
+//         "cantidad_dias": 2,
+//         "descripcion": "Quis sint deserunt velit anim pariatur irure.",
+//         "fecha_inicio": "18-01-2022"
+//       }
+//     ],
+//     "telefono": [
+//       {
+//         "numero": "(948) 539-3937"
+//       },
+//       {
+//         "numero": "(806) 440-2261"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "637e87f06df51163d7924f7a",
+//     "numero_documento": 35921169,
+//     "tipo_documento": "LE",
+//     "nombre": "Estelle",
+//     "apellido": "Gordon",
+//     "estado_civil": "viudo/a",
+//     "legajo": 325,
+//     "fecha_ingreso": "29-03-2009",
+//     "fecha_baja": "21-11-2004",
+//     "fecha_nacimiento": "25-03-2011",
+//     "domicilio": "744 Bath Avenue",
+//     "es_encargado": false,
+//     "codigo_postal": 2816,
+//     "asistencia": [
+//       {
+//         "fecha": "10-04-1997",
+//         "hora_entrada": "06:16",
+//         "hora_salida": "09:42",
+//         "nombre_actividad": "sit aliquip proident voluptate"
+//       },
+//       {
+//         "fecha": "10-07-2014",
+//         "hora_entrada": "01:08",
+//         "hora_salida": "02:42",
+//         "nombre_actividad": "excepteur deserunt sint mollit"
+//       },
+//       {
+//         "fecha": "22-08-1994",
+//         "hora_entrada": "02:30",
+//         "hora_salida": "08:33",
+//         "nombre_actividad": "velit sunt cillum excepteur"
+//       }
+//     ],
+//     "actividad": [
+//       {
+//         "nombre": "incididunt aliqua eiusmod pariatur",
+//         "descripcion": "labore elit magna occaecat",
+//         "fecha": "16-10-1998"
+//       },
+//       {
+//         "nombre": "cupidatat quis commodo voluptate",
+//         "descripcion": "do sint dolor nostrud",
+//         "fecha": "13-02-1997"
+//       },
+//       {
+//         "nombre": "enim veniam ut proident",
+//         "descripcion": "commodo in aliquip ea",
+//         "fecha": "07-12-2007"
+//       }
+//     ],
+//     "titulo_universitario": [],
+//     "turno": [
+//       {
+//         "hora_ingreso": "12:38",
+//         "hora_salida": "03:47",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "11-07-2022",
+//         "fecha_baja": "12-03-2022"
+//       },
+//       {
+//         "hora_ingreso": "04:14",
+//         "hora_salida": "11:35",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "25-09-2022",
+//         "fecha_baja": "16-05-2022"
+//       },
+//       {
+//         "hora_ingreso": "06:38",
+//         "hora_salida": "08:59",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "25-06-2022",
+//         "fecha_baja": "11-08-2022"
+//       },
+//       {
+//         "hora_ingreso": "09:11",
+//         "hora_salida": "12:46",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "03-08-2022",
+//         "fecha_baja": "29-05-2022"
+//       },
+//       {
+//         "hora_ingreso": "05:37",
+//         "hora_salida": "11:56",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "03-03-2022",
+//         "fecha_baja": "26-10-2022"
+//       },
+//       {
+//         "hora_ingreso": "05:57",
+//         "hora_salida": "04:35",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "02-02-2022",
+//         "fecha_baja": "24-10-2022"
+//       },
+//       {
+//         "hora_ingreso": "08:45",
+//         "hora_salida": "02:36",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "28-02-2022",
+//         "fecha_baja": "22-08-2022"
+//       }
+//     ],
+//     "certificado": [],
+//     "telefono": [
+//       {
+//         "numero": "(910) 507-3036"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "637e87f06cd2be3755161b33",
+//     "numero_documento": 37291278,
+//     "tipo_documento": "PASAPORTE",
+//     "nombre": "Strickland",
+//     "apellido": "Kelley",
+//     "estado_civil": "soltero/a",
+//     "legajo": 360,
+//     "fecha_ingreso": "19-11-1994",
+//     "fecha_baja": "01-08-2021",
+//     "fecha_nacimiento": "22-06-1995",
+//     "domicilio": "799 Scott Avenue",
+//     "es_encargado": true,
+//     "codigo_postal": 9333,
+//     "asistencia": [
+//       {
+//         "fecha": "23-06-2021",
+//         "hora_entrada": "10:43",
+//         "hora_salida": "03:24",
+//         "nombre_actividad": "adipisicing enim consectetur cupidatat"
+//       },
+//       {
+//         "fecha": "23-01-2015",
+//         "hora_entrada": "01:45",
+//         "hora_salida": "04:05",
+//         "nombre_actividad": "qui aliqua nulla et"
+//       },
+//       {
+//         "fecha": "12-12-2007",
+//         "hora_entrada": "05:37",
+//         "hora_salida": "07:44",
+//         "nombre_actividad": "quis esse proident quis"
+//       },
+//       {
+//         "fecha": "14-09-2001",
+//         "hora_entrada": "06:47",
+//         "hora_salida": "02:35",
+//         "nombre_actividad": "ex aliquip amet occaecat"
+//       }
+//     ],
+//     "actividad": [],
+//     "titulo_universitario": [
+//       {
+//         "nombre_titulo": "magna sunt minim"
+//       },
+//       {
+//         "nombre_titulo": "minim sit consectetur"
+//       }
+//     ],
+//     "turno": [
+//       {
+//         "hora_ingreso": "09:30",
+//         "hora_salida": "12:43",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "25-04-2022",
+//         "fecha_baja": "14-11-2022"
+//       },
+//       {
+//         "hora_ingreso": "06:39",
+//         "hora_salida": "12:19",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "29-06-2022",
+//         "fecha_baja": "11-03-2022"
+//       },
+//       {
+//         "hora_ingreso": "01:37",
+//         "hora_salida": "06:25",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "12-02-2022",
+//         "fecha_baja": "18-08-2022"
+//       },
+//       {
+//         "hora_ingreso": "01:40",
+//         "hora_salida": "03:48",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "08-10-2022",
+//         "fecha_baja": "18-02-2022"
+//       },
+//       {
+//         "hora_ingreso": "04:27",
+//         "hora_salida": "04:27",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "27-08-2022",
+//         "fecha_baja": "02-02-2022"
+//       },
+//       {
+//         "hora_ingreso": "07:28",
+//         "hora_salida": "12:17",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "19-05-2022",
+//         "fecha_baja": "01-09-2022"
+//       },
+//       {
+//         "hora_ingreso": "05:52",
+//         "hora_salida": "07:15",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "20-02-2022",
+//         "fecha_baja": "30-04-2022"
+//       },
+//       {
+//         "hora_ingreso": "12:40",
+//         "hora_salida": "02:45",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "08-10-2022",
+//         "fecha_baja": "27-03-2022"
+//       },
+//       {
+//         "hora_ingreso": "05:27",
+//         "hora_salida": "04:26",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "14-08-2022",
+//         "fecha_baja": "15-03-2022"
+//       }
+//     ],
+//     "certificado": [
+//       {
+//         "cantidad_dias": 3,
+//         "descripcion": "Consectetur ea est non enim.",
+//         "fecha_inicio": "22-06-2022"
+//       }
+//     ],
+//     "telefono": []
+//   },
+//   {
+//     "_id": "637e87f088703b1b8ef2dc7b",
+//     "numero_documento": 22173533,
+//     "tipo_documento": "",
+//     "nombre": "Mcdonald",
+//     "apellido": "Singleton",
+//     "estado_civil": "casado/a",
+//     "legajo": 171,
+//     "fecha_ingreso": "23-11-1995",
+//     "fecha_baja": "04-07-1990",
+//     "fecha_nacimiento": "26-08-1998",
+//     "domicilio": "313 Madison Place",
+//     "es_encargado": true,
+//     "codigo_postal": 1904,
+//     "asistencia": [
+//       {
+//         "fecha": "19-05-2020",
+//         "hora_entrada": "04:19",
+//         "hora_salida": "11:41",
+//         "nombre_actividad": "anim id mollit fugiat"
+//       },
+//       {
+//         "fecha": "27-03-2002",
+//         "hora_entrada": "08:14",
+//         "hora_salida": "07:19",
+//         "nombre_actividad": "aute anim nostrud laborum"
+//       },
+//       {
+//         "fecha": "26-04-2016",
+//         "hora_entrada": "01:37",
+//         "hora_salida": "02:49",
+//         "nombre_actividad": "nostrud proident ipsum eu"
+//       },
+//       {
+//         "fecha": "27-07-2020",
+//         "hora_entrada": "06:17",
+//         "hora_salida": "02:09",
+//         "nombre_actividad": "anim esse amet aliquip"
+//       },
+//       {
+//         "fecha": "29-11-2005",
+//         "hora_entrada": "08:51",
+//         "hora_salida": "08:00",
+//         "nombre_actividad": "magna consequat consequat consectetur"
+//       }
+//     ],
+//     "actividad": [],
+//     "titulo_universitario": [
+//       {
+//         "nombre_titulo": "sit esse mollit"
+//       }
+//     ],
+//     "turno": [
+//       {
+//         "hora_ingreso": "04:57",
+//         "hora_salida": "09:21",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "27-02-2022",
+//         "fecha_baja": "28-04-2022"
+//       },
+//       {
+//         "hora_ingreso": "08:08",
+//         "hora_salida": "07:58",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "03-01-2022",
+//         "fecha_baja": "20-08-2022"
+//       },
+//       {
+//         "hora_ingreso": "04:59",
+//         "hora_salida": "07:38",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "09-04-2022",
+//         "fecha_baja": "21-03-2022"
+//       },
+//       {
+//         "hora_ingreso": "10:25",
+//         "hora_salida": "04:23",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "08-02-2022",
+//         "fecha_baja": "25-09-2022"
+//       },
+//       {
+//         "hora_ingreso": "12:56",
+//         "hora_salida": "08:08",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "10-08-2022",
+//         "fecha_baja": "07-10-2022"
+//       },
+//       {
+//         "hora_ingreso": "08:16",
+//         "hora_salida": "08:31",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "17-03-2022",
+//         "fecha_baja": "24-07-2022"
+//       },
+//       {
+//         "hora_ingreso": "08:03",
+//         "hora_salida": "04:03",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "08-03-2022",
+//         "fecha_baja": "02-10-2022"
+//       },
+//       {
+//         "hora_ingreso": "05:39",
+//         "hora_salida": "08:40",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "07-02-2022",
+//         "fecha_baja": "16-09-2022"
+//       },
+//       {
+//         "hora_ingreso": "01:50",
+//         "hora_salida": "06:38",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "21-10-2022",
+//         "fecha_baja": "15-06-2022"
+//       },
+//       {
+//         "hora_ingreso": "08:19",
+//         "hora_salida": "10:42",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "21-10-2022",
+//         "fecha_baja": "02-09-2022"
+//       }
+//     ],
+//     "certificado": [],
+//     "telefono": []
+//   },
+//   {
+//     "_id": "637e87f0e78750e81dcf01b5",
+//     "numero_documento": 21129805,
+//     "tipo_documento": "PASAPORTE",
+//     "nombre": "Lilia",
+//     "apellido": "George",
+//     "estado_civil": "casado/a",
+//     "legajo": 257,
+//     "fecha_ingreso": "09-12-2008",
+//     "fecha_baja": "27-11-2019",
+//     "fecha_nacimiento": "02-03-2012",
+//     "domicilio": "431 Matthews Place",
+//     "es_encargado": false,
+//     "codigo_postal": 1904,
+//     "asistencia": [
+//       {
+//         "fecha": "02-04-2020",
+//         "hora_entrada": "02:35",
+//         "hora_salida": "09:16",
+//         "nombre_actividad": "laborum eu ut aliquip"
+//       },
+//       {
+//         "fecha": "08-05-2018",
+//         "hora_entrada": "05:37",
+//         "hora_salida": "04:30",
+//         "nombre_actividad": "occaecat adipisicing mollit adipisicing"
+//       },
+//       {
+//         "fecha": "10-03-2016",
+//         "hora_entrada": "06:57",
+//         "hora_salida": "09:56",
+//         "nombre_actividad": "culpa eu deserunt est"
+//       }
+//     ],
+//     "actividad": [
+//       {
+//         "nombre": "reprehenderit reprehenderit exercitation irure",
+//         "descripcion": "dolor sunt ut reprehenderit",
+//         "fecha": "09-07-2006"
+//       },
+//       {
+//         "nombre": "eu ad in laborum",
+//         "descripcion": "aliquip nulla do voluptate",
+//         "fecha": "26-12-2011"
+//       },
+//       {
+//         "nombre": "culpa nulla laboris commodo",
+//         "descripcion": "aliqua et dolore et",
+//         "fecha": "29-08-1995"
+//       },
+//       {
+//         "nombre": "commodo incididunt in dolor",
+//         "descripcion": "commodo cupidatat esse in",
+//         "fecha": "26-03-1998"
+//       }
+//     ],
+//     "titulo_universitario": [
+//       {
+//         "nombre_titulo": "sint dolor commodo"
+//       },
+//       {
+//         "nombre_titulo": "irure veniam exercitation"
+//       }
+//     ],
+//     "turno": [
+//       {
+//         "hora_ingreso": "09:45",
+//         "hora_salida": "11:14",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "28-05-2022",
+//         "fecha_baja": "10-11-2022"
+//       },
+//       {
+//         "hora_ingreso": "07:08",
+//         "hora_salida": "03:39",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "06-01-2022",
+//         "fecha_baja": "30-05-2022"
+//       },
+//       {
+//         "hora_ingreso": "08:39",
+//         "hora_salida": "01:57",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "12-02-2022",
+//         "fecha_baja": "15-01-2022"
+//       },
+//       {
+//         "hora_ingreso": "08:29",
+//         "hora_salida": "06:09",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "15-07-2022",
+//         "fecha_baja": "02-09-2022"
+//       },
+//       {
+//         "hora_ingreso": "06:23",
+//         "hora_salida": "04:51",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "20-08-2022",
+//         "fecha_baja": "13-02-2022"
+//       }
+//     ],
+//     "certificado": [],
+//     "telefono": [
+//       {
+//         "numero": "(876) 579-3731"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "637e87f0e7447006d615787f",
+//     "numero_documento": 38332092,
+//     "tipo_documento": "LE",
+//     "nombre": "Pamela",
+//     "apellido": "Vaughn",
+//     "estado_civil": "casado/a",
+//     "legajo": 358,
+//     "fecha_ingreso": "10-02-1993",
+//     "fecha_baja": "16-08-2007",
+//     "fecha_nacimiento": "10-02-2007",
+//     "domicilio": "625 Moultrie Street",
+//     "es_encargado": false,
+//     "codigo_postal": 2881,
+//     "asistencia": [
+//       {
+//         "fecha": "28-07-1999",
+//         "hora_entrada": "09:35",
+//         "hora_salida": "03:35",
+//         "nombre_actividad": "minim dolor velit cillum"
+//       },
+//       {
+//         "fecha": "25-04-2017",
+//         "hora_entrada": "05:35",
+//         "hora_salida": "03:08",
+//         "nombre_actividad": "nostrud ad exercitation Lorem"
+//       },
+//       {
+//         "fecha": "16-04-2007",
+//         "hora_entrada": "03:07",
+//         "hora_salida": "11:49",
+//         "nombre_actividad": "mollit do laborum nisi"
+//       },
+//       {
+//         "fecha": "20-08-1999",
+//         "hora_entrada": "07:21",
+//         "hora_salida": "04:20",
+//         "nombre_actividad": "non dolore culpa reprehenderit"
+//       },
+//       {
+//         "fecha": "21-05-2022",
+//         "hora_entrada": "04:33",
+//         "hora_salida": "06:37",
+//         "nombre_actividad": "nulla quis irure proident"
+//       },
+//       {
+//         "fecha": "01-05-1990",
+//         "hora_entrada": "09:19",
+//         "hora_salida": "03:19",
+//         "nombre_actividad": "in ipsum anim officia"
+//       }
+//     ],
+//     "actividad": [
+//       {
+//         "nombre": "cillum consectetur occaecat excepteur",
+//         "descripcion": "nulla aliqua irure amet",
+//         "fecha": "14-04-1997"
+//       },
+//       {
+//         "nombre": "quis minim culpa dolore",
+//         "descripcion": "nostrud cillum labore exercitation",
+//         "fecha": "31-12-1996"
+//       },
+//       {
+//         "nombre": "duis consequat ad eu",
+//         "descripcion": "cillum non culpa sint",
+//         "fecha": "24-06-2004"
+//       },
+//       {
+//         "nombre": "consequat consectetur eu dolore",
+//         "descripcion": "veniam quis exercitation ullamco",
+//         "fecha": "08-05-1990"
+//       }
+//     ],
+//     "titulo_universitario": [
+//       {
+//         "nombre_titulo": "eiusmod proident cillum"
+//       }
+//     ],
+//     "turno": [
+//       {
+//         "hora_ingreso": "06:21",
+//         "hora_salida": "02:44",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "19-02-2022",
+//         "fecha_baja": "03-03-2022"
+//       },
+//       {
+//         "hora_ingreso": "04:13",
+//         "hora_salida": "09:12",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "28-03-2022",
+//         "fecha_baja": "19-02-2022"
+//       },
+//       {
+//         "hora_ingreso": "11:03",
+//         "hora_salida": "03:19",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "28-04-2022",
+//         "fecha_baja": "10-04-2022"
+//       },
+//       {
+//         "hora_ingreso": "11:33",
+//         "hora_salida": "01:32",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "11-06-2022",
+//         "fecha_baja": "19-03-2022"
+//       },
+//       {
+//         "hora_ingreso": "10:57",
+//         "hora_salida": "08:47",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "03-04-2022",
+//         "fecha_baja": "10-10-2022"
+//       },
+//       {
+//         "hora_ingreso": "05:37",
+//         "hora_salida": "08:45",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "21-05-2022",
+//         "fecha_baja": "04-05-2022"
+//       },
+//       {
+//         "hora_ingreso": "05:33",
+//         "hora_salida": "04:25",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "09-05-2022",
+//         "fecha_baja": "09-07-2022"
+//       },
+//       {
+//         "hora_ingreso": "05:05",
+//         "hora_salida": "02:48",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "28-01-2022",
+//         "fecha_baja": "20-04-2022"
+//       },
+//       {
+//         "hora_ingreso": "04:18",
+//         "hora_salida": "04:48",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "06-08-2022",
+//         "fecha_baja": "23-02-2022"
+//       }
+//     ],
+//     "certificado": [
+//       {
+//         "cantidad_dias": 0,
+//         "descripcion": "Tempor reprehenderit voluptate nostrud proident ad amet et magna anim elit est pariatur sint.",
+//         "fecha_inicio": "29-03-2022"
+//       },
+//       {
+//         "cantidad_dias": 3,
+//         "descripcion": "Magna exercitation officia ea tempor fugiat qui tempor cillum.",
+//         "fecha_inicio": "14-01-2022"
+//       }
+//     ],
+//     "telefono": []
+//   },
+//   {
+//     "_id": "637e87f0b5d30fd3000e3d3c",
+//     "numero_documento": 28487128,
+//     "tipo_documento": "DNI",
+//     "nombre": "Rodriquez",
+//     "apellido": "Stephens",
+//     "estado_civil": "casado/a",
+//     "legajo": 185,
+//     "fecha_ingreso": "11-10-1991",
+//     "fecha_baja": "25-12-1997",
+//     "fecha_nacimiento": "29-09-1993",
+//     "domicilio": "877 Hoyts Lane",
+//     "es_encargado": true,
+//     "codigo_postal": 4085,
+//     "asistencia": [
+//       {
+//         "fecha": "19-12-2016",
+//         "hora_entrada": "02:19",
+//         "hora_salida": "01:21",
+//         "nombre_actividad": "mollit cillum velit excepteur"
+//       },
+//       {
+//         "fecha": "05-01-2009",
+//         "hora_entrada": "03:12",
+//         "hora_salida": "03:29",
+//         "nombre_actividad": "aliqua do nostrud sit"
+//       },
+//       {
+//         "fecha": "24-01-2000",
+//         "hora_entrada": "09:02",
+//         "hora_salida": "09:13",
+//         "nombre_actividad": "Lorem proident est dolore"
+//       },
+//       {
+//         "fecha": "21-07-1994",
+//         "hora_entrada": "11:15",
+//         "hora_salida": "12:47",
+//         "nombre_actividad": "laboris eu cupidatat ut"
+//       },
+//       {
+//         "fecha": "12-06-2019",
+//         "hora_entrada": "09:36",
+//         "hora_salida": "12:34",
+//         "nombre_actividad": "cillum quis duis nostrud"
+//       }
+//     ],
+//     "actividad": [],
+//     "titulo_universitario": [
+//       {
+//         "nombre_titulo": "cupidatat culpa fugiat"
+//       },
+//       {
+//         "nombre_titulo": "consectetur quis ad"
+//       }
+//     ],
+//     "turno": [
+//       {
+//         "hora_ingreso": "03:20",
+//         "hora_salida": "10:29",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "15-05-2022",
+//         "fecha_baja": "25-06-2022"
+//       },
+//       {
+//         "hora_ingreso": "01:15",
+//         "hora_salida": "03:55",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "17-07-2022",
+//         "fecha_baja": "18-11-2022"
+//       },
+//       {
+//         "hora_ingreso": "04:56",
+//         "hora_salida": "02:18",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "28-08-2022",
+//         "fecha_baja": "30-10-2022"
+//       }
+//     ],
+//     "certificado": [],
+//     "telefono": [
+//       {
+//         "numero": "(886) 446-2621"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "637e87f06c86b3e948e09295",
+//     "numero_documento": 40724490,
+//     "tipo_documento": "",
+//     "nombre": "Neva",
+//     "apellido": "Morales",
+//     "estado_civil": "soltero/a",
+//     "legajo": 395,
+//     "fecha_ingreso": "24-11-2011",
+//     "fecha_baja": "02-03-2011",
+//     "fecha_nacimiento": "25-02-2007",
+//     "domicilio": "621 Seeley Street",
+//     "es_encargado": true,
+//     "codigo_postal": 7756,
+//     "asistencia": [
+//       {
+//         "fecha": "10-01-2016",
+//         "hora_entrada": "07:14",
+//         "hora_salida": "11:49",
+//         "nombre_actividad": "do nisi in fugiat"
+//       },
+//       {
+//         "fecha": "08-04-1994",
+//         "hora_entrada": "02:13",
+//         "hora_salida": "05:55",
+//         "nombre_actividad": "ut nostrud anim cillum"
+//       }
+//     ],
+//     "actividad": [],
+//     "titulo_universitario": [
+//       {
+//         "nombre_titulo": "fugiat non Lorem"
+//       },
+//       {
+//         "nombre_titulo": "ut culpa laboris"
+//       }
+//     ],
+//     "turno": [
+//       {
+//         "hora_ingreso": "09:29",
+//         "hora_salida": "03:54",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "11-04-2022",
+//         "fecha_baja": "08-09-2022"
+//       },
+//       {
+//         "hora_ingreso": "11:45",
+//         "hora_salida": "05:51",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "17-06-2022",
+//         "fecha_baja": "18-11-2022"
+//       },
+//       {
+//         "hora_ingreso": "06:37",
+//         "hora_salida": "12:14",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "02-07-2022",
+//         "fecha_baja": "05-01-2022"
+//       },
+//       {
+//         "hora_ingreso": "11:38",
+//         "hora_salida": "08:02",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "25-08-2022",
+//         "fecha_baja": "13-01-2022"
+//       },
+//       {
+//         "hora_ingreso": "02:38",
+//         "hora_salida": "10:40",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "26-04-2022",
+//         "fecha_baja": "15-06-2022"
+//       }
+//     ],
+//     "certificado": [
+//       {
+//         "cantidad_dias": 5,
+//         "descripcion": "Incididunt eiusmod consequat cupidatat et ut mollit aliquip aliqua eiusmod fugiat laborum consectetur.",
+//         "fecha_inicio": "18-01-2022"
+//       },
+//       {
+//         "cantidad_dias": 6,
+//         "descripcion": "Esse non commodo minim ea do.",
+//         "fecha_inicio": "22-06-2022"
+//       }
+//     ],
+//     "telefono": [
+//       {
+//         "numero": "(872) 455-2482"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "637e87f034022a697ecf6ced",
+//     "numero_documento": 12348990,
+//     "tipo_documento": "DNI",
+//     "nombre": "Byers",
+//     "apellido": "Noel",
+//     "estado_civil": "soltero/a",
+//     "legajo": 233,
+//     "fecha_ingreso": "05-10-2013",
+//     "fecha_baja": "13-03-2001",
+//     "fecha_nacimiento": "07-01-2002",
+//     "domicilio": "788 Kane Street",
+//     "es_encargado": true,
+//     "codigo_postal": 9416,
+//     "asistencia": [
+//       {
+//         "fecha": "29-04-1998",
+//         "hora_entrada": "12:44",
+//         "hora_salida": "05:20",
+//         "nombre_actividad": "deserunt do consectetur laboris"
+//       },
+//       {
+//         "fecha": "24-04-2007",
+//         "hora_entrada": "11:11",
+//         "hora_salida": "02:19",
+//         "nombre_actividad": "ad reprehenderit consectetur sint"
+//       },
+//       {
+//         "fecha": "22-05-2003",
+//         "hora_entrada": "02:25",
+//         "hora_salida": "11:34",
+//         "nombre_actividad": "elit qui sint ad"
+//       },
+//       {
+//         "fecha": "16-11-1995",
+//         "hora_entrada": "02:20",
+//         "hora_salida": "05:19",
+//         "nombre_actividad": "laboris esse Lorem amet"
+//       },
+//       {
+//         "fecha": "09-03-2018",
+//         "hora_entrada": "05:20",
+//         "hora_salida": "07:33",
+//         "nombre_actividad": "minim sunt ea consectetur"
+//       },
+//       {
+//         "fecha": "20-12-2009",
+//         "hora_entrada": "03:10",
+//         "hora_salida": "01:36",
+//         "nombre_actividad": "ipsum veniam nisi est"
+//       }
+//     ],
+//     "actividad": [],
+//     "titulo_universitario": [
+//       {
+//         "nombre_titulo": "occaecat voluptate dolor"
+//       },
+//       {
+//         "nombre_titulo": "cupidatat irure in"
+//       }
+//     ],
+//     "turno": [
+//       {
+//         "hora_ingreso": "03:37",
+//         "hora_salida": "12:30",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "08-05-2022",
+//         "fecha_baja": "05-10-2022"
+//       },
+//       {
+//         "hora_ingreso": "01:15",
+//         "hora_salida": "07:16",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "27-02-2022",
+//         "fecha_baja": "22-04-2022"
+//       },
+//       {
+//         "hora_ingreso": "11:02",
+//         "hora_salida": "05:14",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "31-05-2022",
+//         "fecha_baja": "20-05-2022"
+//       }
+//     ],
+//     "certificado": [
+//       {
+//         "cantidad_dias": 4,
+//         "descripcion": "Velit dolor dolore minim tempor Lorem culpa anim officia eiusmod voluptate sunt.",
+//         "fecha_inicio": "23-02-2022"
+//       },
+//       {
+//         "cantidad_dias": 1,
+//         "descripcion": "Consequat culpa elit incididunt cupidatat fugiat ex.",
+//         "fecha_inicio": "17-02-2022"
+//       },
+//       {
+//         "cantidad_dias": 7,
+//         "descripcion": "Do ad incididunt adipisicing sit amet cupidatat sint ullamco do qui.",
+//         "fecha_inicio": "13-06-2022"
+//       },
+//       {
+//         "cantidad_dias": 5,
+//         "descripcion": "Quis sint eiusmod quis pariatur est non irure esse tempor proident incididunt sit.",
+//         "fecha_inicio": "15-06-2022"
+//       },
+//       {
+//         "cantidad_dias": 2,
+//         "descripcion": "Dolore mollit deserunt in mollit ea.",
+//         "fecha_inicio": "11-10-2022"
+//       }
+//     ],
+//     "telefono": [
+//       {
+//         "numero": "(850) 534-2522"
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "637e87f06ca6a26f0063f4b2",
+//     "numero_documento": 41647047,
+//     "tipo_documento": "DNI",
+//     "nombre": "Wiggins",
+//     "apellido": "Estrada",
+//     "estado_civil": "soltero/a",
+//     "legajo": 284,
+//     "fecha_ingreso": "12-01-2021",
+//     "fecha_baja": "16-06-2006",
+//     "fecha_nacimiento": "20-02-1990",
+//     "domicilio": "515 Johnson Street",
+//     "es_encargado": true,
+//     "codigo_postal": 2285,
+//     "asistencia": [
+//       {
+//         "fecha": "20-12-2001",
+//         "hora_entrada": "11:49",
+//         "hora_salida": "11:11",
+//         "nombre_actividad": "veniam quis id irure"
+//       },
+//       {
+//         "fecha": "04-01-2008",
+//         "hora_entrada": "08:33",
+//         "hora_salida": "01:37",
+//         "nombre_actividad": "incididunt elit aliquip culpa"
+//       },
+//       {
+//         "fecha": "21-10-2018",
+//         "hora_entrada": "06:40",
+//         "hora_salida": "08:57",
+//         "nombre_actividad": "mollit veniam velit aute"
+//       },
+//       {
+//         "fecha": "05-08-2000",
+//         "hora_entrada": "07:03",
+//         "hora_salida": "03:17",
+//         "nombre_actividad": "ipsum nisi sit ea"
+//       },
+//       {
+//         "fecha": "23-06-2006",
+//         "hora_entrada": "11:50",
+//         "hora_salida": "02:40",
+//         "nombre_actividad": "cillum laboris magna eiusmod"
+//       }
+//     ],
+//     "actividad": [],
+//     "titulo_universitario": [
+//       {
+//         "nombre_titulo": "quis exercitation dolor"
+//       },
+//       {
+//         "nombre_titulo": "nisi enim in"
+//       }
+//     ],
+//     "turno": [
+//       {
+//         "hora_ingreso": "03:32",
+//         "hora_salida": "06:15",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "03-10-2022",
+//         "fecha_baja": "19-04-2022"
+//       },
+//       {
+//         "hora_ingreso": "03:39",
+//         "hora_salida": "07:51",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "15-06-2022",
+//         "fecha_baja": "02-01-2022"
+//       },
+//       {
+//         "hora_ingreso": "11:41",
+//         "hora_salida": "08:29",
+//         "nombre_turno": "Tarde",
+//         "fecha_ingreso": "10-04-2022",
+//         "fecha_baja": "11-04-2022"
+//       },
+//       {
+//         "hora_ingreso": "11:31",
+//         "hora_salida": "09:06",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "17-10-2022",
+//         "fecha_baja": "31-10-2022"
+//       },
+//       {
+//         "hora_ingreso": "05:42",
+//         "hora_salida": "02:24",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "07-03-2022",
+//         "fecha_baja": "28-08-2022"
+//       },
+//       {
+//         "hora_ingreso": "07:36",
+//         "hora_salida": "09:44",
+//         "nombre_turno": "Noche",
+//         "fecha_ingreso": "14-09-2022",
+//         "fecha_baja": "10-07-2022"
+//       },
+//       {
+//         "hora_ingreso": "10:36",
+//         "hora_salida": "05:45",
+//         "nombre_turno": "Mañana",
+//         "fecha_ingreso": "13-11-2022",
+//         "fecha_baja": "14-03-2022"
+//       }
+//     ],
+//     "certificado": [
+//       {
+//         "cantidad_dias": 3,
+//         "descripcion": "Ad minim duis cupidatat exercitation dolor laboris ut labore.",
+//         "fecha_inicio": "24-10-2022"
+//       },
+//       {
+//         "cantidad_dias": 6,
+//         "descripcion": "Velit incididunt ea non sint et sunt nostrud pariatur laborum excepteur aliquip.",
+//         "fecha_inicio": "11-11-2022"
+//       },
+//       {
+//         "cantidad_dias": 7,
+//         "descripcion": "Ex qui ad officia irure labore qui occaecat eiusmod eu eu sint.",
+//         "fecha_inicio": "18-09-2022"
+//       },
+//       {
+//         "cantidad_dias": 7,
+//         "descripcion": "In reprehenderit adipisicing commodo tempor dolor fugiat officia nostrud excepteur consectetur duis dolor aute.",
+//         "fecha_inicio": "17-07-2022"
+//       }
+//     ],
+//     "telefono": []
+//   }
+// ]);
 
