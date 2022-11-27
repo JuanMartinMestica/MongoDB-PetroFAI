@@ -1408,348 +1408,6 @@ use('PetroFAI');
 //   }
 // ]);
 
-// db.Entrega.insertMany([
-//   {
-//     "_id": "638394720e0989ea32ffd4e6",
-//     "fecha": "10-12-2004",
-//     "nombre_cliente": "pariatur laborum ipsum reprehenderit",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 29,
-//         "porcentaje_impurezas": 0.5599,
-//         "monto_final": 89810.1809
-//       },
-//       {
-//         "cantidad": 21,
-//         "porcentaje_impurezas": 0.1886,
-//         "monto_final": 111503.7626
-//       },
-//       {
-//         "cantidad": 70,
-//         "porcentaje_impurezas": 0.2447,
-//         "monto_final": 110546.1049
-//       },
-//       {
-//         "cantidad": 90,
-//         "porcentaje_impurezas": 0.7625,
-//         "monto_final": 35760.167
-//       },
-//       {
-//         "cantidad": 21,
-//         "porcentaje_impurezas": 0.924,
-//         "monto_final": 95673.2866
-//       },
-//       {
-//         "cantidad": 52,
-//         "porcentaje_impurezas": 0.1842,
-//         "monto_final": 17613.8569
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "638394723fd3fbcb73f74e80",
-//     "fecha": "20-02-2004",
-//     "nombre_cliente": "aute veniam nisi nisi",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 36,
-//         "porcentaje_impurezas": 0.9865,
-//         "monto_final": 111802.0553
-//       },
-//       {
-//         "cantidad": 22,
-//         "porcentaje_impurezas": 0.1034,
-//         "monto_final": 85420.6143
-//       },
-//       {
-//         "cantidad": 49,
-//         "porcentaje_impurezas": 0.9396,
-//         "monto_final": 114191.8278
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "638394729f26501e577f3ea7",
-//     "fecha": "09-03-1998",
-//     "nombre_cliente": "cillum eiusmod veniam fugiat",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 110,
-//         "porcentaje_impurezas": 0.1992,
-//         "monto_final": 57218.2842
-//       },
-//       {
-//         "cantidad": 91,
-//         "porcentaje_impurezas": 0.4728,
-//         "monto_final": 45151.1468
-//       },
-//       {
-//         "cantidad": 4,
-//         "porcentaje_impurezas": 0.5372,
-//         "monto_final": 76305.6688
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "63839472f75b0a81c5f315a0",
-//     "fecha": "03-09-1993",
-//     "nombre_cliente": "labore deserunt duis ex",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 3,
-//         "porcentaje_impurezas": 0.4235,
-//         "monto_final": 94306.7098
-//       },
-//       {
-//         "cantidad": 47,
-//         "porcentaje_impurezas": 0.7407,
-//         "monto_final": 21747.0988
-//       },
-//       {
-//         "cantidad": 76,
-//         "porcentaje_impurezas": 0.805,
-//         "monto_final": 28037.9291
-//       },
-//       {
-//         "cantidad": 38,
-//         "porcentaje_impurezas": 0.7177,
-//         "monto_final": 2926.3309
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "63839472742dd384735775bf",
-//     "fecha": "16-04-1999",
-//     "nombre_cliente": "in veniam est minim",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 110,
-//         "porcentaje_impurezas": 0.1209,
-//         "monto_final": 83965.1939
-//       },
-//       {
-//         "cantidad": 94,
-//         "porcentaje_impurezas": 0.99,
-//         "monto_final": 31865.558
-//       },
-//       {
-//         "cantidad": 26,
-//         "porcentaje_impurezas": 0.8026,
-//         "monto_final": 96193.7698
-//       },
-//       {
-//         "cantidad": 72,
-//         "porcentaje_impurezas": 0.1433,
-//         "monto_final": 34610.4244
-//       },
-//       {
-//         "cantidad": 104,
-//         "porcentaje_impurezas": 0.816,
-//         "monto_final": 79828.3905
-//       },
-//       {
-//         "cantidad": 76,
-//         "porcentaje_impurezas": 0.6652,
-//         "monto_final": 21277.0655
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "63839472fc699c04a132fbc7",
-//     "fecha": "26-07-1993",
-//     "nombre_cliente": "ea consectetur aliqua est",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 52,
-//         "porcentaje_impurezas": 0.7079,
-//         "monto_final": 16223.9161
-//       },
-//       {
-//         "cantidad": 9,
-//         "porcentaje_impurezas": 0.6879,
-//         "monto_final": 99885.7261
-//       },
-//       {
-//         "cantidad": 90,
-//         "porcentaje_impurezas": 0.7403,
-//         "monto_final": 91341.1906
-//       },
-//       {
-//         "cantidad": 46,
-//         "porcentaje_impurezas": 0.8564,
-//         "monto_final": 85734.3806
-//       },
-//       {
-//         "cantidad": 70,
-//         "porcentaje_impurezas": 0.3884,
-//         "monto_final": 107840.5664
-//       },
-//       {
-//         "cantidad": 90,
-//         "porcentaje_impurezas": 0.8703,
-//         "monto_final": 5025.1571
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "638394721703094ec6c8e041",
-//     "fecha": "27-04-2016",
-//     "nombre_cliente": "laboris sunt pariatur consequat",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 101,
-//         "porcentaje_impurezas": 0.6377,
-//         "monto_final": 19753.233
-//       },
-//       {
-//         "cantidad": 46,
-//         "porcentaje_impurezas": 0.5502,
-//         "monto_final": 31073.4056
-//       },
-//       {
-//         "cantidad": 59,
-//         "porcentaje_impurezas": 0.2492,
-//         "monto_final": 26800.0546
-//       },
-//       {
-//         "cantidad": 2,
-//         "porcentaje_impurezas": 0.0388,
-//         "monto_final": 109454.6786
-//       },
-//       {
-//         "cantidad": 63,
-//         "porcentaje_impurezas": 0.9657,
-//         "monto_final": 68846.1481
-//       },
-//       {
-//         "cantidad": 3,
-//         "porcentaje_impurezas": 0.7872,
-//         "monto_final": 20645.3072
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "63839472d629907894fe1312",
-//     "fecha": "19-11-2014",
-//     "nombre_cliente": "est non laborum tempor",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 35,
-//         "porcentaje_impurezas": 0.3985,
-//         "monto_final": 89700.0632
-//       },
-//       {
-//         "cantidad": 55,
-//         "porcentaje_impurezas": 0.2369,
-//         "monto_final": 22628.2202
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "6383947248606d35a1084f27",
-//     "fecha": "10-02-1994",
-//     "nombre_cliente": "consequat sint aute incididunt",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 35,
-//         "porcentaje_impurezas": 0.9607,
-//         "monto_final": 90402.8459
-//       },
-//       {
-//         "cantidad": 54,
-//         "porcentaje_impurezas": 0.6878,
-//         "monto_final": 66551.0732
-//       },
-//       {
-//         "cantidad": 19,
-//         "porcentaje_impurezas": 0.0599,
-//         "monto_final": 72482.4612
-//       },
-//       {
-//         "cantidad": 46,
-//         "porcentaje_impurezas": 0.9769,
-//         "monto_final": 102795.0254
-//       },
-//       {
-//         "cantidad": 120,
-//         "porcentaje_impurezas": 0.0081,
-//         "monto_final": 85822.044
-//       },
-//       {
-//         "cantidad": 85,
-//         "porcentaje_impurezas": 0.7819,
-//         "monto_final": 98302.0005
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "638394723a18ce1f09776ff0",
-//     "fecha": "01-03-2009",
-//     "nombre_cliente": "nisi nisi nostrud cillum",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 1,
-//         "porcentaje_impurezas": 0.4093,
-//         "monto_final": 87850.2672
-//       },
-//       {
-//         "cantidad": 53,
-//         "porcentaje_impurezas": 0.2347,
-//         "monto_final": 46549.5831
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "63839472fb8ff7f1e5710f74",
-//     "fecha": "30-07-1993",
-//     "nombre_cliente": "sint minim aliqua velit",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 76,
-//         "porcentaje_impurezas": 0.2458,
-//         "monto_final": 23147.5276
-//       },
-//       {
-//         "cantidad": 77,
-//         "porcentaje_impurezas": 0.298,
-//         "monto_final": 40926.0569
-//       },
-//       {
-//         "cantidad": 99,
-//         "porcentaje_impurezas": 0.2651,
-//         "monto_final": 52646.8954
-//       }
-//     ]
-//   },
-//   {
-//     "_id": "63839472881b7ab1456c9c1d",
-//     "fecha": "09-01-2020",
-//     "nombre_cliente": "elit duis proident fugiat",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 74,
-//         "porcentaje_impurezas": 0.5241,
-//         "monto_final": 61797.8628
-//       },
-//       {
-//         "cantidad": 79,
-//         "porcentaje_impurezas": 0.2094,
-//         "monto_final": 47925.2866
-//       },
-//       {
-//         "cantidad": 20,
-//         "porcentaje_impurezas": 0.1163,
-//         "monto_final": 29156.5402
-//       },
-//       {
-//         "cantidad": 109,
-//         "porcentaje_impurezas": 0.0167,
-//         "monto_final": 39334.0863
-//       }
-//     ]
-//   }
-// ])
-
 
 // db.Area.insertMany([
 //   {
@@ -2125,5 +1783,1097 @@ use('PetroFAI');
 // ])
 
 
+// db.Producto.insertMany([
+//   {
+//     "nombre": "est eiusmod",
+//     "detalle": "Consequat pariatur velit exercitation cillum nostrud dolore reprehenderit exercitation adipisicing.",
+//     "tipo": "ipsum id ipsum do"
+//   },
+//   {
+//     "nombre": "qui ea cillum ipsum qui",
+//     "detalle": "Ea ullamco sunt pariatur dolore anim enim nostrud.",
+//     "tipo": "non reprehenderit eu sunt"
+//   },
+//   {
+//     "nombre": "sint adipisicing anim",
+//     "detalle": "Mollit nulla esse quis in consequat sint ut consectetur adipisicing aliquip fugiat.",
+//     "tipo": "ex"
+//   },
+//   {
+//     "nombre": "voluptate nulla et veniam ad",
+//     "detalle": "Ut ut aliqua adipisicing elit consequat fugiat.",
+//     "tipo": "sint et sit dolore aliqua"
+//   },
+//   {
+//     "nombre": "enim sint occaecat cillum",
+//     "detalle": "Irure culpa ad eu ex ea duis culpa reprehenderit.",
+//     "tipo": "sunt exercitation anim ex"
+//   },
+//   {
+//     "nombre": "nulla Lorem",
+//     "detalle": "Ipsum voluptate mollit consequat dolore nisi aute pariatur.",
+//     "tipo": "consequat in excepteur Lorem proident"
+//   },
+//   {
+//     "nombre": "enim",
+//     "detalle": "Ut mollit pariatur aliquip veniam minim aliqua magna labore non nisi.",
+//     "tipo": "culpa veniam labore aliqua incididunt"
+//   },
+//   {
+//     "nombre": "ea",
+//     "detalle": "Et commodo eiusmod laboris laboris cupidatat irure.",
+//     "tipo": "aliqua ad eiusmod"
+//   },
+//   {
+//     "nombre": "non deserunt nisi velit dolore",
+//     "detalle": "Ullamco excepteur elit sit exercitation deserunt sint ipsum ullamco commodo.",
+//     "tipo": "ut aliqua adipisicing"
+//   },
+//   {
+//     "nombre": "consectetur ex aute",
+//     "detalle": "Magna veniam veniam duis excepteur labore minim occaecat.",
+//     "tipo": "tempor cupidatat ipsum commodo"
+//   },
+//   {
+//     "nombre": "occaecat",
+//     "detalle": "Amet sint anim magna et exercitation ullamco eiusmod consectetur sunt nostrud proident in enim.",
+//     "tipo": "duis fugiat"
+//   },
+//   {
+//     "nombre": "nisi",
+//     "detalle": "Sunt ullamco nisi fugiat duis excepteur velit ex veniam.",
+//     "tipo": "enim esse culpa voluptate"
+//   },
+//   {
+//     "nombre": "dolor exercitation nostrud esse",
+//     "detalle": "Sunt id id aliquip enim in.",
+//     "tipo": "voluptate fugiat laboris est dolore"
+//   },
+//   {
+//     "nombre": "eiusmod sit officia in",
+//     "detalle": "Incididunt aliquip nisi enim dolor proident anim fugiat cillum pariatur do.",
+//     "tipo": "in commodo elit mollit"
+//   },
+//   {
+//     "nombre": "nulla non minim",
+//     "detalle": "Sit proident deserunt cupidatat deserunt exercitation nisi aute velit ea velit mollit laboris irure occaecat.",
+//     "tipo": "culpa labore duis"
+//   }
+// ])
+
+// db.Entrega.insertMany([
+//   {
+//     "_id": "638394720e0989ea32ffd4e6",
+//     "fecha": "10-12-2004",
+//     "nombre_cliente": "pariatur laborum ipsum reprehenderit",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 29,
+//         "porcentaje_impurezas": 0.5599,
+//         "monto_final": 89810.1809
+//       },
+//       {
+//         "cantidad": 21,
+//         "porcentaje_impurezas": 0.1886,
+//         "monto_final": 111503.7626
+//       },
+//       {
+//         "cantidad": 70,
+//         "porcentaje_impurezas": 0.2447,
+//         "monto_final": 110546.1049
+//       },
+//       {
+//         "cantidad": 90,
+//         "porcentaje_impurezas": 0.7625,
+//         "monto_final": 35760.167
+//       },
+//       {
+//         "cantidad": 21,
+//         "porcentaje_impurezas": 0.924,
+//         "monto_final": 95673.2866
+//       },
+//       {
+//         "cantidad": 52,
+//         "porcentaje_impurezas": 0.1842,
+//         "monto_final": 17613.8569
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "638394723fd3fbcb73f74e80",
+//     "fecha": "20-02-2004",
+//     "nombre_cliente": "aute veniam nisi nisi",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 36,
+//         "porcentaje_impurezas": 0.9865,
+//         "monto_final": 111802.0553
+//       },
+//       {
+//         "cantidad": 22,
+//         "porcentaje_impurezas": 0.1034,
+//         "monto_final": 85420.6143
+//       },
+//       {
+//         "cantidad": 49,
+//         "porcentaje_impurezas": 0.9396,
+//         "monto_final": 114191.8278
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "638394729f26501e577f3ea7",
+//     "fecha": "09-03-1998",
+//     "nombre_cliente": "cillum eiusmod veniam fugiat",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 110,
+//         "porcentaje_impurezas": 0.1992,
+//         "monto_final": 57218.2842
+//       },
+//       {
+//         "cantidad": 91,
+//         "porcentaje_impurezas": 0.4728,
+//         "monto_final": 45151.1468
+//       },
+//       {
+//         "cantidad": 4,
+//         "porcentaje_impurezas": 0.5372,
+//         "monto_final": 76305.6688
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472f75b0a81c5f315a0",
+//     "fecha": "03-09-1993",
+//     "nombre_cliente": "labore deserunt duis ex",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 3,
+//         "porcentaje_impurezas": 0.4235,
+//         "monto_final": 94306.7098
+//       },
+//       {
+//         "cantidad": 47,
+//         "porcentaje_impurezas": 0.7407,
+//         "monto_final": 21747.0988
+//       },
+//       {
+//         "cantidad": 76,
+//         "porcentaje_impurezas": 0.805,
+//         "monto_final": 28037.9291
+//       },
+//       {
+//         "cantidad": 38,
+//         "porcentaje_impurezas": 0.7177,
+//         "monto_final": 2926.3309
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472742dd384735775bf",
+//     "fecha": "16-04-1999",
+//     "nombre_cliente": "in veniam est minim",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 110,
+//         "porcentaje_impurezas": 0.1209,
+//         "monto_final": 83965.1939
+//       },
+//       {
+//         "cantidad": 94,
+//         "porcentaje_impurezas": 0.99,
+//         "monto_final": 31865.558
+//       },
+//       {
+//         "cantidad": 26,
+//         "porcentaje_impurezas": 0.8026,
+//         "monto_final": 96193.7698
+//       },
+//       {
+//         "cantidad": 72,
+//         "porcentaje_impurezas": 0.1433,
+//         "monto_final": 34610.4244
+//       },
+//       {
+//         "cantidad": 104,
+//         "porcentaje_impurezas": 0.816,
+//         "monto_final": 79828.3905
+//       },
+//       {
+//         "cantidad": 76,
+//         "porcentaje_impurezas": 0.6652,
+//         "monto_final": 21277.0655
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472fc699c04a132fbc7",
+//     "fecha": "26-07-1993",
+//     "nombre_cliente": "ea consectetur aliqua est",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 52,
+//         "porcentaje_impurezas": 0.7079,
+//         "monto_final": 16223.9161
+//       },
+//       {
+//         "cantidad": 9,
+//         "porcentaje_impurezas": 0.6879,
+//         "monto_final": 99885.7261
+//       },
+//       {
+//         "cantidad": 90,
+//         "porcentaje_impurezas": 0.7403,
+//         "monto_final": 91341.1906
+//       },
+//       {
+//         "cantidad": 46,
+//         "porcentaje_impurezas": 0.8564,
+//         "monto_final": 85734.3806
+//       },
+//       {
+//         "cantidad": 70,
+//         "porcentaje_impurezas": 0.3884,
+//         "monto_final": 107840.5664
+//       },
+//       {
+//         "cantidad": 90,
+//         "porcentaje_impurezas": 0.8703,
+//         "monto_final": 5025.1571
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "638394721703094ec6c8e041",
+//     "fecha": "27-04-2016",
+//     "nombre_cliente": "laboris sunt pariatur consequat",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 101,
+//         "porcentaje_impurezas": 0.6377,
+//         "monto_final": 19753.233
+//       },
+//       {
+//         "cantidad": 46,
+//         "porcentaje_impurezas": 0.5502,
+//         "monto_final": 31073.4056
+//       },
+//       {
+//         "cantidad": 59,
+//         "porcentaje_impurezas": 0.2492,
+//         "monto_final": 26800.0546
+//       },
+//       {
+//         "cantidad": 2,
+//         "porcentaje_impurezas": 0.0388,
+//         "monto_final": 109454.6786
+//       },
+//       {
+//         "cantidad": 63,
+//         "porcentaje_impurezas": 0.9657,
+//         "monto_final": 68846.1481
+//       },
+//       {
+//         "cantidad": 3,
+//         "porcentaje_impurezas": 0.7872,
+//         "monto_final": 20645.3072
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472d629907894fe1312",
+//     "fecha": "19-11-2014",
+//     "nombre_cliente": "est non laborum tempor",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 35,
+//         "porcentaje_impurezas": 0.3985,
+//         "monto_final": 89700.0632
+//       },
+//       {
+//         "cantidad": 55,
+//         "porcentaje_impurezas": 0.2369,
+//         "monto_final": 22628.2202
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "6383947248606d35a1084f27",
+//     "fecha": "10-02-1994",
+//     "nombre_cliente": "consequat sint aute incididunt",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 35,
+//         "porcentaje_impurezas": 0.9607,
+//         "monto_final": 90402.8459
+//       },
+//       {
+//         "cantidad": 54,
+//         "porcentaje_impurezas": 0.6878,
+//         "monto_final": 66551.0732
+//       },
+//       {
+//         "cantidad": 19,
+//         "porcentaje_impurezas": 0.0599,
+//         "monto_final": 72482.4612
+//       },
+//       {
+//         "cantidad": 46,
+//         "porcentaje_impurezas": 0.9769,
+//         "monto_final": 102795.0254
+//       },
+//       {
+//         "cantidad": 120,
+//         "porcentaje_impurezas": 0.0081,
+//         "monto_final": 85822.044
+//       },
+//       {
+//         "cantidad": 85,
+//         "porcentaje_impurezas": 0.7819,
+//         "monto_final": 98302.0005
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "638394723a18ce1f09776ff0",
+//     "fecha": "01-03-2009",
+//     "nombre_cliente": "nisi nisi nostrud cillum",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 1,
+//         "porcentaje_impurezas": 0.4093,
+//         "monto_final": 87850.2672
+//       },
+//       {
+//         "cantidad": 53,
+//         "porcentaje_impurezas": 0.2347,
+//         "monto_final": 46549.5831
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472fb8ff7f1e5710f74",
+//     "fecha": "30-07-1993",
+//     "nombre_cliente": "sint minim aliqua velit",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 76,
+//         "porcentaje_impurezas": 0.2458,
+//         "monto_final": 23147.5276
+//       },
+//       {
+//         "cantidad": 77,
+//         "porcentaje_impurezas": 0.298,
+//         "monto_final": 40926.0569
+//       },
+//       {
+//         "cantidad": 99,
+//         "porcentaje_impurezas": 0.2651,
+//         "monto_final": 52646.8954
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472881b7ab1456c9c1d",
+//     "fecha": "09-01-2020",
+//     "nombre_cliente": "elit duis proident fugiat",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 74,
+//         "porcentaje_impurezas": 0.5241,
+//         "monto_final": 61797.8628
+//       },
+//       {
+//         "cantidad": 79,
+//         "porcentaje_impurezas": 0.2094,
+//         "monto_final": 47925.2866
+//       },
+//       {
+//         "cantidad": 20,
+//         "porcentaje_impurezas": 0.1163,
+//         "monto_final": 29156.5402
+//       },
+//       {
+//         "cantidad": 109,
+//         "porcentaje_impurezas": 0.0167,
+//         "monto_final": 39334.0863
+//       }
+//     ]
+//   }
+// ])
 
 
+// db.Instalacion.insertMany([
+//   {
+//     "latitud": 7.001186,
+//     "longitud": 129.207804,
+//     "descripcion": "Tempor excepteur amet excepteur sunt sunt. Nulla cupidatat aliquip eiusmod irure enim non irure excepteur. Ad id deserunt mollit in nostrud voluptate veniam anim. Elit eiusmod id est consectetur consectetur pariatur aute minim reprehenderit pariatur incididunt nisi.\r\n",
+//     "profundidad": 167,
+//     "es_productor": false,
+//     "estado": [
+//       {
+//         "nombre": "pariatur",
+//         "comentario": "cupidatat adipisicing Lorem ea et",
+//         "fecha": "19-02-2006",
+//         "motivo": "dolor culpa"
+//       },
+//       {
+//         "nombre": "fugiat",
+//         "comentario": "in nisi consequat id irure",
+//         "fecha": "06-06-2012",
+//         "motivo": "adipisicing aliqua"
+//       },
+//       {
+//         "nombre": "est",
+//         "comentario": "dolore ea nostrud nulla deserunt",
+//         "fecha": "02-04-2008",
+//         "motivo": "sit commodo"
+//       },
+//       {
+//         "nombre": "ut",
+//         "comentario": "cupidatat adipisicing ullamco labore occaecat",
+//         "fecha": "08-01-2003",
+//         "motivo": "ut dolore"
+//       },
+//       {
+//         "nombre": "elit",
+//         "comentario": "in laborum laboris laborum excepteur",
+//         "fecha": "13-11-1990",
+//         "motivo": "fugiat culpa"
+//       }
+//     ],
+//     "sistema_de_extraccion": [
+//       {
+//         "nombre": "Lorem"
+//       },
+//       {
+//         "nombre": "elit"
+//       }
+//     ]
+//   },
+//   {
+//     "latitud": 53.888288,
+//     "longitud": 102.20943,
+//     "descripcion": "Est veniam enim occaecat laborum excepteur et ad eiusmod sunt exercitation nisi incididunt. Deserunt incididunt pariatur ea nulla et ullamco aliqua sunt enim non proident. Enim commodo est sint ipsum labore velit qui duis elit proident reprehenderit. Et officia quis irure eu nulla dolore excepteur labore tempor aute.\r\n",
+//     "profundidad": 617,
+//     "es_productor": true,
+//     "estado": [
+//       {
+//         "nombre": "occaecat",
+//         "comentario": "mollit quis irure incididunt ea",
+//         "fecha": "08-12-1997",
+//         "motivo": "pariatur Lorem"
+//       },
+//       {
+//         "nombre": "eu",
+//         "comentario": "laborum veniam sunt non laboris",
+//         "fecha": "12-05-2020",
+//         "motivo": "laboris aute"
+//       }
+//     ],
+//     "sistema_de_extraccion": [
+//       {
+//         "nombre": "nisi"
+//       },
+//       {
+//         "nombre": "incididunt"
+//       },
+//       {
+//         "nombre": "incididunt"
+//       }
+//     ]
+//   },
+//   {
+//     "latitud": -48.859524,
+//     "longitud": -134.350238,
+//     "descripcion": "Incididunt adipisicing deserunt ut sunt magna. In dolore labore ullamco voluptate est cillum qui commodo esse nulla. Ut sunt incididunt non do consectetur tempor aliqua. Ad excepteur qui ut commodo ut enim excepteur anim exercitation ullamco. Quis eu eiusmod dolore sit nisi aliquip magna esse irure exercitation excepteur cillum. Enim duis officia mollit eu ipsum quis.\r\n",
+//     "profundidad": 732,
+//     "es_productor": true,
+//     "estado": [
+//       {
+//         "nombre": "ut",
+//         "comentario": "veniam minim nisi velit cillum",
+//         "fecha": "26-06-1999",
+//         "motivo": "eu dolore"
+//       },
+//       {
+//         "nombre": "deserunt",
+//         "comentario": "fugiat reprehenderit magna est irure",
+//         "fecha": "27-04-2011",
+//         "motivo": "est ad"
+//       },
+//       {
+//         "nombre": "culpa",
+//         "comentario": "sunt in sint aliqua pariatur",
+//         "fecha": "23-11-1995",
+//         "motivo": "amet elit"
+//       },
+//       {
+//         "nombre": "in",
+//         "comentario": "qui quis deserunt consectetur excepteur",
+//         "fecha": "05-04-1998",
+//         "motivo": "voluptate enim"
+//       }
+//     ],
+//     "sistema_de_extraccion": [
+//       {
+//         "nombre": "aliquip"
+//       }
+//     ]
+//   },
+//   {
+//     "latitud": 47.315345,
+//     "longitud": -118.42155,
+//     "descripcion": "Est culpa veniam sint aliquip sit tempor dolor tempor proident deserunt pariatur. Ex ad sunt voluptate labore ipsum nulla voluptate deserunt cillum mollit velit laborum nisi voluptate. Velit ullamco aliqua labore incididunt ipsum. Consequat duis quis ad commodo. Sit in consectetur nisi proident dolore enim elit occaecat veniam. Consectetur incididunt minim aliqua cupidatat eu labore exercitation cillum laborum sint reprehenderit laborum sunt aliqua. Eiusmod commodo nulla et tempor culpa amet consequat est nisi tempor eiusmod magna.\r\n",
+//     "profundidad": 950,
+//     "es_productor": true,
+//     "estado": [
+//       {
+//         "nombre": "aliqua",
+//         "comentario": "est laborum magna duis eu",
+//         "fecha": "14-08-2002",
+//         "motivo": "tempor officia"
+//       },
+//       {
+//         "nombre": "in",
+//         "comentario": "enim irure excepteur nostrud esse",
+//         "fecha": "17-01-1991",
+//         "motivo": "ea dolor"
+//       }
+//     ],
+//     "sistema_de_extraccion": [
+//       {
+//         "nombre": "pariatur"
+//       },
+//       {
+//         "nombre": "amet"
+//       },
+//       {
+//         "nombre": "ut"
+//       }
+//     ]
+//   },
+//   {
+//     "latitud": 27.297233,
+//     "longitud": -72.242271,
+//     "descripcion": "Velit consectetur consectetur do cupidatat ea ad deserunt sit ipsum duis tempor. Amet est quis deserunt qui consectetur nisi proident deserunt ea. Elit cupidatat reprehenderit commodo laborum mollit eiusmod consectetur culpa qui esse cillum. Deserunt eu cupidatat amet fugiat dolor irure quis.\r\n",
+//     "profundidad": 881,
+//     "es_productor": false,
+//     "estado": [
+//       {
+//         "nombre": "qui",
+//         "comentario": "consectetur laborum id commodo est",
+//         "fecha": "28-03-2005",
+//         "motivo": "do consectetur"
+//       },
+//       {
+//         "nombre": "magna",
+//         "comentario": "do aliqua commodo qui sunt",
+//         "fecha": "20-11-2012",
+//         "motivo": "sint officia"
+//       },
+//       {
+//         "nombre": "do",
+//         "comentario": "adipisicing nostrud occaecat velit ea",
+//         "fecha": "29-01-2015",
+//         "motivo": "duis consequat"
+//       }
+//     ],
+//     "sistema_de_extraccion": [
+//       {
+//         "nombre": "tempor"
+//       },
+//       {
+//         "nombre": "anim"
+//       },
+//       {
+//         "nombre": "ad"
+//       },
+//       {
+//         "nombre": "voluptate"
+//       },
+//       {
+//         "nombre": "ex"
+//       }
+//     ]
+//   },
+//   {
+//     "latitud": 63.421128,
+//     "longitud": 58.842156,
+//     "descripcion": "Commodo ex sit incididunt mollit nostrud magna enim aliqua officia pariatur magna aliqua nulla ad. Consectetur laborum deserunt consectetur consectetur laboris nostrud ullamco magna. Veniam eu aliquip laborum enim nulla enim quis irure sit aliquip. Qui aute id quis eu ea et aute incididunt sit voluptate consectetur.\r\n",
+//     "profundidad": 755,
+//     "es_productor": true,
+//     "estado": [
+//       {
+//         "nombre": "labore",
+//         "comentario": "laborum sunt incididunt cupidatat cillum",
+//         "fecha": "13-10-2014",
+//         "motivo": "irure ullamco"
+//       },
+//       {
+//         "nombre": "non",
+//         "comentario": "laborum velit ipsum eiusmod consectetur",
+//         "fecha": "27-07-2000",
+//         "motivo": "eu cillum"
+//       },
+//       {
+//         "nombre": "eiusmod",
+//         "comentario": "magna consectetur laborum ipsum nisi",
+//         "fecha": "04-12-1991",
+//         "motivo": "fugiat nisi"
+//       },
+//       {
+//         "nombre": "quis",
+//         "comentario": "velit nulla ex dolor dolore",
+//         "fecha": "16-05-1996",
+//         "motivo": "Lorem cillum"
+//       }
+//     ],
+//     "sistema_de_extraccion": [
+//       {
+//         "nombre": "eu"
+//       },
+//       {
+//         "nombre": "ea"
+//       },
+//       {
+//         "nombre": "eu"
+//       },
+//       {
+//         "nombre": "amet"
+//       },
+//       {
+//         "nombre": "dolor"
+//       }
+//     ]
+//   },
+//   {
+//     "latitud": 77.647092,
+//     "longitud": 157.86852,
+//     "descripcion": "Magna Lorem cillum laborum consequat cillum non culpa excepteur consectetur sunt pariatur. Ad sunt dolor consectetur eiusmod deserunt. Ea laborum non velit ut minim. Eiusmod non ea velit reprehenderit. Fugiat fugiat ea cillum fugiat irure officia ipsum adipisicing nulla consequat culpa id adipisicing id. Exercitation aliquip tempor ex fugiat fugiat. Ullamco consectetur officia qui ex pariatur elit cupidatat laborum et do.\r\n",
+//     "profundidad": 398,
+//     "es_productor": true,
+//     "estado": [
+//       {
+//         "nombre": "aute",
+//         "comentario": "consectetur occaecat aliquip anim non",
+//         "fecha": "31-07-2010",
+//         "motivo": "adipisicing duis"
+//       },
+//       {
+//         "nombre": "aliqua",
+//         "comentario": "dolor commodo sunt Lorem mollit",
+//         "fecha": "31-03-1998",
+//         "motivo": "in id"
+//       },
+//       {
+//         "nombre": "aute",
+//         "comentario": "ad anim sunt id dolore",
+//         "fecha": "15-09-2005",
+//         "motivo": "fugiat voluptate"
+//       },
+//       {
+//         "nombre": "velit",
+//         "comentario": "ut est non culpa velit",
+//         "fecha": "15-02-2007",
+//         "motivo": "quis dolore"
+//       }
+//     ],
+//     "sistema_de_extraccion": [
+//       {
+//         "nombre": "laborum"
+//       },
+//       {
+//         "nombre": "laborum"
+//       }
+//     ]
+//   },
+//   {
+//     "latitud": -59.246068,
+//     "longitud": -174.121427,
+//     "descripcion": "Aliquip est enim commodo ut nisi. Sint aliqua proident ut consequat quis. Commodo in esse amet esse laborum.\r\n",
+//     "profundidad": 723,
+//     "es_productor": true,
+//     "estado": [
+//       {
+//         "nombre": "esse",
+//         "comentario": "qui non occaecat et duis",
+//         "fecha": "06-02-2012",
+//         "motivo": "aliquip laboris"
+//       },
+//       {
+//         "nombre": "do",
+//         "comentario": "ea exercitation fugiat labore tempor",
+//         "fecha": "27-12-2006",
+//         "motivo": "anim duis"
+//       }
+//     ],
+//     "sistema_de_extraccion": [
+//       {
+//         "nombre": "deserunt"
+//       },
+//       {
+//         "nombre": "ullamco"
+//       },
+//       {
+//         "nombre": "magna"
+//       },
+//       {
+//         "nombre": "dolore"
+//       },
+//       {
+//         "nombre": "nisi"
+//       }
+//     ]
+//   },
+//   {
+//     "latitud": -85.233009,
+//     "longitud": 110.79671,
+//     "descripcion": "Cupidatat consectetur qui fugiat commodo. Laboris eu veniam fugiat voluptate fugiat occaecat esse consectetur adipisicing est amet anim non. Deserunt Lorem dolore aliqua laboris pariatur cillum consectetur ipsum do elit sint consectetur consectetur. In adipisicing et cupidatat ut veniam veniam.\r\n",
+//     "profundidad": 856,
+//     "es_productor": false,
+//     "estado": [
+//       {
+//         "nombre": "adipisicing",
+//         "comentario": "nisi commodo dolor in labore",
+//         "fecha": "22-03-2017",
+//         "motivo": "proident minim"
+//       }
+//     ],
+//     "sistema_de_extraccion": [
+//       {
+//         "nombre": "elit"
+//       },
+//       {
+//         "nombre": "incididunt"
+//       },
+//       {
+//         "nombre": "labore"
+//       },
+//       {
+//         "nombre": "est"
+//       }
+//     ]
+//   },
+//   {
+//     "latitud": 19.540545,
+//     "longitud": -24.150242,
+//     "descripcion": "Adipisicing officia cillum eu aute occaecat labore et ut consequat ut est consequat minim. Quis nisi incididunt et velit id sit ipsum deserunt qui dolor in reprehenderit qui. Nulla proident culpa est deserunt aliqua aute sint id anim consectetur magna cillum. Mollit cupidatat non anim anim sint minim ea enim adipisicing ad nisi. Eiusmod duis irure cupidatat laboris id quis adipisicing sunt ut adipisicing labore nostrud.\r\n",
+//     "profundidad": 616,
+//     "es_productor": true,
+//     "estado": [
+//       {
+//         "nombre": "sunt",
+//         "comentario": "excepteur laborum proident magna excepteur",
+//         "fecha": "12-03-2019",
+//         "motivo": "adipisicing ad"
+//       },
+//       {
+//         "nombre": "commodo",
+//         "comentario": "aliqua adipisicing laborum cillum laboris",
+//         "fecha": "01-01-1994",
+//         "motivo": "duis nisi"
+//       },
+//       {
+//         "nombre": "consequat",
+//         "comentario": "excepteur et sit incididunt Lorem",
+//         "fecha": "18-09-1995",
+//         "motivo": "labore in"
+//       },
+//       {
+//         "nombre": "exercitation",
+//         "comentario": "reprehenderit fugiat adipisicing ad irure",
+//         "fecha": "26-02-2014",
+//         "motivo": "nostrud duis"
+//       },
+//       {
+//         "nombre": "sit",
+//         "comentario": "cillum consectetur sunt cupidatat id",
+//         "fecha": "19-01-2004",
+//         "motivo": "minim non"
+//       }
+//     ],
+//     "sistema_de_extraccion": [
+//       {
+//         "nombre": "irure"
+//       },
+//       {
+//         "nombre": "eiusmod"
+//       },
+//       {
+//         "nombre": "labore"
+//       }
+//     ]
+//   }
+// ])
+
+
+// db.Tanque.insertMany([[
+//   {
+//     "tag": "591amet",
+//     "capacidad_total": 7414.11,
+//     "capacidad_disponible": 5637.1215
+//   },
+//   {
+//     "tag": "485ad",
+//     "capacidad_total": 9422.1086,
+//     "capacidad_disponible": 5763.6802
+//   },
+//   {
+//     "tag": "25voluptate",
+//     "capacidad_total": 3156.5078,
+//     "capacidad_disponible": 9850.4571
+//   },
+//   {
+//     "tag": "622ullamco",
+//     "capacidad_total": 8309.6703,
+//     "capacidad_disponible": 6161.2995
+//   },
+//   {
+//     "tag": "245velit",
+//     "capacidad_total": 967.7884,
+//     "capacidad_disponible": 1611.1836
+//   },
+//   {
+//     "tag": "536reprehenderit",
+//     "capacidad_total": 4391.4975,
+//     "capacidad_disponible": 336.8921
+//   },
+//   {
+//     "tag": "230deserunt",
+//     "capacidad_total": 6801.9672,
+//     "capacidad_disponible": 6074.3034
+//   },
+//   {
+//     "tag": "960consectetur",
+//     "capacidad_total": 1562.7741,
+//     "capacidad_disponible": 2656.2372
+//   },
+//   {
+//     "tag": "53officia",
+//     "capacidad_total": 172.641,
+//     "capacidad_disponible": 4294.699
+//   },
+//   {
+//     "tag": "771consectetur",
+//     "capacidad_total": 8711.4504,
+//     "capacidad_disponible": 3030.4953
+//   }
+// ]])
+
+// db.Medidor.insertMany([
+//   {
+//     "nombre": "est esse",
+//     "porcentaje_precision": 42.21,
+//     "medicion": [
+//       {
+//         "fecha": "17-04-2019",
+//         "medicion_neta": 6070.97,
+//         "medicion_bruta": 6972.061
+//       },
+//       {
+//         "fecha": "28-12-2015",
+//         "medicion_neta": 8970.356,
+//         "medicion_bruta": 3608.258
+//       },
+//       {
+//         "fecha": "03-03-2022",
+//         "medicion_neta": 8679.392,
+//         "medicion_bruta": 4345.669
+//       },
+//       {
+//         "fecha": "16-02-2000",
+//         "medicion_neta": 5104.417,
+//         "medicion_bruta": 8631.634
+//       },
+//       {
+//         "fecha": "24-11-2004",
+//         "medicion_neta": 7124.821,
+//         "medicion_bruta": 5222.409
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "ullamco enim",
+//     "porcentaje_precision": 47.84,
+//     "medicion": [
+//       {
+//         "fecha": "01-05-2021",
+//         "medicion_neta": 4619.23,
+//         "medicion_bruta": 770.382
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "cillum do consectetur eu",
+//     "porcentaje_precision": 62.29,
+//     "medicion": [
+//       {
+//         "fecha": "09-04-1990",
+//         "medicion_neta": 2242.21,
+//         "medicion_bruta": 1993.164
+//       },
+//       {
+//         "fecha": "21-07-1996",
+//         "medicion_neta": 4562.52,
+//         "medicion_bruta": 2458.619
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "labore aliquip sit esse nisi",
+//     "porcentaje_precision": 7.46,
+//     "medicion": [
+//       {
+//         "fecha": "13-11-2011",
+//         "medicion_neta": 7557.149,
+//         "medicion_bruta": 3674.437
+//       },
+//       {
+//         "fecha": "10-09-2005",
+//         "medicion_neta": 5115.678,
+//         "medicion_bruta": 651.944
+//       },
+//       {
+//         "fecha": "13-08-2011",
+//         "medicion_neta": 2057.467,
+//         "medicion_bruta": 4376.103
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "in dolore dolor est ut",
+//     "porcentaje_precision": 99.14,
+//     "medicion": [
+//       {
+//         "fecha": "28-08-2019",
+//         "medicion_neta": 2331.514,
+//         "medicion_bruta": 2309.199
+//       },
+//       {
+//         "fecha": "29-02-1996",
+//         "medicion_neta": 3294.705,
+//         "medicion_bruta": 4414.399
+//       },
+//       {
+//         "fecha": "26-02-2017",
+//         "medicion_neta": 7716.172,
+//         "medicion_bruta": 3166.21
+//       },
+//       {
+//         "fecha": "15-06-2017",
+//         "medicion_neta": 4857.997,
+//         "medicion_bruta": 7138.648
+//       },
+//       {
+//         "fecha": "23-02-2004",
+//         "medicion_neta": 6089.417,
+//         "medicion_bruta": 3709.293
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "laboris incididunt commodo aute",
+//     "porcentaje_precision": 58.61,
+//     "medicion": [
+//       {
+//         "fecha": "13-11-2003",
+//         "medicion_neta": 752.652,
+//         "medicion_bruta": 3898.426
+//       },
+//       {
+//         "fecha": "23-12-2013",
+//         "medicion_neta": 5437.483,
+//         "medicion_bruta": 7798.238
+//       },
+//       {
+//         "fecha": "22-09-1998",
+//         "medicion_neta": 6923.132,
+//         "medicion_bruta": 5494.887
+//       },
+//       {
+//         "fecha": "12-06-1997",
+//         "medicion_neta": 2824.082,
+//         "medicion_bruta": 4267.86
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "aliquip cupidatat et minim laboris",
+//     "porcentaje_precision": 98.01,
+//     "medicion": [
+//       {
+//         "fecha": "18-05-2009",
+//         "medicion_neta": 5311.789,
+//         "medicion_bruta": 9718.504
+//       },
+//       {
+//         "fecha": "22-02-1994",
+//         "medicion_neta": 6483.868,
+//         "medicion_bruta": 5311.481
+//       },
+//       {
+//         "fecha": "07-11-2021",
+//         "medicion_neta": 8587.764,
+//         "medicion_bruta": 2860.314
+//       },
+//       {
+//         "fecha": "03-09-2016",
+//         "medicion_neta": 6777.962,
+//         "medicion_bruta": 3016.65
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "sit ullamco cillum officia",
+//     "porcentaje_precision": 3.06,
+//     "medicion": [
+//       {
+//         "fecha": "17-12-2015",
+//         "medicion_neta": 9554.083,
+//         "medicion_bruta": 9067.44
+//       },
+//       {
+//         "fecha": "02-11-1993",
+//         "medicion_neta": 4756.506,
+//         "medicion_bruta": 9260.841
+//       },
+//       {
+//         "fecha": "23-04-2002",
+//         "medicion_neta": 1424.188,
+//         "medicion_bruta": 7374.796
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "ea laborum dolore laborum nisi",
+//     "porcentaje_precision": 99.5,
+//     "medicion": [
+//       {
+//         "fecha": "17-04-1998",
+//         "medicion_neta": 8177.996,
+//         "medicion_bruta": 2162.415
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "minim fugiat",
+//     "porcentaje_precision": 12.8,
+//     "medicion": [
+//       {
+//         "fecha": "04-09-2010",
+//         "medicion_neta": 5077.861,
+//         "medicion_bruta": 7626.436
+//       },
+//       {
+//         "fecha": "06-08-2012",
+//         "medicion_neta": 6417.004,
+//         "medicion_bruta": 7354.982
+//       }
+//     ]
+//   }
+// ])
+
+
+db.Personal.distinct("_id")
