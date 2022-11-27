@@ -468,11 +468,7 @@ use('PetroFAI');
 //       }
 //     ],
 //     "certificado": [],
-//     "telefono": [
-//       {
-//         "numero": "(910) 507-3036"
-//       }
-//     ]
+//     "telefono": []
 //   },
 //   {
 //     "_id": "637e87f06cd2be3755161b33",
@@ -826,11 +822,7 @@ use('PetroFAI');
 //       }
 //     ],
 //     "certificado": [],
-//     "telefono": [
-//       {
-//         "numero": "(876) 579-3731"
-//       }
-//     ]
+//     "telefono": []
 //   },
 //   {
 //     "_id": "637e87f0e7447006d615787f",
