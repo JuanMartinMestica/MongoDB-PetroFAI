@@ -1408,3 +1408,722 @@ use('PetroFAI');
 //   }
 // ]);
 
+// db.Entrega.insertMany([
+//   {
+//     "_id": "638394720e0989ea32ffd4e6",
+//     "fecha": "10-12-2004",
+//     "nombre_cliente": "pariatur laborum ipsum reprehenderit",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 29,
+//         "porcentaje_impurezas": 0.5599,
+//         "monto_final": 89810.1809
+//       },
+//       {
+//         "cantidad": 21,
+//         "porcentaje_impurezas": 0.1886,
+//         "monto_final": 111503.7626
+//       },
+//       {
+//         "cantidad": 70,
+//         "porcentaje_impurezas": 0.2447,
+//         "monto_final": 110546.1049
+//       },
+//       {
+//         "cantidad": 90,
+//         "porcentaje_impurezas": 0.7625,
+//         "monto_final": 35760.167
+//       },
+//       {
+//         "cantidad": 21,
+//         "porcentaje_impurezas": 0.924,
+//         "monto_final": 95673.2866
+//       },
+//       {
+//         "cantidad": 52,
+//         "porcentaje_impurezas": 0.1842,
+//         "monto_final": 17613.8569
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "638394723fd3fbcb73f74e80",
+//     "fecha": "20-02-2004",
+//     "nombre_cliente": "aute veniam nisi nisi",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 36,
+//         "porcentaje_impurezas": 0.9865,
+//         "monto_final": 111802.0553
+//       },
+//       {
+//         "cantidad": 22,
+//         "porcentaje_impurezas": 0.1034,
+//         "monto_final": 85420.6143
+//       },
+//       {
+//         "cantidad": 49,
+//         "porcentaje_impurezas": 0.9396,
+//         "monto_final": 114191.8278
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "638394729f26501e577f3ea7",
+//     "fecha": "09-03-1998",
+//     "nombre_cliente": "cillum eiusmod veniam fugiat",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 110,
+//         "porcentaje_impurezas": 0.1992,
+//         "monto_final": 57218.2842
+//       },
+//       {
+//         "cantidad": 91,
+//         "porcentaje_impurezas": 0.4728,
+//         "monto_final": 45151.1468
+//       },
+//       {
+//         "cantidad": 4,
+//         "porcentaje_impurezas": 0.5372,
+//         "monto_final": 76305.6688
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472f75b0a81c5f315a0",
+//     "fecha": "03-09-1993",
+//     "nombre_cliente": "labore deserunt duis ex",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 3,
+//         "porcentaje_impurezas": 0.4235,
+//         "monto_final": 94306.7098
+//       },
+//       {
+//         "cantidad": 47,
+//         "porcentaje_impurezas": 0.7407,
+//         "monto_final": 21747.0988
+//       },
+//       {
+//         "cantidad": 76,
+//         "porcentaje_impurezas": 0.805,
+//         "monto_final": 28037.9291
+//       },
+//       {
+//         "cantidad": 38,
+//         "porcentaje_impurezas": 0.7177,
+//         "monto_final": 2926.3309
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472742dd384735775bf",
+//     "fecha": "16-04-1999",
+//     "nombre_cliente": "in veniam est minim",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 110,
+//         "porcentaje_impurezas": 0.1209,
+//         "monto_final": 83965.1939
+//       },
+//       {
+//         "cantidad": 94,
+//         "porcentaje_impurezas": 0.99,
+//         "monto_final": 31865.558
+//       },
+//       {
+//         "cantidad": 26,
+//         "porcentaje_impurezas": 0.8026,
+//         "monto_final": 96193.7698
+//       },
+//       {
+//         "cantidad": 72,
+//         "porcentaje_impurezas": 0.1433,
+//         "monto_final": 34610.4244
+//       },
+//       {
+//         "cantidad": 104,
+//         "porcentaje_impurezas": 0.816,
+//         "monto_final": 79828.3905
+//       },
+//       {
+//         "cantidad": 76,
+//         "porcentaje_impurezas": 0.6652,
+//         "monto_final": 21277.0655
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472fc699c04a132fbc7",
+//     "fecha": "26-07-1993",
+//     "nombre_cliente": "ea consectetur aliqua est",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 52,
+//         "porcentaje_impurezas": 0.7079,
+//         "monto_final": 16223.9161
+//       },
+//       {
+//         "cantidad": 9,
+//         "porcentaje_impurezas": 0.6879,
+//         "monto_final": 99885.7261
+//       },
+//       {
+//         "cantidad": 90,
+//         "porcentaje_impurezas": 0.7403,
+//         "monto_final": 91341.1906
+//       },
+//       {
+//         "cantidad": 46,
+//         "porcentaje_impurezas": 0.8564,
+//         "monto_final": 85734.3806
+//       },
+//       {
+//         "cantidad": 70,
+//         "porcentaje_impurezas": 0.3884,
+//         "monto_final": 107840.5664
+//       },
+//       {
+//         "cantidad": 90,
+//         "porcentaje_impurezas": 0.8703,
+//         "monto_final": 5025.1571
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "638394721703094ec6c8e041",
+//     "fecha": "27-04-2016",
+//     "nombre_cliente": "laboris sunt pariatur consequat",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 101,
+//         "porcentaje_impurezas": 0.6377,
+//         "monto_final": 19753.233
+//       },
+//       {
+//         "cantidad": 46,
+//         "porcentaje_impurezas": 0.5502,
+//         "monto_final": 31073.4056
+//       },
+//       {
+//         "cantidad": 59,
+//         "porcentaje_impurezas": 0.2492,
+//         "monto_final": 26800.0546
+//       },
+//       {
+//         "cantidad": 2,
+//         "porcentaje_impurezas": 0.0388,
+//         "monto_final": 109454.6786
+//       },
+//       {
+//         "cantidad": 63,
+//         "porcentaje_impurezas": 0.9657,
+//         "monto_final": 68846.1481
+//       },
+//       {
+//         "cantidad": 3,
+//         "porcentaje_impurezas": 0.7872,
+//         "monto_final": 20645.3072
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472d629907894fe1312",
+//     "fecha": "19-11-2014",
+//     "nombre_cliente": "est non laborum tempor",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 35,
+//         "porcentaje_impurezas": 0.3985,
+//         "monto_final": 89700.0632
+//       },
+//       {
+//         "cantidad": 55,
+//         "porcentaje_impurezas": 0.2369,
+//         "monto_final": 22628.2202
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "6383947248606d35a1084f27",
+//     "fecha": "10-02-1994",
+//     "nombre_cliente": "consequat sint aute incididunt",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 35,
+//         "porcentaje_impurezas": 0.9607,
+//         "monto_final": 90402.8459
+//       },
+//       {
+//         "cantidad": 54,
+//         "porcentaje_impurezas": 0.6878,
+//         "monto_final": 66551.0732
+//       },
+//       {
+//         "cantidad": 19,
+//         "porcentaje_impurezas": 0.0599,
+//         "monto_final": 72482.4612
+//       },
+//       {
+//         "cantidad": 46,
+//         "porcentaje_impurezas": 0.9769,
+//         "monto_final": 102795.0254
+//       },
+//       {
+//         "cantidad": 120,
+//         "porcentaje_impurezas": 0.0081,
+//         "monto_final": 85822.044
+//       },
+//       {
+//         "cantidad": 85,
+//         "porcentaje_impurezas": 0.7819,
+//         "monto_final": 98302.0005
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "638394723a18ce1f09776ff0",
+//     "fecha": "01-03-2009",
+//     "nombre_cliente": "nisi nisi nostrud cillum",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 1,
+//         "porcentaje_impurezas": 0.4093,
+//         "monto_final": 87850.2672
+//       },
+//       {
+//         "cantidad": 53,
+//         "porcentaje_impurezas": 0.2347,
+//         "monto_final": 46549.5831
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472fb8ff7f1e5710f74",
+//     "fecha": "30-07-1993",
+//     "nombre_cliente": "sint minim aliqua velit",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 76,
+//         "porcentaje_impurezas": 0.2458,
+//         "monto_final": 23147.5276
+//       },
+//       {
+//         "cantidad": 77,
+//         "porcentaje_impurezas": 0.298,
+//         "monto_final": 40926.0569
+//       },
+//       {
+//         "cantidad": 99,
+//         "porcentaje_impurezas": 0.2651,
+//         "monto_final": 52646.8954
+//       }
+//     ]
+//   },
+//   {
+//     "_id": "63839472881b7ab1456c9c1d",
+//     "fecha": "09-01-2020",
+//     "nombre_cliente": "elit duis proident fugiat",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 74,
+//         "porcentaje_impurezas": 0.5241,
+//         "monto_final": 61797.8628
+//       },
+//       {
+//         "cantidad": 79,
+//         "porcentaje_impurezas": 0.2094,
+//         "monto_final": 47925.2866
+//       },
+//       {
+//         "cantidad": 20,
+//         "porcentaje_impurezas": 0.1163,
+//         "monto_final": 29156.5402
+//       },
+//       {
+//         "cantidad": 109,
+//         "porcentaje_impurezas": 0.0167,
+//         "monto_final": 39334.0863
+//       }
+//     ]
+//   }
+// ])
+
+
+// db.Area.insertMany([
+//   {
+//     "nombre": "eu elit incididunt",
+//     "tamanio": 2070,
+//     "codigo_area": 1318,
+//     "latitud": 9369,
+//     "longitud": 9296,
+//     "zona": [
+//       {
+//         "nombre": "South Carolina",
+//         "superficie": 3213
+//       },
+//       {
+//         "nombre": "Northern Mariana Islands",
+//         "superficie": 1045
+//       },
+//       {
+//         "nombre": "North Carolina",
+//         "superficie": 678
+//       },
+//       {
+//         "nombre": "California",
+//         "superficie": 3253
+//       },
+//       {
+//         "nombre": "Maryland",
+//         "superficie": 4057
+//       },
+//       {
+//         "nombre": "Palau",
+//         "superficie": 983
+//       },
+//       {
+//         "nombre": "Wisconsin",
+//         "superficie": 4178
+//       },
+//       {
+//         "nombre": "South Dakota",
+//         "superficie": 261
+//       },
+//       {
+//         "nombre": "Michigan",
+//         "superficie": 563
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "cupidatat",
+//     "tamanio": 7719,
+//     "codigo_area": 6625,
+//     "latitud": 1052,
+//     "longitud": 5048,
+//     "zona": [
+//       {
+//         "nombre": "Wyoming",
+//         "superficie": 3935
+//       },
+//       {
+//         "nombre": "Alabama",
+//         "superficie": 2572
+//       },
+//       {
+//         "nombre": "Oregon",
+//         "superficie": 1197
+//       },
+//       {
+//         "nombre": "Arizona",
+//         "superficie": 8933
+//       },
+//       {
+//         "nombre": "American Samoa",
+//         "superficie": 2357
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "esse ea nulla",
+//     "tamanio": 6487,
+//     "codigo_area": 9835,
+//     "latitud": 3135,
+//     "longitud": 2096,
+//     "zona": [
+//       {
+//         "nombre": "Indiana",
+//         "superficie": 6245
+//       },
+//       {
+//         "nombre": "Pennsylvania",
+//         "superficie": 6875
+//       },
+//       {
+//         "nombre": "Puerto Rico",
+//         "superficie": 8679
+//       },
+//       {
+//         "nombre": "Guam",
+//         "superficie": 5454
+//       },
+//       {
+//         "nombre": "Ohio",
+//         "superficie": 4349
+//       },
+//       {
+//         "nombre": "Illinois",
+//         "superficie": 328
+//       },
+//       {
+//         "nombre": "Delaware",
+//         "superficie": 4878
+//       },
+//       {
+//         "nombre": "New Mexico",
+//         "superficie": 2250
+//       },
+//       {
+//         "nombre": "North Dakota",
+//         "superficie": 379
+//       },
+//       {
+//         "nombre": "Massachusetts",
+//         "superficie": 3595
+//       },
+//       {
+//         "nombre": "Kansas",
+//         "superficie": 7249
+//       },
+//       {
+//         "nombre": "Colorado",
+//         "superficie": 8569
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "pariatur",
+//     "tamanio": 1068,
+//     "codigo_area": 4441,
+//     "latitud": 1105,
+//     "longitud": 3514,
+//     "zona": [
+//       {
+//         "nombre": "Connecticut",
+//         "superficie": 3744
+//       },
+//       {
+//         "nombre": "District Of Columbia",
+//         "superficie": 7833
+//       },
+//       {
+//         "nombre": "Arkansas",
+//         "superficie": 6165
+//       },
+//       {
+//         "nombre": "Montana",
+//         "superficie": 4180
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "sit reprehenderit",
+//     "tamanio": 1100,
+//     "codigo_area": 3464,
+//     "latitud": 7972,
+//     "longitud": 4038,
+//     "zona": [
+//       {
+//         "nombre": "Hawaii",
+//         "superficie": 6224
+//       },
+//       {
+//         "nombre": "Washington",
+//         "superficie": 9740
+//       },
+//       {
+//         "nombre": "Louisiana",
+//         "superficie": 7467
+//       },
+//       {
+//         "nombre": "Idaho",
+//         "superficie": 3590
+//       },
+//       {
+//         "nombre": "Vermont",
+//         "superficie": 7708
+//       },
+//       {
+//         "nombre": "Maine",
+//         "superficie": 8519
+//       },
+//       {
+//         "nombre": "Minnesota",
+//         "superficie": 7442
+//       },
+//       {
+//         "nombre": "Missouri",
+//         "superficie": 1105
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "mollit adipisicing",
+//     "tamanio": 5283,
+//     "codigo_area": 9618,
+//     "latitud": 9808,
+//     "longitud": 6668,
+//     "zona": [
+//       {
+//         "nombre": "New Jersey",
+//         "superficie": 5503
+//       },
+//       {
+//         "nombre": "Kentucky",
+//         "superficie": 4234
+//       },
+//       {
+//         "nombre": "Virginia",
+//         "superficie": 9423
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "ipsum ullamco adipisicing dolore",
+//     "tamanio": 9627,
+//     "codigo_area": 9503,
+//     "latitud": 4118,
+//     "longitud": 5763,
+//     "zona": [
+//       {
+//         "nombre": "New York",
+//         "superficie": 4616
+//       },
+//       {
+//         "nombre": "Rhode Island",
+//         "superficie": 8220
+//       },
+//       {
+//         "nombre": "Utah",
+//         "superficie": 9074
+//       },
+//       {
+//         "nombre": "Nevada",
+//         "superficie": 1987
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "fugiat ipsum",
+//     "tamanio": 9849,
+//     "codigo_area": 5048,
+//     "latitud": 1389,
+//     "longitud": 5895,
+//     "zona": [
+//       {
+//         "nombre": "Oklahoma",
+//         "superficie": 8469
+//       },
+//       {
+//         "nombre": "West Virginia",
+//         "superficie": 7168
+//       },
+//       {
+//         "nombre": "Mississippi",
+//         "superficie": 9195
+//       },
+//       {
+//         "nombre": "Marshall Islands",
+//         "superficie": 7693
+//       },
+//       {
+//         "nombre": "New Hampshire",
+//         "superficie": 8335
+//       },
+//       {
+//         "nombre": "Georgia",
+//         "superficie": 5807
+//       },
+//       {
+//         "nombre": "Virgin Islands",
+//         "superficie": 6405
+//       },
+//       {
+//         "nombre": "Florida",
+//         "superficie": 1925
+//       },
+//       {
+//         "nombre": "Federated States Of Micronesia",
+//         "superficie": 3495
+//       },
+//       {
+//         "nombre": "Nebraska",
+//         "superficie": 9596
+//       },
+//       {
+//         "nombre": "Texas",
+//         "superficie": 8304
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "sint reprehenderit",
+//     "tamanio": 2892,
+//     "codigo_area": 9757,
+//     "latitud": 6403,
+//     "longitud": 543,
+//     "zona": [
+//       {
+//         "nombre": "Tennessee",
+//         "superficie": 8864
+//       },
+//       {
+//         "nombre": "Iowa",
+//         "superficie": 8983
+//       },
+//       {
+//         "nombre": "South Carolina",
+//         "superficie": 9955
+//       },
+//       {
+//         "nombre": "Northern Mariana Islands",
+//         "superficie": 9491
+//       },
+//       {
+//         "nombre": "North Carolina",
+//         "superficie": 1412
+//       },
+//       {
+//         "nombre": "California",
+//         "superficie": 2590
+//       },
+//       {
+//         "nombre": "Maryland",
+//         "superficie": 1310
+//       },
+//       {
+//         "nombre": "Palau",
+//         "superficie": 8156
+//       },
+//       {
+//         "nombre": "Wisconsin",
+//         "superficie": 1296
+//       },
+//       {
+//         "nombre": "South Dakota",
+//         "superficie": 8012
+//       },
+//       {
+//         "nombre": "Michigan",
+//         "superficie": 3373
+//       }
+//     ]
+//   },
+//   {
+//     "nombre": "proident in eiusmod do",
+//     "tamanio": 8986,
+//     "codigo_area": 9042,
+//     "latitud": 1818,
+//     "longitud": 7434,
+//     "zona": [
+//       {
+//         "nombre": "Wyoming",
+//         "superficie": 7140
+//       },
+//       {
+//         "nombre": "Alabama",
+//         "superficie": 8772
+//       },
+//       {
+//         "nombre": "Oregon",
+//         "superficie": 4747
+//       }
+//     ]
+//   }
+// ])
+
+
+
+
