@@ -16,7 +16,6 @@ use('PetroFAI');
 // db.Provincia.insertMany(
 //     [
 //     {
-//     "_id": "63794a848f89d447eaf65121",
 //     "nombre": "Oneida",
 //     "ciudad": [
 //       {
@@ -42,7 +41,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63794a8421dd1cf244169e73",
 //     "nombre": "Interlochen",
 //     "ciudad": [
 //       {
@@ -60,7 +58,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63794a84f2bf6a4e2854d40e",
 //     "nombre": "Wakulla",
 //     "ciudad": [
 //       {
@@ -74,7 +71,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63794a8428c52c9b719c1b75",
 //     "nombre": "Snyderville",
 //     "ciudad": [
 //       {
@@ -92,7 +88,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63794a8415924f333a142c9d",
 //     "nombre": "Emory",
 //     "ciudad": [
 //       {
@@ -106,7 +101,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63794a842bf131ef1e0ccf19",
 //     "nombre": "Blanford",
 //     "ciudad": [
 //       {
@@ -116,7 +110,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63794a84219803efbc58e340",
 //     "nombre": "Santel",
 //     "ciudad": [
 //       {
@@ -134,7 +127,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63794a8459f38a4101d36533",
 //     "nombre": "Munjor",
 //     "ciudad": [
 //       {
@@ -160,7 +152,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63794a844bccf658b53c749c",
 //     "nombre": "Carbonville",
 //     "ciudad": [
 //       {
@@ -174,7 +165,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63794a840ad7fe360da6ebb6",
 //     "nombre": "Hiko",
 //     "ciudad": [
 //       {
@@ -206,7 +196,6 @@ use('PetroFAI');
 
 // db.Personal.insertMany([
 //   {
-//     "_id": "637e87f088f192c39f6e2e78",
 //     "numero_documento": 19293828,
 //     "tipo_documento": "DNI",
 //     "nombre": "Mercedes",
@@ -365,7 +354,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "637e87f06df51163d7924f7a",
 //     "numero_documento": 35921169,
 //     "tipo_documento": "LE",
 //     "nombre": "Estelle",
@@ -471,7 +459,6 @@ use('PetroFAI');
 //     "telefono": []
 //   },
 //   {
-//     "_id": "637e87f06cd2be3755161b33",
 //     "numero_documento": 37291278,
 //     "tipo_documento": "PASAPORTE",
 //     "nombre": "Strickland",
@@ -594,7 +581,6 @@ use('PetroFAI');
 //     "telefono": []
 //   },
 //   {
-//     "_id": "637e87f088703b1b8ef2dc7b",
 //     "numero_documento": 22173533,
 //     "tipo_documento": "",
 //     "nombre": "Mcdonald",
@@ -721,7 +707,6 @@ use('PetroFAI');
 //     "telefono": []
 //   },
 //   {
-//     "_id": "637e87f0e78750e81dcf01b5",
 //     "numero_documento": 21129805,
 //     "tipo_documento": "PASAPORTE",
 //     "nombre": "Lilia",
@@ -825,7 +810,6 @@ use('PetroFAI');
 //     "telefono": []
 //   },
 //   {
-//     "_id": "637e87f0e7447006d615787f",
 //     "numero_documento": 38332092,
 //     "tipo_documento": "LE",
 //     "nombre": "Pamela",
@@ -983,7 +967,6 @@ use('PetroFAI');
 //     "telefono": []
 //   },
 //   {
-//     "_id": "637e87f0b5d30fd3000e3d3c",
 //     "numero_documento": 28487128,
 //     "tipo_documento": "DNI",
 //     "nombre": "Rodriquez",
@@ -1068,7 +1051,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "637e87f06c86b3e948e09295",
 //     "numero_documento": 40724490,
 //     "tipo_documento": "",
 //     "nombre": "Neva",
@@ -1160,7 +1142,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "637e87f034022a697ecf6ced",
 //     "numero_documento": 12348990,
 //     "tipo_documento": "DNI",
 //     "nombre": "Byers",
@@ -1277,7 +1258,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "637e87f06ca6a26f0063f4b2",
 //     "numero_documento": 41647047,
 //     "tipo_documento": "DNI",
 //     "nombre": "Wiggins",
@@ -1863,7 +1843,6 @@ use('PetroFAI');
 
 // db.Entrega.insertMany([
 //   {
-//     "_id": "638394720e0989ea32ffd4e6",
 //     "fecha": "10-12-2004",
 //     "nombre_cliente": "pariatur laborum ipsum reprehenderit",
 //     "detalle_entrega": [
@@ -1900,7 +1879,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "638394723fd3fbcb73f74e80",
 //     "fecha": "20-02-2004",
 //     "nombre_cliente": "aute veniam nisi nisi",
 //     "detalle_entrega": [
@@ -1922,7 +1900,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "638394729f26501e577f3ea7",
 //     "fecha": "09-03-1998",
 //     "nombre_cliente": "cillum eiusmod veniam fugiat",
 //     "detalle_entrega": [
@@ -1944,7 +1921,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63839472f75b0a81c5f315a0",
 //     "fecha": "03-09-1993",
 //     "nombre_cliente": "labore deserunt duis ex",
 //     "detalle_entrega": [
@@ -1971,7 +1947,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63839472742dd384735775bf",
 //     "fecha": "16-04-1999",
 //     "nombre_cliente": "in veniam est minim",
 //     "detalle_entrega": [
@@ -2008,7 +1983,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63839472fc699c04a132fbc7",
 //     "fecha": "26-07-1993",
 //     "nombre_cliente": "ea consectetur aliqua est",
 //     "detalle_entrega": [
@@ -2045,7 +2019,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "638394721703094ec6c8e041",
 //     "fecha": "27-04-2016",
 //     "nombre_cliente": "laboris sunt pariatur consequat",
 //     "detalle_entrega": [
@@ -2082,7 +2055,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63839472d629907894fe1312",
 //     "fecha": "19-11-2014",
 //     "nombre_cliente": "est non laborum tempor",
 //     "detalle_entrega": [
@@ -2099,7 +2071,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "6383947248606d35a1084f27",
 //     "fecha": "10-02-1994",
 //     "nombre_cliente": "consequat sint aute incididunt",
 //     "detalle_entrega": [
@@ -2136,7 +2107,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "638394723a18ce1f09776ff0",
 //     "fecha": "01-03-2009",
 //     "nombre_cliente": "nisi nisi nostrud cillum",
 //     "detalle_entrega": [
@@ -2153,7 +2123,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63839472fb8ff7f1e5710f74",
 //     "fecha": "30-07-1993",
 //     "nombre_cliente": "sint minim aliqua velit",
 //     "detalle_entrega": [
@@ -2175,7 +2144,6 @@ use('PetroFAI');
 //     ]
 //   },
 //   {
-//     "_id": "63839472881b7ab1456c9c1d",
 //     "fecha": "09-01-2020",
 //     "nombre_cliente": "elit duis proident fugiat",
 //     "detalle_entrega": [
@@ -2876,4 +2844,65 @@ use('PetroFAI');
 // ])
 
 
-db.Personal.distinct("_id")
+// db.Trabaja.insertMany([
+//   {
+//     "fecha_inicio": "23-12-2007",
+//     "fecha_finalizacion": "31-01-1998",
+//     "personal": "6383a3a20a34b7480f7fa06a",
+//     "instalacion": "63839e6ae8135414fa57c29b"
+//   },
+//   {
+//     "fecha_inicio": "27-07-2022",
+//     "fecha_finalizacion": "09-12-2019",
+//     "personal": "6383a3a20a34b7480f7fa069",
+//     "instalacion": "63839e6ae8135414fa57c299"
+//   },
+//   {
+//     "fecha_inicio": "17-12-2015",
+//     "fecha_finalizacion": "17-03-2002",
+//     "personal": "6383a3a20a34b7480f7fa064",
+//     "instalacion": "63839e6ae8135414fa57c29b"
+//   },
+//   {
+//     "fecha_inicio": "03-06-2007",
+//     "fecha_finalizacion": "18-05-2001",
+//     "personal": "6383a3a20a34b7480f7fa06a",
+//     "instalacion": "63839e6ae8135414fa57c29a"
+//   },
+//   {
+//     "fecha_inicio": "15-06-1990",
+//     "fecha_finalizacion": "06-03-2005",
+//     "personal": "6383a3a20a34b7480f7fa068",
+//     "instalacion": "63839e6ae8135414fa57c2a2"
+//   },
+//   {
+//     "fecha_inicio": "09-12-2020",
+//     "fecha_finalizacion": "13-02-2011",
+//     "personal": "6383a3a20a34b7480f7fa067",
+//     "instalacion": "63839e6ae8135414fa57c2a0"
+//   },
+//   {
+//     "fecha_inicio": "27-09-2011",
+//     "fecha_finalizacion": "04-12-1990",
+//     "personal": "6383a3a20a34b7480f7fa068",
+//     "instalacion": "63839e6ae8135414fa57c29c"
+//   },
+//   {
+//     "fecha_inicio": "17-08-2021",
+//     "fecha_finalizacion": "14-05-2005",
+//     "personal": "6383a3a20a34b7480f7fa068",
+//     "instalacion": "63839e6ae8135414fa57c2a2"
+//   },
+//   {
+//     "fecha_inicio": "24-06-2000",
+//     "fecha_finalizacion": "01-09-1991",
+//     "personal": "6383a3a20a34b7480f7fa065",
+//     "instalacion": "63839e6ae8135414fa57c29b"
+//   },
+//   {
+//     "fecha_inicio": "09-03-1995",
+//     "fecha_finalizacion": "01-12-1994",
+//     "personal": "6383a3a20a34b7480f7fa067",
+//     "instalacion": "63839e6ae8135414fa57c2a1"
+//   }
+// ])
