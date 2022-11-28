@@ -2630,216 +2630,274 @@ use('PetroFAI');
 //   }
 // ]])
 
-// db.Medidor.insertMany([
+//  db.Medidor.insertMany([
 //   {
-//     "nombre": "est esse",
-//     "porcentaje_precision": 42.21,
+//     "nombre": "ea voluptate ipsum sit",
+//     "porcentaje_precision": 81.59,
 //     "medicion": [
 //       {
-//         "fecha": "17-04-2019",
-//         "medicion_neta": 6070.97,
-//         "medicion_bruta": 6972.061
-//       },
-//       {
-//         "fecha": "28-12-2015",
-//         "medicion_neta": 8970.356,
-//         "medicion_bruta": 3608.258
-//       },
-//       {
-//         "fecha": "03-03-2022",
-//         "medicion_neta": 8679.392,
-//         "medicion_bruta": 4345.669
-//       },
-//       {
-//         "fecha": "16-02-2000",
-//         "medicion_neta": 5104.417,
-//         "medicion_bruta": 8631.634
-//       },
-//       {
-//         "fecha": "24-11-2004",
-//         "medicion_neta": 7124.821,
-//         "medicion_bruta": 5222.409
+//         "fecha": "06-07-2008",
+//         "medicion_neta": 8445.657,
+//         "medicion_bruta": 7453.151,
+//         "producto": ObjectId("63839eaee8135414fa57c2ab")
 //       }
-//     ]
+//     ],
+//     "instalacion": ObjectId("63839e6ae8135414fa57c299")
 //   },
 //   {
-//     "nombre": "ullamco enim",
-//     "porcentaje_precision": 47.84,
+//     "nombre": "cupidatat qui culpa reprehenderit ut",
+//     "porcentaje_precision": 16.46,
 //     "medicion": [
 //       {
-//         "fecha": "01-05-2021",
-//         "medicion_neta": 4619.23,
-//         "medicion_bruta": 770.382
+//         "fecha": "03-07-2008",
+//         "medicion_neta": 9765.086,
+//         "medicion_bruta": 5771.005,
+//         "producto": ObjectId("63839eaee8135414fa57c2b6")
+//       },
+//       {
+//         "fecha": "17-04-2017",
+//         "medicion_neta": 8424.857,
+//         "medicion_bruta": 740.821,
+//         "producto": ObjectId("63839eaee8135414fa57c2b0")
+//       },
+//       {
+//         "fecha": "08-04-2020",
+//         "medicion_neta": 2781.876,
+//         "medicion_bruta": 9758.204,
+//         "producto": ObjectId("63839eaee8135414fa57c2ad")
+//       },
+//       {
+//         "fecha": "15-04-1997",
+//         "medicion_neta": 2912.477,
+//         "medicion_bruta": 5767.966,
+//         "producto": ObjectId("63839eaee8135414fa57c2b6")
+//       },
+//       {
+//         "fecha": "06-08-2006",
+//         "medicion_neta": 7407.308,
+//         "medicion_bruta": 4729.04,
+//         "producto": ObjectId("63839eaee8135414fa57c2aa")
 //       }
-//     ]
+//     ],
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29a")
 //   },
 //   {
-//     "nombre": "cillum do consectetur eu",
-//     "porcentaje_precision": 62.29,
+//     "nombre": "deserunt Lorem nostrud duis",
+//     "porcentaje_precision": 0.02,
 //     "medicion": [
 //       {
-//         "fecha": "09-04-1990",
-//         "medicion_neta": 2242.21,
-//         "medicion_bruta": 1993.164
+//         "fecha": "26-07-2010",
+//         "medicion_neta": 3629.562,
+//         "medicion_bruta": 3669.645,
+//         "producto": ObjectId("63839eaee8135414fa57c2b6")
 //       },
 //       {
-//         "fecha": "21-07-1996",
-//         "medicion_neta": 4562.52,
-//         "medicion_bruta": 2458.619
+//         "fecha": "31-12-2010",
+//         "medicion_neta": 2107.735,
+//         "medicion_bruta": 4969.882,
+//         "producto": ObjectId("63839eaee8135414fa57c2a9")
 //       }
-//     ]
+//     ],
+//     "instalacion": ObjectId("63839e6ae8135414fa57c299")
 //   },
 //   {
-//     "nombre": "labore aliquip sit esse nisi",
-//     "porcentaje_precision": 7.46,
+//     "nombre": "amet est est",
+//     "porcentaje_precision": 99.16,
 //     "medicion": [
 //       {
-//         "fecha": "13-11-2011",
-//         "medicion_neta": 7557.149,
-//         "medicion_bruta": 3674.437
+//         "fecha": "08-03-1992",
+//         "medicion_neta": 3373.275,
+//         "medicion_bruta": 5448.899,
+//         "producto": ObjectId("63839eaee8135414fa57c2ae")
 //       },
 //       {
-//         "fecha": "10-09-2005",
-//         "medicion_neta": 5115.678,
-//         "medicion_bruta": 651.944
+//         "fecha": "29-07-2009",
+//         "medicion_neta": 2709.816,
+//         "medicion_bruta": 1691.912,
+//         "producto": ObjectId("63839eaee8135414fa57c2a8")
 //       },
 //       {
-//         "fecha": "13-08-2011",
-//         "medicion_neta": 2057.467,
-//         "medicion_bruta": 4376.103
+//         "fecha": "27-12-2021",
+//         "medicion_neta": 3463.894,
+//         "medicion_bruta": 3439.904,
+//         "producto": ObjectId("63839eaee8135414fa57c2ab")
+//       },
+//       {
+//         "fecha": "06-05-1993",
+//         "medicion_neta": 3252.778,
+//         "medicion_bruta": 6037.698,
+//         "producto": ObjectId("63839eaee8135414fa57c2ae")
+//       },
+//       {
+//         "fecha": "29-10-2010",
+//         "medicion_neta": 3780.663,
+//         "medicion_bruta": 979.39,
+//         "producto": ObjectId("63839eaee8135414fa57c2af")
 //       }
-//     ]
+//     ],
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29d")
 //   },
 //   {
-//     "nombre": "in dolore dolor est ut",
-//     "porcentaje_precision": 99.14,
+//     "nombre": "consequat nostrud irure velit ipsum",
+//     "porcentaje_precision": 30.64,
 //     "medicion": [
 //       {
-//         "fecha": "28-08-2019",
-//         "medicion_neta": 2331.514,
-//         "medicion_bruta": 2309.199
+//         "fecha": "16-05-1990",
+//         "medicion_neta": 5745.349,
+//         "medicion_bruta": 6995.024,
+//         "producto": ObjectId("63839eaee8135414fa57c2b5")
 //       },
 //       {
-//         "fecha": "29-02-1996",
-//         "medicion_neta": 3294.705,
-//         "medicion_bruta": 4414.399
+//         "fecha": "21-11-2015",
+//         "medicion_neta": 495.646,
+//         "medicion_bruta": 658.773,
+//         "producto": ObjectId("63839eaee8135414fa57c2b5")
 //       },
 //       {
-//         "fecha": "26-02-2017",
-//         "medicion_neta": 7716.172,
-//         "medicion_bruta": 3166.21
+//         "fecha": "06-08-2000",
+//         "medicion_neta": 9169.37,
+//         "medicion_bruta": 5177.762,
+//         "producto": ObjectId("63839eaee8135414fa57c2ab")
 //       },
 //       {
-//         "fecha": "15-06-2017",
-//         "medicion_neta": 4857.997,
-//         "medicion_bruta": 7138.648
+//         "fecha": "05-08-2018",
+//         "medicion_neta": 3684.899,
+//         "medicion_bruta": 2836.457,
+//         "producto": ObjectId("63839eaee8135414fa57c2ab")
 //       },
 //       {
-//         "fecha": "23-02-2004",
-//         "medicion_neta": 6089.417,
-//         "medicion_bruta": 3709.293
+//         "fecha": "14-11-2015",
+//         "medicion_neta": 8667.244,
+//         "medicion_bruta": 3046.559,
+//         "producto": ObjectId("63839eaee8135414fa57c2b5")
 //       }
-//     ]
+//     ],
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a0")
 //   },
 //   {
-//     "nombre": "laboris incididunt commodo aute",
-//     "porcentaje_precision": 58.61,
+//     "nombre": "consequat sint",
+//     "porcentaje_precision": 87.25,
 //     "medicion": [
 //       {
-//         "fecha": "13-11-2003",
-//         "medicion_neta": 752.652,
-//         "medicion_bruta": 3898.426
+//         "fecha": "24-12-2004",
+//         "medicion_neta": 7958.865,
+//         "medicion_bruta": 3374.871,
+//         "producto": ObjectId("63839eaee8135414fa57c2b6")
 //       },
 //       {
-//         "fecha": "23-12-2013",
-//         "medicion_neta": 5437.483,
-//         "medicion_bruta": 7798.238
-//       },
-//       {
-//         "fecha": "22-09-1998",
-//         "medicion_neta": 6923.132,
-//         "medicion_bruta": 5494.887
-//       },
-//       {
-//         "fecha": "12-06-1997",
-//         "medicion_neta": 2824.082,
-//         "medicion_bruta": 4267.86
+//         "fecha": "11-05-2010",
+//         "medicion_neta": 5471.803,
+//         "medicion_bruta": 2533.07,
+//         "producto": ObjectId("63839eaee8135414fa57c2aa")
 //       }
-//     ]
+//     ],
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
 //   },
 //   {
-//     "nombre": "aliquip cupidatat et minim laboris",
-//     "porcentaje_precision": 98.01,
+//     "nombre": "nostrud ullamco",
+//     "porcentaje_precision": 88.9,
 //     "medicion": [
 //       {
-//         "fecha": "18-05-2009",
-//         "medicion_neta": 5311.789,
-//         "medicion_bruta": 9718.504
+//         "fecha": "11-05-2006",
+//         "medicion_neta": 4228.289,
+//         "medicion_bruta": 9339.226,
+//         "producto": ObjectId("63839eaee8135414fa57c2b6")
 //       },
 //       {
-//         "fecha": "22-02-1994",
-//         "medicion_neta": 6483.868,
-//         "medicion_bruta": 5311.481
+//         "fecha": "05-01-1992",
+//         "medicion_neta": 4561.405,
+//         "medicion_bruta": 6591.655,
+//         "producto": ObjectId("63839eaee8135414fa57c2b4")
 //       },
 //       {
-//         "fecha": "07-11-2021",
-//         "medicion_neta": 8587.764,
-//         "medicion_bruta": 2860.314
+//         "fecha": "17-12-2005",
+//         "medicion_neta": 4640.317,
+//         "medicion_bruta": 2100.877,
+//         "producto": ObjectId("63839eaee8135414fa57c2b6")
 //       },
 //       {
-//         "fecha": "03-09-2016",
-//         "medicion_neta": 6777.962,
-//         "medicion_bruta": 3016.65
+//         "fecha": "06-02-2021",
+//         "medicion_neta": 7425.761,
+//         "medicion_bruta": 7485.796,
+//         "producto": ObjectId("63839eaee8135414fa57c2b3")
 //       }
-//     ]
+//     ],
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
 //   },
 //   {
-//     "nombre": "sit ullamco cillum officia",
-//     "porcentaje_precision": 3.06,
+//     "nombre": "elit non do",
+//     "porcentaje_precision": 12.42,
 //     "medicion": [
 //       {
-//         "fecha": "17-12-2015",
-//         "medicion_neta": 9554.083,
-//         "medicion_bruta": 9067.44
-//       },
-//       {
-//         "fecha": "02-11-1993",
-//         "medicion_neta": 4756.506,
-//         "medicion_bruta": 9260.841
-//       },
-//       {
-//         "fecha": "23-04-2002",
-//         "medicion_neta": 1424.188,
-//         "medicion_bruta": 7374.796
+//         "fecha": "11-12-2011",
+//         "medicion_neta": 5433.886,
+//         "medicion_bruta": 2483.383,
+//         "producto": ObjectId("63839eaee8135414fa57c2aa")
 //       }
-//     ]
+//     ],
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
 //   },
 //   {
-//     "nombre": "ea laborum dolore laborum nisi",
-//     "porcentaje_precision": 99.5,
+//     "nombre": "ipsum non ad deserunt",
+//     "porcentaje_precision": 47.46,
 //     "medicion": [
 //       {
-//         "fecha": "17-04-1998",
-//         "medicion_neta": 8177.996,
-//         "medicion_bruta": 2162.415
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "minim fugiat",
-//     "porcentaje_precision": 12.8,
-//     "medicion": [
-//       {
-//         "fecha": "04-09-2010",
-//         "medicion_neta": 5077.861,
-//         "medicion_bruta": 7626.436
+//         "fecha": "03-01-2021",
+//         "medicion_neta": 6644.405,
+//         "medicion_bruta": 4805.521,
+//         "producto": ObjectId("63839eaee8135414fa57c2b2")
 //       },
 //       {
-//         "fecha": "06-08-2012",
-//         "medicion_neta": 6417.004,
-//         "medicion_bruta": 7354.982
+//         "fecha": "16-06-1995",
+//         "medicion_neta": 469.221,
+//         "medicion_bruta": 1420.637,
+//         "producto": ObjectId("63839eaee8135414fa57c2b0")
+//       },
+//       {
+//         "fecha": "24-02-2000",
+//         "medicion_neta": 7179.688,
+//         "medicion_bruta": 5626.282,
+//         "producto": ObjectId("63839eaee8135414fa57c2ad")
+//       },
+//       {
+//         "fecha": "24-08-2020",
+//         "medicion_neta": 4545.585,
+//         "medicion_bruta": 9381.834,
+//         "producto": ObjectId("63839eaee8135414fa57c2aa")
+//       },
+//       {
+//         "fecha": "24-09-2003",
+//         "medicion_neta": 7647.081,
+//         "medicion_bruta": 3811.411,
+//         "producto": ObjectId("63839eaee8135414fa57c2b6")
 //       }
-//     ]
+//     ],
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29d")
+//   },
+//   {
+//     "nombre": "irure enim tempor eiusmod amet",
+//     "porcentaje_precision": 26.97,
+//     "medicion": [
+//       {
+//         "fecha": "05-11-1995",
+//         "medicion_neta": 6673.924,
+//         "medicion_bruta": 6502.755,
+//         "producto": ObjectId("63839eaee8135414fa57c2b0")
+//       },
+//       {
+//         "fecha": "30-07-2020",
+//         "medicion_neta": 6498.406,
+//         "medicion_bruta": 8651.347,
+//         "producto": ObjectId("63839eaee8135414fa57c2b1")
+//       },
+//       {
+//         "fecha": "30-12-1999",
+//         "medicion_neta": 9836.505,
+//         "medicion_bruta": 5898.617,
+//         "producto": ObjectId("63839eaee8135414fa57c2b3")
+//       }
+//     ],
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
 //   }
 // ])
 
@@ -2848,355 +2906,355 @@ use('PetroFAI');
 //   {
 //     "fecha_inicio": "23-12-2007",
 //     "fecha_finalizacion": "31-01-1998",
-//     "personal": "6383a3a20a34b7480f7fa06a",
-//     "instalacion": "63839e6ae8135414fa57c29b"
+//     "personal": ObjectId("6383a3a20a34b7480f7fa06a"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
 //   },
 //   {
 //     "fecha_inicio": "27-07-2022",
 //     "fecha_finalizacion": "09-12-2019",
-//     "personal": "6383a3a20a34b7480f7fa069",
-//     "instalacion": "63839e6ae8135414fa57c299"
+//     "personal": ObjectId("6383a3a20a34b7480f7fa069"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c299")
 //   },
 //   {
 //     "fecha_inicio": "17-12-2015",
 //     "fecha_finalizacion": "17-03-2002",
-//     "personal": "6383a3a20a34b7480f7fa064",
-//     "instalacion": "63839e6ae8135414fa57c29b"
+//     "personal": ObjectId("6383a3a20a34b7480f7fa064"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
 //   },
 //   {
 //     "fecha_inicio": "03-06-2007",
 //     "fecha_finalizacion": "18-05-2001",
-//     "personal": "6383a3a20a34b7480f7fa06a",
-//     "instalacion": "63839e6ae8135414fa57c29a"
+//     "personal": ObjectId("6383a3a20a34b7480f7fa06a"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29a")
 //   },
 //   {
 //     "fecha_inicio": "15-06-1990",
 //     "fecha_finalizacion": "06-03-2005",
-//     "personal": "6383a3a20a34b7480f7fa068",
-//     "instalacion": "63839e6ae8135414fa57c2a2"
+//     "personal": ObjectId("6383a3a20a34b7480f7fa068"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a2")
 //   },
 //   {
 //     "fecha_inicio": "09-12-2020",
 //     "fecha_finalizacion": "13-02-2011",
-//     "personal": "6383a3a20a34b7480f7fa067",
-//     "instalacion": "63839e6ae8135414fa57c2a0"
+//     "personal": ObjectId("6383a3a20a34b7480f7fa067"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a0")
 //   },
 //   {
 //     "fecha_inicio": "27-09-2011",
 //     "fecha_finalizacion": "04-12-1990",
-//     "personal": "6383a3a20a34b7480f7fa068",
-//     "instalacion": "63839e6ae8135414fa57c29c"
+//     "personal": ObjectId("6383a3a20a34b7480f7fa068"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29c")
 //   },
 //   {
 //     "fecha_inicio": "17-08-2021",
 //     "fecha_finalizacion": "14-05-2005",
-//     "personal": "6383a3a20a34b7480f7fa068",
-//     "instalacion": "63839e6ae8135414fa57c2a2"
+//     "personal": ObjectId("6383a3a20a34b7480f7fa068"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a2")
 //   },
 //   {
 //     "fecha_inicio": "24-06-2000",
 //     "fecha_finalizacion": "01-09-1991",
-//     "personal": "6383a3a20a34b7480f7fa065",
-//     "instalacion": "63839e6ae8135414fa57c29b"
+//     "personal": ObjectId("6383a3a20a34b7480f7fa065"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
 //   },
 //   {
 //     "fecha_inicio": "09-03-1995",
 //     "fecha_finalizacion": "01-12-1994",
-//     "personal": "6383a3a20a34b7480f7fa067",
-//     "instalacion": "63839e6ae8135414fa57c2a1"
+//     "personal": ObjectId("6383a3a20a34b7480f7fa067"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
 //   }
 // ])
 
-db.Almacena.insertMany([
-  {
-    "cantidad": 9,
-    "fecha": "02-06-1992",
-    "hora": "01:01",
-    "tanque": "63839f36e8135414fa57c2bf",
-    "instalacion": "63839e6ae8135414fa57c2a1"
-  },
-  {
-    "cantidad": 3,
-    "fecha": "26-07-2019",
-    "hora": "09:59",
-    "tanque": "63839f36e8135414fa57c2c3",
-    "instalacion": "63839e6ae8135414fa57c299"
-  },
-  {
-    "cantidad": 8,
-    "fecha": "16-05-2018",
-    "hora": "02:17",
-    "tanque": "63839f36e8135414fa57c2bd",
-    "instalacion": "63839e6ae8135414fa57c2a1"
-  },
-  {
-    "cantidad": 18,
-    "fecha": "03-06-2000",
-    "hora": "02:21",
-    "tanque": "63839f36e8135414fa57c2c5",
-    "instalacion": "63839e6ae8135414fa57c29e"
-  },
-  {
-    "cantidad": 17,
-    "fecha": "30-07-1997",
-    "hora": "03:37",
-    "tanque": "63839f36e8135414fa57c2c2",
-    "instalacion": "63839e6ae8135414fa57c29e"
-  },
-  {
-    "cantidad": 11,
-    "fecha": "16-01-2018",
-    "hora": "11:45",
-    "tanque": "63839f36e8135414fa57c2bd",
-    "instalacion": "63839e6ae8135414fa57c2a1"
-  },
-  {
-    "cantidad": 3,
-    "fecha": "15-09-2017",
-    "hora": "09:54",
-    "tanque": "63839f36e8135414fa57c2bd",
-    "instalacion": "63839e6ae8135414fa57c299"
-  },
-  {
-    "cantidad": 16,
-    "fecha": "02-09-2012",
-    "hora": "11:16",
-    "tanque": "63839f36e8135414fa57c2c0",
-    "instalacion": "63839e6ae8135414fa57c29b"
-  },
-  {
-    "cantidad": 12,
-    "fecha": "06-07-1990",
-    "hora": "07:40",
-    "tanque": "63839f36e8135414fa57c2be",
-    "instalacion": "63839e6ae8135414fa57c29b"
-  },
-  {
-    "cantidad": 20,
-    "fecha": "30-04-2007",
-    "hora": "03:31",
-    "tanque": "63839f36e8135414fa57c2c3",
-    "instalacion": "63839e6ae8135414fa57c29f"
-  },
-  {
-    "cantidad": 17,
-    "fecha": "04-10-2005",
-    "hora": "07:55",
-    "tanque": "63839f36e8135414fa57c2bf",
-    "instalacion": "63839e6ae8135414fa57c29d"
-  },
-  {
-    "cantidad": 20,
-    "fecha": "25-08-1993",
-    "hora": "02:00",
-    "tanque": "63839f36e8135414fa57c2c3",
-    "instalacion": "63839e6ae8135414fa57c29e"
-  },
-  {
-    "cantidad": 4,
-    "fecha": "12-08-2006",
-    "hora": "06:19",
-    "tanque": "63839f36e8135414fa57c2c1",
-    "instalacion": "63839e6ae8135414fa57c2a2"
-  },
-  {
-    "cantidad": 20,
-    "fecha": "29-11-2002",
-    "hora": "12:33",
-    "tanque": "63839f36e8135414fa57c2bd",
-    "instalacion": "63839e6ae8135414fa57c2a1"
-  },
-  {
-    "cantidad": 18,
-    "fecha": "12-01-2018",
-    "hora": "08:38",
-    "tanque": "63839f36e8135414fa57c2c1",
-    "instalacion": "63839e6ae8135414fa57c2a1"
-  }
-])
+// db.Almacena.insertMany([
+//   {
+//     "cantidad": 9,
+//     "fecha": "02-06-1992",
+//     "hora": "01:01",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bf"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
+//   },
+//   {
+//     "cantidad": 3,
+//     "fecha": "26-07-2019",
+//     "hora": "09:59",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c3"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c299")
+//   },
+//   {
+//     "cantidad": 8,
+//     "fecha": "16-05-2018",
+//     "hora": "02:17",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
+//   },
+//   {
+//     "cantidad": 18,
+//     "fecha": "03-06-2000",
+//     "hora": "02:21",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c5"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29e")
+//   },
+//   {
+//     "cantidad": 17,
+//     "fecha": "30-07-1997",
+//     "hora": "03:37",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c2"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29e")
+//   },
+//   {
+//     "cantidad": 11,
+//     "fecha": "16-01-2018",
+//     "hora": "11:45",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
+//   },
+//   {
+//     "cantidad": 3,
+//     "fecha": "15-09-2017",
+//     "hora": "09:54",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c299")
+//   },
+//   {
+//     "cantidad": 16,
+//     "fecha": "02-09-2012",
+//     "hora": "11:16",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c0"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
+//   },
+//   {
+//     "cantidad": 12,
+//     "fecha": "06-07-1990",
+//     "hora": "07:40",
+//     "tanque": ObjectId("63839f36e8135414fa57c2be"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
+//   },
+//   {
+//     "cantidad": 20,
+//     "fecha": "30-04-2007",
+//     "hora": "03:31",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c3"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29f")
+//   },
+//   {
+//     "cantidad": 17,
+//     "fecha": "04-10-2005",
+//     "hora": "07:55",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bf"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29d")
+//   },
+//   {
+//     "cantidad": 20,
+//     "fecha": "25-08-1993",
+//     "hora": "02:00",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c3"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29e")
+//   },
+//   {
+//     "cantidad": 4,
+//     "fecha": "12-08-2006",
+//     "hora": "06:19",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c1"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a2")
+//   },
+//   {
+//     "cantidad": 20,
+//     "fecha": "29-11-2002",
+//     "hora": "12:33",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
+//   },
+//   {
+//     "cantidad": 18,
+//     "fecha": "12-01-2018",
+//     "hora": "08:38",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c1"),
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
+//   }
+// ])
 
-db.Almacena_Tipo.insertMany([
-  {
-    "fecha_inicio": "01-06-2009",
-    "fecha_fin": "02-01-2019",
-    "tanque": "63839f36e8135414fa57c2be",
-    "producto": "63839eaee8135414fa57c2ab"
-  },
-  {
-    "fecha_inicio": "06-11-1995",
-    "fecha_fin": "11-05-2012",
-    "tanque": "63839f36e8135414fa57c2bf",
-    "producto": "63839eaee8135414fa57c2b3"
-  },
-  {
-    "fecha_inicio": "19-07-2011",
-    "fecha_fin": "06-05-1990",
-    "tanque": "63839f36e8135414fa57c2bd",
-    "producto": "63839eaee8135414fa57c2ad"
-  },
-  {
-    "fecha_inicio": "09-02-1993",
-    "fecha_fin": "22-05-2012",
-    "tanque": "63839f36e8135414fa57c2c5",
-    "producto": "63839eaee8135414fa57c2b4"
-  },
-  {
-    "fecha_inicio": "23-06-2019",
-    "fecha_fin": "11-10-2021",
-    "tanque": "63839f36e8135414fa57c2c5",
-    "producto": "63839eaee8135414fa57c2b0"
-  },
-  {
-    "fecha_inicio": "11-07-1996",
-    "fecha_fin": "22-04-2008",
-    "tanque": "63839f36e8135414fa57c2bc",
-    "producto": "63839eaee8135414fa57c2af"
-  },
-  {
-    "fecha_inicio": "18-02-1999",
-    "fecha_fin": "09-02-1996",
-    "tanque": "63839f36e8135414fa57c2be",
-    "producto": "63839eaee8135414fa57c2b1"
-  },
-  {
-    "fecha_inicio": "03-08-2006",
-    "fecha_fin": "28-08-2010",
-    "tanque": "63839f36e8135414fa57c2bd",
-    "producto": "63839eaee8135414fa57c2b2"
-  },
-  {
-    "fecha_inicio": "24-02-2020",
-    "fecha_fin": "02-06-2000",
-    "tanque": "63839f36e8135414fa57c2c4",
-    "producto": "63839eaee8135414fa57c2a8"
-  },
-  {
-    "fecha_inicio": "10-12-1999",
-    "fecha_fin": "24-05-2000",
-    "tanque": "63839f36e8135414fa57c2c1",
-    "producto": "63839eaee8135414fa57c2a8"
-  },
-  {
-    "fecha_inicio": "08-07-2021",
-    "fecha_fin": "02-07-2009",
-    "tanque": "63839f36e8135414fa57c2bf",
-    "producto": "63839eaee8135414fa57c2a8"
-  },
-  {
-    "fecha_inicio": "06-12-1992",
-    "fecha_fin": "27-04-1994",
-    "tanque": "63839f36e8135414fa57c2bc",
-    "producto": "63839eaee8135414fa57c2ae"
-  },
-  {
-    "fecha_inicio": "15-08-2002",
-    "fecha_fin": "03-06-2021",
-    "tanque": "63839f36e8135414fa57c2c5",
-    "producto": "63839eaee8135414fa57c2ad"
-  },
-  {
-    "fecha_inicio": "13-10-1998",
-    "fecha_fin": "21-10-2011",
-    "tanque": "63839f36e8135414fa57c2bc",
-    "producto": "63839eaee8135414fa57c2b3"
-  },
-  {
-    "fecha_inicio": "27-03-2011",
-    "fecha_fin": "04-03-2017",
-    "tanque": "63839f36e8135414fa57c2bc",
-    "producto": "63839eaee8135414fa57c2aa"
-  }
-])
+// db.Almacena_Tipo.insertMany([
+//   {
+//     "fecha_inicio": "01-06-2009",
+//     "fecha_fin": "02-01-2019",
+//     "tanque": ObjectId("63839f36e8135414fa57c2be"),
+//     "producto": ObjectId("63839eaee8135414fa57c2ab")
+//   },
+//   {
+//     "fecha_inicio": "06-11-1995",
+//     "fecha_fin": "11-05-2012",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bf"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b3")
+//   },
+//   {
+//     "fecha_inicio": "19-07-2011",
+//     "fecha_fin": "06-05-1990",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
+//     "producto": ObjectId("63839eaee8135414fa57c2ad")
+//   },
+//   {
+//     "fecha_inicio": "09-02-1993",
+//     "fecha_fin": "22-05-2012",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c5"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b4")
+//   },
+//   {
+//     "fecha_inicio": "23-06-2019",
+//     "fecha_fin": "11-10-2021",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c5"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b0")
+//   },
+//   {
+//     "fecha_inicio": "11-07-1996",
+//     "fecha_fin": "22-04-2008",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bc"),
+//     "producto": ObjectId("63839eaee8135414fa57c2af")
+//   },
+//   {
+//     "fecha_inicio": "18-02-1999",
+//     "fecha_fin": "09-02-1996",
+//     "tanque": ObjectId("63839f36e8135414fa57c2be"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b1")
+//   },
+//   {
+//     "fecha_inicio": "03-08-2006",
+//     "fecha_fin": "28-08-2010",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b2")
+//   },
+//   {
+//     "fecha_inicio": "24-02-2020",
+//     "fecha_fin": "02-06-2000",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c4"),
+//     "producto": ObjectId("63839eaee8135414fa57c2a8")
+//   },
+//   {
+//     "fecha_inicio": "10-12-1999",
+//     "fecha_fin": "24-05-2000",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c1"),
+//     "producto": ObjectId("63839eaee8135414fa57c2a8")
+//   },
+//   {
+//     "fecha_inicio": "08-07-2021",
+//     "fecha_fin": "02-07-2009",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bf"),
+//     "producto": ObjectId("63839eaee8135414fa57c2a8")
+//   },
+//   {
+//     "fecha_inicio": "06-12-1992",
+//     "fecha_fin": "27-04-1994",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bc"),
+//     "producto": ObjectId("63839eaee8135414fa57c2ae")
+//   },
+//   {
+//     "fecha_inicio": "15-08-2002",
+//     "fecha_fin": "03-06-2021",
+//     "tanque": ObjectId("63839f36e8135414fa57c2c5"),
+//     "producto": ObjectId("63839eaee8135414fa57c2ad")
+//   },
+//   {
+//     "fecha_inicio": "13-10-1998",
+//     "fecha_fin": "21-10-2011",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bc"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b3")
+//   },
+//   {
+//     "fecha_inicio": "27-03-2011",
+//     "fecha_fin": "04-03-2017",
+//     "tanque": ObjectId("63839f36e8135414fa57c2bc"),
+//     "producto": ObjectId("63839eaee8135414fa57c2aa")
+//   }
+// ])
 
-db.Asocia.insertMany([
-  {
-    "fecha_inicio": "22-04-1997",
-    "fecha_fin": "02-09-1996",
-    "instalacion": "63839e6ae8135414fa57c2a2",
-    "producto": "63839eaee8135414fa57c2b3"
-  },
-  {
-    "fecha_inicio": "20-06-2022",
-    "fecha_fin": "03-05-1997",
-    "instalacion": "63839e6ae8135414fa57c299",
-    "producto": "63839eaee8135414fa57c2b1"
-  },
-  {
-    "fecha_inicio": "12-07-2004",
-    "fecha_fin": "25-11-1991",
-    "instalacion": "63839e6ae8135414fa57c29c",
-    "producto": "63839eaee8135414fa57c2b3"
-  },
-  {
-    "fecha_inicio": "14-12-2012",
-    "fecha_fin": "13-06-1991",
-    "instalacion": "63839e6ae8135414fa57c2a1",
-    "producto": "63839eaee8135414fa57c2af"
-  },
-  {
-    "fecha_inicio": "17-08-2021",
-    "fecha_fin": "25-01-2022",
-    "instalacion": "63839e6ae8135414fa57c2a2",
-    "producto": "63839eaee8135414fa57c2ac"
-  },
-  {
-    "fecha_inicio": "28-06-2012",
-    "fecha_fin": "22-02-2021",
-    "instalacion": "63839e6ae8135414fa57c29f",
-    "producto": "63839eaee8135414fa57c2b3"
-  },
-  {
-    "fecha_inicio": "28-11-2020",
-    "fecha_fin": "21-02-2001",
-    "instalacion": "63839e6ae8135414fa57c29d",
-    "producto": "63839eaee8135414fa57c2b6"
-  },
-  {
-    "fecha_inicio": "27-10-2007",
-    "fecha_fin": "24-06-2011",
-    "instalacion": "63839e6ae8135414fa57c29a",
-    "producto": "63839eaee8135414fa57c2b1"
-  },
-  {
-    "fecha_inicio": "04-11-2019",
-    "fecha_fin": "10-05-1996",
-    "instalacion": "63839e6ae8135414fa57c29e",
-    "producto": "63839eaee8135414fa57c2ae"
-  },
-  {
-    "fecha_inicio": "02-04-1991",
-    "fecha_fin": "03-09-2006",
-    "instalacion": "63839e6ae8135414fa57c29b",
-    "producto": "63839eaee8135414fa57c2ac"
-  },
-  {
-    "fecha_inicio": "17-10-2000",
-    "fecha_fin": "11-03-1993",
-    "instalacion": "63839e6ae8135414fa57c29a",
-    "producto": "63839eaee8135414fa57c2ad"
-  },
-  {
-    "fecha_inicio": "02-03-1998",
-    "fecha_fin": "24-01-2007",
-    "instalacion": "63839e6ae8135414fa57c29a",
-    "producto": "63839eaee8135414fa57c2ae"
-  },
-  {
-    "fecha_inicio": "11-01-2007",
-    "fecha_fin": "13-11-2002",
-    "instalacion": "63839e6ae8135414fa57c29e",
-    "producto": "63839eaee8135414fa57c2b0"
-  },
-  {
-    "fecha_inicio": "09-04-2012",
-    "fecha_fin": "27-09-2010",
-    "instalacion": "63839e6ae8135414fa57c29c",
-    "producto": "63839eaee8135414fa57c2b5"
-  },
-  {
-    "fecha_inicio": "19-01-2017",
-    "fecha_fin": "24-08-1990",
-    "instalacion": "63839e6ae8135414fa57c29d",
-    "producto": "63839eaee8135414fa57c2ad"
-  }
-])
+// db.Asocia.insertMany([
+//   {
+//     "fecha_inicio": "22-04-1997",
+//     "fecha_fin": "02-09-1996",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a2"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b3")
+//   },
+//   {
+//     "fecha_inicio": "20-06-2022",
+//     "fecha_fin": "03-05-1997",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c299"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b1")
+//   },
+//   {
+//     "fecha_inicio": "12-07-2004",
+//     "fecha_fin": "25-11-1991",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29c"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b3")
+//   },
+//   {
+//     "fecha_inicio": "14-12-2012",
+//     "fecha_fin": "13-06-1991",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1"),
+//     "producto": ObjectId("63839eaee8135414fa57c2af")
+//   },
+//   {
+//     "fecha_inicio": "17-08-2021",
+//     "fecha_fin": "25-01-2022",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c2a2"),
+//     "producto": ObjectId("63839eaee8135414fa57c2ac")
+//   },
+//   {
+//     "fecha_inicio": "28-06-2012",
+//     "fecha_fin": "22-02-2021",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29f"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b3")
+//   },
+//   {
+//     "fecha_inicio": "28-11-2020",
+//     "fecha_fin": "21-02-2001",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29d"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b6")
+//   },
+//   {
+//     "fecha_inicio": "27-10-2007",
+//     "fecha_fin": "24-06-2011",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29a"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b1")
+//   },
+//   {
+//     "fecha_inicio": "04-11-2019",
+//     "fecha_fin": "10-05-1996",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29e"),
+//     "producto": ObjectId("63839eaee8135414fa57c2ae")
+//   },
+//   {
+//     "fecha_inicio": "02-04-1991",
+//     "fecha_fin": "03-09-2006",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29b"),
+//     "producto": ObjectId("63839eaee8135414fa57c2ac")
+//   },
+//   {
+//     "fecha_inicio": "17-10-2000",
+//     "fecha_fin": "11-03-1993",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29a"),
+//     "producto": ObjectId("63839eaee8135414fa57c2ad")
+//   },
+//   {
+//     "fecha_inicio": "02-03-1998",
+//     "fecha_fin": "24-01-2007",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29a"),
+//     "producto": ObjectId("63839eaee8135414fa57c2ae")
+//   },
+//   {
+//     "fecha_inicio": "11-01-2007",
+//     "fecha_fin": "13-11-2002",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29e"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b0")
+//   },
+//   {
+//     "fecha_inicio": "09-04-2012",
+//     "fecha_fin": "27-09-2010",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29c"),
+//     "producto": ObjectId("63839eaee8135414fa57c2b5")
+//   },
+//   {
+//     "fecha_inicio": "19-01-2017",
+//     "fecha_fin": "24-08-1990",
+//     "instalacion": ObjectId("63839e6ae8135414fa57c29d"),
+//     "producto": ObjectId("63839eaee8135414fa57c2ad")
+//   }
+// ])
