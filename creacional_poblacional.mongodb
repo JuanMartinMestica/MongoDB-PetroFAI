@@ -1843,331 +1843,303 @@ use('PetroFAI');
 
 // db.Entrega.insertMany([
 //   {
-//     "fecha": "10-12-2004",
-//     "nombre_cliente": "pariatur laborum ipsum reprehenderit",
+//     "fecha": "08-07-1995",
+//     "nombre_cliente": "Lessie Alvarado",
 //     "detalle_entrega": [
 //       {
-//         "cantidad": 29,
-//         "porcentaje_impurezas": 0.5599,
-//         "monto_final": 89810.1809
+//         "cantidad": 8,
+//         "porcentaje_impurezas": 27,
+//         "monto_final": 386982.75,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b5")
+//         ]
 //       },
 //       {
-//         "cantidad": 21,
-//         "porcentaje_impurezas": 0.1886,
-//         "monto_final": 111503.7626
-//       },
-//       {
-//         "cantidad": 70,
-//         "porcentaje_impurezas": 0.2447,
-//         "monto_final": 110546.1049
-//       },
-//       {
-//         "cantidad": 90,
-//         "porcentaje_impurezas": 0.7625,
-//         "monto_final": 35760.167
-//       },
-//       {
-//         "cantidad": 21,
-//         "porcentaje_impurezas": 0.924,
-//         "monto_final": 95673.2866
-//       },
-//       {
-//         "cantidad": 52,
-//         "porcentaje_impurezas": 0.1842,
-//         "monto_final": 17613.8569
+//         "cantidad": 10,
+//         "porcentaje_impurezas": 100,
+//         "monto_final": 255042.14,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b6"),
+//           ObjectId("63839eaee8135414fa57c2b0"),
+//           ObjectId("63839eaee8135414fa57c2b2"),
+//           ObjectId("63839eaee8135414fa57c2ad")
+//         ]
 //       }
-//     ]
+//     ],
+//     "area": ObjectId("638393100a34b7480f7fa017")
 //   },
 //   {
-//     "fecha": "20-02-2004",
-//     "nombre_cliente": "aute veniam nisi nisi",
+//     "fecha": "08-12-1998",
+//     "nombre_cliente": "Mai Singleton",
 //     "detalle_entrega": [
 //       {
-//         "cantidad": 36,
-//         "porcentaje_impurezas": 0.9865,
-//         "monto_final": 111802.0553
-//       },
-//       {
-//         "cantidad": 22,
-//         "porcentaje_impurezas": 0.1034,
-//         "monto_final": 85420.6143
-//       },
-//       {
-//         "cantidad": 49,
-//         "porcentaje_impurezas": 0.9396,
-//         "monto_final": 114191.8278
-//       }
-//     ]
-//   },
-//   {
-//     "fecha": "09-03-1998",
-//     "nombre_cliente": "cillum eiusmod veniam fugiat",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 110,
-//         "porcentaje_impurezas": 0.1992,
-//         "monto_final": 57218.2842
-//       },
-//       {
-//         "cantidad": 91,
-//         "porcentaje_impurezas": 0.4728,
-//         "monto_final": 45151.1468
-//       },
-//       {
-//         "cantidad": 4,
-//         "porcentaje_impurezas": 0.5372,
-//         "monto_final": 76305.6688
-//       }
-//     ]
-//   },
-//   {
-//     "fecha": "03-09-1993",
-//     "nombre_cliente": "labore deserunt duis ex",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 3,
-//         "porcentaje_impurezas": 0.4235,
-//         "monto_final": 94306.7098
-//       },
-//       {
-//         "cantidad": 47,
-//         "porcentaje_impurezas": 0.7407,
-//         "monto_final": 21747.0988
-//       },
-//       {
-//         "cantidad": 76,
-//         "porcentaje_impurezas": 0.805,
-//         "monto_final": 28037.9291
-//       },
-//       {
-//         "cantidad": 38,
-//         "porcentaje_impurezas": 0.7177,
-//         "monto_final": 2926.3309
-//       }
-//     ]
-//   },
-//   {
-//     "fecha": "16-04-1999",
-//     "nombre_cliente": "in veniam est minim",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 110,
-//         "porcentaje_impurezas": 0.1209,
-//         "monto_final": 83965.1939
-//       },
-//       {
-//         "cantidad": 94,
-//         "porcentaje_impurezas": 0.99,
-//         "monto_final": 31865.558
-//       },
-//       {
-//         "cantidad": 26,
-//         "porcentaje_impurezas": 0.8026,
-//         "monto_final": 96193.7698
-//       },
-//       {
-//         "cantidad": 72,
-//         "porcentaje_impurezas": 0.1433,
-//         "monto_final": 34610.4244
-//       },
-//       {
-//         "cantidad": 104,
-//         "porcentaje_impurezas": 0.816,
-//         "monto_final": 79828.3905
-//       },
-//       {
-//         "cantidad": 76,
-//         "porcentaje_impurezas": 0.6652,
-//         "monto_final": 21277.0655
-//       }
-//     ]
-//   },
-//   {
-//     "fecha": "26-07-1993",
-//     "nombre_cliente": "ea consectetur aliqua est",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 52,
-//         "porcentaje_impurezas": 0.7079,
-//         "monto_final": 16223.9161
+//         "cantidad": 7,
+//         "porcentaje_impurezas": 88,
+//         "monto_final": 132115.35,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b4"),
+//           ObjectId("63839eaee8135414fa57c2b0"),
+//           ObjectId("63839eaee8135414fa57c2b3"),
+//           ObjectId("63839eaee8135414fa57c2b3"),
+//           ObjectId("63839eaee8135414fa57c2b6")
+//         ]
 //       },
 //       {
 //         "cantidad": 9,
-//         "porcentaje_impurezas": 0.6879,
-//         "monto_final": 99885.7261
+//         "porcentaje_impurezas": 52,
+//         "monto_final": 793565.42,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b6"),
+//           ObjectId("63839eaee8135414fa57c2aa"),
+//           ObjectId("63839eaee8135414fa57c2ab"),
+//           ObjectId("63839eaee8135414fa57c2a9")
+//         ]
 //       },
 //       {
-//         "cantidad": 90,
-//         "porcentaje_impurezas": 0.7403,
-//         "monto_final": 91341.1906
-//       },
-//       {
-//         "cantidad": 46,
-//         "porcentaje_impurezas": 0.8564,
-//         "monto_final": 85734.3806
-//       },
-//       {
-//         "cantidad": 70,
-//         "porcentaje_impurezas": 0.3884,
-//         "monto_final": 107840.5664
-//       },
-//       {
-//         "cantidad": 90,
-//         "porcentaje_impurezas": 0.8703,
-//         "monto_final": 5025.1571
+//         "cantidad": 9,
+//         "porcentaje_impurezas": 52,
+//         "monto_final": 279321.71,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2ac"),
+//           ObjectId("63839eaee8135414fa57c2ab")
+//         ]
 //       }
-//     ]
+//     ],
+//     "area": ObjectId("638393100a34b7480f7fa017")
 //   },
 //   {
-//     "fecha": "27-04-2016",
-//     "nombre_cliente": "laboris sunt pariatur consequat",
+//     "fecha": "19-08-1999",
+//     "nombre_cliente": "Sherman Kramer",
 //     "detalle_entrega": [
 //       {
-//         "cantidad": 101,
-//         "porcentaje_impurezas": 0.6377,
-//         "monto_final": 19753.233
+//         "cantidad": 8,
+//         "porcentaje_impurezas": 96,
+//         "monto_final": 250723.7,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2ac")
+//         ]
 //       },
 //       {
-//         "cantidad": 46,
-//         "porcentaje_impurezas": 0.5502,
-//         "monto_final": 31073.4056
+//         "cantidad": 6,
+//         "porcentaje_impurezas": 66,
+//         "monto_final": 162606.98,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2af")
+//         ]
+//       }
+//     ],
+//     "area": ObjectId("638393100a34b7480f7fa011")
+//   },
+//   {
+//     "fecha": "26-05-2007",
+//     "nombre_cliente": "Mayo Thomas",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 4,
+//         "porcentaje_impurezas": 65,
+//         "monto_final": 711531.83,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b3"),
+//           ObjectId("63839eaee8135414fa57c2a9"),
+//           ObjectId("63839eaee8135414fa57c2b0"),
+//           ObjectId("63839eaee8135414fa57c2b1"),
+//           ObjectId("63839eaee8135414fa57c2b3")
+//         ]
 //       },
 //       {
-//         "cantidad": 59,
-//         "porcentaje_impurezas": 0.2492,
-//         "monto_final": 26800.0546
+//         "cantidad": 9,
+//         "porcentaje_impurezas": 74,
+//         "monto_final": 320952.38,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2a8"),
+//           ObjectId("63839eaee8135414fa57c2b2"),
+//           ObjectId("63839eaee8135414fa57c2b1"),
+//           ObjectId("63839eaee8135414fa57c2b1")
+//         ]
 //       },
+//       {
+//         "cantidad": 10,
+//         "porcentaje_impurezas": 55,
+//         "monto_final": 624274.45,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b2")
+//         ]
+//       }
+//     ],
+//     "area": ObjectId("638393100a34b7480f7fa012")
+//   },
+//   {
+//     "fecha": "12-11-2020",
+//     "nombre_cliente": "Tamara Coleman",
+//     "detalle_entrega": [
 //       {
 //         "cantidad": 2,
-//         "porcentaje_impurezas": 0.0388,
-//         "monto_final": 109454.6786
+//         "porcentaje_impurezas": 91,
+//         "monto_final": 356312.22,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2ad"),
+//           ObjectId("63839eaee8135414fa57c2ad"),
+//           ObjectId("63839eaee8135414fa57c2a9")
+//         ]
 //       },
 //       {
-//         "cantidad": 63,
-//         "porcentaje_impurezas": 0.9657,
-//         "monto_final": 68846.1481
+//         "cantidad": 10,
+//         "porcentaje_impurezas": 49,
+//         "monto_final": 950104.67,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b3"),
+//           ObjectId("63839eaee8135414fa57c2b6")
+//         ]
 //       },
 //       {
-//         "cantidad": 3,
-//         "porcentaje_impurezas": 0.7872,
-//         "monto_final": 20645.3072
+//         "cantidad": 8,
+//         "porcentaje_impurezas": 51,
+//         "monto_final": 76546.65,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b0")
+//         ]
+//       },
+//       {
+//         "cantidad": 6,
+//         "porcentaje_impurezas": 88,
+//         "monto_final": 135394.04,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2a8"),
+//           ObjectId("63839eaee8135414fa57c2af"),
+//           ObjectId("63839eaee8135414fa57c2ad"),
+//           ObjectId("63839eaee8135414fa57c2a8")
+//         ]
 //       }
-//     ]
+//     ],
+//     "area": ObjectId("638393100a34b7480f7fa012")
 //   },
 //   {
-//     "fecha": "19-11-2014",
-//     "nombre_cliente": "est non laborum tempor",
+//     "fecha": "14-09-2001",
+//     "nombre_cliente": "Belinda Madden",
 //     "detalle_entrega": [
 //       {
-//         "cantidad": 35,
-//         "porcentaje_impurezas": 0.3985,
-//         "monto_final": 89700.0632
-//       },
-//       {
-//         "cantidad": 55,
-//         "porcentaje_impurezas": 0.2369,
-//         "monto_final": 22628.2202
+//         "cantidad": 5,
+//         "porcentaje_impurezas": 51,
+//         "monto_final": 423132.98,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b3"),
+//           ObjectId("63839eaee8135414fa57c2b1"),
+//           ObjectId("63839eaee8135414fa57c2a8"),
+//           ObjectId("63839eaee8135414fa57c2a8"),
+//           ObjectId("63839eaee8135414fa57c2ab")
+//         ]
 //       }
-//     ]
+//     ],
+//     "area": ObjectId("638393100a34b7480f7fa013")
 //   },
 //   {
-//     "fecha": "10-02-1994",
-//     "nombre_cliente": "consequat sint aute incididunt",
+//     "fecha": "12-03-2002",
+//     "nombre_cliente": "Emily Ross",
 //     "detalle_entrega": [
 //       {
-//         "cantidad": 35,
-//         "porcentaje_impurezas": 0.9607,
-//         "monto_final": 90402.8459
+//         "cantidad": 10,
+//         "porcentaje_impurezas": 22,
+//         "monto_final": 10539.45,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2ae"),
+//           ObjectId("63839eaee8135414fa57c2b4"),
+//           ObjectId("63839eaee8135414fa57c2ac")
+//         ]
 //       },
 //       {
-//         "cantidad": 54,
-//         "porcentaje_impurezas": 0.6878,
-//         "monto_final": 66551.0732
+//         "cantidad": 10,
+//         "porcentaje_impurezas": 100,
+//         "monto_final": 365190.61,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2a8"),
+//           ObjectId("63839eaee8135414fa57c2a8")
+//         ]
 //       },
 //       {
-//         "cantidad": 19,
-//         "porcentaje_impurezas": 0.0599,
-//         "monto_final": 72482.4612
+//         "cantidad": 5,
+//         "porcentaje_impurezas": 58,
+//         "monto_final": 721473.45,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b2"),
+//           ObjectId("63839eaee8135414fa57c2ae")
+//         ]
 //       },
 //       {
-//         "cantidad": 46,
-//         "porcentaje_impurezas": 0.9769,
-//         "monto_final": 102795.0254
+//         "cantidad": 7,
+//         "porcentaje_impurezas": 3,
+//         "monto_final": 655580.6,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2aa")
+//         ]
 //       },
 //       {
-//         "cantidad": 120,
-//         "porcentaje_impurezas": 0.0081,
-//         "monto_final": 85822.044
-//       },
-//       {
-//         "cantidad": 85,
-//         "porcentaje_impurezas": 0.7819,
-//         "monto_final": 98302.0005
+//         "cantidad": 9,
+//         "porcentaje_impurezas": 54,
+//         "monto_final": 637323.74,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2aa")
+//         ]
 //       }
-//     ]
+//     ],
+//     "area": ObjectId("638393100a34b7480f7fa016")
 //   },
 //   {
-//     "fecha": "01-03-2009",
-//     "nombre_cliente": "nisi nisi nostrud cillum",
+//     "fecha": "10-06-1993",
+//     "nombre_cliente": "Pennington Perkins",
 //     "detalle_entrega": [
+//       {
+//         "cantidad": 10,
+//         "porcentaje_impurezas": 77,
+//         "monto_final": 899092.44,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b0"),
+//           ObjectId("63839eaee8135414fa57c2a8")
+//         ]
+//       }
+//     ],
+//     "area": ObjectId("638393100a34b7480f7fa016")
+//   },
+//   {
+//     "fecha": "12-09-2003",
+//     "nombre_cliente": "Matthews Garrett",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 4,
+//         "porcentaje_impurezas": 78,
+//         "monto_final": 804003.91,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2ae")
+//         ]
+//       }
+//     ],
+//     "area": ObjectId("638393100a34b7480f7fa015")
+//   },
+//   {
+//     "fecha": "03-06-2022",
+//     "nombre_cliente": "Leona Walters",
+//     "detalle_entrega": [
+//       {
+//         "cantidad": 10,
+//         "porcentaje_impurezas": 76,
+//         "monto_final": 805855.77,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2ad"),
+//           ObjectId("63839eaee8135414fa57c2ad"),
+//           ObjectId("63839eaee8135414fa57c2ad"),
+//           ObjectId("63839eaee8135414fa57c2a9")
+//         ]
+//       },
 //       {
 //         "cantidad": 1,
-//         "porcentaje_impurezas": 0.4093,
-//         "monto_final": 87850.2672
-//       },
-//       {
-//         "cantidad": 53,
-//         "porcentaje_impurezas": 0.2347,
-//         "monto_final": 46549.5831
+//         "porcentaje_impurezas": 97,
+//         "monto_final": 877169.05,
+//         "producto": [
+//           ObjectId("63839eaee8135414fa57c2b3"),
+//           ObjectId("63839eaee8135414fa57c2ac")
+//         ]
 //       }
-//     ]
-//   },
-//   {
-//     "fecha": "30-07-1993",
-//     "nombre_cliente": "sint minim aliqua velit",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 76,
-//         "porcentaje_impurezas": 0.2458,
-//         "monto_final": 23147.5276
-//       },
-//       {
-//         "cantidad": 77,
-//         "porcentaje_impurezas": 0.298,
-//         "monto_final": 40926.0569
-//       },
-//       {
-//         "cantidad": 99,
-//         "porcentaje_impurezas": 0.2651,
-//         "monto_final": 52646.8954
-//       }
-//     ]
-//   },
-//   {
-//     "fecha": "09-01-2020",
-//     "nombre_cliente": "elit duis proident fugiat",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 74,
-//         "porcentaje_impurezas": 0.5241,
-//         "monto_final": 61797.8628
-//       },
-//       {
-//         "cantidad": 79,
-//         "porcentaje_impurezas": 0.2094,
-//         "monto_final": 47925.2866
-//       },
-//       {
-//         "cantidad": 20,
-//         "porcentaje_impurezas": 0.1163,
-//         "monto_final": 29156.5402
-//       },
-//       {
-//         "cantidad": 109,
-//         "porcentaje_impurezas": 0.0167,
-//         "monto_final": 39334.0863
-//       }
-//     ]
+//     ],
+//     "area": ObjectId("638393100a34b7480f7fa014")
 //   }
 // ])
 
@@ -3258,3 +3230,5 @@ use('PetroFAI');
 //     "producto": ObjectId("63839eaee8135414fa57c2ad")
 //   }
 // ])
+
+// db.Producto.distinct("_id");
