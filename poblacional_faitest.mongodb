@@ -1,0 +1,5449 @@
+use('petrofai_test');
+
+db.Provincia.drop(); 
+db.Area.drop(); 
+db.Medidor.drop(); 
+db.Entrega.drop(); 
+db.Almacena.drop(); 
+db.Tanque.drop(); 
+db.Instalacion.drop(); 
+db.Producto.drop(); 
+db.Asocia.drop(); 
+db.Personal.drop(); 
+db.Trabaja.drop(); 
+db.Almacena_Tipo.drop(); 
+
+db.createCollection('Provincia')
+db.createCollection('Area')
+db.createCollection('Medidor')
+db.createCollection('Entrega')
+db.createCollection('Almacena')
+db.createCollection('Tanque')
+db.createCollection('Instalacion')
+db.createCollection('Producto')
+db.createCollection('Asocia')
+db.createCollection('Personal')
+db.createCollection('Trabaja')
+db.createCollection('Almacena_Tipo')
+
+db.Provincia.insertMany([{
+  "_id": ObjectId("6383a7f45c01da03a8e59c11"),
+  "nombre": "Oneida",
+  "ciudad": [
+    {
+      "codigo_postal": 2268,
+      "nombre": "Marshall Islands"
+    },
+    {
+      "codigo_postal": 6463,
+      "nombre": "Puerto Rico"
+    },
+    {
+      "codigo_postal": 835,
+      "nombre": "Iowa"
+    },
+    {
+      "codigo_postal": 9416,
+      "nombre": "New York"
+    },
+    {
+      "codigo_postal": 4085,
+      "nombre": "Oklahoma"
+    }
+  ]
+},{
+  "_id": ObjectId("6383a7f45c01da03a8e59c12"),
+  "nombre": "Interlochen",
+  "ciudad": [
+    {
+      "codigo_postal": 5120,
+      "nombre": "Palau"
+    },
+    {
+      "codigo_postal": 8195,
+      "nombre": "American Samoa"
+    },
+    {
+      "codigo_postal": 186,
+      "nombre": "Oregon"
+    }
+  ]
+},{
+  "_id": ObjectId("6383a7f45c01da03a8e59c13"),
+  "nombre": "Wakulla",
+  "ciudad": [
+    {
+      "codigo_postal": 3505,
+      "nombre": "Connecticut"
+    },
+    {
+      "codigo_postal": 1904,
+      "nombre": "Virginia"
+    }
+  ]
+},{
+  "_id": ObjectId("6383a7f45c01da03a8e59c14"),
+  "nombre": "Snyderville",
+  "ciudad": [
+    {
+      "codigo_postal": 9869,
+      "nombre": "South Dakota"
+    },
+    {
+      "codigo_postal": 4514,
+      "nombre": "Guam"
+    },
+    {
+      "codigo_postal": 5394,
+      "nombre": "California"
+    }
+  ]
+},{
+  "_id": ObjectId("6383a7f45c01da03a8e59c15"),
+  "nombre": "Emory",
+  "ciudad": [
+    {
+      "codigo_postal": 7756,
+      "nombre": "Pennsylvania"
+    },
+    {
+      "codigo_postal": 4112,
+      "nombre": "Massachusetts"
+    }
+  ]
+},{
+  "_id": ObjectId("6383a7f45c01da03a8e59c16"),
+  "nombre": "Blanford",
+  "ciudad": [
+    {
+      "codigo_postal": 8723,
+      "nombre": "Arkansas"
+    }
+  ]
+},{
+  "_id": ObjectId("6383a7f45c01da03a8e59c17"),
+  "nombre": "Santel",
+  "ciudad": [
+    {
+      "codigo_postal": 9333,
+      "nombre": "South Carolina"
+    },
+    {
+      "codigo_postal": 7365,
+      "nombre": "Wisconsin"
+    },
+    {
+      "codigo_postal": 7447,
+      "nombre": "Kansas"
+    }
+  ]
+},{
+  "_id": ObjectId("6383a7f45c01da03a8e59c18"),
+  "nombre": "Munjor",
+  "ciudad": [
+    {
+      "codigo_postal": 8558,
+      "nombre": "Texas"
+    },
+    {
+      "codigo_postal": 2881,
+      "nombre": "Arizona"
+    },
+    {
+      "codigo_postal": 7279,
+      "nombre": "Federated States Of Micronesia"
+    },
+    {
+      "codigo_postal": 5595,
+      "nombre": "Nebraska"
+    },
+    {
+      "codigo_postal": 4540,
+      "nombre": "Montana"
+    }
+  ]
+},{
+  "_id": ObjectId("6383a7f45c01da03a8e59c19"),
+  "nombre": "Neuquen",
+  "ciudad": [
+    {
+      "codigo_postal": 3899,
+      "nombre": "Zapala"
+    },
+    {
+      "codigo_postal": 2285,
+      "nombre": "Neuquen"
+    },
+    {
+      "codigo_postal": 2343,
+      "nombre": "Loncopue"
+    }
+  ]
+},{
+  "_id": ObjectId("6383a7f45c01da03a8e59c1a"),
+  "nombre": "Hiko",
+  "ciudad": [
+    {
+      "codigo_postal": 4510,
+      "nombre": "Florida"
+    },
+    {
+      "codigo_postal": 7634,
+      "nombre": "Northern Mariana Islands"
+    },
+    {
+      "codigo_postal": 1692,
+      "nombre": "Ohio"
+    },
+    {
+      "codigo_postal": 9523,
+      "nombre": "New Hampshire"
+    },
+    {
+      "codigo_postal": 2816,
+      "nombre": "New Mexico"
+    }
+  ]
+}])
+
+db.Personal.insertMany([{
+  "_id": ObjectId("6383a3a20a34b7480f7fa064"),
+  "numero_documento": 19293828,
+  "tipo_documento": "DNI",
+  "nombre": "Mercedes",
+  "apellido": "Blevins",
+  "estado_civil": "soltero/a",
+  "legajo": 436,
+  "fecha_ingreso": new Date("13-01-1998"),
+  "fecha_baja": null,
+  "fecha_nacimiento": new Date("28-02-2002"),
+  "domicilio": "641 Berry Street",
+  "es_encargado": true,
+  "codigo_postal": 7365,
+  "asistencia": [
+    {
+      "fecha": new Date("25-06-2013"),
+      "hora_entrada": "11:50",
+      "hora_salida": "06:29",
+      "nombre_actividad": "occaecat minim nisi eiusmod"
+    },
+    {
+      "fecha": new Date("04-07-2021"),
+      "hora_entrada": "07:45",
+      "hora_salida": "07:27",
+      "nombre_actividad": "irure aute anim cillum"
+    },
+    {
+      "fecha": new Date("30-01-2017"),
+      "hora_entrada": "07:02",
+      "hora_salida": "06:10",
+      "nombre_actividad": "incididunt adipisicing anim elit"
+    },
+    {
+      "fecha": new Date("27-04-1999"),
+      "hora_entrada": "01:25",
+      "hora_salida": "05:13",
+      "nombre_actividad": "do eu consequat deserunt"
+    },
+    {
+      "fecha": new Date("15-08-1999"),
+      "hora_entrada": "10:36",
+      "hora_salida": "04:02",
+      "nombre_actividad": "cupidatat duis ad nisi"
+    },
+    {
+      "fecha": new Date("12-06-1994"),
+      "hora_entrada": "12:49",
+      "hora_salida": "01:14",
+      "nombre_actividad": "ipsum aliquip aute nisi"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "nulla occaecat ipsum"
+    },
+    {
+      "nombre_titulo": "irure et ut"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "02:54",
+      "hora_salida": "12:04",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("19-05-2022"),
+      "fecha_baja": new Date("23-08-2022")
+    },
+    {
+      "hora_ingreso": "12:40",
+      "hora_salida": "05:22",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("14-10-2022"),
+      "fecha_baja": new Date("15-11-2022")
+    },
+    {
+      "hora_ingreso": "07:26",
+      "hora_salida": "05:44",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("23-04-2022"),
+      "fecha_baja": new Date("27-03-2022")
+    },
+    {
+      "hora_ingreso": "04:05",
+      "hora_salida": "04:53",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("24-09-2022"),
+      "fecha_baja": new Date("28-10-2022")
+    },
+    {
+      "hora_ingreso": "09:42",
+      "hora_salida": "12:15",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("08-09-2022"),
+      "fecha_baja": new Date("03-10-2022")
+    },
+    {
+      "hora_ingreso": "08:50",
+      "hora_salida": "12:25",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("10-07-2022"),
+      "fecha_baja": new Date("31-05-2022")
+    },
+    {
+      "hora_ingreso": "04:36",
+      "hora_salida": "10:19",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("15-01-2022"),
+      "fecha_baja": new Date("15-07-2022")
+    },
+    {
+      "hora_ingreso": "10:20",
+      "hora_salida": "08:12",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("03-11-2022"),
+      "fecha_baja": new Date("04-04-2022")
+    },
+    {
+      "hora_ingreso": "07:24",
+      "hora_salida": "05:06",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("24-09-2022"),
+      "fecha_baja": new Date("20-03-2022")
+    },
+    {
+      "hora_ingreso": "11:06",
+      "hora_salida": "05:20",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("25-07-2022"),
+      "fecha_baja": new Date("29-05-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 1,
+      "descripcion": "Do fugiat aliqua magna duis ea Lorem.",
+      "fecha_inicio": new Date("05-11-2022")
+    },
+    {
+      "cantidad_dias": 6,
+      "descripcion": "Ipsum commodo voluptate occaecat esse in cillum sunt incididunt.",
+      "fecha_inicio": new Date("01-06-2022")
+    },
+    {
+      "cantidad_dias": 2,
+      "descripcion": "Quis sint deserunt velit anim pariatur irure.",
+      "fecha_inicio": new Date("18-01-2022")
+    }
+  ],
+  "telefono": [
+    {
+      "numero": "(948) 539-3937"
+    },
+    {
+      "numero": "(806) 440-2261"
+    }
+  ],
+  "provincia": ObjectId("6383a7f45c01da03a8e59c17")
+  
+},{
+  "_id": ObjectId("6383a3a20a34b7480f7fa065"),
+  "numero_documento": 35921169,
+  "tipo_documento": "LE",
+  "nombre": "Estelle",
+  "apellido": "Gordon",
+  "estado_civil": "viudo/a",
+  "legajo": 325,
+  "fecha_ingreso": new Date("30-11-2001"),
+  "fecha_baja": new Date("08-03-1995"),
+  "fecha_nacimiento": new Date("20-03-2010"),
+  "domicilio": "744 Bath Avenue",
+  "es_encargado": false,
+  "codigo_postal": 2816,
+  "asistencia": [
+    {
+      "fecha": new Date("10-04-1997"),
+      "hora_entrada": "06:16",
+      "hora_salida": "09:42",
+      "nombre_actividad": "sit aliquip proident voluptate"
+    },
+    {
+      "fecha": new Date("10-07-2014"),
+      "hora_entrada": "01:08",
+      "hora_salida": "02:42",
+      "nombre_actividad": "excepteur deserunt sint mollit"
+    },
+    {
+      "fecha": new Date("22-08-1994"),
+      "hora_entrada": "02:30",
+      "hora_salida": "08:33",
+      "nombre_actividad": "velit sunt cillum excepteur"
+    }
+  ],
+  "actividad": [
+    {
+      "nombre": "incididunt aliqua eiusmod pariatur",
+      "descripcion": "labore elit magna occaecat",
+      "fecha": new Date("16-10-1998")
+    },
+    {
+      "nombre": "cupidatat quis commodo voluptate",
+      "descripcion": "do sint dolor nostrud",
+      "fecha": new Date("13-02-1997")
+    },
+    {
+      "nombre": "enim veniam ut proident",
+      "descripcion": "commodo in aliquip ea",
+      "fecha": new Date("07-12-2007")
+    }
+  ],
+  "titulo_universitario": [],
+  "turno": [
+    {
+      "hora_ingreso": "12:38",
+      "hora_salida": "03:47",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("11-07-2022"),
+      "fecha_baja": new Date("12-03-2022")
+    },
+    {
+      "hora_ingreso": "04:14",
+      "hora_salida": "11:35",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("25-09-2022"),
+      "fecha_baja": new Date("16-05-2022")
+    },
+    {
+      "hora_ingreso": "06:38",
+      "hora_salida": "08:59",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("25-06-2022"),
+      "fecha_baja": new Date("11-08-2022")
+    },
+    {
+      "hora_ingreso": "09:11",
+      "hora_salida": "12:46",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("03-08-2022"),
+      "fecha_baja": new Date("29-05-2022")
+    },
+    {
+      "hora_ingreso": "05:37",
+      "hora_salida": "11:56",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("03-03-2022"),
+      "fecha_baja": new Date("26-10-2022")
+    },
+    {
+      "hora_ingreso": "05:57",
+      "hora_salida": "04:35",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("02-02-2022"),
+      "fecha_baja": new Date("24-10-2022")
+    },
+    {
+      "hora_ingreso": "08:45",
+      "hora_salida": "02:36",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("28-02-2022"),
+      "fecha_baja": new Date("22-08-2022")
+    }
+  ],
+  "certificado": [],
+  "telefono": [
+    {
+      "numero": "(910) 507-3036"
+    }
+  ],
+  "provincia": ObjectId("6383a7f45c01da03a8e59c1a")
+  
+},{
+  "_id": ObjectId("6383a3a20a34b7480f7fa067"),
+  "numero_documento": 22173533,
+  "tipo_documento": "DNI",
+  "nombre": "Mcdonald",
+  "apellido": "Singleton",
+  "estado_civil": "casado/a",
+  "legajo": 171,
+  "fecha_ingreso": new Date("07-02-1991"),
+  "fecha_baja": null,
+  "fecha_nacimiento": new Date("24-06-2013"),
+  "domicilio": "313 Madison Place",
+  "es_encargado": true,
+  "codigo_postal": 1904,
+  "asistencia": [
+    {
+      "fecha": new Date("19-05-2020"),
+      "hora_entrada": "04:19",
+      "hora_salida": "11:41",
+      "nombre_actividad": "anim id mollit fugiat"
+    },
+    {
+      "fecha": new Date("27-03-2002"),
+      "hora_entrada": "08:14",
+      "hora_salida": "07:19",
+      "nombre_actividad": "aute anim nostrud laborum"
+    },
+    {
+      "fecha": new Date("26-04-2016"),
+      "hora_entrada": "01:37",
+      "hora_salida": "02:49",
+      "nombre_actividad": "nostrud proident ipsum eu"
+    },
+    {
+      "fecha": new Date("27-07-2020"),
+      "hora_entrada": "06:17",
+      "hora_salida": "02:09",
+      "nombre_actividad": "anim esse amet aliquip"
+    },
+    {
+      "fecha": new Date("29-11-2005"),
+      "hora_entrada": "08:51",
+      "hora_salida": "08:00",
+      "nombre_actividad": "magna consequat consequat consectetur"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "sit esse mollit"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "04:57",
+      "hora_salida": "09:21",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("27-02-2022"),
+      "fecha_baja": new Date("28-04-2022")
+    },
+    {
+      "hora_ingreso": "08:08",
+      "hora_salida": "07:58",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("03-01-2022"),
+      "fecha_baja": new Date("20-08-2022")
+    },
+    {
+      "hora_ingreso": "04:59",
+      "hora_salida": "07:38",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("09-04-2022"),
+      "fecha_baja": new Date("21-03-2022")
+    },
+    {
+      "hora_ingreso": "10:25",
+      "hora_salida": "04:23",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("08-02-2022"),
+      "fecha_baja": new Date("25-09-2022")
+    },
+    {
+      "hora_ingreso": "12:56",
+      "hora_salida": "08:08",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("10-08-2022"),
+      "fecha_baja": new Date("07-10-2022")
+    },
+    {
+      "hora_ingreso": "08:16",
+      "hora_salida": "08:31",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("17-03-2022"),
+      "fecha_baja": new Date("24-07-2022")
+    },
+    {
+      "hora_ingreso": "08:03",
+      "hora_salida": "04:03",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("08-03-2022"),
+      "fecha_baja": new Date("02-10-2022")
+    },
+    {
+      "hora_ingreso": "05:39",
+      "hora_salida": "08:40",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("07-02-2022"),
+      "fecha_baja": new Date("16-09-2022")
+    },
+    {
+      "hora_ingreso": "01:50",
+      "hora_salida": "06:38",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("21-10-2022"),
+      "fecha_baja": new Date("15-06-2022")
+    },
+    {
+      "hora_ingreso": "08:19",
+      "hora_salida": "10:42",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("21-10-2022"),
+      "fecha_baja": new Date("02-09-2022")
+    }
+  ],
+  "certificado": [],
+  "telefono": [],
+  "provincia": ObjectId("6383a7f45c01da03a8e59c13")
+  
+},{
+  "_id": ObjectId("6383a3a20a34b7480f7fa068"),
+  "numero_documento": 21129805,
+  "tipo_documento": "PASAPORTE",
+  "nombre": "Lilia",
+  "apellido": "George",
+  "estado_civil": "casado/a",
+  "legajo": 257,
+  "fecha_ingreso": new Date("07-10-1992"),
+  "fecha_baja": new Date("23-08-1999"),
+  "fecha_nacimiento": new Date("12-04-2015"),
+  "domicilio": "431 Matthews Place",
+  "es_encargado": false,
+  "codigo_postal": 1904,
+  "asistencia": [
+    {
+      "fecha": new Date("02-04-2020"),
+      "hora_entrada": "02:35",
+      "hora_salida": "09:16",
+      "nombre_actividad": "laborum eu ut aliquip"
+    },
+    {
+      "fecha": new Date("08-05-2018"),
+      "hora_entrada": "05:37",
+      "hora_salida": "04:30",
+      "nombre_actividad": "occaecat adipisicing mollit adipisicing"
+    },
+    {
+      "fecha": new Date("10-03-2016"),
+      "hora_entrada": "06:57",
+      "hora_salida": "09:56",
+      "nombre_actividad": "culpa eu deserunt est"
+    }
+  ],
+  "actividad": [
+    {
+      "nombre": "reprehenderit reprehenderit exercitation irure",
+      "descripcion": "dolor sunt ut reprehenderit",
+      "fecha": new Date("09-07-2006")
+    },
+    {
+      "nombre": "eu ad in laborum",
+      "descripcion": "aliquip nulla do voluptate",
+      "fecha": new Date("26-12-2011")
+    },
+    {
+      "nombre": "culpa nulla laboris commodo",
+      "descripcion": "aliqua et dolore et",
+      "fecha": new Date("29-08-1995")
+    },
+    {
+      "nombre": "commodo incididunt in dolor",
+      "descripcion": "commodo cupidatat esse in",
+      "fecha": new Date("26-03-1998")
+    }
+  ],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "sint dolor commodo"
+    },
+    {
+      "nombre_titulo": "irure veniam exercitation"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "09:45",
+      "hora_salida": "11:14",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("28-05-2022"),
+      "fecha_baja": new Date("10-11-2022")
+    },
+    {
+      "hora_ingreso": "07:08",
+      "hora_salida": "03:39",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("06-01-2022"),
+      "fecha_baja": new Date("30-05-2022")
+    },
+    {
+      "hora_ingreso": "08:39",
+      "hora_salida": "01:57",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("12-02-2022"),
+      "fecha_baja": new Date("15-01-2022")
+    },
+    {
+      "hora_ingreso": "08:29",
+      "hora_salida": "06:09",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("15-07-2022"),
+      "fecha_baja": new Date("02-09-2022")
+    },
+    {
+      "hora_ingreso": "06:23",
+      "hora_salida": "04:51",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("20-08-2022"),
+      "fecha_baja": new Date("13-02-2022")
+    }
+  ],
+  "certificado": [],
+  "telefono": [
+    {
+      "numero": "(876) 579-3731"
+    }
+  ],
+  "provincia": ObjectId("6383a7f45c01da03a8e59c13")
+  
+},{
+  "_id": ObjectId("6383a3a20a34b7480f7fa069"),
+  "numero_documento": 38332092,
+  "tipo_documento": "LE",
+  "nombre": "Pamela",
+  "apellido": "Vaughn",
+  "estado_civil": "casado/a",
+  "legajo": 358,
+  "fecha_ingreso": new Date("11-05-2017"),
+  "fecha_baja": new Date("06-01-2017"),
+  "fecha_nacimiento": new Date("05-05-2017"),
+  "domicilio": "625 Moultrie Street",
+  "es_encargado": false,
+  "codigo_postal": 2881,
+  "asistencia": [
+    {
+      "fecha": new Date("28-07-1999"),
+      "hora_entrada": "09:35",
+      "hora_salida": "03:35",
+      "nombre_actividad": "minim dolor velit cillum"
+    },
+    {
+      "fecha": new Date("25-04-2017"),
+      "hora_entrada": "05:35",
+      "hora_salida": "03:08",
+      "nombre_actividad": "nostrud ad exercitation Lorem"
+    },
+    {
+      "fecha": new Date("16-04-2007"),
+      "hora_entrada": "03:07",
+      "hora_salida": "11:49",
+      "nombre_actividad": "mollit do laborum nisi"
+    },
+    {
+      "fecha": new Date("20-08-1999"),
+      "hora_entrada": "07:21",
+      "hora_salida": "04:20",
+      "nombre_actividad": "non dolore culpa reprehenderit"
+    },
+    {
+      "fecha": new Date("21-05-2022"),
+      "hora_entrada": "04:33",
+      "hora_salida": "06:37",
+      "nombre_actividad": "nulla quis irure proident"
+    },
+    {
+      "fecha": new Date("01-05-1990"),
+      "hora_entrada": "09:19",
+      "hora_salida": "03:19",
+      "nombre_actividad": "in ipsum anim officia"
+    }
+  ],
+  "actividad": [
+    {
+      "nombre": "cillum consectetur occaecat excepteur",
+      "descripcion": "nulla aliqua irure amet",
+      "fecha": new Date("14-04-1997")
+    },
+    {
+      "nombre": "quis minim culpa dolore",
+      "descripcion": "nostrud cillum labore exercitation",
+      "fecha": new Date("31-12-1996")
+    },
+    {
+      "nombre": "duis consequat ad eu",
+      "descripcion": "cillum non culpa sint",
+      "fecha": new Date("24-06-2004")
+    },
+    {
+      "nombre": "consequat consectetur eu dolore",
+      "descripcion": "veniam quis exercitation ullamco",
+      "fecha": new Date("08-05-1990")
+    }
+  ],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "eiusmod proident cillum"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "06:21",
+      "hora_salida": "02:44",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("19-02-2022"),
+      "fecha_baja": new Date("03-03-2022")
+    },
+    {
+      "hora_ingreso": "04:13",
+      "hora_salida": "09:12",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("28-03-2022"),
+      "fecha_baja": new Date("19-02-2022")
+    },
+    {
+      "hora_ingreso": "11:03",
+      "hora_salida": "03:19",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("28-04-2022"),
+      "fecha_baja": new Date("10-04-2022")
+    },
+    {
+      "hora_ingreso": "11:33",
+      "hora_salida": "01:32",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("11-06-2022"),
+      "fecha_baja": new Date("19-03-2022")
+    },
+    {
+      "hora_ingreso": "10:57",
+      "hora_salida": "08:47",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("03-04-2022"),
+      "fecha_baja": new Date("10-10-2022")
+    },
+    {
+      "hora_ingreso": "05:37",
+      "hora_salida": "08:45",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("21-05-2022"),
+      "fecha_baja": new Date("04-05-2022")
+    },
+    {
+      "hora_ingreso": "05:33",
+      "hora_salida": "04:25",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("09-05-2022"),
+      "fecha_baja": new Date("09-07-2022")
+    },
+    {
+      "hora_ingreso": "05:05",
+      "hora_salida": "02:48",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("28-01-2022"),
+      "fecha_baja": new Date("20-04-2022")
+    },
+    {
+      "hora_ingreso": "04:18",
+      "hora_salida": "04:48",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("06-08-2022"),
+      "fecha_baja": new Date("23-02-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 0,
+      "descripcion": "Tempor reprehenderit voluptate nostrud proident ad amet et magna anim elit est pariatur sint.",
+      "fecha_inicio": new Date("29-03-2022")
+    },
+    {
+      "cantidad_dias": 3,
+      "descripcion": "Magna exercitation officia ea tempor fugiat qui tempor cillum.",
+      "fecha_inicio": new Date("14-01-2022")
+    }
+  ],
+  "telefono": [],
+  "provincia": ObjectId("6383a7f45c01da03a8e59c18")
+  
+},{
+  "_id": ObjectId("6383a3a20a34b7480f7fa06a"),
+  "numero_documento": 28487128,
+  "tipo_documento": "DNI",
+  "nombre": "Rodriquez",
+  "apellido": "Stephens",
+  "estado_civil": "casado/a",
+  "legajo": 185,
+  "fecha_ingreso": new Date("03-07-2001"),
+  "fecha_baja": new Date("19-08-2017"),
+  "fecha_nacimiento": new Date("30-05-2007"),
+  "domicilio": "877 Hoyts Lane",
+  "es_encargado": true,
+  "codigo_postal": 4085,
+  "asistencia": [
+    {
+      "fecha": new Date("19-12-2016"),
+      "hora_entrada": "02:19",
+      "hora_salida": "01:21",
+      "nombre_actividad": "mollit cillum velit excepteur"
+    },
+    {
+      "fecha": new Date("05-01-2009"),
+      "hora_entrada": "03:12",
+      "hora_salida": "03:29",
+      "nombre_actividad": "aliqua do nostrud sit"
+    },
+    {
+      "fecha": new Date("24-01-2000"),
+      "hora_entrada": "09:02",
+      "hora_salida": "09:13",
+      "nombre_actividad": "Lorem proident est dolore"
+    },
+    {
+      "fecha": new Date("21-07-1994"),
+      "hora_entrada": "11:15",
+      "hora_salida": "12:47",
+      "nombre_actividad": "laboris eu cupidatat ut"
+    },
+    {
+      "fecha": new Date("12-06-2019"),
+      "hora_entrada": "09:36",
+      "hora_salida": "12:34",
+      "nombre_actividad": "cillum quis duis nostrud"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "cupidatat culpa fugiat"
+    },
+    {
+      "nombre_titulo": "consectetur quis ad"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "03:20",
+      "hora_salida": "10:29",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("15-05-2022"),
+      "fecha_baja": new Date("25-06-2022")
+    },
+    {
+      "hora_ingreso": "01:15",
+      "hora_salida": "03:55",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("17-07-2022"),
+      "fecha_baja": new Date("18-11-2022")
+    },
+    {
+      "hora_ingreso": "04:56",
+      "hora_salida": "02:18",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("28-08-2022"),
+      "fecha_baja": new Date("30-10-2022")
+    }
+  ],
+  "certificado": [],
+  "telefono": [
+    {
+      "numero": "(886) 446-2621"
+    }
+  ],
+  "provincia": ObjectId("6383a7f45c01da03a8e59c11")
+  
+},{
+  "_id": ObjectId("6383a3a20a34b7480f7fa06b"),
+  "numero_documento": 40724490,
+  "tipo_documento": "",
+  "nombre": "Neva",
+  "apellido": "Morales",
+  "estado_civil": "soltero/a",
+  "legajo": 395,
+  "fecha_ingreso": new Date("07-09-2006"),
+  "fecha_baja": null,
+  "fecha_nacimiento": new Date("14-12-2011"),
+  "domicilio": "621 Seeley Street",
+  "es_encargado": true,
+  "codigo_postal": 7756,
+  "asistencia": [
+    {
+      "fecha": new Date("10-01-2016"),
+      "hora_entrada": "07:14",
+      "hora_salida": "11:49",
+      "nombre_actividad": "do nisi in fugiat"
+    },
+    {
+      "fecha": new Date("08-04-1994"),
+      "hora_entrada": "02:13",
+      "hora_salida": "05:55",
+      "nombre_actividad": "ut nostrud anim cillum"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "fugiat non Lorem"
+    },
+    {
+      "nombre_titulo": "ut culpa laboris"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "09:29",
+      "hora_salida": "03:54",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("11-04-2022"),
+      "fecha_baja": new Date("08-09-2022")
+    },
+    {
+      "hora_ingreso": "11:45",
+      "hora_salida": "05:51",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("17-06-2022"),
+      "fecha_baja": new Date("18-11-2022")
+    },
+    {
+      "hora_ingreso": "06:37",
+      "hora_salida": "12:14",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("02-07-2022"),
+      "fecha_baja": new Date("05-01-2022")
+    },
+    {
+      "hora_ingreso": "11:38",
+      "hora_salida": "08:02",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("25-08-2022"),
+      "fecha_baja": new Date("13-01-2022")
+    },
+    {
+      "hora_ingreso": "02:38",
+      "hora_salida": "10:40",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("26-04-2022"),
+      "fecha_baja": new Date("15-06-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 5,
+      "descripcion": "Incididunt eiusmod consequat cupidatat et ut mollit aliquip aliqua eiusmod fugiat laborum consectetur.",
+      "fecha_inicio": new Date("18-01-2022")
+    },
+    {
+      "cantidad_dias": 6,
+      "descripcion": "Esse non commodo minim ea do.",
+      "fecha_inicio": new Date("22-06-2022")
+    }
+  ],
+  "telefono": [
+    {
+      "numero": "(872) 455-2482"
+    }
+  ],
+  "provincia": ObjectId("6383a7f45c01da03a8e59c15")
+  
+},{
+  "_id": ObjectId("6383a3a20a34b7480f7fa06c"),
+  "numero_documento": 12348990,
+  "tipo_documento": "DNI",
+  "nombre": "Byers",
+  "apellido": "Noel",
+  "estado_civil": "soltero/a",
+  "legajo": 233,
+  "fecha_ingreso": new Date("07-08-2008"),
+  "fecha_baja": null,
+  "fecha_nacimiento": new Date("24-04-2009"),
+  "domicilio": "788 Kane Street",
+  "es_encargado": true,
+  "codigo_postal": 9416,
+  "asistencia": [
+    {
+      "fecha": new Date("29-04-1998"),
+      "hora_entrada": "12:44",
+      "hora_salida": "05:20",
+      "nombre_actividad": "deserunt do consectetur laboris"
+    },
+    {
+      "fecha": new Date("24-04-2007"),
+      "hora_entrada": "11:11",
+      "hora_salida": "02:19",
+      "nombre_actividad": "ad reprehenderit consectetur sint"
+    },
+    {
+      "fecha": new Date("22-05-2003"),
+      "hora_entrada": "02:25",
+      "hora_salida": "11:34",
+      "nombre_actividad": "elit qui sint ad"
+    },
+    {
+      "fecha": new Date("16-11-1995"),
+      "hora_entrada": "02:20",
+      "hora_salida": "05:19",
+      "nombre_actividad": "laboris esse Lorem amet"
+    },
+    {
+      "fecha": new Date("09-03-2018"),
+      "hora_entrada": "05:20",
+      "hora_salida": "07:33",
+      "nombre_actividad": "minim sunt ea consectetur"
+    },
+    {
+      "fecha": new Date("20-12-2009"),
+      "hora_entrada": "03:10",
+      "hora_salida": "01:36",
+      "nombre_actividad": "ipsum veniam nisi est"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "occaecat voluptate dolor"
+    },
+    {
+      "nombre_titulo": "cupidatat irure in"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "03:37",
+      "hora_salida": "12:30",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("08-05-2022"),
+      "fecha_baja": new Date("05-10-2022")
+    },
+    {
+      "hora_ingreso": "01:15",
+      "hora_salida": "07:16",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("27-02-2022"),
+      "fecha_baja": new Date("22-04-2022")
+    },
+    {
+      "hora_ingreso": "11:02",
+      "hora_salida": "05:14",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("31-05-2022"),
+      "fecha_baja": new Date("20-05-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 4,
+      "descripcion": "Velit dolor dolore minim tempor Lorem culpa anim officia eiusmod voluptate sunt.",
+      "fecha_inicio": new Date("23-02-2022")
+    },
+    {
+      "cantidad_dias": 1,
+      "descripcion": "Consequat culpa elit incididunt cupidatat fugiat ex.",
+      "fecha_inicio": new Date("17-02-2022")
+    },
+    {
+      "cantidad_dias": 7,
+      "descripcion": "Do ad incididunt adipisicing sit amet cupidatat sint ullamco do qui.",
+      "fecha_inicio": new Date("13-06-2022")
+    },
+    {
+      "cantidad_dias": 5,
+      "descripcion": "Quis sint eiusmod quis pariatur est non irure esse tempor proident incididunt sit.",
+      "fecha_inicio": new Date("15-06-2022")
+    },
+    {
+      "cantidad_dias": 2,
+      "descripcion": "Dolore mollit deserunt in mollit ea.",
+      "fecha_inicio": new Date("11-10-2022")
+    }
+  ],
+  "telefono": [
+    {
+      "numero": "(850) 534-2522"
+    }
+  ],
+  "provincia": ObjectId("6383a7f45c01da03a8e59c11")
+  
+},{
+  "_id": ObjectId("6383a3a20a34b7480f7fa06d"),
+  "numero_documento": 41647047,
+  "tipo_documento": "DNI",
+  "nombre": "Wiggins",
+  "apellido": "Estrada",
+  "estado_civil": "soltero/a",
+  "legajo": 284,
+  "fecha_ingreso": new Date("21-02-2017"),
+  "fecha_baja": null,
+  "fecha_nacimiento": new Date("31-07-2000"),
+  "domicilio": "515 Johnson Street",
+  "es_encargado": true,
+  "codigo_postal": 2285,
+  "asistencia": [
+    {
+      "fecha": new Date("20-12-2001"),
+      "hora_entrada": "11:49",
+      "hora_salida": "11:11",
+      "nombre_actividad": "veniam quis id irure"
+    },
+    {
+      "fecha": new Date("04-01-2008"),
+      "hora_entrada": "08:33",
+      "hora_salida": "01:37",
+      "nombre_actividad": "incididunt elit aliquip culpa"
+    },
+    {
+      "fecha": new Date("21-10-2018"),
+      "hora_entrada": "06:40",
+      "hora_salida": "08:57",
+      "nombre_actividad": "mollit veniam velit aute"
+    },
+    {
+      "fecha": new Date("05-08-2000"),
+      "hora_entrada": "07:03",
+      "hora_salida": "03:17",
+      "nombre_actividad": "ipsum nisi sit ea"
+    },
+    {
+      "fecha": new Date("23-06-2006"),
+      "hora_entrada": "11:50",
+      "hora_salida": "02:40",
+      "nombre_actividad": "cillum laboris magna eiusmod"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "quis exercitation dolor"
+    },
+    {
+      "nombre_titulo": "nisi enim in"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "03:32",
+      "hora_salida": "06:15",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("03-10-2022"),
+      "fecha_baja": new Date("19-04-2022")
+    },
+    {
+      "hora_ingreso": "03:39",
+      "hora_salida": "07:51",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("15-06-2022"),
+      "fecha_baja": new Date("02-01-2022")
+    },
+    {
+      "hora_ingreso": "11:41",
+      "hora_salida": "08:29",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("10-04-2022"),
+      "fecha_baja": new Date("11-04-2022")
+    },
+    {
+      "hora_ingreso": "11:31",
+      "hora_salida": "09:06",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("17-10-2022"),
+      "fecha_baja": new Date("31-10-2022")
+    },
+    {
+      "hora_ingreso": "05:42",
+      "hora_salida": "02:24",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("07-03-2022"),
+      "fecha_baja": new Date("28-08-2022")
+    },
+    {
+      "hora_ingreso": "07:36",
+      "hora_salida": "09:44",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("14-09-2022"),
+      "fecha_baja": new Date("10-07-2022")
+    },
+    {
+      "hora_ingreso": "10:36",
+      "hora_salida": "05:45",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("13-11-2022"),
+      "fecha_baja": new Date("14-03-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 3,
+      "descripcion": "Ad minim duis cupidatat exercitation dolor laboris ut labore.",
+      "fecha_inicio": new Date("24-10-2022")
+    },
+    {
+      "cantidad_dias": 6,
+      "descripcion": "Velit incididunt ea non sint et sunt nostrud pariatur laborum excepteur aliquip.",
+      "fecha_inicio": new Date("11-11-2022")
+    },
+    {
+      "cantidad_dias": 7,
+      "descripcion": "Ex qui ad officia irure labore qui occaecat eiusmod eu eu sint.",
+      "fecha_inicio": new Date("18-09-2022")
+    },
+    {
+      "cantidad_dias": 7,
+      "descripcion": "In reprehenderit adipisicing commodo tempor dolor fugiat officia nostrud excepteur consectetur duis dolor aute.",
+      "fecha_inicio": new Date("17-07-2022")
+    }
+  ],
+  "telefono": [],
+  "provincia": ObjectId("6383a7f45c01da03a8e59c19")
+  
+}]);
+
+db.Area.insertMany([{
+  "_id": ObjectId("63863c498afc52e9b8648fc1"),
+  "nombre": "tempor magna",
+  "tamanio": 2824,
+  "codigo_area": 2526,
+  "latitud": 8712,
+  "longitud": 1136,
+  "zona": [
+    {
+      "nombre": "Oklahoma",
+      "superficie": 1934
+    },
+    {
+      "nombre": "Illinois",
+      "superficie": 3273
+    },
+    {
+      "nombre": "Utah",
+      "superficie": 9671
+    },
+    {
+      "nombre": "Oregon",
+      "superficie": 3984
+    },
+    {
+      "nombre": "American Samoa",
+      "superficie": 2743
+    },
+    {
+      "nombre": "Minnesota",
+      "superficie": 5569
+    },
+    {
+      "nombre": "New Mexico",
+      "superficie": 2816
+    },
+    {
+      "nombre": "Louisiana",
+      "superficie": 8968
+    },
+    {
+      "nombre": "Connecticut",
+      "superficie": 8687
+    },
+    {
+      "nombre": "Missouri",
+      "superficie": 9519
+    },
+    {
+      "nombre": "Alaska",
+      "superficie": 957
+    },
+    {
+      "nombre": "Northern Mariana Islands",
+      "superficie": 9448
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c14"
+  }
+},{
+  "_id": ObjectId("63863c498afc52e9b8648fc2"),
+  "nombre": "amet laboris aliqua irure",
+  "tamanio": 6370,
+  "codigo_area": 1054,
+  "latitud": 2084,
+  "longitud": 3501,
+  "zona": [
+    {
+      "nombre": "Ohio",
+      "superficie": 373
+    },
+    {
+      "nombre": "Iowa",
+      "superficie": 6903
+    },
+    {
+      "nombre": "Nevada",
+      "superficie": 2441
+    },
+    {
+      "nombre": "Guam",
+      "superficie": 6948
+    },
+    {
+      "nombre": "Indiana",
+      "superficie": 7529
+    },
+    {
+      "nombre": "California",
+      "superficie": 5454
+    },
+    {
+      "nombre": "Arkansas",
+      "superficie": 7716
+    },
+    {
+      "nombre": "Kentucky",
+      "superficie": 2156
+    },
+    {
+      "nombre": "Florida",
+      "superficie": 1939
+    },
+    {
+      "nombre": "New Jersey",
+      "superficie": 3808
+    },
+    {
+      "nombre": "Kansas",
+      "superficie": 4380
+    },
+    {
+      "nombre": "Federated States Of Micronesia",
+      "superficie": 7774
+    },
+    {
+      "nombre": "Virginia",
+      "superficie": 6276
+    },
+    {
+      "nombre": "Nebraska",
+      "superficie": 4239
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c16"
+  }
+},{
+  "_id": ObjectId("63863c498afc52e9b8648fc3"),
+  "nombre": "et non",
+  "tamanio": 3934,
+  "codigo_area": 6440,
+  "latitud": 3361,
+  "longitud": 7228,
+  "zona": [
+    {
+      "nombre": "Alabama",
+      "superficie": 5536
+    },
+    {
+      "nombre": "Washington",
+      "superficie": 9956
+    },
+    {
+      "nombre": "Arizona",
+      "superficie": 3119
+    },
+    {
+      "nombre": "Marshall Islands",
+      "superficie": 9911
+    },
+    {
+      "nombre": "Maine",
+      "superficie": 560
+    },
+    {
+      "nombre": "Colorado",
+      "superficie": 9243
+    },
+    {
+      "nombre": "South Carolina",
+      "superficie": 4542
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c12"
+  }
+},{
+  "_id": ObjectId("63863c498afc52e9b8648fc4"),
+  "nombre": "magna non duis et",
+  "tamanio": 6147,
+  "codigo_area": 9267,
+  "latitud": 3809,
+  "longitud": 7232,
+  "zona": [
+    {
+      "nombre": "West Virginia",
+      "superficie": 6967
+    },
+    {
+      "nombre": "Vermont",
+      "superficie": 6663
+    },
+    {
+      "nombre": "Puerto Rico",
+      "superficie": 2411
+    },
+    {
+      "nombre": "New York",
+      "superficie": 2684
+    },
+    {
+      "nombre": "Palau",
+      "superficie": 687
+    },
+    {
+      "nombre": "Rhode Island",
+      "superficie": 2505
+    },
+    {
+      "nombre": "Georgia",
+      "superficie": 9048
+    },
+    {
+      "nombre": "Tennessee",
+      "superficie": 7711
+    },
+    {
+      "nombre": "Hawaii",
+      "superficie": 3626
+    },
+    {
+      "nombre": "North Carolina",
+      "superficie": 7977
+    },
+    {
+      "nombre": "Wyoming",
+      "superficie": 9505
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c12"
+  }
+},{
+  "_id": ObjectId("63863c498afc52e9b8648fc5"),
+  "nombre": "ipsum",
+  "tamanio": 9943,
+  "codigo_area": 748,
+  "latitud": 3480,
+  "longitud": 1027,
+  "zona": [
+    {
+      "nombre": "North Dakota",
+      "superficie": 5263
+    },
+    {
+      "nombre": "Maryland",
+      "superficie": 4208
+    },
+    {
+      "nombre": "Wisconsin",
+      "superficie": 4410
+    },
+    {
+      "nombre": "South Dakota",
+      "superficie": 9166
+    },
+    {
+      "nombre": "Pennsylvania",
+      "superficie": 2341
+    },
+    {
+      "nombre": "Idaho",
+      "superficie": 5422
+    },
+    {
+      "nombre": "Texas",
+      "superficie": 4196
+    },
+    {
+      "nombre": "Virgin Islands",
+      "superficie": 3943
+    },
+    {
+      "nombre": "Massachusetts",
+      "superficie": 3917
+    },
+    {
+      "nombre": "New Hampshire",
+      "superficie": 4803
+    },
+    {
+      "nombre": "Mississippi",
+      "superficie": 9700
+    },
+    {
+      "nombre": "Delaware",
+      "superficie": 8756
+    },
+    {
+      "nombre": "Michigan",
+      "superficie": 5584
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c12"
+  }
+},{
+  "_id": ObjectId("63863c498afc52e9b8648fc6"),
+  "nombre": "incididunt est",
+  "tamanio": 5718,
+  "codigo_area": 2838,
+  "latitud": 9812,
+  "longitud": 5556,
+  "zona": [
+    {
+      "nombre": "District Of Columbia",
+      "superficie": 7269
+    },
+    {
+      "nombre": "Oklahoma",
+      "superficie": 1978
+    },
+    {
+      "nombre": "Illinois",
+      "superficie": 6246
+    },
+    {
+      "nombre": "Utah",
+      "superficie": 5517
+    },
+    {
+      "nombre": "Oregon",
+      "superficie": 9326
+    },
+    {
+      "nombre": "American Samoa",
+      "superficie": 4920
+    },
+    {
+      "nombre": "Minnesota",
+      "superficie": 9281
+    },
+    {
+      "nombre": "New Mexico",
+      "superficie": 980
+    },
+    {
+      "nombre": "Louisiana",
+      "superficie": 3417
+    },
+    {
+      "nombre": "Connecticut",
+      "superficie": 3477
+    },
+    {
+      "nombre": "Missouri",
+      "superficie": 9205
+    },
+    {
+      "nombre": "Alaska",
+      "superficie": 9206
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c11"
+  }
+},{
+  "_id": ObjectId("63863c498afc52e9b8648fc7"),
+  "nombre": "in nulla fugiat",
+  "tamanio": 3041,
+  "codigo_area": 7423,
+  "latitud": 2623,
+  "longitud": 6442,
+  "zona": [
+    {
+      "nombre": "Northern Mariana Islands",
+      "superficie": 1262
+    },
+    {
+      "nombre": "Ohio",
+      "superficie": 7873
+    },
+    {
+      "nombre": "Iowa",
+      "superficie": 9628
+    },
+    {
+      "nombre": "Nevada",
+      "superficie": 3395
+    },
+    {
+      "nombre": "Guam",
+      "superficie": 9765
+    },
+    {
+      "nombre": "Indiana",
+      "superficie": 6084
+    },
+    {
+      "nombre": "California",
+      "superficie": 7500
+    },
+    {
+      "nombre": "Arkansas",
+      "superficie": 7291
+    },
+    {
+      "nombre": "New Jersey",
+      "superficie": 6743
+    },
+    {
+      "nombre": "Kansas",
+      "superficie": 7888
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c11"
+  }
+},{
+  "_id": ObjectId("63863c498afc52e9b8648fc8"),
+  "nombre": "elit Lorem",
+  "tamanio": 6626,
+  "codigo_area": 6842,
+  "latitud": 2538,
+  "longitud": 1782,
+  "zona": [
+    {
+      "nombre": "Federated States Of Micronesia",
+      "superficie": 6151
+    },
+    {
+      "nombre": "Virginia",
+      "superficie": 770
+    },
+    {
+      "nombre": "Nebraska",
+      "superficie": 9621
+    },
+    {
+      "nombre": "Alabama",
+      "superficie": 8755
+    },
+    {
+      "nombre": "Washington",
+      "superficie": 7767
+    },
+    {
+      "nombre": "Arizona",
+      "superficie": 7865
+    },
+    {
+      "nombre": "Marshall Islands",
+      "superficie": 230
+    },
+    {
+      "nombre": "Maine",
+      "superficie": 6392
+    },
+    {
+      "nombre": "Colorado",
+      "superficie": 1216
+    },
+    {
+      "nombre": "South Carolina",
+      "superficie": 8862
+    },
+    {
+      "nombre": "West Virginia",
+      "superficie": 6972
+    },
+    {
+      "nombre": "Vermont",
+      "superficie": 6101
+    },
+    {
+      "nombre": "Puerto Rico",
+      "superficie": 6467
+    },
+    {
+      "nombre": "New York",
+      "superficie": 6631
+    },
+    {
+      "nombre": "Palau",
+      "superficie": 2021
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c16"
+  }
+},{
+  "_id": ObjectId("63863c498afc52e9b8648fc9"),
+  "nombre": "sint",
+  "tamanio": 891,
+  "codigo_area": 8996,
+  "latitud": 1976,
+  "longitud": 6603,
+  "zona": [
+    {
+      "nombre": "Rhode Island",
+      "superficie": 2350
+    },
+    {
+      "nombre": "Georgia",
+      "superficie": 3923
+    },
+    {
+      "nombre": "Tennessee",
+      "superficie": 7253
+    },
+    {
+      "nombre": "Hawaii",
+      "superficie": 2805
+    },
+    {
+      "nombre": "North Carolina",
+      "superficie": 4251
+    },
+    {
+      "nombre": "Wyoming",
+      "superficie": 8321
+    },
+    {
+      "nombre": "North Dakota",
+      "superficie": 1665
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c14"
+  }
+},{
+  "_id": ObjectId("63863c498afc52e9b8648fca"),
+  "nombre": "reprehenderit aliqua",
+  "tamanio": 6113,
+  "codigo_area": 7994,
+  "latitud": 1647,
+  "longitud": 3710,
+  "zona": [
+    {
+      "nombre": "Maryland",
+      "superficie": 9803
+    },
+    {
+      "nombre": "Wisconsin",
+      "superficie": 9966
+    },
+    {
+      "nombre": "South Dakota",
+      "superficie": 3490
+    },
+    {
+      "nombre": "Pennsylvania",
+      "superficie": 326
+    },
+    {
+      "nombre": "Idaho",
+      "superficie": 1474
+    },
+    {
+      "nombre": "Texas",
+      "superficie": 2033
+    },
+    {
+      "nombre": "Virgin Islands",
+      "superficie": 9705
+    },
+    {
+      "nombre": "Massachusetts",
+      "superficie": 7478
+    },
+    {
+      "nombre": "New Hampshire",
+      "superficie": 6118
+    },
+    {
+      "nombre": "Mississippi",
+      "superficie": 4377
+    },
+    {
+      "nombre": "Delaware",
+      "superficie": 7748
+    },
+    {
+      "nombre": "Michigan",
+      "superficie": 857
+    },
+    {
+      "nombre": "District Of Columbia",
+      "superficie": 1691
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c14"
+  }
+}])
+
+db.Producto.insertMany([{
+  "_id": ObjectId("63839eaee8135414fa57c2a8"),
+  "nombre": "est eiusmod",
+  "detalle": "Consequat pariatur velit exercitation cillum nostrud dolore reprehenderit exercitation adipisicing.",
+  "tipo": "ipsum id ipsum do"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2a9"),
+  "nombre": "qui ea cillum ipsum qui",
+  "detalle": "Ea ullamco sunt pariatur dolore anim enim nostrud.",
+  "tipo": "non reprehenderit eu sunt"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2aa"),
+  "nombre": "sint adipisicing anim",
+  "detalle": "Mollit nulla esse quis in consequat sint ut consectetur adipisicing aliquip fugiat.",
+  "tipo": "ex"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2ab"),
+  "nombre": "voluptate nulla et veniam ad",
+  "detalle": "Ut ut aliqua adipisicing elit consequat fugiat.",
+  "tipo": "sint et sit dolore aliqua"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2ac"),
+  "nombre": "enim sint occaecat cillum",
+  "detalle": "Irure culpa ad eu ex ea duis culpa reprehenderit.",
+  "tipo": "sunt exercitation anim ex"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2ad"),
+  "nombre": "nulla Lorem",
+  "detalle": "Ipsum voluptate mollit consequat dolore nisi aute pariatur.",
+  "tipo": "consequat in excepteur Lorem proident"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2ae"),
+  "nombre": "enim",
+  "detalle": "Ut mollit pariatur aliquip veniam minim aliqua magna labore non nisi.",
+  "tipo": "culpa veniam labore aliqua incididunt"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2af"),
+  "nombre": "ea",
+  "detalle": "Et commodo eiusmod laboris laboris cupidatat irure.",
+  "tipo": "aliqua ad eiusmod"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2b0"),
+  "nombre": "non deserunt nisi velit dolore",
+  "detalle": "Ullamco excepteur elit sit exercitation deserunt sint ipsum ullamco commodo.",
+  "tipo": "ut aliqua adipisicing"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2b1"),
+  "nombre": "consectetur ex aute",
+  "detalle": "Magna veniam veniam duis excepteur labore minim occaecat.",
+  "tipo": "tempor cupidatat ipsum commodo"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2b2"),
+  "nombre": "occaecat",
+  "detalle": "Amet sint anim magna et exercitation ullamco eiusmod consectetur sunt nostrud proident in enim.",
+  "tipo": "duis fugiat"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2b3"),
+  "nombre": "nisi",
+  "detalle": "Sunt ullamco nisi fugiat duis excepteur velit ex veniam.",
+  "tipo": "enim esse culpa voluptate"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2b4"),
+  "nombre": "dolor exercitation nostrud esse",
+  "detalle": "Sunt id id aliquip enim in.",
+  "tipo": "voluptate fugiat laboris est dolore"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2b5"),
+  "nombre": "eiusmod sit officia in",
+  "detalle": "Incididunt aliquip nisi enim dolor proident anim fugiat cillum pariatur do.",
+  "tipo": "in commodo elit mollit"
+},{
+  "_id": ObjectId("63839eaee8135414fa57c2b6"),
+  "nombre": "nulla non minim",
+  "detalle": "Sit proident deserunt cupidatat deserunt exercitation nisi aute velit ea velit mollit laboris irure occaecat.",
+  "tipo": "culpa labore duis"
+}])
+
+db.Entrega.insertMany([{
+  "_id": ObjectId("63854efdebb83652ab79e611"),
+  "fecha": new Date("08-07-1995"),
+  "nombre_cliente": "Lessie Alvarado",
+  "detalle_entrega": [
+    {
+      "cantidad": 8,
+      "porcentaje_impurezas": 27,
+      "monto_final": 386982.75,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b5"
+        }
+      ]
+    },
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 100,
+      "monto_final": 255042.14,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b6"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b0"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b2"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc1"
+  }
+},{
+  "_id": ObjectId("63854efdebb83652ab79e612"),
+  "fecha": new Date("08-12-1998"),
+  "nombre_cliente": "Mai Singleton",
+  "detalle_entrega": [
+    {
+      "cantidad": 7,
+      "porcentaje_impurezas": 88,
+      "monto_final": 132115.35,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b4"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b0"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b6"
+        }
+      ]
+    },
+    {
+      "cantidad": 9,
+      "porcentaje_impurezas": 52,
+      "monto_final": 793565.42,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b6"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2aa"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ab"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a9"
+        }
+      ]
+    },
+    {
+      "cantidad": 9,
+      "porcentaje_impurezas": 52,
+      "monto_final": 279321.71,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ac"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ab"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+},{
+  "_id": ObjectId("63854efdebb83652ab79e613"),
+  "fecha": new Date("19-08-1999"),
+  "nombre_cliente": "Sherman Kramer",
+  "detalle_entrega": [
+    {
+      "cantidad": 8,
+      "porcentaje_impurezas": 96,
+      "monto_final": 250723.7,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ac"
+        }
+      ]
+    },
+    {
+      "cantidad": 6,
+      "porcentaje_impurezas": 66,
+      "monto_final": 162606.98,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2af"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "_id": ObjectId("63854efdebb83652ab79e614"),
+  "fecha": new Date("26-05-2007"),
+  "nombre_cliente": "Mayo Thomas",
+  "detalle_entrega": [
+    {
+      "cantidad": 4,
+      "porcentaje_impurezas": 65,
+      "monto_final": 711531.83,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a9"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b0"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b1"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        }
+      ]
+    },
+    {
+      "cantidad": 9,
+      "porcentaje_impurezas": 74,
+      "monto_final": 320952.38,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b2"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b1"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b1"
+        }
+      ]
+    },
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 55,
+      "monto_final": 624274.45,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b2"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  }
+},{
+  "_id": ObjectId("63854efdebb83652ab79e615"),
+  "fecha": new Date("12-11-2020"),
+  "nombre_cliente": "Tamara Coleman",
+  "detalle_entrega": [
+    {
+      "cantidad": 2,
+      "porcentaje_impurezas": 91,
+      "monto_final": 356312.22,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a9"
+        }
+      ]
+    },
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 49,
+      "monto_final": 950104.67,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b6"
+        }
+      ]
+    },
+    {
+      "cantidad": 8,
+      "porcentaje_impurezas": 51,
+      "monto_final": 76546.65,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b0"
+        }
+      ]
+    },
+    {
+      "cantidad": 6,
+      "porcentaje_impurezas": 88,
+      "monto_final": 135394.04,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2af"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  }
+},{
+  "_id": ObjectId("63854efdebb83652ab79e616"),
+  "fecha": new Date("14-09-2001"),
+  "nombre_cliente": "Belinda Madden",
+  "detalle_entrega": [
+    {
+      "cantidad": 5,
+      "porcentaje_impurezas": 51,
+      "monto_final": 423132.98,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b1"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ab"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc6"
+  }
+},{
+  "_id": ObjectId("63854efdebb83652ab79e617"),
+  "fecha": new Date("12-03-2002"),
+  "nombre_cliente": "Emily Ross",
+  "detalle_entrega": [
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 22,
+      "monto_final": 10539.45,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ae"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b4"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ac"
+        }
+      ]
+    },
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 100,
+      "monto_final": 365190.61,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        }
+      ]
+    },
+    {
+      "cantidad": 5,
+      "porcentaje_impurezas": 58,
+      "monto_final": 721473.45,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b2"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ae"
+        }
+      ]
+    },
+    {
+      "cantidad": 7,
+      "porcentaje_impurezas": 3,
+      "monto_final": 655580.6,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2aa"
+        }
+      ]
+    },
+    {
+      "cantidad": 9,
+      "porcentaje_impurezas": 54,
+      "monto_final": 637323.74,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2aa"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc7"
+  }
+},{
+  "_id": ObjectId("63854efdebb83652ab79e618"),
+  "fecha": new Date("10-06-1993"),
+  "nombre_cliente": "Pennington Perkins",
+  "detalle_entrega": [
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 77,
+      "monto_final": 899092.44,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b0"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc8"
+  }
+},{
+  "_id": ObjectId("63854efdebb83652ab79e619"),
+  "fecha": new Date("12-09-2003"),
+  "nombre_cliente": "Matthews Garrett",
+  "detalle_entrega": [
+    {
+      "cantidad": 4,
+      "porcentaje_impurezas": 78,
+      "monto_final": 804003.91,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ae"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc9"
+  }
+},{
+  "_id": ObjectId("63854efdebb83652ab79e61a"),
+  "fecha": new Date("03-06-2022"),
+  "nombre_cliente": "Leona Walters",
+  "detalle_entrega": [
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 76,
+      "monto_final": 805855.77,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a9"
+        }
+      ]
+    },
+    {
+      "cantidad": 1,
+      "porcentaje_impurezas": 97,
+      "monto_final": 877169.05,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ac"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fca"
+  }
+}])
+
+db.Instalacion.insertMany([{
+  "_id": ObjectId("638649e878a041870fa5ad49"),
+  "latitud": -75.115951,
+  "longitud": 96.528982,
+  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
+  "profundidad": 528,
+  "es_productor": false,
+  "nombre_zona": "New York",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  },
+  "estado": [
+    {
+      "nombre": "consequat",
+      "comentario": "ullamco Lorem amet eu exercitation",
+      "fecha": new Date("04-03-2011"),
+      "motivo": "aliqua et"
+    },
+    {
+      "nombre": "ex",
+      "comentario": "ad ut ut pariatur aliquip",
+      "fecha": new Date("25-09-1999"),
+      "motivo": "laboris velit"
+    },
+    {
+      "nombre": "sit",
+      "comentario": "aliquip nulla voluptate veniam pariatur",
+      "fecha": new Date("24-05-2021"),
+      "motivo": "labore sint"
+    },
+    {
+      "nombre": "anim",
+      "comentario": "do labore ex id commodo",
+      "fecha": new Date("12-09-2005"),
+      "motivo": "id cupidatat"
+    },
+    {
+      "nombre": "non",
+      "comentario": "proident sint enim ad minim",
+      "fecha": new Date("14-06-2012"),
+      "motivo": "enim non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "ex"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "dolore"
+    },
+    {
+      "nombre": "anim"
+    }
+  ]
+},{
+  "_id": ObjectId("638649e878a041870fa5ad4a"),
+  "latitud": -82.61231,
+  "longitud": 87.707962,
+  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
+  "profundidad": 250,
+  "es_productor": true,
+  "nombre_zona": "Minnesota",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc1"
+  },
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "est aute ad veniam nostrud",
+      "fecha": new Date("07-07-2015"),
+      "motivo": "non anim"
+    },
+    {
+      "nombre": "Lorem",
+      "comentario": "dolor mollit sint officia aliquip",
+      "fecha": new Date("17-02-2020"),
+      "motivo": "reprehenderit consectetur"
+    },
+    {
+      "nombre": "voluptate",
+      "comentario": "nostrud minim commodo consectetur incididunt",
+      "fecha": new Date("20-02-2013"),
+      "motivo": "minim qui"
+    },
+    {
+      "nombre": "adipisicing",
+      "comentario": "ea voluptate velit enim ad",
+      "fecha": new Date("23-04-2012"),
+      "motivo": "ullamco labore"
+    },
+    {
+      "nombre": "eu",
+      "comentario": "qui qui sunt sunt aute",
+      "fecha": new Date("29-12-2002"),
+      "motivo": "ex minim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "id"
+    }
+  ]
+},{
+  "_id": ObjectId("638649e878a041870fa5ad4b"),
+  "latitud": -62.827566,
+  "longitud": -81.417786,
+  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
+  "profundidad": 873,
+  "es_productor": false,
+  "nombre_zona": "Kansas",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  },
+  "estado": [
+    {
+      "nombre": "id",
+      "comentario": "aliqua ad commodo ut anim",
+      "fecha": new Date("28-06-2012"),
+      "motivo": "consectetur aute"
+    },
+    {
+      "nombre": "nulla",
+      "comentario": "est esse officia amet ipsum",
+      "fecha": new Date("30-08-1990"),
+      "motivo": "proident laborum"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "nisi"
+    }
+  ]
+},{
+  "_id": ObjectId("638649e878a041870fa5ad4c"),
+  "latitud": -26.14198,
+  "longitud": -102.885429,
+  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
+  "profundidad": 259,
+  "es_productor": true,
+  "nombre_zona": "Maine",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "minim",
+      "comentario": "ut magna ullamco tempor occaecat",
+      "fecha": new Date("08-02-2004"),
+      "motivo": "laboris qui"
+    },
+    {
+      "nombre": "duis",
+      "comentario": "reprehenderit culpa aliquip ad amet",
+      "fecha": new Date("29-07-1996"),
+      "motivo": "tempor anim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "sit"
+    }
+  ]
+},{
+  "_id": ObjectId("638649e878a041870fa5ad4d"),
+  "latitud": 83.830126,
+  "longitud": 67.357681,
+  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
+  "profundidad": 146,
+  "es_productor": false,
+  "nombre_zona": "Alabama",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "voluptate",
+      "comentario": "consectetur aute aliqua ea non",
+      "fecha": new Date("27-11-2020"),
+      "motivo": "amet et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat proident quis sint adipisicing",
+      "fecha": new Date("01-10-2005"),
+      "motivo": "est ullamco"
+    },
+    {
+      "nombre": "amet",
+      "comentario": "ut quis nulla nostrud sint",
+      "fecha": new Date("29-12-2020"),
+      "motivo": "nulla excepteur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "cillum"
+    },
+    {
+      "nombre": "Lorem"
+    }
+  ]
+},{
+  "_id": ObjectId("638649e878a041870fa5ad4e"),
+  "latitud": -57.850042,
+  "longitud": 79.677488,
+  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
+  "profundidad": 834,
+  "es_productor": true,
+  "nombre_zona": "Alabama",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "esse",
+      "comentario": "quis excepteur ea labore velit",
+      "fecha": new Date("15-03-2007"),
+      "motivo": "est non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "occaecat"
+    },
+    {
+      "nombre": "fugiat"
+    }
+  ]
+},{
+  "_id": ObjectId("638649e878a041870fa5ad4f"),
+  "latitud": 89.418417,
+  "longitud": -155.982361,
+  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
+  "profundidad": 449,
+  "es_productor": true,
+  "nombre_zona": "Ohio",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  },
+  "estado": [
+    {
+      "nombre": "velit",
+      "comentario": "nisi duis eiusmod laborum elit",
+      "fecha": new Date("01-06-1993"),
+      "motivo": "occaecat reprehenderit"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "reprehenderit officia do culpa ullamco",
+      "fecha": new Date("10-01-2020"),
+      "motivo": "duis ea"
+    },
+    {
+      "nombre": "labore",
+      "comentario": "magna esse ex Lorem esse",
+      "fecha": new Date("26-09-2019"),
+      "motivo": "labore aliqua"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "_id": ObjectId("638649e878a041870fa5ad50"),
+  "latitud": 17.116161,
+  "longitud": 173.382221,
+  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
+  "profundidad": 531,
+  "es_productor": true,
+  "nombre_zona": "Wyoming",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  },
+  "estado": [
+    {
+      "nombre": "aliquip",
+      "comentario": "tempor anim irure deserunt tempor",
+      "fecha": new Date("05-10-1997"),
+      "motivo": "aliqua consequat"
+    },
+    {
+      "nombre": "aute",
+      "comentario": "non irure laborum commodo ullamco",
+      "fecha": new Date("06-02-2015"),
+      "motivo": "adipisicing incididunt"
+    },
+    {
+      "nombre": "cillum",
+      "comentario": "tempor ea occaecat pariatur excepteur",
+      "fecha": new Date("07-02-2015"),
+      "motivo": "occaecat incididunt"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "ea nulla laboris labore anim",
+      "fecha": new Date("07-06-2017"),
+      "motivo": "consequat Lorem"
+    },
+    {
+      "nombre": "irure",
+      "comentario": "ea pariatur ad adipisicing anim",
+      "fecha": new Date("09-01-2008"),
+      "motivo": "nulla elit"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "eiusmod"
+    }
+  ]
+},{
+  "_id": ObjectId("638649e878a041870fa5ad51"),
+  "latitud": -51.815494,
+  "longitud": 119.898034,
+  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
+  "profundidad": 505,
+  "es_productor": true,
+  "nombre_zona": "Massachusetts",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  },
+  "estado": [
+    {
+      "nombre": "in",
+      "comentario": "consequat excepteur occaecat in exercitation",
+      "fecha": new Date("21-01-2014"),
+      "motivo": "consequat excepteur"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "non aliquip incididunt ullamco id",
+      "fecha": new Date("09-10-2009"),
+      "motivo": "ea labore"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "et veniam quis aliqua et",
+      "fecha": new Date("15-08-2022"),
+      "motivo": "eu exercitation"
+    },
+    {
+      "nombre": "consectetur",
+      "comentario": "elit sint dolore officia amet",
+      "fecha": new Date("26-02-2011"),
+      "motivo": "Lorem et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat officia velit sit dolor",
+      "fecha": new Date("26-12-1993"),
+      "motivo": "dolor consectetur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "_id": ObjectId("638649e878a041870fa5ad52"),
+  "latitud": -87.480671,
+  "longitud": -166.420003,
+  "descripcion": "Aliquip exercitation proident cillum nisi duis deserunt cillum sit veniam et incididunt. Aliqua incididunt et duis adipisicing dolore cupidatat dolor anim sint eu aliquip aliquip. Incididunt ex aliquip aliqua mollit proident cupidatat. Mollit eiusmod sunt nostrud nisi proident velit magna. Irure officia eu amet esse sit magna pariatur est magna officia amet eu reprehenderit.\r\n",
+  "profundidad": 605,
+  "es_productor": false,
+  "nombre_zona": "Washington",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "mollit duis magna ea laboris",
+      "fecha": new Date("30-03-2006"),
+      "motivo": "esse reprehenderit"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "eu veniam anim excepteur officia",
+      "fecha": new Date("25-01-2018"),
+      "motivo": "irure nulla"
+    },
+    {
+      "nombre": "consequat",
+      "comentario": "enim nisi quis cupidatat cillum",
+      "fecha": new Date("29-09-2001"),
+      "motivo": "est duis"
+    },
+    {
+      "nombre": "eiusmod",
+      "comentario": "esse commodo dolore nulla Lorem",
+      "fecha": new Date("21-01-1998"),
+      "motivo": "Lorem voluptate"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "sunt"
+    },
+    {
+      "nombre": "esse"
+    },
+    {
+      "nombre": "non"
+    },
+    {
+      "nombre": "aute"
+    }
+  ]
+},{
+  "_id": ObjectId("638697443ec41448f4794802"),
+  "latitud": -75.115951,
+  "longitud": 96.528982,
+  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
+  "profundidad": 528,
+  "es_productor": false,
+  "nombre_zona": "New York",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "consequat",
+      "comentario": "ullamco Lorem amet eu exercitation",
+      "fecha": new Date("04-03-2011"),
+      "motivo": "aliqua et"
+    },
+    {
+      "nombre": "ex",
+      "comentario": "ad ut ut pariatur aliquip",
+      "fecha": new Date("25-09-1999"),
+      "motivo": "laboris velit"
+    },
+    {
+      "nombre": "sit",
+      "comentario": "aliquip nulla voluptate veniam pariatur",
+      "fecha": new Date("24-05-2021"),
+      "motivo": "labore sint"
+    },
+    {
+      "nombre": "anim",
+      "comentario": "do labore ex id commodo",
+      "fecha": new Date("12-09-2005"),
+      "motivo": "id cupidatat"
+    },
+    {
+      "nombre": "non",
+      "comentario": "proident sint enim ad minim",
+      "fecha": new Date("14-06-2012"),
+      "motivo": "enim non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "ex"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "dolore"
+    },
+    {
+      "nombre": "anim"
+    }
+  ]
+},{
+  "_id": ObjectId("638697443ec41448f4794803"),
+  "latitud": -82.61231,
+  "longitud": 87.707962,
+  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
+  "profundidad": 250,
+  "es_productor": true,
+  "nombre_zona": "Minnesota",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "est aute ad veniam nostrud",
+      "fecha": new Date("07-07-2015"),
+      "motivo": "non anim"
+    },
+    {
+      "nombre": "Lorem",
+      "comentario": "dolor mollit sint officia aliquip",
+      "fecha": new Date("17-02-2020"),
+      "motivo": "reprehenderit consectetur"
+    },
+    {
+      "nombre": "voluptate",
+      "comentario": "nostrud minim commodo consectetur incididunt",
+      "fecha": new Date("20-02-2013"),
+      "motivo": "minim qui"
+    },
+    {
+      "nombre": "adipisicing",
+      "comentario": "ea voluptate velit enim ad",
+      "fecha": new Date("23-04-2012"),
+      "motivo": "ullamco labore"
+    },
+    {
+      "nombre": "eu",
+      "comentario": "qui qui sunt sunt aute",
+      "fecha": new Date("29-12-2002"),
+      "motivo": "ex minim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "id"
+    }
+  ]
+},{
+  "_id": ObjectId("638697443ec41448f4794804"),
+  "latitud": -62.827566,
+  "longitud": -81.417786,
+  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
+  "profundidad": 873,
+  "es_productor": false,
+  "nombre_zona": "Kansas",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "id",
+      "comentario": "aliqua ad commodo ut anim",
+      "fecha": new Date("28-06-2012"),
+      "motivo": "consectetur aute"
+    },
+    {
+      "nombre": "nulla",
+      "comentario": "est esse officia amet ipsum",
+      "fecha": new Date("30-08-1990"),
+      "motivo": "proident laborum"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "nisi"
+    }
+  ]
+},{
+  "_id": ObjectId("638697443ec41448f4794805"),
+  "latitud": -26.14198,
+  "longitud": -102.885429,
+  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
+  "profundidad": 259,
+  "es_productor": true,
+  "nombre_zona": "Maine",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "minim",
+      "comentario": "ut magna ullamco tempor occaecat",
+      "fecha": new Date("08-02-2004"),
+      "motivo": "laboris qui"
+    },
+    {
+      "nombre": "duis",
+      "comentario": "reprehenderit culpa aliquip ad amet",
+      "fecha": new Date("29-07-1996"),
+      "motivo": "tempor anim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "sit"
+    }
+  ]
+},{
+  "_id": ObjectId("638697443ec41448f4794806"),
+  "latitud": 83.830126,
+  "longitud": 67.357681,
+  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
+  "profundidad": 146,
+  "es_productor": false,
+  "nombre_zona": "Alabama",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "voluptate",
+      "comentario": "consectetur aute aliqua ea non",
+      "fecha": new Date("27-11-2020"),
+      "motivo": "amet et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat proident quis sint adipisicing",
+      "fecha": new Date("01-10-2005"),
+      "motivo": "est ullamco"
+    },
+    {
+      "nombre": "amet",
+      "comentario": "ut quis nulla nostrud sint",
+      "fecha": new Date("29-12-2020"),
+      "motivo": "nulla excepteur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "cillum"
+    },
+    {
+      "nombre": "Lorem"
+    }
+  ]
+},{
+  "_id": ObjectId("638697443ec41448f4794807"),
+  "latitud": -57.850042,
+  "longitud": 79.677488,
+  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
+  "profundidad": 834,
+  "es_productor": true,
+  "nombre_zona": "Alabama",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "esse",
+      "comentario": "quis excepteur ea labore velit",
+      "fecha": new Date("15-03-2007"),
+      "motivo": "est non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "occaecat"
+    },
+    {
+      "nombre": "fugiat"
+    }
+  ]
+},{
+  "_id": ObjectId("638697443ec41448f4794808"),
+  "latitud": 89.418417,
+  "longitud": -155.982361,
+  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
+  "profundidad": 449,
+  "es_productor": true,
+  "nombre_zona": "Ohio",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "velit",
+      "comentario": "nisi duis eiusmod laborum elit",
+      "fecha": new Date("01-06-1993"),
+      "motivo": "occaecat reprehenderit"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "reprehenderit officia do culpa ullamco",
+      "fecha": new Date("10-01-2020"),
+      "motivo": "duis ea"
+    },
+    {
+      "nombre": "labore",
+      "comentario": "magna esse ex Lorem esse",
+      "fecha": new Date("26-09-2019"),
+      "motivo": "labore aliqua"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "_id": ObjectId("638697443ec41448f4794809"),
+  "latitud": 17.116161,
+  "longitud": 173.382221,
+  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
+  "profundidad": 531,
+  "es_productor": true,
+  "nombre_zona": "Wyoming",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "aliquip",
+      "comentario": "tempor anim irure deserunt tempor",
+      "fecha": new Date("05-10-1997"),
+      "motivo": "aliqua consequat"
+    },
+    {
+      "nombre": "aute",
+      "comentario": "non irure laborum commodo ullamco",
+      "fecha": new Date("06-02-2015"),
+      "motivo": "adipisicing incididunt"
+    },
+    {
+      "nombre": "cillum",
+      "comentario": "tempor ea occaecat pariatur excepteur",
+      "fecha": new Date("07-02-2015"),
+      "motivo": "occaecat incididunt"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "ea nulla laboris labore anim",
+      "fecha": new Date("07-06-2017"),
+      "motivo": "consequat Lorem"
+    },
+    {
+      "nombre": "irure",
+      "comentario": "ea pariatur ad adipisicing anim",
+      "fecha": new Date("09-01-2008"),
+      "motivo": "nulla elit"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "eiusmod"
+    }
+  ]
+},{
+  "_id": ObjectId("638697443ec41448f479480a"),
+  "latitud": -51.815494,
+  "longitud": 119.898034,
+  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
+  "profundidad": 505,
+  "es_productor": true,
+  "nombre_zona": "Massachusetts",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "in",
+      "comentario": "consequat excepteur occaecat in exercitation",
+      "fecha": new Date("21-01-2014"),
+      "motivo": "consequat excepteur"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "non aliquip incididunt ullamco id",
+      "fecha": new Date("09-10-2009"),
+      "motivo": "ea labore"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "et veniam quis aliqua et",
+      "fecha": new Date("15-08-2022"),
+      "motivo": "eu exercitation"
+    },
+    {
+      "nombre": "consectetur",
+      "comentario": "elit sint dolore officia amet",
+      "fecha": new Date("26-02-2011"),
+      "motivo": "Lorem et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat officia velit sit dolor",
+      "fecha": new Date("26-12-1993"),
+      "motivo": "dolor consectetur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "_id": ObjectId("638697443ec41448f479480b"),
+  "latitud": -87.480671,
+  "longitud": -166.420003,
+  "descripcion": "Aliquip exercitation proden cillum nisi duis deserunt cillum sit ven...",
+  "profundidad": 605,
+  "es_productor": false,
+  "nombre_zona": "Washington",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "mollit duis magna ea laboris",
+      "fecha": new Date("30-03-2006"),
+      "motivo": "esse reprehenderit"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "eu veniam anim excepteur officia",
+      "fecha": new Date("25-01-2018"),
+      "motivo": "irure nulla"
+    },
+    {
+      "nombre": "consequat",
+      "comentario": "enim nisi quis cupidatat cillum",
+      "fecha": new Date("29-09-2001"),
+      "motivo": "est duis"
+    },
+    {
+      "nombre": "eiusmod",
+      "comentario": "esse commodo dolore nulla Lorem",
+      "fecha": new Date("21-01-1998"),
+      "motivo": "Lorem voluptate"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "sunt"
+    },
+    {
+      "nombre": "esse"
+    },
+    {
+      "nombre": "non"
+    },
+    {
+      "nombre": "aute"
+    }
+  ]
+},{
+  "_id": ObjectId("63869876f3389e40e00989b7"),
+  "latitud": -75.115951,
+  "longitud": 96.528982,
+  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
+  "profundidad": 528,
+  "es_productor": false,
+  "nombre_zona": "New York",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "consequat",
+      "comentario": "ullamco Lorem amet eu exercitation",
+      "fecha": new Date("04-03-2011"),
+      "motivo": "aliqua et"
+    },
+    {
+      "nombre": "ex",
+      "comentario": "ad ut ut pariatur aliquip",
+      "fecha": new Date("25-09-1999"),
+      "motivo": "laboris velit"
+    },
+    {
+      "nombre": "sit",
+      "comentario": "aliquip nulla voluptate veniam pariatur",
+      "fecha": new Date("24-05-2021"),
+      "motivo": "labore sint"
+    },
+    {
+      "nombre": "anim",
+      "comentario": "do labore ex id commodo",
+      "fecha": new Date("12-09-2005"),
+      "motivo": "id cupidatat"
+    },
+    {
+      "nombre": "non",
+      "comentario": "proident sint enim ad minim",
+      "fecha": new Date("14-06-2012"),
+      "motivo": "enim non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "ex"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "dolore"
+    },
+    {
+      "nombre": "anim"
+    }
+  ]
+},{
+  "_id": ObjectId("63869876f3389e40e00989b8"),
+  "latitud": -82.61231,
+  "longitud": 87.707962,
+  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
+  "profundidad": 250,
+  "es_productor": true,
+  "nombre_zona": "Minnesota",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "est aute ad veniam nostrud",
+      "fecha": new Date("07-07-2015"),
+      "motivo": "non anim"
+    },
+    {
+      "nombre": "Lorem",
+      "comentario": "dolor mollit sint officia aliquip",
+      "fecha": new Date("17-02-2020"),
+      "motivo": "reprehenderit consectetur"
+    },
+    {
+      "nombre": "voluptate",
+      "comentario": "nostrud minim commodo consectetur incididunt",
+      "fecha": new Date("20-02-2013"),
+      "motivo": "minim qui"
+    },
+    {
+      "nombre": "adipisicing",
+      "comentario": "ea voluptate velit enim ad",
+      "fecha": new Date("23-04-2012"),
+      "motivo": "ullamco labore"
+    },
+    {
+      "nombre": "eu",
+      "comentario": "qui qui sunt sunt aute",
+      "fecha": new Date("29-12-2002"),
+      "motivo": "ex minim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "id"
+    }
+  ]
+},{
+  "_id": ObjectId("63869876f3389e40e00989b9"),
+  "latitud": -62.827566,
+  "longitud": -81.417786,
+  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
+  "profundidad": 873,
+  "es_productor": false,
+  "nombre_zona": "Kansas",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "id",
+      "comentario": "aliqua ad commodo ut anim",
+      "fecha": new Date("28-06-2012"),
+      "motivo": "consectetur aute"
+    },
+    {
+      "nombre": "nulla",
+      "comentario": "est esse officia amet ipsum",
+      "fecha": new Date("30-08-1990"),
+      "motivo": "proident laborum"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "nisi"
+    }
+  ]
+},{
+  "_id": ObjectId("63869876f3389e40e00989ba"),
+  "latitud": -26.14198,
+  "longitud": -102.885429,
+  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
+  "profundidad": 259,
+  "es_productor": true,
+  "nombre_zona": "Maine",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "minim",
+      "comentario": "ut magna ullamco tempor occaecat",
+      "fecha": new Date("08-02-2004"),
+      "motivo": "laboris qui"
+    },
+    {
+      "nombre": "duis",
+      "comentario": "reprehenderit culpa aliquip ad amet",
+      "fecha": new Date("29-07-1996"),
+      "motivo": "tempor anim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "sit"
+    }
+  ]
+},{
+  "_id": ObjectId("63869876f3389e40e00989bb"),
+  "latitud": 83.830126,
+  "longitud": 67.357681,
+  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
+  "profundidad": 146,
+  "es_productor": false,
+  "nombre_zona": "Alabama",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "voluptate",
+      "comentario": "consectetur aute aliqua ea non",
+      "fecha": new Date("27-11-2020"),
+      "motivo": "amet et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat proident quis sint adipisicing",
+      "fecha": new Date("01-10-2005"),
+      "motivo": "est ullamco"
+    },
+    {
+      "nombre": "amet",
+      "comentario": "ut quis nulla nostrud sint",
+      "fecha": new Date("29-12-2020"),
+      "motivo": "nulla excepteur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "cillum"
+    },
+    {
+      "nombre": "Lorem"
+    }
+  ]
+},{
+  "_id": ObjectId("63869876f3389e40e00989bc"),
+  "latitud": -57.850042,
+  "longitud": 79.677488,
+  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
+  "profundidad": 834,
+  "es_productor": true,
+  "nombre_zona": "Alabama",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "esse",
+      "comentario": "quis excepteur ea labore velit",
+      "fecha": new Date("15-03-2007"),
+      "motivo": "est non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "occaecat"
+    },
+    {
+      "nombre": "fugiat"
+    }
+  ]
+},{
+  "_id": ObjectId("63869876f3389e40e00989bd"),
+  "latitud": 89.418417,
+  "longitud": -155.982361,
+  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
+  "profundidad": 449,
+  "es_productor": true,
+  "nombre_zona": "Ohio",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "velit",
+      "comentario": "nisi duis eiusmod laborum elit",
+      "fecha": new Date("01-06-1993"),
+      "motivo": "occaecat reprehenderit"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "reprehenderit officia do culpa ullamco",
+      "fecha": new Date("10-01-2020"),
+      "motivo": "duis ea"
+    },
+    {
+      "nombre": "labore",
+      "comentario": "magna esse ex Lorem esse",
+      "fecha": new Date("26-09-2019"),
+      "motivo": "labore aliqua"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "_id": ObjectId("63869876f3389e40e00989be"),
+  "latitud": 17.116161,
+  "longitud": 173.382221,
+  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
+  "profundidad": 531,
+  "es_productor": true,
+  "nombre_zona": "Wyoming",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "aliquip",
+      "comentario": "tempor anim irure deserunt tempor",
+      "fecha": new Date("05-10-1997"),
+      "motivo": "aliqua consequat"
+    },
+    {
+      "nombre": "aute",
+      "comentario": "non irure laborum commodo ullamco",
+      "fecha": new Date("06-02-2015"),
+      "motivo": "adipisicing incididunt"
+    },
+    {
+      "nombre": "cillum",
+      "comentario": "tempor ea occaecat pariatur excepteur",
+      "fecha": new Date("07-02-2015"),
+      "motivo": "occaecat incididunt"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "ea nulla laboris labore anim",
+      "fecha": new Date("07-06-2017"),
+      "motivo": "consequat Lorem"
+    },
+    {
+      "nombre": "irure",
+      "comentario": "ea pariatur ad adipisicing anim",
+      "fecha": new Date("09-01-2008"),
+      "motivo": "nulla elit"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "eiusmod"
+    }
+  ]
+},{
+  "_id": ObjectId("63869876f3389e40e00989bf"),
+  "latitud": -51.815494,
+  "longitud": 119.898034,
+  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
+  "profundidad": 505,
+  "es_productor": true,
+  "nombre_zona": "Massachusetts",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "in",
+      "comentario": "consequat excepteur occaecat in exercitation",
+      "fecha": new Date("21-01-2014"),
+      "motivo": "consequat excepteur"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "non aliquip incididunt ullamco id",
+      "fecha": new Date("09-10-2009"),
+      "motivo": "ea labore"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "et veniam quis aliqua et",
+      "fecha": new Date("15-08-2022"),
+      "motivo": "eu exercitation"
+    },
+    {
+      "nombre": "consectetur",
+      "comentario": "elit sint dolore officia amet",
+      "fecha": new Date("26-02-2011"),
+      "motivo": "Lorem et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat officia velit sit dolor",
+      "fecha": new Date("26-12-1993"),
+      "motivo": "dolor consectetur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "_id": ObjectId("63869876f3389e40e00989c0"),
+  "latitud": -87.480671,
+  "longitud": -166.420003,
+  "descripcion": "Aliquip exercitation proident cillum nisi duis deserunt cillum sit veniam et incididunt. Aliqua incididunt et duis adipisicing dolore cupidatat dolor anim sint eu aliquip aliquip. Incididunt ex aliquip aliqua mollit proident cupidatat. Mollit eiusmod sunt nostrud nisi proident velit magna. Irure officia eu amet esse sit magna pariatur est magna officia amet eu reprehenderit.\r\n",
+  "profundidad": 605,
+  "es_productor": false,
+  "nombre_zona": "Washington",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "mollit duis magna ea laboris",
+      "fecha": new Date("30-03-2006"),
+      "motivo": "esse reprehenderit"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "eu veniam anim excepteur officia",
+      "fecha": new Date("25-01-2018"),
+      "motivo": "irure nulla"
+    },
+    {
+      "nombre": "consequat",
+      "comentario": "enim nisi quis cupidatat cillum",
+      "fecha": new Date("29-09-2001"),
+      "motivo": "est duis"
+    },
+    {
+      "nombre": "eiusmod",
+      "comentario": "esse commodo dolore nulla Lorem",
+      "fecha": new Date("21-01-1998"),
+      "motivo": "Lorem voluptate"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "sunt"
+    },
+    {
+      "nombre": "esse"
+    },
+    {
+      "nombre": "non"
+    },
+    {
+      "nombre": "aute"
+    }
+  ]
+},{
+  "_id": ObjectId("6386988fe20426555fe45653"),
+  "latitud": -75.115951,
+  "longitud": 96.528982,
+  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
+  "profundidad": 528,
+  "es_productor": false,
+  "nombre_zona": "New York",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "consequat",
+      "comentario": "ullamco Lorem amet eu exercitation",
+      "fecha": new Date("04-03-2011"),
+      "motivo": "aliqua et"
+    },
+    {
+      "nombre": "ex",
+      "comentario": "ad ut ut pariatur aliquip",
+      "fecha": new Date("25-09-1999"),
+      "motivo": "laboris velit"
+    },
+    {
+      "nombre": "sit",
+      "comentario": "aliquip nulla voluptate veniam pariatur",
+      "fecha": new Date("24-05-2021"),
+      "motivo": "labore sint"
+    },
+    {
+      "nombre": "anim",
+      "comentario": "do labore ex id commodo",
+      "fecha": new Date("12-09-2005"),
+      "motivo": "id cupidatat"
+    },
+    {
+      "nombre": "non",
+      "comentario": "proident sint enim ad minim",
+      "fecha": new Date("14-06-2012"),
+      "motivo": "enim non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "ex"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "dolore"
+    },
+    {
+      "nombre": "anim"
+    }
+  ]
+},{
+  "_id": ObjectId("6386988fe20426555fe45654"),
+  "latitud": -82.61231,
+  "longitud": 87.707962,
+  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
+  "profundidad": 250,
+  "es_productor": true,
+  "nombre_zona": "Minnesota",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "est aute ad veniam nostrud",
+      "fecha": new Date("07-07-2015"),
+      "motivo": "non anim"
+    },
+    {
+      "nombre": "Lorem",
+      "comentario": "dolor mollit sint officia aliquip",
+      "fecha": new Date("17-02-2020"),
+      "motivo": "reprehenderit consectetur"
+    },
+    {
+      "nombre": "voluptate",
+      "comentario": "nostrud minim commodo consectetur incididunt",
+      "fecha": new Date("20-02-2013"),
+      "motivo": "minim qui"
+    },
+    {
+      "nombre": "adipisicing",
+      "comentario": "ea voluptate velit enim ad",
+      "fecha": new Date("23-04-2012"),
+      "motivo": "ullamco labore"
+    },
+    {
+      "nombre": "eu",
+      "comentario": "qui qui sunt sunt aute",
+      "fecha": new Date("29-12-2002"),
+      "motivo": "ex minim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "id"
+    }
+  ]
+},{
+  "_id": ObjectId("6386988fe20426555fe45655"),
+  "latitud": -62.827566,
+  "longitud": -81.417786,
+  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
+  "profundidad": 873,
+  "es_productor": false,
+  "nombre_zona": "Kansas",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "id",
+      "comentario": "aliqua ad commodo ut anim",
+      "fecha": new Date("28-06-2012"),
+      "motivo": "consectetur aute"
+    },
+    {
+      "nombre": "nulla",
+      "comentario": "est esse officia amet ipsum",
+      "fecha": new Date("30-08-1990"),
+      "motivo": "proident laborum"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "nisi"
+    }
+  ]
+},{
+  "_id": ObjectId("6386988fe20426555fe45656"),
+  "latitud": -26.14198,
+  "longitud": -102.885429,
+  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
+  "profundidad": 259,
+  "es_productor": true,
+  "nombre_zona": "Maine",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "minim",
+      "comentario": "ut magna ullamco tempor occaecat",
+      "fecha": new Date("08-02-2004"),
+      "motivo": "laboris qui"
+    },
+    {
+      "nombre": "duis",
+      "comentario": "reprehenderit culpa aliquip ad amet",
+      "fecha": new Date("29-07-1996"),
+      "motivo": "tempor anim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "sit"
+    }
+  ]
+},{
+  "_id": ObjectId("6386988fe20426555fe45657"),
+  "latitud": 83.830126,
+  "longitud": 67.357681,
+  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
+  "profundidad": 146,
+  "es_productor": false,
+  "nombre_zona": "Alabama",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "voluptate",
+      "comentario": "consectetur aute aliqua ea non",
+      "fecha": new Date("27-11-2020"),
+      "motivo": "amet et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat proident quis sint adipisicing",
+      "fecha": new Date("01-10-2005"),
+      "motivo": "est ullamco"
+    },
+    {
+      "nombre": "amet",
+      "comentario": "ut quis nulla nostrud sint",
+      "fecha": new Date("29-12-2020"),
+      "motivo": "nulla excepteur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "cillum"
+    },
+    {
+      "nombre": "Lorem"
+    }
+  ]
+},{
+  "_id": ObjectId("6386988fe20426555fe45658"),
+  "latitud": -57.850042,
+  "longitud": 79.677488,
+  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
+  "profundidad": 834,
+  "es_productor": true,
+  "nombre_zona": "Alabama",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "esse",
+      "comentario": "quis excepteur ea labore velit",
+      "fecha": new Date("15-03-2007"),
+      "motivo": "est non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "occaecat"
+    },
+    {
+      "nombre": "fugiat"
+    }
+  ]
+},{
+  "_id": ObjectId("6386988fe20426555fe45659"),
+  "latitud": 89.418417,
+  "longitud": -155.982361,
+  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
+  "profundidad": 449,
+  "es_productor": true,
+  "nombre_zona": "Ohio",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "velit",
+      "comentario": "nisi duis eiusmod laborum elit",
+      "fecha": new Date("01-06-1993"),
+      "motivo": "occaecat reprehenderit"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "reprehenderit officia do culpa ullamco",
+      "fecha": new Date("10-01-2020"),
+      "motivo": "duis ea"
+    },
+    {
+      "nombre": "labore",
+      "comentario": "magna esse ex Lorem esse",
+      "fecha": new Date("26-09-2019"),
+      "motivo": "labore aliqua"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "_id": ObjectId("6386988fe20426555fe4565a"),
+  "latitud": 17.116161,
+  "longitud": 173.382221,
+  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
+  "profundidad": 531,
+  "es_productor": true,
+  "nombre_zona": "Wyoming",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "aliquip",
+      "comentario": "tempor anim irure deserunt tempor",
+      "fecha": new Date("05-10-1997"),
+      "motivo": "aliqua consequat"
+    },
+    {
+      "nombre": "aute",
+      "comentario": "non irure laborum commodo ullamco",
+      "fecha": new Date("06-02-2015"),
+      "motivo": "adipisicing incididunt"
+    },
+    {
+      "nombre": "cillum",
+      "comentario": "tempor ea occaecat pariatur excepteur",
+      "fecha": new Date("07-02-2015"),
+      "motivo": "occaecat incididunt"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "ea nulla laboris labore anim",
+      "fecha": new Date("07-06-2017"),
+      "motivo": "consequat Lorem"
+    },
+    {
+      "nombre": "irure",
+      "comentario": "ea pariatur ad adipisicing anim",
+      "fecha": new Date("09-01-2008"),
+      "motivo": "nulla elit"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "eiusmod"
+    }
+  ]
+},{
+  "_id": ObjectId("6386988fe20426555fe4565b"),
+  "latitud": -51.815494,
+  "longitud": 119.898034,
+  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
+  "profundidad": 505,
+  "es_productor": true,
+  "nombre_zona": "Massachusetts",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "in",
+      "comentario": "consequat excepteur occaecat in exercitation",
+      "fecha": new Date("21-01-2014"),
+      "motivo": "consequat excepteur"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "non aliquip incididunt ullamco id",
+      "fecha": new Date("09-10-2009"),
+      "motivo": "ea labore"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "et veniam quis aliqua et",
+      "fecha": new Date("15-08-2022"),
+      "motivo": "eu exercitation"
+    },
+    {
+      "nombre": "consectetur",
+      "comentario": "elit sint dolore officia amet",
+      "fecha": new Date("26-02-2011"),
+      "motivo": "Lorem et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat officia velit sit dolor",
+      "fecha": new Date("26-12-1993"),
+      "motivo": "dolor consectetur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "_id": ObjectId("6386988fe20426555fe4565c"),
+  "latitud": -87.480671,
+  "longitud": -166.420003,
+  "descripcion": "Aliquip exercitation proident cillum nisi duis deserunt cillum sit veniam et incididunt. Aliqua incididunt et duis adipisicing dolore cupidatat dolor anim sint eu aliquip aliquip. Incididunt ex aliquip aliqua mollit proident cupidatat. Mollit eiusmod sunt nostrud nisi proident velit magna. Irure officia eu amet esse sit magna pariatur est magna officia amet eu reprehenderit.\r\n",
+  "profundidad": 605,
+  "es_productor": false,
+  "nombre_zona": "Washington",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "mollit duis magna ea laboris",
+      "fecha": new Date("30-03-2006"),
+      "motivo": "esse reprehenderit"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "eu veniam anim excepteur officia",
+      "fecha": new Date("25-01-2018"),
+      "motivo": "irure nulla"
+    },
+    {
+      "nombre": "consequat",
+      "comentario": "enim nisi quis cupidatat cillum",
+      "fecha": new Date("29-09-2001"),
+      "motivo": "est duis"
+    },
+    {
+      "nombre": "eiusmod",
+      "comentario": "esse commodo dolore nulla Lorem",
+      "fecha": new Date("21-01-1998"),
+      "motivo": "Lorem voluptate"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "sunt"
+    },
+    {
+      "nombre": "esse"
+    },
+    {
+      "nombre": "non"
+    },
+    {
+      "nombre": "aute"
+    }
+  ]
+},{
+  "_id": ObjectId("6386997aa17abc1502d219b4"),
+  "latitud": -75.115951,
+  "longitud": 96.528982,
+  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
+  "profundidad": 528,
+  "es_productor": false,
+  "nombre_zona": "New York",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "consequat",
+      "comentario": "ullamco Lorem amet eu exercitation",
+      "fecha": new Date("04-03-2011"),
+      "motivo": "aliqua et"
+    },
+    {
+      "nombre": "ex",
+      "comentario": "ad ut ut pariatur aliquip",
+      "fecha": new Date("25-09-1999"),
+      "motivo": "laboris velit"
+    },
+    {
+      "nombre": "sit",
+      "comentario": "aliquip nulla voluptate veniam pariatur",
+      "fecha": new Date("24-05-2021"),
+      "motivo": "labore sint"
+    },
+    {
+      "nombre": "anim",
+      "comentario": "do labore ex id commodo",
+      "fecha": new Date("12-09-2005"),
+      "motivo": "id cupidatat"
+    },
+    {
+      "nombre": "non",
+      "comentario": "proident sint enim ad minim",
+      "fecha": new Date("14-06-2012"),
+      "motivo": "enim non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "ex"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "dolore"
+    },
+    {
+      "nombre": "anim"
+    }
+  ]
+},{
+  "_id": ObjectId("6386997aa17abc1502d219b5"),
+  "latitud": -82.61231,
+  "longitud": 87.707962,
+  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
+  "profundidad": 250,
+  "es_productor": true,
+  "nombre_zona": "Minnesota",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "est aute ad veniam nostrud",
+      "fecha": new Date("07-07-2015"),
+      "motivo": "non anim"
+    },
+    {
+      "nombre": "Lorem",
+      "comentario": "dolor mollit sint officia aliquip",
+      "fecha": new Date("17-02-2020"),
+      "motivo": "reprehenderit consectetur"
+    },
+    {
+      "nombre": "voluptate",
+      "comentario": "nostrud minim commodo consectetur incididunt",
+      "fecha": new Date("20-02-2013"),
+      "motivo": "minim qui"
+    },
+    {
+      "nombre": "adipisicing",
+      "comentario": "ea voluptate velit enim ad",
+      "fecha": new Date("23-04-2012"),
+      "motivo": "ullamco labore"
+    },
+    {
+      "nombre": "eu",
+      "comentario": "qui qui sunt sunt aute",
+      "fecha": new Date("29-12-2002"),
+      "motivo": "ex minim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "id"
+    }
+  ]
+},{
+  "_id": ObjectId("6386997aa17abc1502d219b6"),
+  "latitud": -62.827566,
+  "longitud": -81.417786,
+  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
+  "profundidad": 873,
+  "es_productor": false,
+  "nombre_zona": "Kansas",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "id",
+      "comentario": "aliqua ad commodo ut anim",
+      "fecha": new Date("28-06-2012"),
+      "motivo": "consectetur aute"
+    },
+    {
+      "nombre": "nulla",
+      "comentario": "est esse officia amet ipsum",
+      "fecha": new Date("30-08-1990"),
+      "motivo": "proident laborum"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "nisi"
+    }
+  ]
+},{
+  "_id": ObjectId("6386997aa17abc1502d219b7"),
+  "latitud": -26.14198,
+  "longitud": -102.885429,
+  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
+  "profundidad": 259,
+  "es_productor": true,
+  "nombre_zona": "Maine",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "minim",
+      "comentario": "ut magna ullamco tempor occaecat",
+      "fecha": new Date("08-02-2004"),
+      "motivo": "laboris qui"
+    },
+    {
+      "nombre": "duis",
+      "comentario": "reprehenderit culpa aliquip ad amet",
+      "fecha": new Date("29-07-1996"),
+      "motivo": "tempor anim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "sit"
+    }
+  ]
+},{
+  "_id": ObjectId("6386997aa17abc1502d219b8"),
+  "latitud": 83.830126,
+  "longitud": 67.357681,
+  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
+  "profundidad": 146,
+  "es_productor": false,
+  "nombre_zona": "Alabama",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "voluptate",
+      "comentario": "consectetur aute aliqua ea non",
+      "fecha": new Date("27-11-2020"),
+      "motivo": "amet et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat proident quis sint adipisicing",
+      "fecha": new Date("01-10-2005"),
+      "motivo": "est ullamco"
+    },
+    {
+      "nombre": "amet",
+      "comentario": "ut quis nulla nostrud sint",
+      "fecha": new Date("29-12-2020"),
+      "motivo": "nulla excepteur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "cillum"
+    },
+    {
+      "nombre": "Lorem"
+    }
+  ]
+},{
+  "_id": ObjectId("6386997aa17abc1502d219b9"),
+  "latitud": -57.850042,
+  "longitud": 79.677488,
+  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
+  "profundidad": 834,
+  "es_productor": true,
+  "nombre_zona": "Alabama",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "esse",
+      "comentario": "quis excepteur ea labore velit",
+      "fecha": new Date("15-03-2007"),
+      "motivo": "est non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "occaecat"
+    },
+    {
+      "nombre": "fugiat"
+    }
+  ]
+},{
+  "_id": ObjectId("6386997aa17abc1502d219ba"),
+  "latitud": 89.418417,
+  "longitud": -155.982361,
+  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
+  "profundidad": 449,
+  "es_productor": true,
+  "nombre_zona": "Ohio",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "velit",
+      "comentario": "nisi duis eiusmod laborum elit",
+      "fecha": new Date("01-06-1993"),
+      "motivo": "occaecat reprehenderit"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "reprehenderit officia do culpa ullamco",
+      "fecha": new Date("10-01-2020"),
+      "motivo": "duis ea"
+    },
+    {
+      "nombre": "labore",
+      "comentario": "magna esse ex Lorem esse",
+      "fecha": new Date("26-09-2019"),
+      "motivo": "labore aliqua"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "_id": ObjectId("6386997aa17abc1502d219bb"),
+  "latitud": 17.116161,
+  "longitud": 173.382221,
+  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
+  "profundidad": 531,
+  "es_productor": true,
+  "nombre_zona": "Wyoming",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "aliquip",
+      "comentario": "tempor anim irure deserunt tempor",
+      "fecha": new Date("05-10-1997"),
+      "motivo": "aliqua consequat"
+    },
+    {
+      "nombre": "aute",
+      "comentario": "non irure laborum commodo ullamco",
+      "fecha": new Date("06-02-2015"),
+      "motivo": "adipisicing incididunt"
+    },
+    {
+      "nombre": "cillum",
+      "comentario": "tempor ea occaecat pariatur excepteur",
+      "fecha": new Date("07-02-2015"),
+      "motivo": "occaecat incididunt"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "ea nulla laboris labore anim",
+      "fecha": new Date("07-06-2017"),
+      "motivo": "consequat Lorem"
+    },
+    {
+      "nombre": "irure",
+      "comentario": "ea pariatur ad adipisicing anim",
+      "fecha": new Date("09-01-2008"),
+      "motivo": "nulla elit"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "eiusmod"
+    }
+  ]
+},{
+  "_id": ObjectId("6386997aa17abc1502d219bc"),
+  "latitud": -51.815494,
+  "longitud": 119.898034,
+  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
+  "profundidad": 505,
+  "es_productor": true,
+  "nombre_zona": "Massachusetts",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "in",
+      "comentario": "consequat excepteur occaecat in exercitation",
+      "fecha": new Date("21-01-2014"),
+      "motivo": "consequat excepteur"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "non aliquip incididunt ullamco id",
+      "fecha": new Date("09-10-2009"),
+      "motivo": "ea labore"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "et veniam quis aliqua et",
+      "fecha": new Date("15-08-2022"),
+      "motivo": "eu exercitation"
+    },
+    {
+      "nombre": "consectetur",
+      "comentario": "elit sint dolore officia amet",
+      "fecha": new Date("26-02-2011"),
+      "motivo": "Lorem et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat officia velit sit dolor",
+      "fecha": new Date("26-12-1993"),
+      "motivo": "dolor consectetur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "_id": ObjectId("6386997aa17abc1502d219bd"),
+  "latitud": -87.480671,
+  "longitud": -166.420003,
+  "descripcion": "Aliquip exercitation proident cillum nisi duis deserunt cillum sit veniam et incididunt. Aliqua incididunt et duis adipisicing dolore cupidatat dolor anim sint eu aliquip aliquip. Incididunt ex aliquip aliqua mollit proident cupidatat. Mollit eiusmod sunt nostrud nisi proident velit magna. Irure officia eu amet esse sit magna pariatur est magna officia amet eu reprehenderit.\r\n",
+  "profundidad": 605,
+  "es_productor": false,
+  "nombre_zona": "Washington",
+  "area": "",
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "mollit duis magna ea laboris",
+      "fecha": new Date("30-03-2006"),
+      "motivo": "esse reprehenderit"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "eu veniam anim excepteur officia",
+      "fecha": new Date("25-01-2018"),
+      "motivo": "irure nulla"
+    },
+    {
+      "nombre": "consequat",
+      "comentario": "enim nisi quis cupidatat cillum",
+      "fecha": new Date("29-09-2001"),
+      "motivo": "est duis"
+    },
+    {
+      "nombre": "eiusmod",
+      "comentario": "esse commodo dolore nulla Lorem",
+      "fecha": new Date("21-01-1998"),
+      "motivo": "Lorem voluptate"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "sunt"
+    },
+    {
+      "nombre": "esse"
+    },
+    {
+      "nombre": "non"
+    },
+    {
+      "nombre": "aute"
+    }
+  ]
+}])
+
+db.Tanque.insertMany([{
+  "_id": ObjectId("63864366fe7157ccc94a8947"),
+  "tag": "230reprehenderit",
+  "capacidad_total": 4575.1459,
+  "capacidad_disponible": 5115.2601,
+  "nombre_zona": "Florida",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+},{
+  "_id": ObjectId("63864366fe7157ccc94a8948"),
+  "tag": "967qui",
+  "capacidad_total": 4950.2794,
+  "capacidad_disponible": 5508.6722,
+  "nombre_zona": "Kentucky",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+},{
+  "_id": ObjectId("63864366fe7157ccc94a8949"),
+  "tag": "402amet",
+  "capacidad_total": 3338.7829,
+  "capacidad_disponible": 7766.3344,
+  "nombre_zona": "New Hampshire",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  }
+},{
+  "_id": ObjectId("63864366fe7157ccc94a894a"),
+  "tag": "593veniam",
+  "capacidad_total": 7060.0103,
+  "capacidad_disponible": 369.6027,
+  "nombre_zona": "Washington",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "_id": ObjectId("63864366fe7157ccc94a894b"),
+  "tag": "42pariatur",
+  "capacidad_total": 8410.0891,
+  "capacidad_disponible": 4278.5031,
+  "nombre_zona": "Tennessee",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  }
+},{
+  "_id": ObjectId("63864366fe7157ccc94a894c"),
+  "tag": "677nisi",
+  "capacidad_total": 890.4184,
+  "capacidad_disponible": 7602.9176,
+  "nombre_zona": "Washington",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "_id": ObjectId("63864366fe7157ccc94a894d"),
+  "tag": "209nulla",
+  "capacidad_total": 3353.2439,
+  "capacidad_disponible": 4592.7663,
+  "nombre_zona": "Mississippi",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  }
+},{
+  "_id": ObjectId("63864366fe7157ccc94a894e"),
+  "tag": "31occaecat",
+  "capacidad_total": 3384.3476,
+  "capacidad_disponible": 7248.9109,
+  "nombre_zona": "Puerto Rico",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  }
+},{
+  "_id": ObjectId("63864366fe7157ccc94a894f"),
+  "tag": "948Lorem",
+  "capacidad_total": 7941.3922,
+  "capacidad_disponible": 9416.8432,
+  "nombre_zona": "South Carolina",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "_id": ObjectId("63864366fe7157ccc94a8950"),
+  "tag": "560ea",
+  "capacidad_total": 4094.7862,
+  "capacidad_disponible": 1684.3963,
+  "nombre_zona": "Arkansas",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+}])
+
+db.Medidor.insertMany([{
+  "_id": ObjectId("638530b57bdfc89cd6f05230"),
+  "nombre": "ea voluptate ipsum sit",
+  "porcentaje_precision": 81.59,
+  "medicion": [
+    {
+      "fecha": new Date("06-07-2008"),
+      "medicion_neta": 8445.657,
+      "medicion_bruta": 7453.151,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ab"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad49"
+  }
+},{
+  "_id": ObjectId("638530b57bdfc89cd6f05231"),
+  "nombre": "cupidatat qui culpa reprehenderit ut",
+  "porcentaje_precision": 16.46,
+  "medicion": [],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4a"
+  }
+},{
+  "_id": ObjectId("638530b57bdfc89cd6f05232"),
+  "nombre": "deserunt Lorem nostrud duis",
+  "porcentaje_precision": 0.02,
+  "medicion": [
+    {
+      "fecha": new Date("26-07-2010"),
+      "medicion_neta": 3629.562,
+      "medicion_bruta": 3669.645,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b6"
+      }
+    },
+    {
+      "fecha": new Date("31-12-2010"),
+      "medicion_neta": 2107.735,
+      "medicion_bruta": 4969.882,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2a9"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4b"
+  }
+},{
+  "_id": ObjectId("638530b57bdfc89cd6f05233"),
+  "nombre": "amet est est",
+  "porcentaje_precision": 99.16,
+  "medicion": [
+    {
+      "fecha": new Date("08-03-1992"),
+      "medicion_neta": 3373.275,
+      "medicion_bruta": 5448.899,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ae"
+      }
+    },
+    {
+      "fecha": new Date("29-07-2009"),
+      "medicion_neta": 2709.816,
+      "medicion_bruta": 1691.912,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2a8"
+      }
+    },
+    {
+      "fecha": new Date("27-12-2021"),
+      "medicion_neta": 3463.894,
+      "medicion_bruta": 3439.904,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ab"
+      }
+    },
+    {
+      "fecha": new Date("06-05-1993"),
+      "medicion_neta": 3252.778,
+      "medicion_bruta": 6037.698,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ae"
+      }
+    },
+    {
+      "fecha": new Date("29-10-2010"),
+      "medicion_neta": 3780.663,
+      "medicion_bruta": 979.39,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2af"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4c"
+  }
+},{
+  "_id": ObjectId("638530b57bdfc89cd6f05234"),
+  "nombre": "consequat nostrud irure velit ipsum",
+  "porcentaje_precision": 30.64,
+  "medicion": [
+    {
+      "fecha": new Date("16-05-1990"),
+      "medicion_neta": 5745.349,
+      "medicion_bruta": 6995.024,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b5"
+      }
+    },
+    {
+      "fecha": new Date("21-11-2015"),
+      "medicion_neta": 495.646,
+      "medicion_bruta": 658.773,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b5"
+      }
+    },
+    {
+      "fecha": new Date("06-08-2000"),
+      "medicion_neta": 9169.37,
+      "medicion_bruta": 5177.762,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ab"
+      }
+    },
+    {
+      "fecha": new Date("05-08-2018"),
+      "medicion_neta": 3684.899,
+      "medicion_bruta": 2836.457,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ab"
+      }
+    },
+    {
+      "fecha": new Date("14-11-2015"),
+      "medicion_neta": 8667.244,
+      "medicion_bruta": 3046.559,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b5"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4d"
+  }
+},{
+  "_id": ObjectId("638530b57bdfc89cd6f05235"),
+  "nombre": "consequat sint",
+  "porcentaje_precision": 87.25,
+  "medicion": [
+    {
+      "fecha": new Date("24-12-2004"),
+      "medicion_neta": 7958.865,
+      "medicion_bruta": 3374.871,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b6"
+      }
+    },
+    {
+      "fecha": new Date("11-05-2010"),
+      "medicion_neta": 5471.803,
+      "medicion_bruta": 2533.07,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2aa"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4e"
+  }
+},{
+  "_id": ObjectId("638530b57bdfc89cd6f05236"),
+  "nombre": "nostrud ullamco",
+  "porcentaje_precision": 88.9,
+  "medicion": [
+    {
+      "fecha": new Date("11-05-2006"),
+      "medicion_neta": 4228.289,
+      "medicion_bruta": 9339.226,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b6"
+      }
+    },
+    {
+      "fecha": new Date("05-01-1992"),
+      "medicion_neta": 4561.405,
+      "medicion_bruta": 6591.655,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b4"
+      }
+    },
+    {
+      "fecha": new Date("17-12-2005"),
+      "medicion_neta": 4640.317,
+      "medicion_bruta": 2100.877,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b6"
+      }
+    },
+    {
+      "fecha": new Date("06-02-2021"),
+      "medicion_neta": 7425.761,
+      "medicion_bruta": 7485.796,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b3"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4f"
+  }
+},{
+  "_id": ObjectId("638530b57bdfc89cd6f05237"),
+  "nombre": "elit non do",
+  "porcentaje_precision": 12.42,
+  "medicion": [
+    {
+      "fecha": new Date("11-12-2011"),
+      "medicion_neta": 5433.886,
+      "medicion_bruta": 2483.383,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2aa"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad50"
+  }
+},{
+  "_id": ObjectId("638530b57bdfc89cd6f05238"),
+  "nombre": "ipsum non ad deserunt",
+  "porcentaje_precision": 47.46,
+  "medicion": [
+    {
+      "fecha": new Date("03-01-2021"),
+      "medicion_neta": 6644.405,
+      "medicion_bruta": 4805.521,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b2"
+      }
+    },
+    {
+      "fecha": new Date("16-06-1995"),
+      "medicion_neta": 469.221,
+      "medicion_bruta": 1420.637,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b0"
+      }
+    },
+    {
+      "fecha": new Date("24-02-2000"),
+      "medicion_neta": 7179.688,
+      "medicion_bruta": 5626.282,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ad"
+      }
+    },
+    {
+      "fecha": new Date("24-08-2020"),
+      "medicion_neta": 4545.585,
+      "medicion_bruta": 9381.834,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2aa"
+      }
+    },
+    {
+      "fecha": new Date("24-09-2003"),
+      "medicion_neta": 7647.081,
+      "medicion_bruta": 3811.411,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b6"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad51"
+  }
+},{
+  "_id": ObjectId("638530b57bdfc89cd6f05239"),
+  "nombre": "irure enim tempor eiusmod amet",
+  "porcentaje_precision": 26.97,
+  "medicion": [
+    {
+      "fecha": new Date("05-11-1995"),
+      "medicion_neta": 6673.924,
+      "medicion_bruta": 6502.755,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b0"
+      }
+    },
+    {
+      "fecha": new Date("30-07-2020"),
+      "medicion_neta": 6498.406,
+      "medicion_bruta": 8651.347,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b1"
+      }
+    },
+    {
+      "fecha": new Date("30-12-1999"),
+      "medicion_neta": 9836.505,
+      "medicion_bruta": 5898.617,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b3"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad52"
+  }
+}])
+
+db.Trabaja.insertMany([{
+  "_id": ObjectId("6383a6454e694899bbe87a0f"),
+  "fecha_inicio": new Date("23-12-2007"),
+  "fecha_finalizacion": new Date("31-01-1998"),
+  "personal": ObjectId( "6383a3a20a34b7480f7fa06a")
+  ,
+  "instalacion": ObjectId( "638649e878a041870fa5ad49")
+},{
+  "_id": ObjectId("6383a6454e694899bbe87a10"),
+  "fecha_inicio": new Date("27-07-2022"),
+  "fecha_finalizacion": new Date("09-12-2019"),
+  "personal": ObjectId( "6383a3a20a34b7480f7fa069")
+  ,
+  "instalacion": ObjectId( "638649e878a041870fa5ad4a")
+},{
+  "_id": ObjectId("6383a6454e694899bbe87a11"),
+  "fecha_inicio": new Date("17-12-2015"),
+  "fecha_finalizacion": new Date("17-03-2002"),
+  "personal": ObjectId( "6383a3a20a34b7480f7fa064")
+  ,
+  "instalacion": ObjectId( "638649e878a041870fa5ad4b")
+},{
+  "_id": ObjectId("6383a6454e694899bbe87a12"),
+  "fecha_inicio": new Date("03-06-2007"),
+  "fecha_finalizacion": new Date("18-05-2001"),
+  "personal": ObjectId( "6383a3a20a34b7480f7fa06a")
+  ,
+  "instalacion": ObjectId( "638649e878a041870fa5ad4c")
+},{
+  "_id": ObjectId("6383a6454e694899bbe87a13"),
+  "fecha_inicio": new Date("15-06-1990"),
+  "fecha_finalizacion": new Date("06-03-2005"),
+  "personal": ObjectId( "6383a3a20a34b7480f7fa068")
+  ,
+  "instalacion": ObjectId( "638649e878a041870fa5ad4d")
+},{
+  "_id": ObjectId("6383a6454e694899bbe87a14"),
+  "fecha_inicio": new Date("09-12-2020"),
+  "fecha_finalizacion": new Date("13-02-2011"),
+  "personal": ObjectId( "6383a3a20a34b7480f7fa067")
+  ,
+  "instalacion": ObjectId( "638649e878a041870fa5ad4e")
+},{
+  "_id": ObjectId("6383a6454e694899bbe87a15"),
+  "fecha_inicio": new Date("27-09-2011"),
+  "fecha_finalizacion": new Date("04-12-1990"),
+  "personal": ObjectId( "6383a3a20a34b7480f7fa068")
+  ,
+  "instalacion": ObjectId( "638649e878a041870fa5ad4f")
+},{
+  "_id": ObjectId("6383a6454e694899bbe87a16"),
+  "fecha_inicio": new Date("17-08-2021"),
+  "fecha_finalizacion": new Date("14-05-2005"),
+  "personal": ObjectId( "6383a3a20a34b7480f7fa068")
+  ,
+  "instalacion": ObjectId( "638649e878a041870fa5ad50")
+},{
+  "_id": ObjectId("6383a6454e694899bbe87a17"),
+  "fecha_inicio": new Date("24-06-2000"),
+  "fecha_finalizacion": new Date("01-09-1991"),
+  "personal": ObjectId( "6383a3a20a34b7480f7fa065")
+  ,
+  "instalacion": ObjectId( "638649e878a041870fa5ad51")
+},{
+  "_id": ObjectId("6383a6454e694899bbe87a18"),
+  "fecha_inicio": new Date("09-03-1995"),
+  "fecha_finalizacion": new Date("01-12-2022"),
+  "personal": ObjectId( "6383a3a20a34b7480f7fa06d")
+  ,
+  "instalacion": ObjectId( "638649e878a041870fa5ad52")
+}])
+
+db.Almacena.insertMany([{
+  "_id": ObjectId("6386997aa17abc1502d219be"),
+  "cantidad": 9,
+  "fecha": new Date("26-07-2015"),
+  "hora": "01:01",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8948"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad49"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219bf"),
+  "cantidad": 3,
+  "fecha": new Date("26-07-2019"),
+  "hora": "09:59",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8947"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4a"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219c0"),
+  "cantidad": 8,
+  "fecha": new Date("16-05-2018"),
+  "hora": "02:17",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8949"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4b"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219c1"),
+  "cantidad": 18,
+  "fecha": new Date("03-06-2000"),
+  "hora": "02:21",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894a"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4c"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219c2"),
+  "cantidad": 17,
+  "fecha": new Date("30-07-1997"),
+  "hora": "03:37",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4d"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219c3"),
+  "cantidad": 11,
+  "fecha": new Date("16-01-2018"),
+  "hora": "11:45",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894c"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4e"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219c4"),
+  "cantidad": 3,
+  "fecha": new Date("15-09-2017"),
+  "hora": "09:54",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894d"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4f"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219c5"),
+  "cantidad": 16,
+  "fecha": new Date("02-09-2012"),
+  "hora": "11:16",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894e"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad50"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219c6"),
+  "cantidad": 12,
+  "fecha": new Date("06-07-1990"),
+  "hora": "07:40",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894f"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad51"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219c7"),
+  "cantidad": 20,
+  "fecha": new Date("30-04-2007"),
+  "hora": "03:31",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8950"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad52"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219c8"),
+  "cantidad": 17,
+  "fecha": new Date("04-10-2005"),
+  "hora": "07:55",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
+  "instalacion": {
+    "$oid": "638697443ec41448f4794802"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219c9"),
+  "cantidad": 20,
+  "fecha": new Date("25-08-1993"),
+  "hora": "02:00",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894c"
+  },
+  "instalacion": {
+    "$oid": "638697443ec41448f4794803"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219ca"),
+  "cantidad": 4,
+  "fecha": new Date("12-08-2006"),
+  "hora": "06:19",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8948"
+  },
+  "instalacion": {
+    "$oid": "638697443ec41448f4794804"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219cb"),
+  "cantidad": 20,
+  "fecha": new Date("29-11-2002"),
+  "hora": "12:33",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8947"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad49"
+  }
+},{
+  "_id": ObjectId("6386997aa17abc1502d219cc"),
+  "cantidad": 18,
+  "fecha": new Date("12-01-2018"),
+  "hora": "08:38",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894c"
+  },
+  "instalacion": {
+    "$oid": "638697443ec41448f4794805"
+  }
+}])
+
+db.Almacena_Tipo.insertMany([{
+  "_id": ObjectId("6383c5ae62100d559c6edd56"),
+  "fecha_inicio": new Date("01-06-2009"),
+  "fecha_fin": new Date("02-01-2019"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8947"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ab"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd57"),
+  "fecha_inicio": new Date("06-11-1995"),
+  "fecha_fin": new Date("11-05-2012"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894d"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b3"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd58"),
+  "fecha_inicio": new Date("19-07-2011"),
+  "fecha_fin": new Date("06-05-1990"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894f"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ad"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd59"),
+  "fecha_inicio": new Date("09-02-1993"),
+  "fecha_fin": new Date("22-05-2012"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8949"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b4"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd5a"),
+  "fecha_inicio": new Date("23-06-2019"),
+  "fecha_fin": new Date("11-10-2021"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8948"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b0"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd5b"),
+  "fecha_inicio": new Date("11-07-1996"),
+  "fecha_fin": new Date("22-04-2008"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2af"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd5c"),
+  "fecha_inicio": new Date("18-02-1999"),
+  "fecha_fin": new Date("09-02-1996"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8947"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b1"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd5d"),
+  "fecha_inicio": new Date("03-08-2006"),
+  "fecha_fin": new Date("28-08-2010"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894d"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b2"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd5e"),
+  "fecha_inicio": new Date("24-02-2020"),
+  "fecha_fin": new Date("02-06-2000"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8950"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2a8"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd5f"),
+  "fecha_inicio": new Date("10-12-1999"),
+  "fecha_fin": new Date("24-05-2000"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894d"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2a8"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd60"),
+  "fecha_inicio": new Date("08-07-2021"),
+  "fecha_fin": new Date("02-07-2009"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2a8"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd61"),
+  "fecha_inicio": new Date("06-12-1992"),
+  "fecha_fin": new Date("27-04-1994"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8948"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ae"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd62"),
+  "fecha_inicio": new Date("15-08-2002"),
+  "fecha_fin": new Date("03-06-2021"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8949"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ad"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd63"),
+  "fecha_inicio": new Date("13-10-1998"),
+  "fecha_fin": new Date("21-10-2011"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b3"
+  }
+},{
+  "_id": ObjectId("6383c5ae62100d559c6edd64"),
+  "fecha_inicio": new Date("27-03-2011"),
+  "fecha_fin": new Date("04-03-2017"),
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894c"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2aa"
+  }
+}])
+
+db.Asocia.insertMany([{
+  "_id": ObjectId("6383c5af62100d559c6edd65"),
+  "fecha_inicio": new Date("22-04-1997"),
+  "fecha_fin": new Date("02-09-1996"),
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad49"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b3"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd66"),
+  "fecha_inicio": new Date("20-06-2022"),
+  "fecha_fin": new Date("03-05-1997"),
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4a"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b1"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd67"),
+  "fecha_inicio": new Date("12-07-2004"),
+  "fecha_fin": new Date("25-11-1991"),
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4b"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b3"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd68"),
+  "fecha_inicio": new Date("14-12-2012"),
+  "fecha_fin": new Date("13-06-1991"),
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4c"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2af"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd69"),
+  "fecha_inicio": new Date("17-08-2021"),
+  "fecha_fin": new Date("25-01-2022"),
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4d"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ac"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd6a"),
+  "fecha_inicio": new Date("28-06-2012"),
+  "fecha_fin": new Date("22-02-2021"),
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4e"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b3"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd6b"),
+  "fecha_inicio": new Date("28-11-2020"),
+  "fecha_fin": new Date("21-02-2001"),
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4f"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b6"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd6c"),
+  "fecha_inicio": new Date("27-10-2007"),
+  "fecha_fin": new Date("24-06-2011"),
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad50"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b1"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd6d"),
+  "fecha_inicio": new Date("04-11-2019"),
+  "fecha_fin": new Date("10-05-1996"),
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad51"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ae"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd6e"),
+  "fecha_inicio": new Date("02-04-1991"),
+  "fecha_fin": new Date("03-09-2006"),
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad52"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ac"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd6f"),
+  "fecha_inicio": new Date("17-10-2000"),
+  "fecha_fin": new Date("11-03-1993"),
+  "instalacion": {
+    "$oid": "638697443ec41448f4794802"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ad"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd70"),
+  "fecha_inicio": new Date("02-03-1998"),
+  "fecha_fin": new Date("24-01-2007"),
+  "instalacion": {
+    "$oid": "638697443ec41448f4794803"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ae"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd71"),
+  "fecha_inicio": new Date("11-01-2007"),
+  "fecha_fin": new Date("13-11-2002"),
+  "instalacion": {
+    "$oid": "638697443ec41448f4794804"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b0"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd72"),
+  "fecha_inicio": new Date("09-04-2012"),
+  "fecha_fin": new Date("27-09-2010"),
+  "instalacion": {
+    "$oid": "638697443ec41448f4794805"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b5"
+  }
+},{
+  "_id": ObjectId("6383c5af62100d559c6edd73"),
+  "fecha_inicio": new Date("19-01-2017"),
+  "fecha_fin": new Date("24-08-1990"),
+  "instalacion": {
+    "$oid": "638697443ec41448f4794806"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ad"
+  }
+}])
