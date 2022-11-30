@@ -1,107 +1,196 @@
-[
-  {
-    "cantidad": 9,
-    "fecha": new Date("02-06-1992"),
-    "hora": "01:01",
-    "tanque": "63839f36e8135414fa57c2bf",
-    "instalacion": "63839e6ae8135414fa57c2a1"
+[{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219be"
   },
-  {
-    "cantidad": 3,
-    "fecha": new Date("26-07-2019"),
-    "hora": "09:59",
-    "tanque": "63839f36e8135414fa57c2c3",
-    "instalacion": "63839e6ae8135414fa57c299"
+  "cantidad": 9,
+  "fecha": "26-07-2015",
+  "hora": "01:01",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8948"
   },
-  {
-    "cantidad": 8,
-    "fecha": new Date("16-05-2018"),
-    "hora": "02:17",
-    "tanque": "63839f36e8135414fa57c2bd",
-    "instalacion": "63839e6ae8135414fa57c2a1"
-  },
-  {
-    "cantidad": 18,
-    "fecha": new Date("03-06-2000"),
-    "hora": "02:21",
-    "tanque": "63839f36e8135414fa57c2c5",
-    "instalacion": "63839e6ae8135414fa57c29e"
-  },
-  {
-    "cantidad": 17,
-    "fecha": new Date("30-07-1997"),
-    "hora": "03:37",
-    "tanque": "63839f36e8135414fa57c2c2",
-    "instalacion": "63839e6ae8135414fa57c29e"
-  },
-  {
-    "cantidad": 11,
-    "fecha": new Date("16-01-2018"),
-    "hora": "11:45",
-    "tanque": "63839f36e8135414fa57c2bd",
-    "instalacion": "63839e6ae8135414fa57c2a1"
-  },
-  {
-    "cantidad": 3,
-    "fecha": new Date("15-09-2017"),
-    "hora": "09:54",
-    "tanque": "63839f36e8135414fa57c2bd",
-    "instalacion": "63839e6ae8135414fa57c299"
-  },
-  {
-    "cantidad": 16,
-    "fecha": new Date("02-09-2012"),
-    "hora": "11:16",
-    "tanque": "63839f36e8135414fa57c2c0",
-    "instalacion": "63839e6ae8135414fa57c29b"
-  },
-  {
-    "cantidad": 12,
-    "fecha": new Date("06-07-1990"),
-    "hora": "07:40",
-    "tanque": "63839f36e8135414fa57c2be",
-    "instalacion": "63839e6ae8135414fa57c29b"
-  },
-  {
-    "cantidad": 20,
-    "fecha": new Date("30-04-2007"),
-    "hora": "03:31",
-    "tanque": "63839f36e8135414fa57c2c3",
-    "instalacion": "63839e6ae8135414fa57c29f"
-  },
-  {
-    "cantidad": 17,
-    "fecha": new Date("04-10-2005"),
-    "hora": "07:55",
-    "tanque": "63839f36e8135414fa57c2bf",
-    "instalacion": "63839e6ae8135414fa57c29d"
-  },
-  {
-    "cantidad": 20,
-    "fecha": new Date("25-08-1993"),
-    "hora": "02:00",
-    "tanque": "63839f36e8135414fa57c2c3",
-    "instalacion": "63839e6ae8135414fa57c29e"
-  },
-  {
-    "cantidad": 4,
-    "fecha": new Date("12-08-2006"),
-    "hora": "06:19",
-    "tanque": "63839f36e8135414fa57c2c1",
-    "instalacion": "63839e6ae8135414fa57c2a2"
-  },
-  {
-    "cantidad": 20,
-    "fecha": new Date("29-11-2002"),
-    "hora": "12:33",
-    "tanque": "63839f36e8135414fa57c2bd",
-    "instalacion": "63839e6ae8135414fa57c2a1"
-  },
-  {
-    "cantidad": 18,
-    "fecha": new Date("12-01-2018"),
-    "hora": "08:38",
-    "tanque": "63839f36e8135414fa57c2c1",
-    "instalacion": "63839e6ae8135414fa57c2a1"
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad49"
   }
-]
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219bf"
+  },
+  "cantidad": 3,
+  "fecha": "26-07-2019",
+  "hora": "09:59",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8947"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4a"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219c0"
+  },
+  "cantidad": 8,
+  "fecha": "16-05-2018",
+  "hora": "02:17",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8949"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4b"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219c1"
+  },
+  "cantidad": 18,
+  "fecha": "03-06-2000",
+  "hora": "02:21",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894a"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4c"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219c2"
+  },
+  "cantidad": 17,
+  "fecha": "30-07-1997",
+  "hora": "03:37",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4d"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219c3"
+  },
+  "cantidad": 11,
+  "fecha": "16-01-2018",
+  "hora": "11:45",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894c"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4e"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219c4"
+  },
+  "cantidad": 3,
+  "fecha": "15-09-2017",
+  "hora": "09:54",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894d"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4f"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219c5"
+  },
+  "cantidad": 16,
+  "fecha": "02-09-2012",
+  "hora": "11:16",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894e"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad50"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219c6"
+  },
+  "cantidad": 12,
+  "fecha": "06-07-1990",
+  "hora": "07:40",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894f"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad51"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219c7"
+  },
+  "cantidad": 20,
+  "fecha": "30-04-2007",
+  "hora": "03:31",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8950"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad52"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219c8"
+  },
+  "cantidad": 17,
+  "fecha": "04-10-2005",
+  "hora": "07:55",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
+  "instalacion": {
+    "$oid": "638697443ec41448f4794802"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219c9"
+  },
+  "cantidad": 20,
+  "fecha": "25-08-1993",
+  "hora": "02:00",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894c"
+  },
+  "instalacion": {
+    "$oid": "638697443ec41448f4794803"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219ca"
+  },
+  "cantidad": 4,
+  "fecha": "12-08-2006",
+  "hora": "06:19",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8948"
+  },
+  "instalacion": {
+    "$oid": "638697443ec41448f4794804"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219cb"
+  },
+  "cantidad": 20,
+  "fecha": "29-11-2002",
+  "hora": "12:33",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8947"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad49"
+  }
+},{
+  "_id": {
+    "$oid": "6386997aa17abc1502d219cc"
+  },
+  "cantidad": 18,
+  "fecha": "12-01-2018",
+  "hora": "08:38",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894c"
+  },
+  "instalacion": {
+    "$oid": "638697443ec41448f4794805"
+  }
+}]

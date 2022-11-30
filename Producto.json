@@ -1,60 +1,105 @@
 [{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2a8"
+  },
   "nombre": "est eiusmod",
   "detalle": "Consequat pariatur velit exercitation cillum nostrud dolore reprehenderit exercitation adipisicing.",
   "tipo": "ipsum id ipsum do"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2a9"
+  },
   "nombre": "qui ea cillum ipsum qui",
   "detalle": "Ea ullamco sunt pariatur dolore anim enim nostrud.",
   "tipo": "non reprehenderit eu sunt"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2aa"
+  },
   "nombre": "sint adipisicing anim",
   "detalle": "Mollit nulla esse quis in consequat sint ut consectetur adipisicing aliquip fugiat.",
   "tipo": "ex"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2ab"
+  },
   "nombre": "voluptate nulla et veniam ad",
   "detalle": "Ut ut aliqua adipisicing elit consequat fugiat.",
   "tipo": "sint et sit dolore aliqua"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2ac"
+  },
   "nombre": "enim sint occaecat cillum",
   "detalle": "Irure culpa ad eu ex ea duis culpa reprehenderit.",
   "tipo": "sunt exercitation anim ex"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2ad"
+  },
   "nombre": "nulla Lorem",
   "detalle": "Ipsum voluptate mollit consequat dolore nisi aute pariatur.",
   "tipo": "consequat in excepteur Lorem proident"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2ae"
+  },
   "nombre": "enim",
   "detalle": "Ut mollit pariatur aliquip veniam minim aliqua magna labore non nisi.",
   "tipo": "culpa veniam labore aliqua incididunt"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2af"
+  },
   "nombre": "ea",
   "detalle": "Et commodo eiusmod laboris laboris cupidatat irure.",
   "tipo": "aliqua ad eiusmod"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2b0"
+  },
   "nombre": "non deserunt nisi velit dolore",
   "detalle": "Ullamco excepteur elit sit exercitation deserunt sint ipsum ullamco commodo.",
   "tipo": "ut aliqua adipisicing"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2b1"
+  },
   "nombre": "consectetur ex aute",
   "detalle": "Magna veniam veniam duis excepteur labore minim occaecat.",
   "tipo": "tempor cupidatat ipsum commodo"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2b2"
+  },
   "nombre": "occaecat",
   "detalle": "Amet sint anim magna et exercitation ullamco eiusmod consectetur sunt nostrud proident in enim.",
   "tipo": "duis fugiat"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2b3"
+  },
   "nombre": "nisi",
   "detalle": "Sunt ullamco nisi fugiat duis excepteur velit ex veniam.",
   "tipo": "enim esse culpa voluptate"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2b4"
+  },
   "nombre": "dolor exercitation nostrud esse",
   "detalle": "Sunt id id aliquip enim in.",
   "tipo": "voluptate fugiat laboris est dolore"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2b5"
+  },
   "nombre": "eiusmod sit officia in",
   "detalle": "Incididunt aliquip nisi enim dolor proident anim fugiat cillum pariatur do.",
   "tipo": "in commodo elit mollit"
 },{
+  "_id": {
+    "$oid": "63839eaee8135414fa57c2b6"
+  },
   "nombre": "nulla non minim",
   "detalle": "Sit proident deserunt cupidatat deserunt exercitation nisi aute velit ea velit mollit laboris irure occaecat.",
   "tipo": "culpa labore duis"

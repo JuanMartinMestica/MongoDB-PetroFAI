@@ -1,92 +1,181 @@
-[
-  {
-    "fecha_inicio": new Date("22-04-1997"),
-    "fecha_fin": new Date("02-09-1996"),
-    "instalacion": "63839e6ae8135414fa57c2a2",
-    "producto": "63839eaee8135414fa57c2b3"
+[{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd65"
   },
-  {
-    "fecha_inicio": new Date("20-06-2022"),
-    "fecha_fin": new Date("03-05-1997"),
-    "instalacion": "63839e6ae8135414fa57c299",
-    "producto": "63839eaee8135414fa57c2b1"
+  "fecha_inicio": "22-04-1997",
+  "fecha_fin": "02-09-1996",
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad49"
   },
-  {
-    "fecha_inicio": new Date("12-07-2004"),
-    "fecha_fin": new Date("25-11-1991"),
-    "instalacion": "63839e6ae8135414fa57c29c",
-    "producto": "63839eaee8135414fa57c2b3"
-  },
-  {
-    "fecha_inicio": new Date("14-12-2012"),
-    "fecha_fin": new Date("13-06-1991"),
-    "instalacion": "63839e6ae8135414fa57c2a1",
-    "producto": "63839eaee8135414fa57c2af"
-  },
-  {
-    "fecha_inicio": new Date("17-08-2021"),
-    "fecha_fin": new Date("25-01-2022"),
-    "instalacion": "63839e6ae8135414fa57c2a2",
-    "producto": "63839eaee8135414fa57c2ac"
-  },
-  {
-    "fecha_inicio": new Date("28-06-2012"),
-    "fecha_fin": new Date("22-02-2021"),
-    "instalacion": "63839e6ae8135414fa57c29f",
-    "producto": "63839eaee8135414fa57c2b3"
-  },
-  {
-    "fecha_inicio": new Date("28-11-2020"),
-    "fecha_fin": new Date("21-02-2001"),
-    "instalacion": "63839e6ae8135414fa57c29d",
-    "producto": "63839eaee8135414fa57c2b6"
-  },
-  {
-    "fecha_inicio": new Date("27-10-2007"),
-    "fecha_fin": new Date("24-06-2011"),
-    "instalacion": "63839e6ae8135414fa57c29a",
-    "producto": "63839eaee8135414fa57c2b1"
-  },
-  {
-    "fecha_inicio": new Date("04-11-2019"),
-    "fecha_fin": new Date("10-05-1996"),
-    "instalacion": "63839e6ae8135414fa57c29e",
-    "producto": "63839eaee8135414fa57c2ae"
-  },
-  {
-    "fecha_inicio": new Date("02-04-1991"),
-    "fecha_fin": new Date("03-09-2006"),
-    "instalacion": "63839e6ae8135414fa57c29b",
-    "producto": "63839eaee8135414fa57c2ac"
-  },
-  {
-    "fecha_inicio": new Date("17-10-2000"),
-    "fecha_fin": new Date("11-03-1993"),
-    "instalacion": "63839e6ae8135414fa57c29a",
-    "producto": "63839eaee8135414fa57c2ad"
-  },
-  {
-    "fecha_inicio": new Date("02-03-1998"),
-    "fecha_fin": new Date("24-01-2007"),
-    "instalacion": "63839e6ae8135414fa57c29a",
-    "producto": "63839eaee8135414fa57c2ae"
-  },
-  {
-    "fecha_inicio": new Date("11-01-2007"),
-    "fecha_fin": new Date("13-11-2002"),
-    "instalacion": "63839e6ae8135414fa57c29e",
-    "producto": "63839eaee8135414fa57c2b0"
-  },
-  {
-    "fecha_inicio": new Date("09-04-2012"),
-    "fecha_fin": new Date("27-09-2010"),
-    "instalacion": "63839e6ae8135414fa57c29c",
-    "producto": "63839eaee8135414fa57c2b5"
-  },
-  {
-    "fecha_inicio": new Date("19-01-2017"),
-    "fecha_fin": new Date("24-08-1990"),
-    "instalacion": "63839e6ae8135414fa57c29d",
-    "producto": "63839eaee8135414fa57c2ad"
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b3"
   }
-]
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd66"
+  },
+  "fecha_inicio": "20-06-2022",
+  "fecha_fin": "03-05-1997",
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4a"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b1"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd67"
+  },
+  "fecha_inicio": "12-07-2004",
+  "fecha_fin": "25-11-1991",
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4b"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b3"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd68"
+  },
+  "fecha_inicio": "14-12-2012",
+  "fecha_fin": "13-06-1991",
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4c"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2af"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd69"
+  },
+  "fecha_inicio": "17-08-2021",
+  "fecha_fin": "25-01-2022",
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4d"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ac"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd6a"
+  },
+  "fecha_inicio": "28-06-2012",
+  "fecha_fin": "22-02-2021",
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4e"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b3"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd6b"
+  },
+  "fecha_inicio": "28-11-2020",
+  "fecha_fin": "21-02-2001",
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4f"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b6"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd6c"
+  },
+  "fecha_inicio": "27-10-2007",
+  "fecha_fin": "24-06-2011",
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad50"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b1"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd6d"
+  },
+  "fecha_inicio": "04-11-2019",
+  "fecha_fin": "10-05-1996",
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad51"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ae"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd6e"
+  },
+  "fecha_inicio": "02-04-1991",
+  "fecha_fin": "03-09-2006",
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad52"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ac"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd6f"
+  },
+  "fecha_inicio": "17-10-2000",
+  "fecha_fin": "11-03-1993",
+  "instalacion": {
+    "$oid": "638697443ec41448f4794802"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ad"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd70"
+  },
+  "fecha_inicio": "02-03-1998",
+  "fecha_fin": "24-01-2007",
+  "instalacion": {
+    "$oid": "638697443ec41448f4794803"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ae"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd71"
+  },
+  "fecha_inicio": "11-01-2007",
+  "fecha_fin": "13-11-2002",
+  "instalacion": {
+    "$oid": "638697443ec41448f4794804"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b0"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd72"
+  },
+  "fecha_inicio": "09-04-2012",
+  "fecha_fin": "27-09-2010",
+  "instalacion": {
+    "$oid": "638697443ec41448f4794805"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b5"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5af62100d559c6edd73"
+  },
+  "fecha_inicio": "19-01-2017",
+  "fecha_fin": "24-08-1990",
+  "instalacion": {
+    "$oid": "638697443ec41448f4794806"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ad"
+  }
+}]

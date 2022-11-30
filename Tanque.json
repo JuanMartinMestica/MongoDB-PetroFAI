@@ -1,4 +1,7 @@
 [{
+  "_id": {
+    "$oid": "63864366fe7157ccc94a8947"
+  },
   "tag": "230reprehenderit",
   "capacidad_total": 4575.1459,
   "capacidad_disponible": 5115.2601,
@@ -7,6 +10,9 @@
     "$oid": "63863c498afc52e9b8648fc2"
   }
 },{
+  "_id": {
+    "$oid": "63864366fe7157ccc94a8948"
+  },
   "tag": "967qui",
   "capacidad_total": 4950.2794,
   "capacidad_disponible": 5508.6722,
@@ -15,6 +21,9 @@
     "$oid": "63863c498afc52e9b8648fc2"
   }
 },{
+  "_id": {
+    "$oid": "63864366fe7157ccc94a8949"
+  },
   "tag": "402amet",
   "capacidad_total": 3338.7829,
   "capacidad_disponible": 7766.3344,
@@ -23,6 +32,9 @@
     "$oid": "63863c498afc52e9b8648fc5"
   }
 },{
+  "_id": {
+    "$oid": "63864366fe7157ccc94a894a"
+  },
   "tag": "593veniam",
   "capacidad_total": 7060.0103,
   "capacidad_disponible": 369.6027,
@@ -31,6 +43,9 @@
     "$oid": "63863c498afc52e9b8648fc3"
   }
 },{
+  "_id": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
   "tag": "42pariatur",
   "capacidad_total": 8410.0891,
   "capacidad_disponible": 4278.5031,
@@ -39,6 +54,9 @@
     "$oid": "63863c498afc52e9b8648fc4"
   }
 },{
+  "_id": {
+    "$oid": "63864366fe7157ccc94a894c"
+  },
   "tag": "677nisi",
   "capacidad_total": 890.4184,
   "capacidad_disponible": 7602.9176,
@@ -47,6 +65,9 @@
     "$oid": "63863c498afc52e9b8648fc3"
   }
 },{
+  "_id": {
+    "$oid": "63864366fe7157ccc94a894d"
+  },
   "tag": "209nulla",
   "capacidad_total": 3353.2439,
   "capacidad_disponible": 4592.7663,
@@ -55,6 +76,9 @@
     "$oid": "63863c498afc52e9b8648fc5"
   }
 },{
+  "_id": {
+    "$oid": "63864366fe7157ccc94a894e"
+  },
   "tag": "31occaecat",
   "capacidad_total": 3384.3476,
   "capacidad_disponible": 7248.9109,
@@ -63,6 +87,9 @@
     "$oid": "63863c498afc52e9b8648fc4"
   }
 },{
+  "_id": {
+    "$oid": "63864366fe7157ccc94a894f"
+  },
   "tag": "948Lorem",
   "capacidad_total": 7941.3922,
   "capacidad_disponible": 9416.8432,
@@ -71,6 +98,9 @@
     "$oid": "63863c498afc52e9b8648fc3"
   }
 },{
+  "_id": {
+    "$oid": "63864366fe7157ccc94a8950"
+  },
   "tag": "560ea",
   "capacidad_total": 4094.7862,
   "capacidad_disponible": 1684.3963,

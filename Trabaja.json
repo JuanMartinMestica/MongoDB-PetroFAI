@@ -1,62 +1,121 @@
-[
-  {
-    "fecha_inicio": new Date("23-12-2007"),
-    "fecha_finalizacion": new Date("31-01-1998"),
-    "personal": "6383a3a20a34b7480f7fa06a",
-    "instalacion": "63839e6ae8135414fa57c29b"
+[{
+  "_id": {
+    "$oid": "6383a6454e694899bbe87a0f"
   },
-  {
-    "fecha_inicio": new Date("27-07-2022"),
-    "fecha_finalizacion": new Date("09-12-2019"),
-    "personal": "6383a3a20a34b7480f7fa069",
-    "instalacion": "63839e6ae8135414fa57c299"
+  "fecha_inicio": "23-12-2007",
+  "fecha_finalizacion": "31-01-1998",
+  "personal": {
+    "$oid": "6383a3a20a34b7480f7fa06a"
   },
-  {
-    "fecha_inicio": new Date("17-12-2015"),
-    "fecha_finalizacion": new Date("17-03-2002"),
-    "personal": "6383a3a20a34b7480f7fa064",
-    "instalacion": "63839e6ae8135414fa57c29b"
-  },
-  {
-    "fecha_inicio": new Date("03-06-2007"),
-    "fecha_finalizacion": new Date("18-05-2001"),
-    "personal": "6383a3a20a34b7480f7fa06a",
-    "instalacion": "63839e6ae8135414fa57c29a"
-  },
-  {
-    "fecha_inicio": new Date("15-06-1990"),
-    "fecha_finalizacion": new Date("06-03-2005"),
-    "personal": "6383a3a20a34b7480f7fa068",
-    "instalacion": "63839e6ae8135414fa57c2a2"
-  },
-  {
-    "fecha_inicio": new Date("09-12-2020"),
-    "fecha_finalizacion": new Date("13-02-2011"),
-    "personal": "6383a3a20a34b7480f7fa067",
-    "instalacion": "63839e6ae8135414fa57c2a0"
-  },
-  {
-    "fecha_inicio": new Date("27-09-2011"),
-    "fecha_finalizacion": new Date("04-12-1990"),
-    "personal": "6383a3a20a34b7480f7fa068",
-    "instalacion": "63839e6ae8135414fa57c29c"
-  },
-  {
-    "fecha_inicio": new Date("17-08-2021"),
-    "fecha_finalizacion": new Date("14-05-2005"),
-    "personal": "6383a3a20a34b7480f7fa068",
-    "instalacion": "63839e6ae8135414fa57c2a2"
-  },
-  {
-    "fecha_inicio": new Date("24-06-2000"),
-    "fecha_finalizacion": new Date("01-09-1991"),
-    "personal": "6383a3a20a34b7480f7fa065",
-    "instalacion": "63839e6ae8135414fa57c29b"
-  },
-  {
-    "fecha_inicio": new Date("09-03-1995"),
-    "fecha_finalizacion": new Date("01-12-1994"),
-    "personal": "6383a3a20a34b7480f7fa067",
-    "instalacion": "63839e6ae8135414fa57c2a1"
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad49"
   }
-]
+},{
+  "_id": {
+    "$oid": "6383a6454e694899bbe87a10"
+  },
+  "fecha_inicio": "27-07-2022",
+  "fecha_finalizacion": "09-12-2019",
+  "personal": {
+    "$oid": "6383a3a20a34b7480f7fa069"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4a"
+  }
+},{
+  "_id": {
+    "$oid": "6383a6454e694899bbe87a11"
+  },
+  "fecha_inicio": "17-12-2015",
+  "fecha_finalizacion": "17-03-2002",
+  "personal": {
+    "$oid": "6383a3a20a34b7480f7fa064"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4b"
+  }
+},{
+  "_id": {
+    "$oid": "6383a6454e694899bbe87a12"
+  },
+  "fecha_inicio": "03-06-2007",
+  "fecha_finalizacion": "18-05-2001",
+  "personal": {
+    "$oid": "6383a3a20a34b7480f7fa06a"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4c"
+  }
+},{
+  "_id": {
+    "$oid": "6383a6454e694899bbe87a13"
+  },
+  "fecha_inicio": "15-06-1990",
+  "fecha_finalizacion": "06-03-2005",
+  "personal": {
+    "$oid": "6383a3a20a34b7480f7fa068"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4d"
+  }
+},{
+  "_id": {
+    "$oid": "6383a6454e694899bbe87a14"
+  },
+  "fecha_inicio": "09-12-2020",
+  "fecha_finalizacion": "13-02-2011",
+  "personal": {
+    "$oid": "6383a3a20a34b7480f7fa067"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4e"
+  }
+},{
+  "_id": {
+    "$oid": "6383a6454e694899bbe87a15"
+  },
+  "fecha_inicio": "27-09-2011",
+  "fecha_finalizacion": "04-12-1990",
+  "personal": {
+    "$oid": "6383a3a20a34b7480f7fa068"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4f"
+  }
+},{
+  "_id": {
+    "$oid": "6383a6454e694899bbe87a16"
+  },
+  "fecha_inicio": "17-08-2021",
+  "fecha_finalizacion": "14-05-2005",
+  "personal": {
+    "$oid": "6383a3a20a34b7480f7fa068"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad50"
+  }
+},{
+  "_id": {
+    "$oid": "6383a6454e694899bbe87a17"
+  },
+  "fecha_inicio": "24-06-2000",
+  "fecha_finalizacion": "01-09-1991",
+  "personal": {
+    "$oid": "6383a3a20a34b7480f7fa065"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad51"
+  }
+},{
+  "_id": {
+    "$oid": "6383a6454e694899bbe87a18"
+  },
+  "fecha_inicio": "09-03-1995",
+  "fecha_finalizacion": "01-12-1994",
+  "personal": {
+    "$oid": "6383a3a20a34b7480f7fa067"
+  },
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad52"
+  }
+}]

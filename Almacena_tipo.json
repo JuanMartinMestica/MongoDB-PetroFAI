@@ -1,92 +1,181 @@
-[
-  {
-    "fecha_inicio": new Date("01-06-2009"),
-    "fecha_fin": new Date("02-01-2019"),
-    "tanque": "63839f36e8135414fa57c2be",
-    "producto": "63839eaee8135414fa57c2ab"
+[{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd56"
   },
-  {
-    "fecha_inicio": new Date("06-11-1995"),
-    "fecha_fin": new Date("11-05-2012"),
-    "tanque": "63839f36e8135414fa57c2bf",
-    "producto": "63839eaee8135414fa57c2b3"
+  "fecha_inicio": "01-06-2009",
+  "fecha_fin": "02-01-2019",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8947"
   },
-  {
-    "fecha_inicio": new Date("19-07-2011"),
-    "fecha_fin": new Date("06-05-1990"),
-    "tanque": "63839f36e8135414fa57c2bd",
-    "producto": "63839eaee8135414fa57c2ad"
-  },
-  {
-    "fecha_inicio": new Date("09-02-1993"),
-    "fecha_fin": new Date("22-05-2012"),
-    "tanque": "63839f36e8135414fa57c2c5",
-    "producto": "63839eaee8135414fa57c2b4"
-  },
-  {
-    "fecha_inicio": new Date("23-06-2019"),
-    "fecha_fin": new Date("11-10-2021"),
-    "tanque": "63839f36e8135414fa57c2c5",
-    "producto": "63839eaee8135414fa57c2b0"
-  },
-  {
-    "fecha_inicio": new Date("11-07-1996"),
-    "fecha_fin": new Date("22-04-2008"),
-    "tanque": "63839f36e8135414fa57c2bc",
-    "producto": "63839eaee8135414fa57c2af"
-  },
-  {
-    "fecha_inicio": new Date("18-02-1999"),
-    "fecha_fin": new Date("09-02-1996"),
-    "tanque": "63839f36e8135414fa57c2be",
-    "producto": "63839eaee8135414fa57c2b1"
-  },
-  {
-    "fecha_inicio": new Date("03-08-2006"),
-    "fecha_fin": new Date("28-08-2010"),
-    "tanque": "63839f36e8135414fa57c2bd",
-    "producto": "63839eaee8135414fa57c2b2"
-  },
-  {
-    "fecha_inicio": new Date("24-02-2020"),
-    "fecha_fin": new Date("02-06-2000"),
-    "tanque": "63839f36e8135414fa57c2c4",
-    "producto": "63839eaee8135414fa57c2a8"
-  },
-  {
-    "fecha_inicio": new Date("10-12-1999"),
-    "fecha_fin": new Date("24-05-2000"),
-    "tanque": "63839f36e8135414fa57c2c1",
-    "producto": "63839eaee8135414fa57c2a8"
-  },
-  {
-    "fecha_inicio": new Date("08-07-2021"),
-    "fecha_fin": new Date("02-07-2009"),
-    "tanque": "63839f36e8135414fa57c2bf",
-    "producto": "63839eaee8135414fa57c2a8"
-  },
-  {
-    "fecha_inicio": new Date("06-12-1992"),
-    "fecha_fin": new Date("27-04-1994"),
-    "tanque": "63839f36e8135414fa57c2bc",
-    "producto": "63839eaee8135414fa57c2ae"
-  },
-  {
-    "fecha_inicio": new Date("15-08-2002"),
-    "fecha_fin": new Date("03-06-2021"),
-    "tanque": "63839f36e8135414fa57c2c5",
-    "producto": "63839eaee8135414fa57c2ad"
-  },
-  {
-    "fecha_inicio": new Date("13-10-1998"),
-    "fecha_fin": new Date("21-10-2011"),
-    "tanque": "63839f36e8135414fa57c2bc",
-    "producto": "63839eaee8135414fa57c2b3"
-  },
-  {
-    "fecha_inicio": new Date("27-03-2011"),
-    "fecha_fin": new Date("04-03-2017"),
-    "tanque": "63839f36e8135414fa57c2bc",
-    "producto": "63839eaee8135414fa57c2aa"
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ab"
   }
-]
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd57"
+  },
+  "fecha_inicio": "06-11-1995",
+  "fecha_fin": "11-05-2012",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894d"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b3"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd58"
+  },
+  "fecha_inicio": "19-07-2011",
+  "fecha_fin": "06-05-1990",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894f"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ad"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd59"
+  },
+  "fecha_inicio": "09-02-1993",
+  "fecha_fin": "22-05-2012",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8949"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b4"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd5a"
+  },
+  "fecha_inicio": "23-06-2019",
+  "fecha_fin": "11-10-2021",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8948"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b0"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd5b"
+  },
+  "fecha_inicio": "11-07-1996",
+  "fecha_fin": "22-04-2008",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2af"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd5c"
+  },
+  "fecha_inicio": "18-02-1999",
+  "fecha_fin": "09-02-1996",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8947"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b1"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd5d"
+  },
+  "fecha_inicio": "03-08-2006",
+  "fecha_fin": "28-08-2010",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894d"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b2"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd5e"
+  },
+  "fecha_inicio": "24-02-2020",
+  "fecha_fin": "02-06-2000",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8950"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2a8"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd5f"
+  },
+  "fecha_inicio": "10-12-1999",
+  "fecha_fin": "24-05-2000",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894d"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2a8"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd60"
+  },
+  "fecha_inicio": "08-07-2021",
+  "fecha_fin": "02-07-2009",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2a8"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd61"
+  },
+  "fecha_inicio": "06-12-1992",
+  "fecha_fin": "27-04-1994",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8948"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ae"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd62"
+  },
+  "fecha_inicio": "15-08-2002",
+  "fecha_fin": "03-06-2021",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a8949"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2ad"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd63"
+  },
+  "fecha_inicio": "13-10-1998",
+  "fecha_fin": "21-10-2011",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894b"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2b3"
+  }
+},{
+  "_id": {
+    "$oid": "6383c5ae62100d559c6edd64"
+  },
+  "fecha_inicio": "27-03-2011",
+  "fecha_fin": "04-03-2017",
+  "tanque": {
+    "$oid": "63864366fe7157ccc94a894c"
+  },
+  "producto": {
+    "$oid": "63839eaee8135414fa57c2aa"
+  }
+}]

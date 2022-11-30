@@ -1,301 +1,462 @@
-[
-  {
-    "fecha": new Date("08-07-1995"),
-    "nombre_cliente": "Lessie Alvarado",
-    "detalle_entrega": [
-      {
-        "cantidad": 8,
-        "porcentaje_impurezas": 27,
-        "monto_final": 386982.75,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b5")
-        ]
-      },
-      {
-        "cantidad": 10,
-        "porcentaje_impurezas": 100,
-        "monto_final": 255042.14,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b6"),
-          ObjectId("63839eaee8135414fa57c2b0"),
-          ObjectId("63839eaee8135414fa57c2b2"),
-          ObjectId("63839eaee8135414fa57c2ad")
-        ]
-      }
-    ],
-    "area": ObjectId("638393100a34b7480f7fa017")
+[{
+  "_id": {
+    "$oid": "63854efdebb83652ab79e611"
   },
-  {
-    "fecha": new Date("08-12-1998"),
-    "nombre_cliente": "Mai Singleton",
-    "detalle_entrega": [
-      {
-        "cantidad": 7,
-        "porcentaje_impurezas": 88,
-        "monto_final": 132115.35,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b4"),
-          ObjectId("63839eaee8135414fa57c2b0"),
-          ObjectId("63839eaee8135414fa57c2b3"),
-          ObjectId("63839eaee8135414fa57c2b3"),
-          ObjectId("63839eaee8135414fa57c2b6")
-        ]
-      },
-      {
-        "cantidad": 9,
-        "porcentaje_impurezas": 52,
-        "monto_final": 793565.42,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b6"),
-          ObjectId("63839eaee8135414fa57c2aa"),
-          ObjectId("63839eaee8135414fa57c2ab"),
-          ObjectId("63839eaee8135414fa57c2a9")
-        ]
-      },
-      {
-        "cantidad": 9,
-        "porcentaje_impurezas": 52,
-        "monto_final": 279321.71,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2ac"),
-          ObjectId("63839eaee8135414fa57c2ab")
-        ]
-      }
-    ],
-    "area": ObjectId("638393100a34b7480f7fa017")
-  },
-  {
-    "fecha": new Date("19-08-1999"),
-    "nombre_cliente": "Sherman Kramer",
-    "detalle_entrega": [
-      {
-        "cantidad": 8,
-        "porcentaje_impurezas": 96,
-        "monto_final": 250723.7,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2ac")
-        ]
-      },
-      {
-        "cantidad": 6,
-        "porcentaje_impurezas": 66,
-        "monto_final": 162606.98,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2af")
-        ]
-      }
-    ],
-    "area": ObjectId("638393100a34b7480f7fa011")
-  },
-  {
-    "fecha": new Date("26-05-2007"),
-    "nombre_cliente": "Mayo Thomas",
-    "detalle_entrega": [
-      {
-        "cantidad": 4,
-        "porcentaje_impurezas": 65,
-        "monto_final": 711531.83,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b3"),
-          ObjectId("63839eaee8135414fa57c2a9"),
-          ObjectId("63839eaee8135414fa57c2b0"),
-          ObjectId("63839eaee8135414fa57c2b1"),
-          ObjectId("63839eaee8135414fa57c2b3")
-        ]
-      },
-      {
-        "cantidad": 9,
-        "porcentaje_impurezas": 74,
-        "monto_final": 320952.38,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2a8"),
-          ObjectId("63839eaee8135414fa57c2b2"),
-          ObjectId("63839eaee8135414fa57c2b1"),
-          ObjectId("63839eaee8135414fa57c2b1")
-        ]
-      },
-      {
-        "cantidad": 10,
-        "porcentaje_impurezas": 55,
-        "monto_final": 624274.45,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b2")
-        ]
-      }
-    ],
-    "area": ObjectId("638393100a34b7480f7fa012")
-  },
-  {
-    "fecha": new Date("12-11-2020"),
-    "nombre_cliente": "Tamara Coleman",
-    "detalle_entrega": [
-      {
-        "cantidad": 2,
-        "porcentaje_impurezas": 91,
-        "monto_final": 356312.22,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2ad"),
-          ObjectId("63839eaee8135414fa57c2ad"),
-          ObjectId("63839eaee8135414fa57c2a9")
-        ]
-      },
-      {
-        "cantidad": 10,
-        "porcentaje_impurezas": 49,
-        "monto_final": 950104.67,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b3"),
-          ObjectId("63839eaee8135414fa57c2b6")
-        ]
-      },
-      {
-        "cantidad": 8,
-        "porcentaje_impurezas": 51,
-        "monto_final": 76546.65,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b0")
-        ]
-      },
-      {
-        "cantidad": 6,
-        "porcentaje_impurezas": 88,
-        "monto_final": 135394.04,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2a8"),
-          ObjectId("63839eaee8135414fa57c2af"),
-          ObjectId("63839eaee8135414fa57c2ad"),
-          ObjectId("63839eaee8135414fa57c2a8")
-        ]
-      }
-    ],
-    "area": ObjectId("638393100a34b7480f7fa012")
-  },
-  {
-    "fecha": new Date("14-09-2001"),
-    "nombre_cliente": "Belinda Madden",
-    "detalle_entrega": [
-      {
-        "cantidad": 5,
-        "porcentaje_impurezas": 51,
-        "monto_final": 423132.98,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b3"),
-          ObjectId("63839eaee8135414fa57c2b1"),
-          ObjectId("63839eaee8135414fa57c2a8"),
-          ObjectId("63839eaee8135414fa57c2a8"),
-          ObjectId("63839eaee8135414fa57c2ab")
-        ]
-      }
-    ],
-    "area": ObjectId("638393100a34b7480f7fa013")
-  },
-  {
-    "fecha": new Date("12-03-2002"),
-    "nombre_cliente": "Emily Ross",
-    "detalle_entrega": [
-      {
-        "cantidad": 10,
-        "porcentaje_impurezas": 22,
-        "monto_final": 10539.45,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2ae"),
-          ObjectId("63839eaee8135414fa57c2b4"),
-          ObjectId("63839eaee8135414fa57c2ac")
-        ]
-      },
-      {
-        "cantidad": 10,
-        "porcentaje_impurezas": 100,
-        "monto_final": 365190.61,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2a8"),
-          ObjectId("63839eaee8135414fa57c2a8")
-        ]
-      },
-      {
-        "cantidad": 5,
-        "porcentaje_impurezas": 58,
-        "monto_final": 721473.45,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b2"),
-          ObjectId("63839eaee8135414fa57c2ae")
-        ]
-      },
-      {
-        "cantidad": 7,
-        "porcentaje_impurezas": 3,
-        "monto_final": 655580.6,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2aa")
-        ]
-      },
-      {
-        "cantidad": 9,
-        "porcentaje_impurezas": 54,
-        "monto_final": 637323.74,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2aa")
-        ]
-      }
-    ],
-    "area": ObjectId("638393100a34b7480f7fa016")
-  },
-  {
-    "fecha": new Date("10-06-1993"),
-    "nombre_cliente": "Pennington Perkins",
-    "detalle_entrega": [
-      {
-        "cantidad": 10,
-        "porcentaje_impurezas": 77,
-        "monto_final": 899092.44,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b0"),
-          ObjectId("63839eaee8135414fa57c2a8")
-        ]
-      }
-    ],
-    "area": ObjectId("638393100a34b7480f7fa016")
-  },
-  {
-    "fecha": new Date("12-09-2003"),
-    "nombre_cliente": "Matthews Garrett",
-    "detalle_entrega": [
-      {
-        "cantidad": 4,
-        "porcentaje_impurezas": 78,
-        "monto_final": 804003.91,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2ae")
-        ]
-      }
-    ],
-    "area": ObjectId("638393100a34b7480f7fa015")
-  },
-  {
-    "fecha": new Date("03-06-2022"),
-    "nombre_cliente": "Leona Walters",
-    "detalle_entrega": [
-      {
-        "cantidad": 10,
-        "porcentaje_impurezas": 76,
-        "monto_final": 805855.77,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2ad"),
-          ObjectId("63839eaee8135414fa57c2ad"),
-          ObjectId("63839eaee8135414fa57c2ad"),
-          ObjectId("63839eaee8135414fa57c2a9")
-        ]
-      },
-      {
-        "cantidad": 1,
-        "porcentaje_impurezas": 97,
-        "monto_final": 877169.05,
-        "producto": [
-          ObjectId("63839eaee8135414fa57c2b3"),
-          ObjectId("63839eaee8135414fa57c2ac")
-        ]
-      }
-    ],
-    "area": ObjectId("638393100a34b7480f7fa014")
+  "fecha": "08-07-1995",
+  "nombre_cliente": "Lessie Alvarado",
+  "detalle_entrega": [
+    {
+      "cantidad": 8,
+      "porcentaje_impurezas": 27,
+      "monto_final": 386982.75,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b5"
+        }
+      ]
+    },
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 100,
+      "monto_final": 255042.14,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b6"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b0"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b2"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc1"
   }
-]
+},{
+  "_id": {
+    "$oid": "63854efdebb83652ab79e612"
+  },
+  "fecha": "08-12-1998",
+  "nombre_cliente": "Mai Singleton",
+  "detalle_entrega": [
+    {
+      "cantidad": 7,
+      "porcentaje_impurezas": 88,
+      "monto_final": 132115.35,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b4"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b0"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b6"
+        }
+      ]
+    },
+    {
+      "cantidad": 9,
+      "porcentaje_impurezas": 52,
+      "monto_final": 793565.42,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b6"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2aa"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ab"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a9"
+        }
+      ]
+    },
+    {
+      "cantidad": 9,
+      "porcentaje_impurezas": 52,
+      "monto_final": 279321.71,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ac"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ab"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+},{
+  "_id": {
+    "$oid": "63854efdebb83652ab79e613"
+  },
+  "fecha": "19-08-1999",
+  "nombre_cliente": "Sherman Kramer",
+  "detalle_entrega": [
+    {
+      "cantidad": 8,
+      "porcentaje_impurezas": 96,
+      "monto_final": 250723.7,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ac"
+        }
+      ]
+    },
+    {
+      "cantidad": 6,
+      "porcentaje_impurezas": 66,
+      "monto_final": 162606.98,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2af"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "_id": {
+    "$oid": "63854efdebb83652ab79e614"
+  },
+  "fecha": "26-05-2007",
+  "nombre_cliente": "Mayo Thomas",
+  "detalle_entrega": [
+    {
+      "cantidad": 4,
+      "porcentaje_impurezas": 65,
+      "monto_final": 711531.83,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a9"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b0"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b1"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        }
+      ]
+    },
+    {
+      "cantidad": 9,
+      "porcentaje_impurezas": 74,
+      "monto_final": 320952.38,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b2"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b1"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b1"
+        }
+      ]
+    },
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 55,
+      "monto_final": 624274.45,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b2"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  }
+},{
+  "_id": {
+    "$oid": "63854efdebb83652ab79e615"
+  },
+  "fecha": "12-11-2020",
+  "nombre_cliente": "Tamara Coleman",
+  "detalle_entrega": [
+    {
+      "cantidad": 2,
+      "porcentaje_impurezas": 91,
+      "monto_final": 356312.22,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a9"
+        }
+      ]
+    },
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 49,
+      "monto_final": 950104.67,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b6"
+        }
+      ]
+    },
+    {
+      "cantidad": 8,
+      "porcentaje_impurezas": 51,
+      "monto_final": 76546.65,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b0"
+        }
+      ]
+    },
+    {
+      "cantidad": 6,
+      "porcentaje_impurezas": 88,
+      "monto_final": 135394.04,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2af"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  }
+},{
+  "_id": {
+    "$oid": "63854efdebb83652ab79e616"
+  },
+  "fecha": "14-09-2001",
+  "nombre_cliente": "Belinda Madden",
+  "detalle_entrega": [
+    {
+      "cantidad": 5,
+      "porcentaje_impurezas": 51,
+      "monto_final": 423132.98,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b1"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ab"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc6"
+  }
+},{
+  "_id": {
+    "$oid": "63854efdebb83652ab79e617"
+  },
+  "fecha": "12-03-2002",
+  "nombre_cliente": "Emily Ross",
+  "detalle_entrega": [
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 22,
+      "monto_final": 10539.45,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ae"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2b4"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ac"
+        }
+      ]
+    },
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 100,
+      "monto_final": 365190.61,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        }
+      ]
+    },
+    {
+      "cantidad": 5,
+      "porcentaje_impurezas": 58,
+      "monto_final": 721473.45,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b2"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ae"
+        }
+      ]
+    },
+    {
+      "cantidad": 7,
+      "porcentaje_impurezas": 3,
+      "monto_final": 655580.6,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2aa"
+        }
+      ]
+    },
+    {
+      "cantidad": 9,
+      "porcentaje_impurezas": 54,
+      "monto_final": 637323.74,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2aa"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc7"
+  }
+},{
+  "_id": {
+    "$oid": "63854efdebb83652ab79e618"
+  },
+  "fecha": "10-06-1993",
+  "nombre_cliente": "Pennington Perkins",
+  "detalle_entrega": [
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 77,
+      "monto_final": 899092.44,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b0"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a8"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc8"
+  }
+},{
+  "_id": {
+    "$oid": "63854efdebb83652ab79e619"
+  },
+  "fecha": "12-09-2003",
+  "nombre_cliente": "Matthews Garrett",
+  "detalle_entrega": [
+    {
+      "cantidad": 4,
+      "porcentaje_impurezas": 78,
+      "monto_final": 804003.91,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ae"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc9"
+  }
+},{
+  "_id": {
+    "$oid": "63854efdebb83652ab79e61a"
+  },
+  "fecha": "03-06-2022",
+  "nombre_cliente": "Leona Walters",
+  "detalle_entrega": [
+    {
+      "cantidad": 10,
+      "porcentaje_impurezas": 76,
+      "monto_final": 805855.77,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ad"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2a9"
+        }
+      ]
+    },
+    {
+      "cantidad": 1,
+      "porcentaje_impurezas": 97,
+      "monto_final": 877169.05,
+      "producto": [
+        {
+          "$oid": "63839eaee8135414fa57c2b3"
+        },
+        {
+          "$oid": "63839eaee8135414fa57c2ac"
+        }
+      ]
+    }
+  ],
+  "area": {
+    "$oid": "63863c498afc52e9b8648fca"
+  }
+}]

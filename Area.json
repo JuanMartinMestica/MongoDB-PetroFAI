@@ -1,426 +1,597 @@
 [{
-  "latitud": -75.115951,
-  "longitud": 96.528982,
-  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
-  "profundidad": 528,
-  "es_productor": false,
-  "nombre_zona": "New York",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc4"
-  },
-  "estado": [
-    {
-      "nombre": "consequat",
-      "comentario": "ullamco Lorem amet eu exercitation",
-      "fecha": new Date("04-03-2011"),
-      "motivo": "aliqua et"
-    },
-    {
-      "nombre": "ex",
-      "comentario": "ad ut ut pariatur aliquip",
-      "fecha": new Date("25-09-1999"),
-      "motivo": "laboris velit"
-    },
-    {
-      "nombre": "sit",
-      "comentario": "aliquip nulla voluptate veniam pariatur",
-      "fecha": new Date("24-05-2021"),
-      "motivo": "labore sint"
-    },
-    {
-      "nombre": "anim",
-      "comentario": "do labore ex id commodo",
-      "fecha": new Date("12-09-2005"),
-      "motivo": "id cupidatat"
-    },
-    {
-      "nombre": "non",
-      "comentario": "proident sint enim ad minim",
-      "fecha": new Date("14-06-2012"),
-      "motivo": "enim non"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "ex"
-    },
-    {
-      "nombre": "irure"
-    },
-    {
-      "nombre": "dolore"
-    },
-    {
-      "nombre": "anim"
-    }
-  ]
-},{
-  "latitud": -82.61231,
-  "longitud": 87.707962,
-  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
-  "profundidad": 250,
-  "es_productor": true,
-  "nombre_zona": "Minnesota",
-  "area": {
+  "_id": {
     "$oid": "63863c498afc52e9b8648fc1"
   },
-  "estado": [
+  "nombre": "tempor magna",
+  "tamanio": 2824,
+  "codigo_area": 2526,
+  "latitud": 8712,
+  "longitud": 1136,
+  "zona": [
     {
-      "nombre": "anim",
-      "comentario": "est aute ad veniam nostrud",
-      "fecha": new Date("07-07-2015"),
-      "motivo": "non anim"
+      "nombre": "Oklahoma",
+      "superficie": 1934
     },
     {
-      "nombre": "Lorem",
-      "comentario": "dolor mollit sint officia aliquip",
-      "fecha": new Date("17-02-2020"),
-      "motivo": "reprehenderit consectetur"
+      "nombre": "Illinois",
+      "superficie": 3273
     },
     {
-      "nombre": "voluptate",
-      "comentario": "nostrud minim commodo consectetur incididunt",
-      "fecha": new Date("20-02-2013"),
-      "motivo": "minim qui"
+      "nombre": "Utah",
+      "superficie": 9671
     },
     {
-      "nombre": "adipisicing",
-      "comentario": "ea voluptate velit enim ad",
-      "fecha": new Date("23-04-2012"),
-      "motivo": "ullamco labore"
+      "nombre": "Oregon",
+      "superficie": 3984
     },
     {
-      "nombre": "eu",
-      "comentario": "qui qui sunt sunt aute",
-      "fecha": new Date("29-12-2002"),
-      "motivo": "ex minim"
+      "nombre": "American Samoa",
+      "superficie": 2743
+    },
+    {
+      "nombre": "Minnesota",
+      "superficie": 5569
+    },
+    {
+      "nombre": "New Mexico",
+      "superficie": 2816
+    },
+    {
+      "nombre": "Louisiana",
+      "superficie": 8968
+    },
+    {
+      "nombre": "Connecticut",
+      "superficie": 8687
+    },
+    {
+      "nombre": "Missouri",
+      "superficie": 9519
+    },
+    {
+      "nombre": "Alaska",
+      "superficie": 957
+    },
+    {
+      "nombre": "Northern Mariana Islands",
+      "superficie": 9448
     }
   ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "aute"
-    },
-    {
-      "nombre": "id"
-    }
-  ]
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c14"
+  }
 },{
-  "latitud": -62.827566,
-  "longitud": -81.417786,
-  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
-  "profundidad": 873,
-  "es_productor": false,
-  "nombre_zona": "Kansas",
-  "area": {
+  "_id": {
     "$oid": "63863c498afc52e9b8648fc2"
   },
-  "estado": [
+  "nombre": "amet laboris aliqua irure",
+  "tamanio": 6370,
+  "codigo_area": 1054,
+  "latitud": 2084,
+  "longitud": 3501,
+  "zona": [
     {
-      "nombre": "id",
-      "comentario": "aliqua ad commodo ut anim",
-      "fecha": new Date("28-06-2012"),
-      "motivo": "consectetur aute"
+      "nombre": "Ohio",
+      "superficie": 373
     },
     {
-      "nombre": "nulla",
-      "comentario": "est esse officia amet ipsum",
-      "fecha": new Date("30-08-1990"),
-      "motivo": "proident laborum"
+      "nombre": "Iowa",
+      "superficie": 6903
+    },
+    {
+      "nombre": "Nevada",
+      "superficie": 2441
+    },
+    {
+      "nombre": "Guam",
+      "superficie": 6948
+    },
+    {
+      "nombre": "Indiana",
+      "superficie": 7529
+    },
+    {
+      "nombre": "California",
+      "superficie": 5454
+    },
+    {
+      "nombre": "Arkansas",
+      "superficie": 7716
+    },
+    {
+      "nombre": "Kentucky",
+      "superficie": 2156
+    },
+    {
+      "nombre": "Florida",
+      "superficie": 1939
+    },
+    {
+      "nombre": "New Jersey",
+      "superficie": 3808
+    },
+    {
+      "nombre": "Kansas",
+      "superficie": 4380
+    },
+    {
+      "nombre": "Federated States Of Micronesia",
+      "superficie": 7774
+    },
+    {
+      "nombre": "Virginia",
+      "superficie": 6276
+    },
+    {
+      "nombre": "Nebraska",
+      "superficie": 4239
     }
   ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "aute"
-    },
-    {
-      "nombre": "irure"
-    },
-    {
-      "nombre": "nisi"
-    }
-  ]
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c16"
+  }
 },{
-  "latitud": -26.14198,
-  "longitud": -102.885429,
-  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
-  "profundidad": 259,
-  "es_productor": true,
-  "nombre_zona": "Maine",
-  "area": {
+  "_id": {
     "$oid": "63863c498afc52e9b8648fc3"
   },
-  "estado": [
+  "nombre": "et non",
+  "tamanio": 3934,
+  "codigo_area": 6440,
+  "latitud": 3361,
+  "longitud": 7228,
+  "zona": [
     {
-      "nombre": "minim",
-      "comentario": "ut magna ullamco tempor occaecat",
-      "fecha": new Date("08-02-2004"),
-      "motivo": "laboris qui"
+      "nombre": "Alabama",
+      "superficie": 5536
     },
     {
-      "nombre": "duis",
-      "comentario": "reprehenderit culpa aliquip ad amet",
-      "fecha": new Date("29-07-1996"),
-      "motivo": "tempor anim"
+      "nombre": "Washington",
+      "superficie": 9956
+    },
+    {
+      "nombre": "Arizona",
+      "superficie": 3119
+    },
+    {
+      "nombre": "Marshall Islands",
+      "superficie": 9911
+    },
+    {
+      "nombre": "Maine",
+      "superficie": 560
+    },
+    {
+      "nombre": "Colorado",
+      "superficie": 9243
+    },
+    {
+      "nombre": "South Carolina",
+      "superficie": 4542
     }
   ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "sit"
-    }
-  ]
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c12"
+  }
 },{
-  "latitud": 83.830126,
-  "longitud": 67.357681,
-  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
-  "profundidad": 146,
-  "es_productor": false,
-  "nombre_zona": "Alabama",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
-  },
-  "estado": [
-    {
-      "nombre": "voluptate",
-      "comentario": "consectetur aute aliqua ea non",
-      "fecha": new Date("27-11-2020"),
-      "motivo": "amet et"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "occaecat proident quis sint adipisicing",
-      "fecha": new Date("01-10-2005"),
-      "motivo": "est ullamco"
-    },
-    {
-      "nombre": "amet",
-      "comentario": "ut quis nulla nostrud sint",
-      "fecha": new Date("29-12-2020"),
-      "motivo": "nulla excepteur"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "cillum"
-    },
-    {
-      "nombre": "Lorem"
-    }
-  ]
-},{
-  "latitud": -57.850042,
-  "longitud": 79.677488,
-  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
-  "profundidad": 834,
-  "es_productor": true,
-  "nombre_zona": "Alabama",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
-  },
-  "estado": [
-    {
-      "nombre": "esse",
-      "comentario": "quis excepteur ea labore velit",
-      "fecha": new Date("15-03-2007"),
-      "motivo": "est non"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "occaecat"
-    },
-    {
-      "nombre": "fugiat"
-    }
-  ]
-},{
-  "latitud": 89.418417,
-  "longitud": -155.982361,
-  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
-  "profundidad": 449,
-  "es_productor": true,
-  "nombre_zona": "Ohio",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc2"
-  },
-  "estado": [
-    {
-      "nombre": "velit",
-      "comentario": "nisi duis eiusmod laborum elit",
-      "fecha": new Date("01-06-1993"),
-      "motivo": "occaecat reprehenderit"
-    },
-    {
-      "nombre": "ut",
-      "comentario": "reprehenderit officia do culpa ullamco",
-      "fecha": new Date("10-01-2020"),
-      "motivo": "duis ea"
-    },
-    {
-      "nombre": "labore",
-      "comentario": "magna esse ex Lorem esse",
-      "fecha": new Date("26-09-2019"),
-      "motivo": "labore aliqua"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "Lorem"
-    },
-    {
-      "nombre": "ullamco"
-    }
-  ]
-},{
-  "latitud": 17.116161,
-  "longitud": 173.382221,
-  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
-  "profundidad": 531,
-  "es_productor": true,
-  "nombre_zona": "Wyoming",
-  "area": {
+  "_id": {
     "$oid": "63863c498afc52e9b8648fc4"
   },
-  "estado": [
+  "nombre": "magna non duis et",
+  "tamanio": 6147,
+  "codigo_area": 9267,
+  "latitud": 3809,
+  "longitud": 7232,
+  "zona": [
     {
-      "nombre": "aliquip",
-      "comentario": "tempor anim irure deserunt tempor",
-      "fecha": new Date("05-10-1997"),
-      "motivo": "aliqua consequat"
+      "nombre": "West Virginia",
+      "superficie": 6967
     },
     {
-      "nombre": "aute",
-      "comentario": "non irure laborum commodo ullamco",
-      "fecha": new Date("06-02-2015"),
-      "motivo": "adipisicing incididunt"
+      "nombre": "Vermont",
+      "superficie": 6663
     },
     {
-      "nombre": "cillum",
-      "comentario": "tempor ea occaecat pariatur excepteur",
-      "fecha": new Date("07-02-2015"),
-      "motivo": "occaecat incididunt"
+      "nombre": "Puerto Rico",
+      "superficie": 2411
     },
     {
-      "nombre": "ut",
-      "comentario": "ea nulla laboris labore anim",
-      "fecha": new Date("07-06-2017"),
-      "motivo": "consequat Lorem"
+      "nombre": "New York",
+      "superficie": 2684
     },
     {
-      "nombre": "irure",
-      "comentario": "ea pariatur ad adipisicing anim",
-      "fecha": new Date("09-01-2008"),
-      "motivo": "nulla elit"
+      "nombre": "Palau",
+      "superficie": 687
+    },
+    {
+      "nombre": "Rhode Island",
+      "superficie": 2505
+    },
+    {
+      "nombre": "Georgia",
+      "superficie": 9048
+    },
+    {
+      "nombre": "Tennessee",
+      "superficie": 7711
+    },
+    {
+      "nombre": "Hawaii",
+      "superficie": 3626
+    },
+    {
+      "nombre": "North Carolina",
+      "superficie": 7977
+    },
+    {
+      "nombre": "Wyoming",
+      "superficie": 9505
     }
   ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "fugiat"
-    },
-    {
-      "nombre": "eiusmod"
-    }
-  ]
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c12"
+  }
 },{
-  "latitud": -51.815494,
-  "longitud": 119.898034,
-  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
-  "profundidad": 505,
-  "es_productor": true,
-  "nombre_zona": "Massachusetts",
-  "area": {
+  "_id": {
     "$oid": "63863c498afc52e9b8648fc5"
   },
-  "estado": [
+  "nombre": "ipsum",
+  "tamanio": 9943,
+  "codigo_area": 748,
+  "latitud": 3480,
+  "longitud": 1027,
+  "zona": [
     {
-      "nombre": "in",
-      "comentario": "consequat excepteur occaecat in exercitation",
-      "fecha": new Date("21-01-2014"),
-      "motivo": "consequat excepteur"
+      "nombre": "North Dakota",
+      "superficie": 5263
     },
     {
-      "nombre": "occaecat",
-      "comentario": "non aliquip incididunt ullamco id",
-      "fecha": new Date("09-10-2009"),
-      "motivo": "ea labore"
+      "nombre": "Maryland",
+      "superficie": 4208
     },
     {
-      "nombre": "occaecat",
-      "comentario": "et veniam quis aliqua et",
-      "fecha": new Date("15-08-2022"),
-      "motivo": "eu exercitation"
+      "nombre": "Wisconsin",
+      "superficie": 4410
     },
     {
-      "nombre": "consectetur",
-      "comentario": "elit sint dolore officia amet",
-      "fecha": new Date("26-02-2011"),
-      "motivo": "Lorem et"
+      "nombre": "South Dakota",
+      "superficie": 9166
     },
     {
-      "nombre": "reprehenderit",
-      "comentario": "occaecat officia velit sit dolor",
-      "fecha": new Date("26-12-1993"),
-      "motivo": "dolor consectetur"
+      "nombre": "Pennsylvania",
+      "superficie": 2341
+    },
+    {
+      "nombre": "Idaho",
+      "superficie": 5422
+    },
+    {
+      "nombre": "Texas",
+      "superficie": 4196
+    },
+    {
+      "nombre": "Virgin Islands",
+      "superficie": 3943
+    },
+    {
+      "nombre": "Massachusetts",
+      "superficie": 3917
+    },
+    {
+      "nombre": "New Hampshire",
+      "superficie": 4803
+    },
+    {
+      "nombre": "Mississippi",
+      "superficie": 9700
+    },
+    {
+      "nombre": "Delaware",
+      "superficie": 8756
+    },
+    {
+      "nombre": "Michigan",
+      "superficie": 5584
     }
   ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "Lorem"
-    },
-    {
-      "nombre": "ullamco"
-    }
-  ]
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c12"
+  }
 },{
-  "latitud": -87.480671,
-  "longitud": -166.420003,
-  "descripcion": "Aliquip exercitation proident cillum nisi duis deserunt cillum sit veniam et incididunt. Aliqua incididunt et duis adipisicing dolore cupidatat dolor anim sint eu aliquip aliquip. Incididunt ex aliquip aliqua mollit proident cupidatat. Mollit eiusmod sunt nostrud nisi proident velit magna. Irure officia eu amet esse sit magna pariatur est magna officia amet eu reprehenderit.\r\n",
-  "profundidad": 605,
-  "es_productor": false,
-  "nombre_zona": "Washington",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
+  "_id": {
+    "$oid": "63863c498afc52e9b8648fc6"
   },
-  "estado": [
+  "nombre": "incididunt est",
+  "tamanio": 5718,
+  "codigo_area": 2838,
+  "latitud": 9812,
+  "longitud": 5556,
+  "zona": [
     {
-      "nombre": "anim",
-      "comentario": "mollit duis magna ea laboris",
-      "fecha": new Date("30-03-2006"),
-      "motivo": "esse reprehenderit"
+      "nombre": "District Of Columbia",
+      "superficie": 7269
     },
     {
-      "nombre": "reprehenderit",
-      "comentario": "eu veniam anim excepteur officia",
-      "fecha": new Date("25-01-2018"),
-      "motivo": "irure nulla"
+      "nombre": "Oklahoma",
+      "superficie": 1978
     },
     {
-      "nombre": "consequat",
-      "comentario": "enim nisi quis cupidatat cillum",
-      "fecha": new Date("29-09-2001"),
-      "motivo": "est duis"
+      "nombre": "Illinois",
+      "superficie": 6246
     },
     {
-      "nombre": "eiusmod",
-      "comentario": "esse commodo dolore nulla Lorem",
-      "fecha": new Date("21-01-1998"),
-      "motivo": "Lorem voluptate"
+      "nombre": "Utah",
+      "superficie": 5517
+    },
+    {
+      "nombre": "Oregon",
+      "superficie": 9326
+    },
+    {
+      "nombre": "American Samoa",
+      "superficie": 4920
+    },
+    {
+      "nombre": "Minnesota",
+      "superficie": 9281
+    },
+    {
+      "nombre": "New Mexico",
+      "superficie": 980
+    },
+    {
+      "nombre": "Louisiana",
+      "superficie": 3417
+    },
+    {
+      "nombre": "Connecticut",
+      "superficie": 3477
+    },
+    {
+      "nombre": "Missouri",
+      "superficie": 9205
+    },
+    {
+      "nombre": "Alaska",
+      "superficie": 9206
     }
   ],
-  "sistema_de_extraccion": [
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c11"
+  }
+},{
+  "_id": {
+    "$oid": "63863c498afc52e9b8648fc7"
+  },
+  "nombre": "in nulla fugiat",
+  "tamanio": 3041,
+  "codigo_area": 7423,
+  "latitud": 2623,
+  "longitud": 6442,
+  "zona": [
     {
-      "nombre": "fugiat"
+      "nombre": "Northern Mariana Islands",
+      "superficie": 1262
     },
     {
-      "nombre": "sunt"
+      "nombre": "Ohio",
+      "superficie": 7873
     },
     {
-      "nombre": "esse"
+      "nombre": "Iowa",
+      "superficie": 9628
     },
     {
-      "nombre": "non"
+      "nombre": "Nevada",
+      "superficie": 3395
     },
     {
-      "nombre": "aute"
+      "nombre": "Guam",
+      "superficie": 9765
+    },
+    {
+      "nombre": "Indiana",
+      "superficie": 6084
+    },
+    {
+      "nombre": "California",
+      "superficie": 7500
+    },
+    {
+      "nombre": "Arkansas",
+      "superficie": 7291
+    },
+    {
+      "nombre": "New Jersey",
+      "superficie": 6743
+    },
+    {
+      "nombre": "Kansas",
+      "superficie": 7888
     }
-  ]
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c11"
+  }
+},{
+  "_id": {
+    "$oid": "63863c498afc52e9b8648fc8"
+  },
+  "nombre": "elit Lorem",
+  "tamanio": 6626,
+  "codigo_area": 6842,
+  "latitud": 2538,
+  "longitud": 1782,
+  "zona": [
+    {
+      "nombre": "Federated States Of Micronesia",
+      "superficie": 6151
+    },
+    {
+      "nombre": "Virginia",
+      "superficie": 770
+    },
+    {
+      "nombre": "Nebraska",
+      "superficie": 9621
+    },
+    {
+      "nombre": "Alabama",
+      "superficie": 8755
+    },
+    {
+      "nombre": "Washington",
+      "superficie": 7767
+    },
+    {
+      "nombre": "Arizona",
+      "superficie": 7865
+    },
+    {
+      "nombre": "Marshall Islands",
+      "superficie": 230
+    },
+    {
+      "nombre": "Maine",
+      "superficie": 6392
+    },
+    {
+      "nombre": "Colorado",
+      "superficie": 1216
+    },
+    {
+      "nombre": "South Carolina",
+      "superficie": 8862
+    },
+    {
+      "nombre": "West Virginia",
+      "superficie": 6972
+    },
+    {
+      "nombre": "Vermont",
+      "superficie": 6101
+    },
+    {
+      "nombre": "Puerto Rico",
+      "superficie": 6467
+    },
+    {
+      "nombre": "New York",
+      "superficie": 6631
+    },
+    {
+      "nombre": "Palau",
+      "superficie": 2021
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c16"
+  }
+},{
+  "_id": {
+    "$oid": "63863c498afc52e9b8648fc9"
+  },
+  "nombre": "sint",
+  "tamanio": 891,
+  "codigo_area": 8996,
+  "latitud": 1976,
+  "longitud": 6603,
+  "zona": [
+    {
+      "nombre": "Rhode Island",
+      "superficie": 2350
+    },
+    {
+      "nombre": "Georgia",
+      "superficie": 3923
+    },
+    {
+      "nombre": "Tennessee",
+      "superficie": 7253
+    },
+    {
+      "nombre": "Hawaii",
+      "superficie": 2805
+    },
+    {
+      "nombre": "North Carolina",
+      "superficie": 4251
+    },
+    {
+      "nombre": "Wyoming",
+      "superficie": 8321
+    },
+    {
+      "nombre": "North Dakota",
+      "superficie": 1665
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c14"
+  }
+},{
+  "_id": {
+    "$oid": "63863c498afc52e9b8648fca"
+  },
+  "nombre": "reprehenderit aliqua",
+  "tamanio": 6113,
+  "codigo_area": 7994,
+  "latitud": 1647,
+  "longitud": 3710,
+  "zona": [
+    {
+      "nombre": "Maryland",
+      "superficie": 9803
+    },
+    {
+      "nombre": "Wisconsin",
+      "superficie": 9966
+    },
+    {
+      "nombre": "South Dakota",
+      "superficie": 3490
+    },
+    {
+      "nombre": "Pennsylvania",
+      "superficie": 326
+    },
+    {
+      "nombre": "Idaho",
+      "superficie": 1474
+    },
+    {
+      "nombre": "Texas",
+      "superficie": 2033
+    },
+    {
+      "nombre": "Virgin Islands",
+      "superficie": 9705
+    },
+    {
+      "nombre": "Massachusetts",
+      "superficie": 7478
+    },
+    {
+      "nombre": "New Hampshire",
+      "superficie": 6118
+    },
+    {
+      "nombre": "Mississippi",
+      "superficie": 4377
+    },
+    {
+      "nombre": "Delaware",
+      "superficie": 7748
+    },
+    {
+      "nombre": "Michigan",
+      "superficie": 857
+    },
+    {
+      "nombre": "District Of Columbia",
+      "superficie": 1691
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c14"
+  }
 }]

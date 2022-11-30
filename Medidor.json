@@ -1,239 +1,334 @@
-[
-  {
-    "nombre": "proident cupidatat laborum esse magna",
-    "porcentaje_precision": 79.11,
-    "medicion": [
-      {
-        "fecha": new Date("14-06-2002"),
-        "medicion_neta": 9657.704,
-        "medicion_bruta": 1924.681,
-        "producto": ObjectId("63839eaee8135414fa57c2ab")
-      },
-      {
-        "fecha": new Date("11-05-2017"),
-        "medicion_neta": 1801.935,
-        "medicion_bruta": 8768.995,
-        "producto": ObjectId("63839eaee8135414fa57c2b5")
-      }
-    ],
-    "instalacion": ObjectId("638531b75dfa0234eef5cb0f")
+[{
+  "_id": {
+    "$oid": "638530b57bdfc89cd6f05230"
   },
-  {
-    "nombre": "culpa amet",
-    "porcentaje_precision": 93.76,
-    "medicion": [
-      {
-        "fecha": new Date("30-03-2010"),
-        "medicion_neta": 636.564,
-        "medicion_bruta": 2837.818,
-        "producto": ObjectId("63839eaee8135414fa57c2ac")
-      },
-      {
-        "fecha": new Date("12-03-2011"),
-        "medicion_neta": 4933.859,
-        "medicion_bruta": 5622.222,
-        "producto": ObjectId("63839eaee8135414fa57c2b1")
-      },
-      {
-        "fecha": new Date("22-04-2014"),
-        "medicion_neta": 938.305,
-        "medicion_bruta": 9815.747,
-        "producto": ObjectId("63839eaee8135414fa57c2a9")
+  "nombre": "ea voluptate ipsum sit",
+  "porcentaje_precision": 81.59,
+  "medicion": [
+    {
+      "fecha": "06-07-2008",
+      "medicion_neta": 8445.657,
+      "medicion_bruta": 7453.151,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ab"
       }
-    ],
-    "instalacion": ObjectId("638531b76b06e1cfe4271913")
-  },
-  {
-    "nombre": "fugiat aliquip",
-    "porcentaje_precision": 44.37,
-    "medicion": [
-      {
-        "fecha": new Date("15-08-2016"),
-        "medicion_neta": 8255.405,
-        "medicion_bruta": 4580.211,
-        "producto": ObjectId("63839eaee8135414fa57c2b5")
-      },
-      {
-        "fecha": new Date("07-01-2007"),
-        "medicion_neta": 9074.106,
-        "medicion_bruta": 2670.42,
-        "producto": ObjectId("63839eaee8135414fa57c2b2")
-      }
-    ],
-    "instalacion": ObjectId("638531b7ca219b88801dcb2e")
-  },
-  {
-    "nombre": "in culpa adipisicing culpa nisi",
-    "porcentaje_precision": 10.04,
-    "medicion": [
-      {
-        "fecha": new Date("23-02-2003"),
-        "medicion_neta": 7856.065,
-        "medicion_bruta": 2678.958,
-        "producto": ObjectId("63839eaee8135414fa57c2ab")
-      },
-      {
-        "fecha": new Date("06-06-1993"),
-        "medicion_neta": 2485.734,
-        "medicion_bruta": 8918.538,
-        "producto": ObjectId("63839eaee8135414fa57c2a9")
-      },
-      {
-        "fecha": new Date("10-12-1990"),
-        "medicion_neta": 2048.492,
-        "medicion_bruta": 7363.209,
-        "producto": ObjectId("63839eaee8135414fa57c2a8")
-      }
-    ],
-    "instalacion": ObjectId("638531b7453d0a5229f71a36")
-  },
-  {
-    "nombre": "incididunt fugiat",
-    "porcentaje_precision": 36.16,
-    "medicion": [],
-    "instalacion": ObjectId("638531b7d098abcdf40b2da1")
-  },
-  {
-    "nombre": "eu ipsum nostrud",
-    "porcentaje_precision": 46.59,
-    "medicion": [
-      {
-        "fecha": new Date("22-04-2013"),
-        "medicion_neta": 7603.545,
-        "medicion_bruta": 2583.836,
-        "producto": ObjectId("63839eaee8135414fa57c2b6")
-      }
-    ],
-    "instalacion": ObjectId("638531b7fe7c6d9391c93705")
-  },
-  {
-    "nombre": "deserunt cupidatat fugiat ullamco",
-    "porcentaje_precision": 90.77,
-    "medicion": [
-      {
-        "fecha": new Date("05-09-2010"),
-        "medicion_neta": 4311.655,
-        "medicion_bruta": 4852.484,
-        "producto": ObjectId("63839eaee8135414fa57c2ad")
-      },
-      {
-        "fecha": new Date("05-05-2019"),
-        "medicion_neta": 9187.242,
-        "medicion_bruta": 9035.203,
-        "producto": ObjectId("63839eaee8135414fa57c2ad")
-      },
-      {
-        "fecha": new Date("25-09-2002"),
-        "medicion_neta": 8977.819,
-        "medicion_bruta": 2261.369,
-        "producto": ObjectId("63839eaee8135414fa57c2aa")
-      },
-      {
-        "fecha": new Date("20-06-1999"),
-        "medicion_neta": 4675.361,
-        "medicion_bruta": 3703.684,
-        "producto": ObjectId("63839eaee8135414fa57c2ad")
-      },
-      {
-        "fecha": new Date("08-12-2013"),
-        "medicion_neta": 6703.473,
-        "medicion_bruta": 4473.293,
-        "producto": ObjectId("63839eaee8135414fa57c2ac")
-      }
-    ],
-    "instalacion": ObjectId("638531b7a8075cabbb4e733f")
-  },
-  {
-    "nombre": "dolor non labore",
-    "porcentaje_precision": 68.15,
-    "medicion": [
-      {
-        "fecha": new Date("21-09-1992"),
-        "medicion_neta": 4116.898,
-        "medicion_bruta": 4917.523,
-        "producto": ObjectId("63839eaee8135414fa57c2b0")
-      },
-      {
-        "fecha": new Date("13-09-1991"),
-        "medicion_neta": 7493.29,
-        "medicion_bruta": 9679.797,
-        "producto": ObjectId("63839eaee8135414fa57c2b0")
-      }
-    ],
-    "instalacion": ObjectId("638531b74f2218ab0f19712f")
-  },
-  {
-    "nombre": "sunt cupidatat sunt anim cillum",
-    "porcentaje_precision": 60.05,
-    "medicion": [
-      {
-        "fecha": new Date("28-09-2014"),
-        "medicion_neta": 6273.195,
-        "medicion_bruta": 6720.332,
-        "producto": ObjectId("63839eaee8135414fa57c2ae")
-      },
-      {
-        "fecha": new Date("15-10-2010"),
-        "medicion_neta": 3643.598,
-        "medicion_bruta": 3397.072,
-        "producto": ObjectId("63839eaee8135414fa57c2b0")
-      },
-      {
-        "fecha": new Date("12-11-1996"),
-        "medicion_neta": 279.371,
-        "medicion_bruta": 2658.489,
-        "producto": ObjectId("63839eaee8135414fa57c2a9")
-      },
-      {
-        "fecha": new Date("06-03-1991"),
-        "medicion_neta": 6302.526,
-        "medicion_bruta": 9901.094,
-        "producto": ObjectId("63839eaee8135414fa57c2ab")
-      },
-      {
-        "fecha": new Date("23-02-2018"),
-        "medicion_neta": 358.5,
-        "medicion_bruta": 2502.49,
-        "producto": ObjectId("63839eaee8135414fa57c2a9")
-      }
-    ],
-    "instalacion": ObjectId("638531b7d4e6c8c0bb91091e")
-  },
-  {
-    "nombre": "fugiat mollit nisi eu in",
-    "porcentaje_precision": 66.06,
-    "medicion": [
-      {
-        "fecha": new Date("20-10-2010"),
-        "medicion_neta": 762.038,
-        "medicion_bruta": 135.845,
-        "producto": ObjectId("63839eaee8135414fa57c2ae")
-      },
-      {
-        "fecha": new Date("23-01-1999"),
-        "medicion_neta": 736.843,
-        "medicion_bruta": 6144.885,
-        "producto": ObjectId("63839eaee8135414fa57c2b4")
-      },
-      {
-        "fecha": new Date("11-08-1997"),
-        "medicion_neta": 7876.925,
-        "medicion_bruta": 1551.176,
-        "producto": ObjectId("63839eaee8135414fa57c2a9")
-      },
-      {
-        "fecha": new Date("26-11-2017"),
-        "medicion_neta": 3710.838,
-        "medicion_bruta": 8709.864,
-        "producto": ObjectId("63839eaee8135414fa57c2a8")
-      },
-      {
-        "fecha": new Date("14-12-2019"),
-        "medicion_neta": 1795.369,
-        "medicion_bruta": 3659.763,
-        "producto": ObjectId("63839eaee8135414fa57c2ac")
-      }
-    ],
-    "instalacion": ObjectId("638531b73e234a59a0647cd4")
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad49"
   }
-]
+},{
+  "_id": {
+    "$oid": "638530b57bdfc89cd6f05231"
+  },
+  "nombre": "cupidatat qui culpa reprehenderit ut",
+  "porcentaje_precision": 16.46,
+  "medicion": [],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4a"
+  }
+},{
+  "_id": {
+    "$oid": "638530b57bdfc89cd6f05232"
+  },
+  "nombre": "deserunt Lorem nostrud duis",
+  "porcentaje_precision": 0.02,
+  "medicion": [
+    {
+      "fecha": "26-07-2010",
+      "medicion_neta": 3629.562,
+      "medicion_bruta": 3669.645,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b6"
+      }
+    },
+    {
+      "fecha": "31-12-2010",
+      "medicion_neta": 2107.735,
+      "medicion_bruta": 4969.882,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2a9"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4b"
+  }
+},{
+  "_id": {
+    "$oid": "638530b57bdfc89cd6f05233"
+  },
+  "nombre": "amet est est",
+  "porcentaje_precision": 99.16,
+  "medicion": [
+    {
+      "fecha": "08-03-1992",
+      "medicion_neta": 3373.275,
+      "medicion_bruta": 5448.899,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ae"
+      }
+    },
+    {
+      "fecha": "29-07-2009",
+      "medicion_neta": 2709.816,
+      "medicion_bruta": 1691.912,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2a8"
+      }
+    },
+    {
+      "fecha": "27-12-2021",
+      "medicion_neta": 3463.894,
+      "medicion_bruta": 3439.904,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ab"
+      }
+    },
+    {
+      "fecha": "06-05-1993",
+      "medicion_neta": 3252.778,
+      "medicion_bruta": 6037.698,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ae"
+      }
+    },
+    {
+      "fecha": "29-10-2010",
+      "medicion_neta": 3780.663,
+      "medicion_bruta": 979.39,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2af"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4c"
+  }
+},{
+  "_id": {
+    "$oid": "638530b57bdfc89cd6f05234"
+  },
+  "nombre": "consequat nostrud irure velit ipsum",
+  "porcentaje_precision": 30.64,
+  "medicion": [
+    {
+      "fecha": "16-05-1990",
+      "medicion_neta": 5745.349,
+      "medicion_bruta": 6995.024,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b5"
+      }
+    },
+    {
+      "fecha": "21-11-2015",
+      "medicion_neta": 495.646,
+      "medicion_bruta": 658.773,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b5"
+      }
+    },
+    {
+      "fecha": "06-08-2000",
+      "medicion_neta": 9169.37,
+      "medicion_bruta": 5177.762,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ab"
+      }
+    },
+    {
+      "fecha": "05-08-2018",
+      "medicion_neta": 3684.899,
+      "medicion_bruta": 2836.457,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ab"
+      }
+    },
+    {
+      "fecha": "14-11-2015",
+      "medicion_neta": 8667.244,
+      "medicion_bruta": 3046.559,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b5"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4d"
+  }
+},{
+  "_id": {
+    "$oid": "638530b57bdfc89cd6f05235"
+  },
+  "nombre": "consequat sint",
+  "porcentaje_precision": 87.25,
+  "medicion": [
+    {
+      "fecha": "24-12-2004",
+      "medicion_neta": 7958.865,
+      "medicion_bruta": 3374.871,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b6"
+      }
+    },
+    {
+      "fecha": "11-05-2010",
+      "medicion_neta": 5471.803,
+      "medicion_bruta": 2533.07,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2aa"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4e"
+  }
+},{
+  "_id": {
+    "$oid": "638530b57bdfc89cd6f05236"
+  },
+  "nombre": "nostrud ullamco",
+  "porcentaje_precision": 88.9,
+  "medicion": [
+    {
+      "fecha": "11-05-2006",
+      "medicion_neta": 4228.289,
+      "medicion_bruta": 9339.226,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b6"
+      }
+    },
+    {
+      "fecha": "05-01-1992",
+      "medicion_neta": 4561.405,
+      "medicion_bruta": 6591.655,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b4"
+      }
+    },
+    {
+      "fecha": "17-12-2005",
+      "medicion_neta": 4640.317,
+      "medicion_bruta": 2100.877,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b6"
+      }
+    },
+    {
+      "fecha": "06-02-2021",
+      "medicion_neta": 7425.761,
+      "medicion_bruta": 7485.796,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b3"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad4f"
+  }
+},{
+  "_id": {
+    "$oid": "638530b57bdfc89cd6f05237"
+  },
+  "nombre": "elit non do",
+  "porcentaje_precision": 12.42,
+  "medicion": [
+    {
+      "fecha": "11-12-2011",
+      "medicion_neta": 5433.886,
+      "medicion_bruta": 2483.383,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2aa"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad50"
+  }
+},{
+  "_id": {
+    "$oid": "638530b57bdfc89cd6f05238"
+  },
+  "nombre": "ipsum non ad deserunt",
+  "porcentaje_precision": 47.46,
+  "medicion": [
+    {
+      "fecha": "03-01-2021",
+      "medicion_neta": 6644.405,
+      "medicion_bruta": 4805.521,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b2"
+      }
+    },
+    {
+      "fecha": "16-06-1995",
+      "medicion_neta": 469.221,
+      "medicion_bruta": 1420.637,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b0"
+      }
+    },
+    {
+      "fecha": "24-02-2000",
+      "medicion_neta": 7179.688,
+      "medicion_bruta": 5626.282,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2ad"
+      }
+    },
+    {
+      "fecha": "24-08-2020",
+      "medicion_neta": 4545.585,
+      "medicion_bruta": 9381.834,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2aa"
+      }
+    },
+    {
+      "fecha": "24-09-2003",
+      "medicion_neta": 7647.081,
+      "medicion_bruta": 3811.411,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b6"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad51"
+  }
+},{
+  "_id": {
+    "$oid": "638530b57bdfc89cd6f05239"
+  },
+  "nombre": "irure enim tempor eiusmod amet",
+  "porcentaje_precision": 26.97,
+  "medicion": [
+    {
+      "fecha": "05-11-1995",
+      "medicion_neta": 6673.924,
+      "medicion_bruta": 6502.755,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b0"
+      }
+    },
+    {
+      "fecha": "30-07-2020",
+      "medicion_neta": 6498.406,
+      "medicion_bruta": 8651.347,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b1"
+      }
+    },
+    {
+      "fecha": "30-12-1999",
+      "medicion_neta": 9836.505,
+      "medicion_bruta": 5898.617,
+      "producto": {
+        "$oid": "63839eaee8135414fa57c2b3"
+      }
+    }
+  ],
+  "instalacion": {
+    "$oid": "638649e878a041870fa5ad52"
+  }
+}]
