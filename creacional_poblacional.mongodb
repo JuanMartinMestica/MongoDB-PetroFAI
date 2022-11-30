@@ -13,6 +13,8 @@ use('PetroFAI');
 //  db.createCollection('Trabaja')
 //  db.createCollection('Almacena_Tipo')
 
+db.Area.find({ 'zona.nombre': 'Kansas' });
+
 db.Provincia.insertMany([{
   "_id": ObjectId("6383a7f45c01da03a8e59c11"),
   "nombre": "Oneida",
@@ -351,9 +353,7 @@ db.Personal.insertMany([{
       "numero": "(806) 440-2261"
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c17"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c17")
 },{
   "_id": ObjectId("6383a3a20a34b7480f7fa065"),
   "numero_documento": 35921169,
@@ -463,9 +463,7 @@ db.Personal.insertMany([{
       "numero": "(910) 507-3036"
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c1a"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c1a")
 },{
   "_id": ObjectId("6383a3a20a34b7480f7fa067"),
   "numero_documento": 22173533,
@@ -592,9 +590,7 @@ db.Personal.insertMany([{
   ],
   "certificado": [],
   "telefono": [],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c13"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c13")
 },{
   "_id": ObjectId("6383a3a20a34b7480f7fa068"),
   "numero_documento": 21129805,
@@ -702,9 +698,7 @@ db.Personal.insertMany([{
       "numero": "(876) 579-3731"
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c13"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c13")
 },{
   "_id": ObjectId("6383a3a20a34b7480f7fa069"),
   "numero_documento": 38332092,
@@ -862,9 +856,7 @@ db.Personal.insertMany([{
     }
   ],
   "telefono": [],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c18"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c18")
 },{
   "_id": ObjectId("6383a3a20a34b7480f7fa06a"),
   "numero_documento": 28487128,
@@ -949,9 +941,7 @@ db.Personal.insertMany([{
       "numero": "(886) 446-2621"
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c11"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c11")
 },{
   "_id": ObjectId("6383a3a20a34b7480f7fa06b"),
   "numero_documento": 40724490,
@@ -1043,9 +1033,7 @@ db.Personal.insertMany([{
       "numero": "(872) 455-2482"
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c15"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c15")
 },{
   "_id": ObjectId("6383a3a20a34b7480f7fa06c"),
   "numero_documento": 12348990,
@@ -1162,9 +1150,7 @@ db.Personal.insertMany([{
       "numero": "(850) 534-2522"
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c11"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c11")
 },{
   "_id": ObjectId("6383a3a20a34b7480f7fa06d"),
   "numero_documento": 41647047,
@@ -1294,9 +1280,7 @@ db.Personal.insertMany([{
     }
   ],
   "telefono": [],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c19"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c19")
 }]);
 
 db.Area.insertMany([{
@@ -1356,9 +1340,7 @@ db.Area.insertMany([{
       "superficie": 9448
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c14"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c14")
 },{
   "_id": ObjectId("63863c498afc52e9b8648fc2"),
   "nombre": "amet laboris aliqua irure",
@@ -1424,9 +1406,7 @@ db.Area.insertMany([{
       "superficie": 4239
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c16"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c16")
 },{
   "_id": ObjectId("63863c498afc52e9b8648fc3"),
   "nombre": "et non",
@@ -1464,9 +1444,7 @@ db.Area.insertMany([{
       "superficie": 4542
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c12"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c12")
 },{
   "_id": ObjectId("63863c498afc52e9b8648fc4"),
   "nombre": "magna non duis et",
@@ -1520,9 +1498,7 @@ db.Area.insertMany([{
       "superficie": 9505
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c12"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c12")
 },{
   "_id": ObjectId("63863c498afc52e9b8648fc5"),
   "nombre": "ipsum",
@@ -1584,9 +1560,7 @@ db.Area.insertMany([{
       "superficie": 5584
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c12"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c12")
 },{
   "_id": ObjectId("63863c498afc52e9b8648fc6"),
   "nombre": "incididunt est",
@@ -1644,9 +1618,7 @@ db.Area.insertMany([{
       "superficie": 9206
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c11"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c11")
 },{
   "_id": ObjectId("63863c498afc52e9b8648fc7"),
   "nombre": "in nulla fugiat",
@@ -1696,9 +1668,7 @@ db.Area.insertMany([{
       "superficie": 7888
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c11"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c11")
 },{
   "_id": ObjectId("63863c498afc52e9b8648fc8"),
   "nombre": "elit Lorem",
@@ -1768,9 +1738,7 @@ db.Area.insertMany([{
       "superficie": 2021
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c16"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c16")
 },{
   "_id": ObjectId("63863c498afc52e9b8648fc9"),
   "nombre": "sint",
@@ -1808,9 +1776,7 @@ db.Area.insertMany([{
       "superficie": 1665
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c14"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c14")
 },{
   "_id": ObjectId("63863c498afc52e9b8648fca"),
   "nombre": "reprehenderit aliqua",
@@ -1872,9 +1838,7 @@ db.Area.insertMany([{
       "superficie": 1691
     }
   ],
-  "provincia": {
-    "$oid": "6383a7f45c01da03a8e59c14"
-  }
+  "provincia": ObjectId("6383a7f45c01da03a8e59c14")
 }])
 
 db.Producto.insertMany([{
@@ -1964,9 +1928,7 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 27,
       "monto_final": 386982.75,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b5"
-        }
+        ObjectId("63839eaee8135414fa57c2b5")
       ]
     },
     {
@@ -1974,24 +1936,14 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 100,
       "monto_final": 255042.14,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b6"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b0"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b2"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ad"
-        }
+        ObjectId("63839eaee8135414fa57c2b6"),
+        ObjectId("63839eaee8135414fa57c2b0"),
+        ObjectId("63839eaee8135414fa57c2b2"),
+        ObjectId("63839eaee8135414fa57c2ad")
       ]
     }
   ],
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc1"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc1")
 },{
   "_id": ObjectId("63854efdebb83652ab79e612"),
   "fecha": new Date("08-12-1998"),
@@ -2002,21 +1954,11 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 88,
       "monto_final": 132115.35,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b4"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b0"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b3"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b3"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b6"
-        }
+           ObjectId("63839eaee8135414fa57c2b4"),
+           ObjectId("63839eaee8135414fa57c2b0"),
+           ObjectId("63839eaee8135414fa57c2b3"),
+           ObjectId("63839eaee8135414fa57c2b3"),
+           ObjectId("63839eaee8135414fa57c2b6")
       ]
     },
     {
@@ -2024,18 +1966,10 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 52,
       "monto_final": 793565.42,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b6"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2aa"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ab"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2a9"
-        }
+           ObjectId("63839eaee8135414fa57c2b6"),
+           ObjectId("63839eaee8135414fa57c2aa"),
+           ObjectId("63839eaee8135414fa57c2ab"),
+           ObjectId("63839eaee8135414fa57c2a9")
       ]
     },
     {
@@ -2043,18 +1977,12 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 52,
       "monto_final": 279321.71,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2ac"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ab"
-        }
+           ObjectId("63839eaee8135414fa57c2ac"),
+           ObjectId("63839eaee8135414fa57c2ab")
       ]
     }
   ],
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc2"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc2")
 },{
   "_id": ObjectId("63854efdebb83652ab79e613"),
   "fecha": new Date("19-08-1999"),
@@ -2065,9 +1993,7 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 96,
       "monto_final": 250723.7,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2ac"
-        }
+        ObjectId("63839eaee8135414fa57c2ac")
       ]
     },
     {
@@ -2075,15 +2001,11 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 66,
       "monto_final": 162606.98,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2af"
-        }
+        ObjectId("63839eaee8135414fa57c2af")
       ]
     }
   ],
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc3")
 },{
   "_id": ObjectId("63854efdebb83652ab79e614"),
   "fecha": new Date("26-05-2007"),
@@ -2094,21 +2016,11 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 65,
       "monto_final": 711531.83,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b3"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2a9"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b0"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b1"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b3"
-        }
+           ObjectId("63839eaee8135414fa57c2b3"),
+           ObjectId("63839eaee8135414fa57c2a9"),
+           ObjectId("63839eaee8135414fa57c2b0"),
+           ObjectId("63839eaee8135414fa57c2b1"),
+           ObjectId("63839eaee8135414fa57c2b3")
       ]
     },
     {
@@ -2116,18 +2028,10 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 74,
       "monto_final": 320952.38,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2a8"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b2"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b1"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b1"
-        }
+           ObjectId("63839eaee8135414fa57c2a8"),
+           ObjectId("63839eaee8135414fa57c2b2"),
+           ObjectId("63839eaee8135414fa57c2b1"),
+           ObjectId("63839eaee8135414fa57c2b1")
       ]
     },
     {
@@ -2135,15 +2039,11 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 55,
       "monto_final": 624274.45,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b2"
-        }
+           ObjectId("63839eaee8135414fa57c2b2")
       ]
     }
   ],
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc4"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc4")
 },{
   "_id": ObjectId("63854efdebb83652ab79e615"),
   "fecha": new Date("12-11-2020"),
@@ -2154,15 +2054,9 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 91,
       "monto_final": 356312.22,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2ad"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ad"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2a9"
-        }
+           ObjectId("63839eaee8135414fa57c2ad"),
+           ObjectId("63839eaee8135414fa57c2ad"),
+           ObjectId("63839eaee8135414fa57c2a9")
       ]
     },
     {
@@ -2170,12 +2064,8 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 49,
       "monto_final": 950104.67,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b3"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b6"
-        }
+           ObjectId("63839eaee8135414fa57c2b3"),
+           ObjectId("63839eaee8135414fa57c2b6")
       ]
     },
     {
@@ -2183,9 +2073,7 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 51,
       "monto_final": 76546.65,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b0"
-        }
+        ObjectId("63839eaee8135414fa57c2b0")  
       ]
     },
     {
@@ -2193,24 +2081,14 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 88,
       "monto_final": 135394.04,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2a8"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2af"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ad"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2a8"
-        }
+           ObjectId("63839eaee8135414fa57c2a8"),
+           ObjectId("63839eaee8135414fa57c2af"),
+           ObjectId("63839eaee8135414fa57c2ad"),
+           ObjectId("63839eaee8135414fa57c2a8")
       ]
     }
   ],
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc5"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc5")
 },{
   "_id": ObjectId("63854efdebb83652ab79e616"),
   "fecha": new Date("14-09-2001"),
@@ -2221,27 +2099,15 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 51,
       "monto_final": 423132.98,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b3"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b1"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2a8"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2a8"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ab"
-        }
+           ObjectId("63839eaee8135414fa57c2b3"),
+           ObjectId("63839eaee8135414fa57c2b1"),
+           ObjectId("63839eaee8135414fa57c2a8"),
+           ObjectId("63839eaee8135414fa57c2a8"),
+           ObjectId("63839eaee8135414fa57c2ab")
       ]
     }
   ],
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc6"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc6")
 },{
   "_id": ObjectId("63854efdebb83652ab79e617"),
   "fecha": new Date("12-03-2002"),
@@ -2252,15 +2118,9 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 22,
       "monto_final": 10539.45,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2ae"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2b4"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ac"
-        }
+           ObjectId("63839eaee8135414fa57c2ae"),
+           ObjectId("63839eaee8135414fa57c2b4"),
+           ObjectId("63839eaee8135414fa57c2ac")
       ]
     },
     {
@@ -2268,12 +2128,8 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 100,
       "monto_final": 365190.61,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2a8"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2a8"
-        }
+           ObjectId("63839eaee8135414fa57c2a8"),
+           ObjectId("63839eaee8135414fa57c2a8")
       ]
     },
     {
@@ -2281,12 +2137,8 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 58,
       "monto_final": 721473.45,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b2"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ae"
-        }
+           ObjectId("63839eaee8135414fa57c2b2"),
+           ObjectId("63839eaee8135414fa57c2ae")
       ]
     },
     {
@@ -2294,25 +2146,18 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 3,
       "monto_final": 655580.6,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2aa"
-        }
+           ObjectId("63839eaee8135414fa57c2aa")
       ]
-    },
-    {
+    
       "cantidad": 9,
       "porcentaje_impurezas": 54,
       "monto_final": 637323.74,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2aa"
-        }
+           ObjectId("63839eaee8135414fa57c2aa")
       ]
     }
   ],
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc7"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc7")
 },{
   "_id": ObjectId("63854efdebb83652ab79e618"),
   "fecha": new Date("10-06-1993"),
@@ -2323,18 +2168,12 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 77,
       "monto_final": 899092.44,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b0"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2a8"
-        }
+           ObjectId("63839eaee8135414fa57c2b0"),
+           ObjectId("63839eaee8135414fa57c2a8")
       ]
     }
   ],
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc8"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc8")
 },{
   "_id": ObjectId("63854efdebb83652ab79e619"),
   "fecha": new Date("12-09-2003"),
@@ -2345,15 +2184,11 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 78,
       "monto_final": 804003.91,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2ae"
-        }
+           ObjectId("63839eaee8135414fa57c2ae")
       ]
     }
   ],
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc9"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc9")
 },{
   "_id": ObjectId("63854efdebb83652ab79e61a"),
   "fecha": new Date("03-06-2022"),
@@ -2364,18 +2199,10 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 76,
       "monto_final": 805855.77,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2ad"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ad"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ad"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2a9"
-        }
+           ObjectId("63839eaee8135414fa57c2ad"),
+           ObjectId("63839eaee8135414fa57c2ad"),
+           ObjectId("63839eaee8135414fa57c2ad"),
+           ObjectId("63839eaee8135414fa57c2a9")
       ]
     },
     {
@@ -2383,18 +2210,12 @@ db.Entrega.insertMany([{
       "porcentaje_impurezas": 97,
       "monto_final": 877169.05,
       "producto": [
-        {
-          "$oid": "63839eaee8135414fa57c2b3"
-        },
-        {
-          "$oid": "63839eaee8135414fa57c2ac"
-        }
+           ObjectId("63839eaee8135414fa57c2b3"),
+           ObjectId("63839eaee8135414fa57c2ac")
       ]
     }
   ],
-  "area": {
-    "$oid": "63863c498afc52e9b8648fca"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fca")
 }])
 
 db.Instalacion.insertMany([{
@@ -2405,38 +2226,36 @@ db.Instalacion.insertMany([{
   "profundidad": 528,
   "es_productor": false,
   "nombre_zona": "New York",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc4"
-  },
+  "area": ObjectId("63863c498afc52e9b8648fc4"),
   "estado": [
     {
       "nombre": "consequat",
       "comentario": "ullamco Lorem amet eu exercitation",
-      "fecha": new Date("04-03-2011"),
+      "fecha": "04-03-2011",
       "motivo": "aliqua et"
     },
     {
       "nombre": "ex",
       "comentario": "ad ut ut pariatur aliquip",
-      "fecha": new Date("25-09-1999"),
+      "fecha": "25-09-1999",
       "motivo": "laboris velit"
     },
     {
       "nombre": "sit",
       "comentario": "aliquip nulla voluptate veniam pariatur",
-      "fecha": new Date("24-05-2021"),
+      "fecha": "24-05-2021",
       "motivo": "labore sint"
     },
     {
       "nombre": "anim",
       "comentario": "do labore ex id commodo",
-      "fecha": new Date("12-09-2005"),
+      "fecha": "12-09-2005",
       "motivo": "id cupidatat"
     },
     {
       "nombre": "non",
       "comentario": "proident sint enim ad minim",
-      "fecha": new Date("14-06-2012"),
+      "fecha": "14-06-2012",
       "motivo": "enim non"
     }
   ],
@@ -2462,38 +2281,36 @@ db.Instalacion.insertMany([{
   "profundidad": 250,
   "es_productor": true,
   "nombre_zona": "Minnesota",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc1"
-  },
+  "area": ObjectId("63863c498afc52e9b8648fc1"),
   "estado": [
     {
       "nombre": "anim",
       "comentario": "est aute ad veniam nostrud",
-      "fecha": new Date("07-07-2015"),
+      "fecha": "07-07-2015",
       "motivo": "non anim"
     },
     {
       "nombre": "Lorem",
       "comentario": "dolor mollit sint officia aliquip",
-      "fecha": new Date("17-02-2020"),
+      "fecha": "17-02-2020",
       "motivo": "reprehenderit consectetur"
     },
     {
       "nombre": "voluptate",
       "comentario": "nostrud minim commodo consectetur incididunt",
-      "fecha": new Date("20-02-2013"),
+      "fecha": "20-02-2013",
       "motivo": "minim qui"
     },
     {
       "nombre": "adipisicing",
       "comentario": "ea voluptate velit enim ad",
-      "fecha": new Date("23-04-2012"),
+      "fecha": "23-04-2012",
       "motivo": "ullamco labore"
     },
     {
       "nombre": "eu",
       "comentario": "qui qui sunt sunt aute",
-      "fecha": new Date("29-12-2002"),
+      "fecha": "29-12-2002",
       "motivo": "ex minim"
     }
   ],
@@ -2513,20 +2330,18 @@ db.Instalacion.insertMany([{
   "profundidad": 873,
   "es_productor": false,
   "nombre_zona": "Kansas",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc2"
-  },
+  "area": ObjectId("63863c498afc52e9b8648fc2"),
   "estado": [
     {
       "nombre": "id",
       "comentario": "aliqua ad commodo ut anim",
-      "fecha": new Date("28-06-2012"),
+      "fecha": "28-06-2012",
       "motivo": "consectetur aute"
     },
     {
       "nombre": "nulla",
       "comentario": "est esse officia amet ipsum",
-      "fecha": new Date("30-08-1990"),
+      "fecha": "30-08-1990",
       "motivo": "proident laborum"
     }
   ],
@@ -2549,20 +2364,18 @@ db.Instalacion.insertMany([{
   "profundidad": 259,
   "es_productor": true,
   "nombre_zona": "Maine",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
-  },
+  "area": ObjectId("63863c498afc52e9b8648fc3"),
   "estado": [
     {
       "nombre": "minim",
       "comentario": "ut magna ullamco tempor occaecat",
-      "fecha": new Date("08-02-2004"),
+      "fecha": "08-02-2004",
       "motivo": "laboris qui"
     },
     {
       "nombre": "duis",
       "comentario": "reprehenderit culpa aliquip ad amet",
-      "fecha": new Date("29-07-1996"),
+      "fecha": "29-07-1996",
       "motivo": "tempor anim"
     }
   ],
@@ -2579,26 +2392,24 @@ db.Instalacion.insertMany([{
   "profundidad": 146,
   "es_productor": false,
   "nombre_zona": "Alabama",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
-  },
+  "area": ObjectId("63863c498afc52e9b8648fc3"),
   "estado": [
     {
       "nombre": "voluptate",
       "comentario": "consectetur aute aliqua ea non",
-      "fecha": new Date("27-11-2020"),
+      "fecha": "27-11-2020",
       "motivo": "amet et"
     },
     {
       "nombre": "reprehenderit",
       "comentario": "occaecat proident quis sint adipisicing",
-      "fecha": new Date("01-10-2005"),
+      "fecha": "01-10-2005",
       "motivo": "est ullamco"
     },
     {
       "nombre": "amet",
       "comentario": "ut quis nulla nostrud sint",
-      "fecha": new Date("29-12-2020"),
+      "fecha": "29-12-2020",
       "motivo": "nulla excepteur"
     }
   ],
@@ -2618,14 +2429,12 @@ db.Instalacion.insertMany([{
   "profundidad": 834,
   "es_productor": true,
   "nombre_zona": "Alabama",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
-  },
+  "area": ObjectId("63863c498afc52e9b8648fc3"),
   "estado": [
     {
       "nombre": "esse",
       "comentario": "quis excepteur ea labore velit",
-      "fecha": new Date("15-03-2007"),
+      "fecha": "15-03-2007",
       "motivo": "est non"
     }
   ],
@@ -2645,26 +2454,24 @@ db.Instalacion.insertMany([{
   "profundidad": 449,
   "es_productor": true,
   "nombre_zona": "Ohio",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc2"
-  },
+  "area": ObjectId("63863c498afc52e9b8648fc2"),
   "estado": [
     {
       "nombre": "velit",
       "comentario": "nisi duis eiusmod laborum elit",
-      "fecha": new Date("01-06-1993"),
+      "fecha": "01-06-1993",
       "motivo": "occaecat reprehenderit"
     },
     {
       "nombre": "ut",
       "comentario": "reprehenderit officia do culpa ullamco",
-      "fecha": new Date("10-01-2020"),
+      "fecha": "10-01-2020",
       "motivo": "duis ea"
     },
     {
       "nombre": "labore",
       "comentario": "magna esse ex Lorem esse",
-      "fecha": new Date("26-09-2019"),
+      "fecha": "26-09-2019",
       "motivo": "labore aliqua"
     }
   ],
@@ -2684,38 +2491,36 @@ db.Instalacion.insertMany([{
   "profundidad": 531,
   "es_productor": true,
   "nombre_zona": "Wyoming",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc4"
-  },
+  "area": ObjectId("63863c498afc52e9b8648fc4"),
   "estado": [
     {
       "nombre": "aliquip",
       "comentario": "tempor anim irure deserunt tempor",
-      "fecha": new Date("05-10-1997"),
+      "fecha": "05-10-1997",
       "motivo": "aliqua consequat"
     },
     {
       "nombre": "aute",
       "comentario": "non irure laborum commodo ullamco",
-      "fecha": new Date("06-02-2015"),
+      "fecha": "06-02-2015",
       "motivo": "adipisicing incididunt"
     },
     {
       "nombre": "cillum",
       "comentario": "tempor ea occaecat pariatur excepteur",
-      "fecha": new Date("07-02-2015"),
+      "fecha": "07-02-2015",
       "motivo": "occaecat incididunt"
     },
     {
       "nombre": "ut",
       "comentario": "ea nulla laboris labore anim",
-      "fecha": new Date("07-06-2017"),
+      "fecha": "07-06-2017",
       "motivo": "consequat Lorem"
     },
     {
       "nombre": "irure",
       "comentario": "ea pariatur ad adipisicing anim",
-      "fecha": new Date("09-01-2008"),
+      "fecha": "09-01-2008",
       "motivo": "nulla elit"
     }
   ],
@@ -2735,38 +2540,36 @@ db.Instalacion.insertMany([{
   "profundidad": 505,
   "es_productor": true,
   "nombre_zona": "Massachusetts",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc5"
-  },
+  "area": ObjectId("63863c498afc52e9b8648fc5"),
   "estado": [
     {
       "nombre": "in",
       "comentario": "consequat excepteur occaecat in exercitation",
-      "fecha": new Date("21-01-2014"),
+      "fecha": "21-01-2014",
       "motivo": "consequat excepteur"
     },
     {
       "nombre": "occaecat",
       "comentario": "non aliquip incididunt ullamco id",
-      "fecha": new Date("09-10-2009"),
+      "fecha": "09-10-2009",
       "motivo": "ea labore"
     },
     {
       "nombre": "occaecat",
       "comentario": "et veniam quis aliqua et",
-      "fecha": new Date("15-08-2022"),
+      "fecha": "15-08-2022",
       "motivo": "eu exercitation"
     },
     {
       "nombre": "consectetur",
       "comentario": "elit sint dolore officia amet",
-      "fecha": new Date("26-02-2011"),
+      "fecha": "26-02-2011",
       "motivo": "Lorem et"
     },
     {
       "nombre": "reprehenderit",
       "comentario": "occaecat officia velit sit dolor",
-      "fecha": new Date("26-12-1993"),
+      "fecha": "26-12-1993",
       "motivo": "dolor consectetur"
     }
   ],
@@ -2786,1692 +2589,30 @@ db.Instalacion.insertMany([{
   "profundidad": 605,
   "es_productor": false,
   "nombre_zona": "Washington",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
-  },
+  "area": ObjectId("63863c498afc52e9b8648fc3"),
   "estado": [
     {
       "nombre": "anim",
       "comentario": "mollit duis magna ea laboris",
-      "fecha": new Date("30-03-2006"),
+      "fecha": "30-03-2006",
       "motivo": "esse reprehenderit"
     },
     {
       "nombre": "reprehenderit",
       "comentario": "eu veniam anim excepteur officia",
-      "fecha": new Date("25-01-2018"),
+      "fecha": "25-01-2018",
       "motivo": "irure nulla"
     },
     {
       "nombre": "consequat",
       "comentario": "enim nisi quis cupidatat cillum",
-      "fecha": new Date("29-09-2001"),
+      "fecha": "29-09-2001",
       "motivo": "est duis"
     },
     {
       "nombre": "eiusmod",
       "comentario": "esse commodo dolore nulla Lorem",
-      "fecha": new Date("21-01-1998"),
-      "motivo": "Lorem voluptate"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "fugiat"
-    },
-    {
-      "nombre": "sunt"
-    },
-    {
-      "nombre": "esse"
-    },
-    {
-      "nombre": "non"
-    },
-    {
-      "nombre": "aute"
-    }
-  ]
-},{
-  "_id": ObjectId("638697443ec41448f4794802"),
-  "latitud": -75.115951,
-  "longitud": 96.528982,
-  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
-  "profundidad": 528,
-  "es_productor": false,
-  "nombre_zona": "New York",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "consequat",
-      "comentario": "ullamco Lorem amet eu exercitation",
-      "fecha": new Date("04-03-2011"),
-      "motivo": "aliqua et"
-    },
-    {
-      "nombre": "ex",
-      "comentario": "ad ut ut pariatur aliquip",
-      "fecha": new Date("25-09-1999"),
-      "motivo": "laboris velit"
-    },
-    {
-      "nombre": "sit",
-      "comentario": "aliquip nulla voluptate veniam pariatur",
-      "fecha": new Date("24-05-2021"),
-      "motivo": "labore sint"
-    },
-    {
-      "nombre": "anim",
-      "comentario": "do labore ex id commodo",
-      "fecha": new Date("12-09-2005"),
-      "motivo": "id cupidatat"
-    },
-    {
-      "nombre": "non",
-      "comentario": "proident sint enim ad minim",
-      "fecha": new Date("14-06-2012"),
-      "motivo": "enim non"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "ex"
-    },
-    {
-      "nombre": "irure"
-    },
-    {
-      "nombre": "dolore"
-    },
-    {
-      "nombre": "anim"
-    }
-  ]
-},{
-  "_id": ObjectId("638697443ec41448f4794803"),
-  "latitud": -82.61231,
-  "longitud": 87.707962,
-  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
-  "profundidad": 250,
-  "es_productor": true,
-  "nombre_zona": "Minnesota",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "anim",
-      "comentario": "est aute ad veniam nostrud",
-      "fecha": new Date("07-07-2015"),
-      "motivo": "non anim"
-    },
-    {
-      "nombre": "Lorem",
-      "comentario": "dolor mollit sint officia aliquip",
-      "fecha": new Date("17-02-2020"),
-      "motivo": "reprehenderit consectetur"
-    },
-    {
-      "nombre": "voluptate",
-      "comentario": "nostrud minim commodo consectetur incididunt",
-      "fecha": new Date("20-02-2013"),
-      "motivo": "minim qui"
-    },
-    {
-      "nombre": "adipisicing",
-      "comentario": "ea voluptate velit enim ad",
-      "fecha": new Date("23-04-2012"),
-      "motivo": "ullamco labore"
-    },
-    {
-      "nombre": "eu",
-      "comentario": "qui qui sunt sunt aute",
-      "fecha": new Date("29-12-2002"),
-      "motivo": "ex minim"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "aute"
-    },
-    {
-      "nombre": "id"
-    }
-  ]
-},{
-  "_id": ObjectId("638697443ec41448f4794804"),
-  "latitud": -62.827566,
-  "longitud": -81.417786,
-  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
-  "profundidad": 873,
-  "es_productor": false,
-  "nombre_zona": "Kansas",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "id",
-      "comentario": "aliqua ad commodo ut anim",
-      "fecha": new Date("28-06-2012"),
-      "motivo": "consectetur aute"
-    },
-    {
-      "nombre": "nulla",
-      "comentario": "est esse officia amet ipsum",
-      "fecha": new Date("30-08-1990"),
-      "motivo": "proident laborum"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "aute"
-    },
-    {
-      "nombre": "irure"
-    },
-    {
-      "nombre": "nisi"
-    }
-  ]
-},{
-  "_id": ObjectId("638697443ec41448f4794805"),
-  "latitud": -26.14198,
-  "longitud": -102.885429,
-  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
-  "profundidad": 259,
-  "es_productor": true,
-  "nombre_zona": "Maine",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "minim",
-      "comentario": "ut magna ullamco tempor occaecat",
-      "fecha": new Date("08-02-2004"),
-      "motivo": "laboris qui"
-    },
-    {
-      "nombre": "duis",
-      "comentario": "reprehenderit culpa aliquip ad amet",
-      "fecha": new Date("29-07-1996"),
-      "motivo": "tempor anim"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "sit"
-    }
-  ]
-},{
-  "_id": ObjectId("638697443ec41448f4794806"),
-  "latitud": 83.830126,
-  "longitud": 67.357681,
-  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
-  "profundidad": 146,
-  "es_productor": false,
-  "nombre_zona": "Alabama",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "voluptate",
-      "comentario": "consectetur aute aliqua ea non",
-      "fecha": new Date("27-11-2020"),
-      "motivo": "amet et"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "occaecat proident quis sint adipisicing",
-      "fecha": new Date("01-10-2005"),
-      "motivo": "est ullamco"
-    },
-    {
-      "nombre": "amet",
-      "comentario": "ut quis nulla nostrud sint",
-      "fecha": new Date("29-12-2020"),
-      "motivo": "nulla excepteur"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "cillum"
-    },
-    {
-      "nombre": "Lorem"
-    }
-  ]
-},{
-  "_id": ObjectId("638697443ec41448f4794807"),
-  "latitud": -57.850042,
-  "longitud": 79.677488,
-  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
-  "profundidad": 834,
-  "es_productor": true,
-  "nombre_zona": "Alabama",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "esse",
-      "comentario": "quis excepteur ea labore velit",
-      "fecha": new Date("15-03-2007"),
-      "motivo": "est non"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "occaecat"
-    },
-    {
-      "nombre": "fugiat"
-    }
-  ]
-},{
-  "_id": ObjectId("638697443ec41448f4794808"),
-  "latitud": 89.418417,
-  "longitud": -155.982361,
-  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
-  "profundidad": 449,
-  "es_productor": true,
-  "nombre_zona": "Ohio",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "velit",
-      "comentario": "nisi duis eiusmod laborum elit",
-      "fecha": new Date("01-06-1993"),
-      "motivo": "occaecat reprehenderit"
-    },
-    {
-      "nombre": "ut",
-      "comentario": "reprehenderit officia do culpa ullamco",
-      "fecha": new Date("10-01-2020"),
-      "motivo": "duis ea"
-    },
-    {
-      "nombre": "labore",
-      "comentario": "magna esse ex Lorem esse",
-      "fecha": new Date("26-09-2019"),
-      "motivo": "labore aliqua"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "Lorem"
-    },
-    {
-      "nombre": "ullamco"
-    }
-  ]
-},{
-  "_id": ObjectId("638697443ec41448f4794809"),
-  "latitud": 17.116161,
-  "longitud": 173.382221,
-  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
-  "profundidad": 531,
-  "es_productor": true,
-  "nombre_zona": "Wyoming",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "aliquip",
-      "comentario": "tempor anim irure deserunt tempor",
-      "fecha": new Date("05-10-1997"),
-      "motivo": "aliqua consequat"
-    },
-    {
-      "nombre": "aute",
-      "comentario": "non irure laborum commodo ullamco",
-      "fecha": new Date("06-02-2015"),
-      "motivo": "adipisicing incididunt"
-    },
-    {
-      "nombre": "cillum",
-      "comentario": "tempor ea occaecat pariatur excepteur",
-      "fecha": new Date("07-02-2015"),
-      "motivo": "occaecat incididunt"
-    },
-    {
-      "nombre": "ut",
-      "comentario": "ea nulla laboris labore anim",
-      "fecha": new Date("07-06-2017"),
-      "motivo": "consequat Lorem"
-    },
-    {
-      "nombre": "irure",
-      "comentario": "ea pariatur ad adipisicing anim",
-      "fecha": new Date("09-01-2008"),
-      "motivo": "nulla elit"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "fugiat"
-    },
-    {
-      "nombre": "eiusmod"
-    }
-  ]
-},{
-  "_id": ObjectId("638697443ec41448f479480a"),
-  "latitud": -51.815494,
-  "longitud": 119.898034,
-  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
-  "profundidad": 505,
-  "es_productor": true,
-  "nombre_zona": "Massachusetts",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "in",
-      "comentario": "consequat excepteur occaecat in exercitation",
-      "fecha": new Date("21-01-2014"),
-      "motivo": "consequat excepteur"
-    },
-    {
-      "nombre": "occaecat",
-      "comentario": "non aliquip incididunt ullamco id",
-      "fecha": new Date("09-10-2009"),
-      "motivo": "ea labore"
-    },
-    {
-      "nombre": "occaecat",
-      "comentario": "et veniam quis aliqua et",
-      "fecha": new Date("15-08-2022"),
-      "motivo": "eu exercitation"
-    },
-    {
-      "nombre": "consectetur",
-      "comentario": "elit sint dolore officia amet",
-      "fecha": new Date("26-02-2011"),
-      "motivo": "Lorem et"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "occaecat officia velit sit dolor",
-      "fecha": new Date("26-12-1993"),
-      "motivo": "dolor consectetur"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "Lorem"
-    },
-    {
-      "nombre": "ullamco"
-    }
-  ]
-},{
-  "_id": ObjectId("638697443ec41448f479480b"),
-  "latitud": -87.480671,
-  "longitud": -166.420003,
-  "descripcion": "Aliquip exercitation proden cillum nisi duis deserunt cillum sit ven...",
-  "profundidad": 605,
-  "es_productor": false,
-  "nombre_zona": "Washington",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "anim",
-      "comentario": "mollit duis magna ea laboris",
-      "fecha": new Date("30-03-2006"),
-      "motivo": "esse reprehenderit"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "eu veniam anim excepteur officia",
-      "fecha": new Date("25-01-2018"),
-      "motivo": "irure nulla"
-    },
-    {
-      "nombre": "consequat",
-      "comentario": "enim nisi quis cupidatat cillum",
-      "fecha": new Date("29-09-2001"),
-      "motivo": "est duis"
-    },
-    {
-      "nombre": "eiusmod",
-      "comentario": "esse commodo dolore nulla Lorem",
-      "fecha": new Date("21-01-1998"),
-      "motivo": "Lorem voluptate"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "fugiat"
-    },
-    {
-      "nombre": "sunt"
-    },
-    {
-      "nombre": "esse"
-    },
-    {
-      "nombre": "non"
-    },
-    {
-      "nombre": "aute"
-    }
-  ]
-},{
-  "_id": ObjectId("63869876f3389e40e00989b7"),
-  "latitud": -75.115951,
-  "longitud": 96.528982,
-  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
-  "profundidad": 528,
-  "es_productor": false,
-  "nombre_zona": "New York",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "consequat",
-      "comentario": "ullamco Lorem amet eu exercitation",
-      "fecha": new Date("04-03-2011"),
-      "motivo": "aliqua et"
-    },
-    {
-      "nombre": "ex",
-      "comentario": "ad ut ut pariatur aliquip",
-      "fecha": new Date("25-09-1999"),
-      "motivo": "laboris velit"
-    },
-    {
-      "nombre": "sit",
-      "comentario": "aliquip nulla voluptate veniam pariatur",
-      "fecha": new Date("24-05-2021"),
-      "motivo": "labore sint"
-    },
-    {
-      "nombre": "anim",
-      "comentario": "do labore ex id commodo",
-      "fecha": new Date("12-09-2005"),
-      "motivo": "id cupidatat"
-    },
-    {
-      "nombre": "non",
-      "comentario": "proident sint enim ad minim",
-      "fecha": new Date("14-06-2012"),
-      "motivo": "enim non"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "ex"
-    },
-    {
-      "nombre": "irure"
-    },
-    {
-      "nombre": "dolore"
-    },
-    {
-      "nombre": "anim"
-    }
-  ]
-},{
-  "_id": ObjectId("63869876f3389e40e00989b8"),
-  "latitud": -82.61231,
-  "longitud": 87.707962,
-  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
-  "profundidad": 250,
-  "es_productor": true,
-  "nombre_zona": "Minnesota",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "anim",
-      "comentario": "est aute ad veniam nostrud",
-      "fecha": new Date("07-07-2015"),
-      "motivo": "non anim"
-    },
-    {
-      "nombre": "Lorem",
-      "comentario": "dolor mollit sint officia aliquip",
-      "fecha": new Date("17-02-2020"),
-      "motivo": "reprehenderit consectetur"
-    },
-    {
-      "nombre": "voluptate",
-      "comentario": "nostrud minim commodo consectetur incididunt",
-      "fecha": new Date("20-02-2013"),
-      "motivo": "minim qui"
-    },
-    {
-      "nombre": "adipisicing",
-      "comentario": "ea voluptate velit enim ad",
-      "fecha": new Date("23-04-2012"),
-      "motivo": "ullamco labore"
-    },
-    {
-      "nombre": "eu",
-      "comentario": "qui qui sunt sunt aute",
-      "fecha": new Date("29-12-2002"),
-      "motivo": "ex minim"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "aute"
-    },
-    {
-      "nombre": "id"
-    }
-  ]
-},{
-  "_id": ObjectId("63869876f3389e40e00989b9"),
-  "latitud": -62.827566,
-  "longitud": -81.417786,
-  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
-  "profundidad": 873,
-  "es_productor": false,
-  "nombre_zona": "Kansas",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "id",
-      "comentario": "aliqua ad commodo ut anim",
-      "fecha": new Date("28-06-2012"),
-      "motivo": "consectetur aute"
-    },
-    {
-      "nombre": "nulla",
-      "comentario": "est esse officia amet ipsum",
-      "fecha": new Date("30-08-1990"),
-      "motivo": "proident laborum"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "aute"
-    },
-    {
-      "nombre": "irure"
-    },
-    {
-      "nombre": "nisi"
-    }
-  ]
-},{
-  "_id": ObjectId("63869876f3389e40e00989ba"),
-  "latitud": -26.14198,
-  "longitud": -102.885429,
-  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
-  "profundidad": 259,
-  "es_productor": true,
-  "nombre_zona": "Maine",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "minim",
-      "comentario": "ut magna ullamco tempor occaecat",
-      "fecha": new Date("08-02-2004"),
-      "motivo": "laboris qui"
-    },
-    {
-      "nombre": "duis",
-      "comentario": "reprehenderit culpa aliquip ad amet",
-      "fecha": new Date("29-07-1996"),
-      "motivo": "tempor anim"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "sit"
-    }
-  ]
-},{
-  "_id": ObjectId("63869876f3389e40e00989bb"),
-  "latitud": 83.830126,
-  "longitud": 67.357681,
-  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
-  "profundidad": 146,
-  "es_productor": false,
-  "nombre_zona": "Alabama",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "voluptate",
-      "comentario": "consectetur aute aliqua ea non",
-      "fecha": new Date("27-11-2020"),
-      "motivo": "amet et"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "occaecat proident quis sint adipisicing",
-      "fecha": new Date("01-10-2005"),
-      "motivo": "est ullamco"
-    },
-    {
-      "nombre": "amet",
-      "comentario": "ut quis nulla nostrud sint",
-      "fecha": new Date("29-12-2020"),
-      "motivo": "nulla excepteur"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "cillum"
-    },
-    {
-      "nombre": "Lorem"
-    }
-  ]
-},{
-  "_id": ObjectId("63869876f3389e40e00989bc"),
-  "latitud": -57.850042,
-  "longitud": 79.677488,
-  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
-  "profundidad": 834,
-  "es_productor": true,
-  "nombre_zona": "Alabama",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "esse",
-      "comentario": "quis excepteur ea labore velit",
-      "fecha": new Date("15-03-2007"),
-      "motivo": "est non"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "occaecat"
-    },
-    {
-      "nombre": "fugiat"
-    }
-  ]
-},{
-  "_id": ObjectId("63869876f3389e40e00989bd"),
-  "latitud": 89.418417,
-  "longitud": -155.982361,
-  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
-  "profundidad": 449,
-  "es_productor": true,
-  "nombre_zona": "Ohio",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "velit",
-      "comentario": "nisi duis eiusmod laborum elit",
-      "fecha": new Date("01-06-1993"),
-      "motivo": "occaecat reprehenderit"
-    },
-    {
-      "nombre": "ut",
-      "comentario": "reprehenderit officia do culpa ullamco",
-      "fecha": new Date("10-01-2020"),
-      "motivo": "duis ea"
-    },
-    {
-      "nombre": "labore",
-      "comentario": "magna esse ex Lorem esse",
-      "fecha": new Date("26-09-2019"),
-      "motivo": "labore aliqua"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "Lorem"
-    },
-    {
-      "nombre": "ullamco"
-    }
-  ]
-},{
-  "_id": ObjectId("63869876f3389e40e00989be"),
-  "latitud": 17.116161,
-  "longitud": 173.382221,
-  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
-  "profundidad": 531,
-  "es_productor": true,
-  "nombre_zona": "Wyoming",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "aliquip",
-      "comentario": "tempor anim irure deserunt tempor",
-      "fecha": new Date("05-10-1997"),
-      "motivo": "aliqua consequat"
-    },
-    {
-      "nombre": "aute",
-      "comentario": "non irure laborum commodo ullamco",
-      "fecha": new Date("06-02-2015"),
-      "motivo": "adipisicing incididunt"
-    },
-    {
-      "nombre": "cillum",
-      "comentario": "tempor ea occaecat pariatur excepteur",
-      "fecha": new Date("07-02-2015"),
-      "motivo": "occaecat incididunt"
-    },
-    {
-      "nombre": "ut",
-      "comentario": "ea nulla laboris labore anim",
-      "fecha": new Date("07-06-2017"),
-      "motivo": "consequat Lorem"
-    },
-    {
-      "nombre": "irure",
-      "comentario": "ea pariatur ad adipisicing anim",
-      "fecha": new Date("09-01-2008"),
-      "motivo": "nulla elit"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "fugiat"
-    },
-    {
-      "nombre": "eiusmod"
-    }
-  ]
-},{
-  "_id": ObjectId("63869876f3389e40e00989bf"),
-  "latitud": -51.815494,
-  "longitud": 119.898034,
-  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
-  "profundidad": 505,
-  "es_productor": true,
-  "nombre_zona": "Massachusetts",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "in",
-      "comentario": "consequat excepteur occaecat in exercitation",
-      "fecha": new Date("21-01-2014"),
-      "motivo": "consequat excepteur"
-    },
-    {
-      "nombre": "occaecat",
-      "comentario": "non aliquip incididunt ullamco id",
-      "fecha": new Date("09-10-2009"),
-      "motivo": "ea labore"
-    },
-    {
-      "nombre": "occaecat",
-      "comentario": "et veniam quis aliqua et",
-      "fecha": new Date("15-08-2022"),
-      "motivo": "eu exercitation"
-    },
-    {
-      "nombre": "consectetur",
-      "comentario": "elit sint dolore officia amet",
-      "fecha": new Date("26-02-2011"),
-      "motivo": "Lorem et"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "occaecat officia velit sit dolor",
-      "fecha": new Date("26-12-1993"),
-      "motivo": "dolor consectetur"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "Lorem"
-    },
-    {
-      "nombre": "ullamco"
-    }
-  ]
-},{
-  "_id": ObjectId("63869876f3389e40e00989c0"),
-  "latitud": -87.480671,
-  "longitud": -166.420003,
-  "descripcion": "Aliquip exercitation proident cillum nisi duis deserunt cillum sit veniam et incididunt. Aliqua incididunt et duis adipisicing dolore cupidatat dolor anim sint eu aliquip aliquip. Incididunt ex aliquip aliqua mollit proident cupidatat. Mollit eiusmod sunt nostrud nisi proident velit magna. Irure officia eu amet esse sit magna pariatur est magna officia amet eu reprehenderit.\r\n",
-  "profundidad": 605,
-  "es_productor": false,
-  "nombre_zona": "Washington",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "anim",
-      "comentario": "mollit duis magna ea laboris",
-      "fecha": new Date("30-03-2006"),
-      "motivo": "esse reprehenderit"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "eu veniam anim excepteur officia",
-      "fecha": new Date("25-01-2018"),
-      "motivo": "irure nulla"
-    },
-    {
-      "nombre": "consequat",
-      "comentario": "enim nisi quis cupidatat cillum",
-      "fecha": new Date("29-09-2001"),
-      "motivo": "est duis"
-    },
-    {
-      "nombre": "eiusmod",
-      "comentario": "esse commodo dolore nulla Lorem",
-      "fecha": new Date("21-01-1998"),
-      "motivo": "Lorem voluptate"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "fugiat"
-    },
-    {
-      "nombre": "sunt"
-    },
-    {
-      "nombre": "esse"
-    },
-    {
-      "nombre": "non"
-    },
-    {
-      "nombre": "aute"
-    }
-  ]
-},{
-  "_id": ObjectId("6386988fe20426555fe45653"),
-  "latitud": -75.115951,
-  "longitud": 96.528982,
-  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
-  "profundidad": 528,
-  "es_productor": false,
-  "nombre_zona": "New York",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "consequat",
-      "comentario": "ullamco Lorem amet eu exercitation",
-      "fecha": new Date("04-03-2011"),
-      "motivo": "aliqua et"
-    },
-    {
-      "nombre": "ex",
-      "comentario": "ad ut ut pariatur aliquip",
-      "fecha": new Date("25-09-1999"),
-      "motivo": "laboris velit"
-    },
-    {
-      "nombre": "sit",
-      "comentario": "aliquip nulla voluptate veniam pariatur",
-      "fecha": new Date("24-05-2021"),
-      "motivo": "labore sint"
-    },
-    {
-      "nombre": "anim",
-      "comentario": "do labore ex id commodo",
-      "fecha": new Date("12-09-2005"),
-      "motivo": "id cupidatat"
-    },
-    {
-      "nombre": "non",
-      "comentario": "proident sint enim ad minim",
-      "fecha": new Date("14-06-2012"),
-      "motivo": "enim non"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "ex"
-    },
-    {
-      "nombre": "irure"
-    },
-    {
-      "nombre": "dolore"
-    },
-    {
-      "nombre": "anim"
-    }
-  ]
-},{
-  "_id": ObjectId("6386988fe20426555fe45654"),
-  "latitud": -82.61231,
-  "longitud": 87.707962,
-  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
-  "profundidad": 250,
-  "es_productor": true,
-  "nombre_zona": "Minnesota",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "anim",
-      "comentario": "est aute ad veniam nostrud",
-      "fecha": new Date("07-07-2015"),
-      "motivo": "non anim"
-    },
-    {
-      "nombre": "Lorem",
-      "comentario": "dolor mollit sint officia aliquip",
-      "fecha": new Date("17-02-2020"),
-      "motivo": "reprehenderit consectetur"
-    },
-    {
-      "nombre": "voluptate",
-      "comentario": "nostrud minim commodo consectetur incididunt",
-      "fecha": new Date("20-02-2013"),
-      "motivo": "minim qui"
-    },
-    {
-      "nombre": "adipisicing",
-      "comentario": "ea voluptate velit enim ad",
-      "fecha": new Date("23-04-2012"),
-      "motivo": "ullamco labore"
-    },
-    {
-      "nombre": "eu",
-      "comentario": "qui qui sunt sunt aute",
-      "fecha": new Date("29-12-2002"),
-      "motivo": "ex minim"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "aute"
-    },
-    {
-      "nombre": "id"
-    }
-  ]
-},{
-  "_id": ObjectId("6386988fe20426555fe45655"),
-  "latitud": -62.827566,
-  "longitud": -81.417786,
-  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
-  "profundidad": 873,
-  "es_productor": false,
-  "nombre_zona": "Kansas",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "id",
-      "comentario": "aliqua ad commodo ut anim",
-      "fecha": new Date("28-06-2012"),
-      "motivo": "consectetur aute"
-    },
-    {
-      "nombre": "nulla",
-      "comentario": "est esse officia amet ipsum",
-      "fecha": new Date("30-08-1990"),
-      "motivo": "proident laborum"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "aute"
-    },
-    {
-      "nombre": "irure"
-    },
-    {
-      "nombre": "nisi"
-    }
-  ]
-},{
-  "_id": ObjectId("6386988fe20426555fe45656"),
-  "latitud": -26.14198,
-  "longitud": -102.885429,
-  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
-  "profundidad": 259,
-  "es_productor": true,
-  "nombre_zona": "Maine",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "minim",
-      "comentario": "ut magna ullamco tempor occaecat",
-      "fecha": new Date("08-02-2004"),
-      "motivo": "laboris qui"
-    },
-    {
-      "nombre": "duis",
-      "comentario": "reprehenderit culpa aliquip ad amet",
-      "fecha": new Date("29-07-1996"),
-      "motivo": "tempor anim"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "sit"
-    }
-  ]
-},{
-  "_id": ObjectId("6386988fe20426555fe45657"),
-  "latitud": 83.830126,
-  "longitud": 67.357681,
-  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
-  "profundidad": 146,
-  "es_productor": false,
-  "nombre_zona": "Alabama",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "voluptate",
-      "comentario": "consectetur aute aliqua ea non",
-      "fecha": new Date("27-11-2020"),
-      "motivo": "amet et"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "occaecat proident quis sint adipisicing",
-      "fecha": new Date("01-10-2005"),
-      "motivo": "est ullamco"
-    },
-    {
-      "nombre": "amet",
-      "comentario": "ut quis nulla nostrud sint",
-      "fecha": new Date("29-12-2020"),
-      "motivo": "nulla excepteur"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "cillum"
-    },
-    {
-      "nombre": "Lorem"
-    }
-  ]
-},{
-  "_id": ObjectId("6386988fe20426555fe45658"),
-  "latitud": -57.850042,
-  "longitud": 79.677488,
-  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
-  "profundidad": 834,
-  "es_productor": true,
-  "nombre_zona": "Alabama",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "esse",
-      "comentario": "quis excepteur ea labore velit",
-      "fecha": new Date("15-03-2007"),
-      "motivo": "est non"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "occaecat"
-    },
-    {
-      "nombre": "fugiat"
-    }
-  ]
-},{
-  "_id": ObjectId("6386988fe20426555fe45659"),
-  "latitud": 89.418417,
-  "longitud": -155.982361,
-  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
-  "profundidad": 449,
-  "es_productor": true,
-  "nombre_zona": "Ohio",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "velit",
-      "comentario": "nisi duis eiusmod laborum elit",
-      "fecha": new Date("01-06-1993"),
-      "motivo": "occaecat reprehenderit"
-    },
-    {
-      "nombre": "ut",
-      "comentario": "reprehenderit officia do culpa ullamco",
-      "fecha": new Date("10-01-2020"),
-      "motivo": "duis ea"
-    },
-    {
-      "nombre": "labore",
-      "comentario": "magna esse ex Lorem esse",
-      "fecha": new Date("26-09-2019"),
-      "motivo": "labore aliqua"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "Lorem"
-    },
-    {
-      "nombre": "ullamco"
-    }
-  ]
-},{
-  "_id": ObjectId("6386988fe20426555fe4565a"),
-  "latitud": 17.116161,
-  "longitud": 173.382221,
-  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
-  "profundidad": 531,
-  "es_productor": true,
-  "nombre_zona": "Wyoming",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "aliquip",
-      "comentario": "tempor anim irure deserunt tempor",
-      "fecha": new Date("05-10-1997"),
-      "motivo": "aliqua consequat"
-    },
-    {
-      "nombre": "aute",
-      "comentario": "non irure laborum commodo ullamco",
-      "fecha": new Date("06-02-2015"),
-      "motivo": "adipisicing incididunt"
-    },
-    {
-      "nombre": "cillum",
-      "comentario": "tempor ea occaecat pariatur excepteur",
-      "fecha": new Date("07-02-2015"),
-      "motivo": "occaecat incididunt"
-    },
-    {
-      "nombre": "ut",
-      "comentario": "ea nulla laboris labore anim",
-      "fecha": new Date("07-06-2017"),
-      "motivo": "consequat Lorem"
-    },
-    {
-      "nombre": "irure",
-      "comentario": "ea pariatur ad adipisicing anim",
-      "fecha": new Date("09-01-2008"),
-      "motivo": "nulla elit"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "fugiat"
-    },
-    {
-      "nombre": "eiusmod"
-    }
-  ]
-},{
-  "_id": ObjectId("6386988fe20426555fe4565b"),
-  "latitud": -51.815494,
-  "longitud": 119.898034,
-  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
-  "profundidad": 505,
-  "es_productor": true,
-  "nombre_zona": "Massachusetts",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "in",
-      "comentario": "consequat excepteur occaecat in exercitation",
-      "fecha": new Date("21-01-2014"),
-      "motivo": "consequat excepteur"
-    },
-    {
-      "nombre": "occaecat",
-      "comentario": "non aliquip incididunt ullamco id",
-      "fecha": new Date("09-10-2009"),
-      "motivo": "ea labore"
-    },
-    {
-      "nombre": "occaecat",
-      "comentario": "et veniam quis aliqua et",
-      "fecha": new Date("15-08-2022"),
-      "motivo": "eu exercitation"
-    },
-    {
-      "nombre": "consectetur",
-      "comentario": "elit sint dolore officia amet",
-      "fecha": new Date("26-02-2011"),
-      "motivo": "Lorem et"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "occaecat officia velit sit dolor",
-      "fecha": new Date("26-12-1993"),
-      "motivo": "dolor consectetur"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "Lorem"
-    },
-    {
-      "nombre": "ullamco"
-    }
-  ]
-},{
-  "_id": ObjectId("6386988fe20426555fe4565c"),
-  "latitud": -87.480671,
-  "longitud": -166.420003,
-  "descripcion": "Aliquip exercitation proident cillum nisi duis deserunt cillum sit veniam et incididunt. Aliqua incididunt et duis adipisicing dolore cupidatat dolor anim sint eu aliquip aliquip. Incididunt ex aliquip aliqua mollit proident cupidatat. Mollit eiusmod sunt nostrud nisi proident velit magna. Irure officia eu amet esse sit magna pariatur est magna officia amet eu reprehenderit.\r\n",
-  "profundidad": 605,
-  "es_productor": false,
-  "nombre_zona": "Washington",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "anim",
-      "comentario": "mollit duis magna ea laboris",
-      "fecha": new Date("30-03-2006"),
-      "motivo": "esse reprehenderit"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "eu veniam anim excepteur officia",
-      "fecha": new Date("25-01-2018"),
-      "motivo": "irure nulla"
-    },
-    {
-      "nombre": "consequat",
-      "comentario": "enim nisi quis cupidatat cillum",
-      "fecha": new Date("29-09-2001"),
-      "motivo": "est duis"
-    },
-    {
-      "nombre": "eiusmod",
-      "comentario": "esse commodo dolore nulla Lorem",
-      "fecha": new Date("21-01-1998"),
-      "motivo": "Lorem voluptate"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "fugiat"
-    },
-    {
-      "nombre": "sunt"
-    },
-    {
-      "nombre": "esse"
-    },
-    {
-      "nombre": "non"
-    },
-    {
-      "nombre": "aute"
-    }
-  ]
-},{
-  "_id": ObjectId("6386997aa17abc1502d219b4"),
-  "latitud": -75.115951,
-  "longitud": 96.528982,
-  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
-  "profundidad": 528,
-  "es_productor": false,
-  "nombre_zona": "New York",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "consequat",
-      "comentario": "ullamco Lorem amet eu exercitation",
-      "fecha": new Date("04-03-2011"),
-      "motivo": "aliqua et"
-    },
-    {
-      "nombre": "ex",
-      "comentario": "ad ut ut pariatur aliquip",
-      "fecha": new Date("25-09-1999"),
-      "motivo": "laboris velit"
-    },
-    {
-      "nombre": "sit",
-      "comentario": "aliquip nulla voluptate veniam pariatur",
-      "fecha": new Date("24-05-2021"),
-      "motivo": "labore sint"
-    },
-    {
-      "nombre": "anim",
-      "comentario": "do labore ex id commodo",
-      "fecha": new Date("12-09-2005"),
-      "motivo": "id cupidatat"
-    },
-    {
-      "nombre": "non",
-      "comentario": "proident sint enim ad minim",
-      "fecha": new Date("14-06-2012"),
-      "motivo": "enim non"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "ex"
-    },
-    {
-      "nombre": "irure"
-    },
-    {
-      "nombre": "dolore"
-    },
-    {
-      "nombre": "anim"
-    }
-  ]
-},{
-  "_id": ObjectId("6386997aa17abc1502d219b5"),
-  "latitud": -82.61231,
-  "longitud": 87.707962,
-  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
-  "profundidad": 250,
-  "es_productor": true,
-  "nombre_zona": "Minnesota",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "anim",
-      "comentario": "est aute ad veniam nostrud",
-      "fecha": new Date("07-07-2015"),
-      "motivo": "non anim"
-    },
-    {
-      "nombre": "Lorem",
-      "comentario": "dolor mollit sint officia aliquip",
-      "fecha": new Date("17-02-2020"),
-      "motivo": "reprehenderit consectetur"
-    },
-    {
-      "nombre": "voluptate",
-      "comentario": "nostrud minim commodo consectetur incididunt",
-      "fecha": new Date("20-02-2013"),
-      "motivo": "minim qui"
-    },
-    {
-      "nombre": "adipisicing",
-      "comentario": "ea voluptate velit enim ad",
-      "fecha": new Date("23-04-2012"),
-      "motivo": "ullamco labore"
-    },
-    {
-      "nombre": "eu",
-      "comentario": "qui qui sunt sunt aute",
-      "fecha": new Date("29-12-2002"),
-      "motivo": "ex minim"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "aute"
-    },
-    {
-      "nombre": "id"
-    }
-  ]
-},{
-  "_id": ObjectId("6386997aa17abc1502d219b6"),
-  "latitud": -62.827566,
-  "longitud": -81.417786,
-  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
-  "profundidad": 873,
-  "es_productor": false,
-  "nombre_zona": "Kansas",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "id",
-      "comentario": "aliqua ad commodo ut anim",
-      "fecha": new Date("28-06-2012"),
-      "motivo": "consectetur aute"
-    },
-    {
-      "nombre": "nulla",
-      "comentario": "est esse officia amet ipsum",
-      "fecha": new Date("30-08-1990"),
-      "motivo": "proident laborum"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "aute"
-    },
-    {
-      "nombre": "irure"
-    },
-    {
-      "nombre": "nisi"
-    }
-  ]
-},{
-  "_id": ObjectId("6386997aa17abc1502d219b7"),
-  "latitud": -26.14198,
-  "longitud": -102.885429,
-  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
-  "profundidad": 259,
-  "es_productor": true,
-  "nombre_zona": "Maine",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "minim",
-      "comentario": "ut magna ullamco tempor occaecat",
-      "fecha": new Date("08-02-2004"),
-      "motivo": "laboris qui"
-    },
-    {
-      "nombre": "duis",
-      "comentario": "reprehenderit culpa aliquip ad amet",
-      "fecha": new Date("29-07-1996"),
-      "motivo": "tempor anim"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "sit"
-    }
-  ]
-},{
-  "_id": ObjectId("6386997aa17abc1502d219b8"),
-  "latitud": 83.830126,
-  "longitud": 67.357681,
-  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
-  "profundidad": 146,
-  "es_productor": false,
-  "nombre_zona": "Alabama",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "voluptate",
-      "comentario": "consectetur aute aliqua ea non",
-      "fecha": new Date("27-11-2020"),
-      "motivo": "amet et"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "occaecat proident quis sint adipisicing",
-      "fecha": new Date("01-10-2005"),
-      "motivo": "est ullamco"
-    },
-    {
-      "nombre": "amet",
-      "comentario": "ut quis nulla nostrud sint",
-      "fecha": new Date("29-12-2020"),
-      "motivo": "nulla excepteur"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "cillum"
-    },
-    {
-      "nombre": "Lorem"
-    }
-  ]
-},{
-  "_id": ObjectId("6386997aa17abc1502d219b9"),
-  "latitud": -57.850042,
-  "longitud": 79.677488,
-  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
-  "profundidad": 834,
-  "es_productor": true,
-  "nombre_zona": "Alabama",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "esse",
-      "comentario": "quis excepteur ea labore velit",
-      "fecha": new Date("15-03-2007"),
-      "motivo": "est non"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "occaecat"
-    },
-    {
-      "nombre": "fugiat"
-    }
-  ]
-},{
-  "_id": ObjectId("6386997aa17abc1502d219ba"),
-  "latitud": 89.418417,
-  "longitud": -155.982361,
-  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
-  "profundidad": 449,
-  "es_productor": true,
-  "nombre_zona": "Ohio",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "velit",
-      "comentario": "nisi duis eiusmod laborum elit",
-      "fecha": new Date("01-06-1993"),
-      "motivo": "occaecat reprehenderit"
-    },
-    {
-      "nombre": "ut",
-      "comentario": "reprehenderit officia do culpa ullamco",
-      "fecha": new Date("10-01-2020"),
-      "motivo": "duis ea"
-    },
-    {
-      "nombre": "labore",
-      "comentario": "magna esse ex Lorem esse",
-      "fecha": new Date("26-09-2019"),
-      "motivo": "labore aliqua"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "Lorem"
-    },
-    {
-      "nombre": "ullamco"
-    }
-  ]
-},{
-  "_id": ObjectId("6386997aa17abc1502d219bb"),
-  "latitud": 17.116161,
-  "longitud": 173.382221,
-  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
-  "profundidad": 531,
-  "es_productor": true,
-  "nombre_zona": "Wyoming",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "aliquip",
-      "comentario": "tempor anim irure deserunt tempor",
-      "fecha": new Date("05-10-1997"),
-      "motivo": "aliqua consequat"
-    },
-    {
-      "nombre": "aute",
-      "comentario": "non irure laborum commodo ullamco",
-      "fecha": new Date("06-02-2015"),
-      "motivo": "adipisicing incididunt"
-    },
-    {
-      "nombre": "cillum",
-      "comentario": "tempor ea occaecat pariatur excepteur",
-      "fecha": new Date("07-02-2015"),
-      "motivo": "occaecat incididunt"
-    },
-    {
-      "nombre": "ut",
-      "comentario": "ea nulla laboris labore anim",
-      "fecha": new Date("07-06-2017"),
-      "motivo": "consequat Lorem"
-    },
-    {
-      "nombre": "irure",
-      "comentario": "ea pariatur ad adipisicing anim",
-      "fecha": new Date("09-01-2008"),
-      "motivo": "nulla elit"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "fugiat"
-    },
-    {
-      "nombre": "eiusmod"
-    }
-  ]
-},{
-  "_id": ObjectId("6386997aa17abc1502d219bc"),
-  "latitud": -51.815494,
-  "longitud": 119.898034,
-  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
-  "profundidad": 505,
-  "es_productor": true,
-  "nombre_zona": "Massachusetts",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "in",
-      "comentario": "consequat excepteur occaecat in exercitation",
-      "fecha": new Date("21-01-2014"),
-      "motivo": "consequat excepteur"
-    },
-    {
-      "nombre": "occaecat",
-      "comentario": "non aliquip incididunt ullamco id",
-      "fecha": new Date("09-10-2009"),
-      "motivo": "ea labore"
-    },
-    {
-      "nombre": "occaecat",
-      "comentario": "et veniam quis aliqua et",
-      "fecha": new Date("15-08-2022"),
-      "motivo": "eu exercitation"
-    },
-    {
-      "nombre": "consectetur",
-      "comentario": "elit sint dolore officia amet",
-      "fecha": new Date("26-02-2011"),
-      "motivo": "Lorem et"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "occaecat officia velit sit dolor",
-      "fecha": new Date("26-12-1993"),
-      "motivo": "dolor consectetur"
-    }
-  ],
-  "sistema_de_extraccion": [
-    {
-      "nombre": "Lorem"
-    },
-    {
-      "nombre": "ullamco"
-    }
-  ]
-},{
-  "_id": ObjectId("6386997aa17abc1502d219bd"),
-  "latitud": -87.480671,
-  "longitud": -166.420003,
-  "descripcion": "Aliquip exercitation proident cillum nisi duis deserunt cillum sit veniam et incididunt. Aliqua incididunt et duis adipisicing dolore cupidatat dolor anim sint eu aliquip aliquip. Incididunt ex aliquip aliqua mollit proident cupidatat. Mollit eiusmod sunt nostrud nisi proident velit magna. Irure officia eu amet esse sit magna pariatur est magna officia amet eu reprehenderit.\r\n",
-  "profundidad": 605,
-  "es_productor": false,
-  "nombre_zona": "Washington",
-  "area": "",
-  "estado": [
-    {
-      "nombre": "anim",
-      "comentario": "mollit duis magna ea laboris",
-      "fecha": new Date("30-03-2006"),
-      "motivo": "esse reprehenderit"
-    },
-    {
-      "nombre": "reprehenderit",
-      "comentario": "eu veniam anim excepteur officia",
-      "fecha": new Date("25-01-2018"),
-      "motivo": "irure nulla"
-    },
-    {
-      "nombre": "consequat",
-      "comentario": "enim nisi quis cupidatat cillum",
-      "fecha": new Date("29-09-2001"),
-      "motivo": "est duis"
-    },
-    {
-      "nombre": "eiusmod",
-      "comentario": "esse commodo dolore nulla Lorem",
-      "fecha": new Date("21-01-1998"),
+      "fecha": "21-01-1998",
       "motivo": "Lorem voluptate"
     }
   ],
@@ -4500,90 +2641,70 @@ db.Tanque.insertMany([{
   "capacidad_total": 4575.1459,
   "capacidad_disponible": 5115.2601,
   "nombre_zona": "Florida",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc2"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc2")
 },{
   "_id": ObjectId("63864366fe7157ccc94a8948"),
   "tag": "967qui",
   "capacidad_total": 4950.2794,
   "capacidad_disponible": 5508.6722,
   "nombre_zona": "Kentucky",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc2"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc2")
 },{
   "_id": ObjectId("63864366fe7157ccc94a8949"),
   "tag": "402amet",
   "capacidad_total": 3338.7829,
   "capacidad_disponible": 7766.3344,
   "nombre_zona": "New Hampshire",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc5"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc5")
 },{
   "_id": ObjectId("63864366fe7157ccc94a894a"),
   "tag": "593veniam",
   "capacidad_total": 7060.0103,
   "capacidad_disponible": 369.6027,
   "nombre_zona": "Washington",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc3")
 },{
   "_id": ObjectId("63864366fe7157ccc94a894b"),
   "tag": "42pariatur",
   "capacidad_total": 8410.0891,
   "capacidad_disponible": 4278.5031,
   "nombre_zona": "Tennessee",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc4"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc4")
 },{
   "_id": ObjectId("63864366fe7157ccc94a894c"),
   "tag": "677nisi",
   "capacidad_total": 890.4184,
   "capacidad_disponible": 7602.9176,
   "nombre_zona": "Washington",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc3")
 },{
   "_id": ObjectId("63864366fe7157ccc94a894d"),
   "tag": "209nulla",
   "capacidad_total": 3353.2439,
   "capacidad_disponible": 4592.7663,
   "nombre_zona": "Mississippi",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc5"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc5")
 },{
   "_id": ObjectId("63864366fe7157ccc94a894e"),
   "tag": "31occaecat",
   "capacidad_total": 3384.3476,
   "capacidad_disponible": 7248.9109,
   "nombre_zona": "Puerto Rico",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc4"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc4")
 },{
   "_id": ObjectId("63864366fe7157ccc94a894f"),
   "tag": "948Lorem",
   "capacidad_total": 7941.3922,
   "capacidad_disponible": 9416.8432,
   "nombre_zona": "South Carolina",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc3"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc3")
 },{
   "_id": ObjectId("63864366fe7157ccc94a8950"),
   "tag": "560ea",
   "capacidad_total": 4094.7862,
   "capacidad_disponible": 1684.3963,
   "nombre_zona": "Arkansas",
-  "area": {
-    "$oid": "63863c498afc52e9b8648fc2"
-  }
+  "area": ObjectId("63863c498afc52e9b8648fc2")
 }])
 
 db.Medidor.insertMany([{
@@ -4592,884 +2713,588 @@ db.Medidor.insertMany([{
   "porcentaje_precision": 81.59,
   "medicion": [
     {
-      "fecha": new Date("06-07-2008"),
+      "fecha": "06-07-2008",
       "medicion_neta": 8445.657,
       "medicion_bruta": 7453.151,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2ab"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2ab")
     }
   ],
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad49"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad49")
 },{
   "_id": ObjectId("638530b57bdfc89cd6f05231"),
   "nombre": "cupidatat qui culpa reprehenderit ut",
   "porcentaje_precision": 16.46,
   "medicion": [],
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4a"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4a")
 },{
   "_id": ObjectId("638530b57bdfc89cd6f05232"),
   "nombre": "deserunt Lorem nostrud duis",
   "porcentaje_precision": 0.02,
   "medicion": [
     {
-      "fecha": new Date("26-07-2010"),
+      "fecha": "26-07-2010",
       "medicion_neta": 3629.562,
       "medicion_bruta": 3669.645,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b6"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b6")
     },
     {
-      "fecha": new Date("31-12-2010"),
+      "fecha": "31-12-2010",
       "medicion_neta": 2107.735,
       "medicion_bruta": 4969.882,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2a9"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2a9")
     }
   ],
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4b"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4b")
 },{
   "_id": ObjectId("638530b57bdfc89cd6f05233"),
   "nombre": "amet est est",
   "porcentaje_precision": 99.16,
   "medicion": [
     {
-      "fecha": new Date("08-03-1992"),
+      "fecha": "08-03-1992",
       "medicion_neta": 3373.275,
       "medicion_bruta": 5448.899,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2ae"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2ae")
     },
     {
-      "fecha": new Date("29-07-2009"),
+      "fecha": "29-07-2009",
       "medicion_neta": 2709.816,
       "medicion_bruta": 1691.912,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2a8"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2a8")
     },
     {
-      "fecha": new Date("27-12-2021"),
+      "fecha": "27-12-2021",
       "medicion_neta": 3463.894,
       "medicion_bruta": 3439.904,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2ab"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2ab")
     },
     {
-      "fecha": new Date("06-05-1993"),
+      "fecha": "06-05-1993",
       "medicion_neta": 3252.778,
       "medicion_bruta": 6037.698,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2ae"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2ae")
     },
     {
-      "fecha": new Date("29-10-2010"),
+      "fecha": "29-10-2010",
       "medicion_neta": 3780.663,
       "medicion_bruta": 979.39,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2af"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2af")
     }
   ],
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4c"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4c")
 },{
   "_id": ObjectId("638530b57bdfc89cd6f05234"),
   "nombre": "consequat nostrud irure velit ipsum",
   "porcentaje_precision": 30.64,
   "medicion": [
     {
-      "fecha": new Date("16-05-1990"),
+      "fecha": "16-05-1990",
       "medicion_neta": 5745.349,
       "medicion_bruta": 6995.024,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b5"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b5")
     },
     {
-      "fecha": new Date("21-11-2015"),
+      "fecha": "21-11-2015",
       "medicion_neta": 495.646,
       "medicion_bruta": 658.773,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b5"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b5")
     },
     {
-      "fecha": new Date("06-08-2000"),
+      "fecha": "06-08-2000",
       "medicion_neta": 9169.37,
       "medicion_bruta": 5177.762,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2ab"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2ab")
     },
     {
-      "fecha": new Date("05-08-2018"),
+      "fecha": "05-08-2018",
       "medicion_neta": 3684.899,
       "medicion_bruta": 2836.457,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2ab"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2ab")
     },
     {
-      "fecha": new Date("14-11-2015"),
+      "fecha": "14-11-2015",
       "medicion_neta": 8667.244,
       "medicion_bruta": 3046.559,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b5"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b5")
     }
   ],
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4d"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4d")
 },{
   "_id": ObjectId("638530b57bdfc89cd6f05235"),
   "nombre": "consequat sint",
   "porcentaje_precision": 87.25,
   "medicion": [
     {
-      "fecha": new Date("24-12-2004"),
+      "fecha": "24-12-2004",
       "medicion_neta": 7958.865,
       "medicion_bruta": 3374.871,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b6"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b6")
     },
     {
-      "fecha": new Date("11-05-2010"),
+      "fecha": "11-05-2010",
       "medicion_neta": 5471.803,
       "medicion_bruta": 2533.07,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2aa"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2aa")
     }
   ],
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4e"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4e")
 },{
   "_id": ObjectId("638530b57bdfc89cd6f05236"),
   "nombre": "nostrud ullamco",
   "porcentaje_precision": 88.9,
   "medicion": [
     {
-      "fecha": new Date("11-05-2006"),
+      "fecha": "11-05-2006",
       "medicion_neta": 4228.289,
       "medicion_bruta": 9339.226,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b6"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b6")
     },
     {
-      "fecha": new Date("05-01-1992"),
+      "fecha": "05-01-1992",
       "medicion_neta": 4561.405,
       "medicion_bruta": 6591.655,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b4"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b4")
     },
     {
-      "fecha": new Date("17-12-2005"),
+      "fecha": "17-12-2005",
       "medicion_neta": 4640.317,
       "medicion_bruta": 2100.877,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b6"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b6")
     },
     {
-      "fecha": new Date("06-02-2021"),
+      "fecha": "06-02-2021",
       "medicion_neta": 7425.761,
       "medicion_bruta": 7485.796,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b3"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b3")
     }
   ],
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4f"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4f")
 },{
   "_id": ObjectId("638530b57bdfc89cd6f05237"),
   "nombre": "elit non do",
   "porcentaje_precision": 12.42,
   "medicion": [
     {
-      "fecha": new Date("11-12-2011"),
+      "fecha": "11-12-2011",
       "medicion_neta": 5433.886,
       "medicion_bruta": 2483.383,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2aa"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2aa")
     }
   ],
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad50"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad50")
 },{
   "_id": ObjectId("638530b57bdfc89cd6f05238"),
   "nombre": "ipsum non ad deserunt",
   "porcentaje_precision": 47.46,
   "medicion": [
     {
-      "fecha": new Date("03-01-2021"),
+      "fecha": "03-01-2021",
       "medicion_neta": 6644.405,
       "medicion_bruta": 4805.521,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b2"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b2")
     },
     {
-      "fecha": new Date("16-06-1995"),
+      "fecha": "16-06-1995",
       "medicion_neta": 469.221,
       "medicion_bruta": 1420.637,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b0"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b0")
     },
     {
-      "fecha": new Date("24-02-2000"),
+      "fecha": "24-02-2000",
       "medicion_neta": 7179.688,
       "medicion_bruta": 5626.282,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2ad"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2ad")
     },
     {
-      "fecha": new Date("24-08-2020"),
+      "fecha": "24-08-2020",
       "medicion_neta": 4545.585,
       "medicion_bruta": 9381.834,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2aa"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2aa")
     },
     {
-      "fecha": new Date("24-09-2003"),
+      "fecha": "24-09-2003",
       "medicion_neta": 7647.081,
       "medicion_bruta": 3811.411,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b6"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b6")
     }
   ],
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad51"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad51")
 },{
   "_id": ObjectId("638530b57bdfc89cd6f05239"),
   "nombre": "irure enim tempor eiusmod amet",
   "porcentaje_precision": 26.97,
   "medicion": [
     {
-      "fecha": new Date("05-11-1995"),
+      "fecha": "05-11-1995",
       "medicion_neta": 6673.924,
       "medicion_bruta": 6502.755,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b0"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b0")
     },
     {
-      "fecha": new Date("30-07-2020"),
+      "fecha": "30-07-2020",
       "medicion_neta": 6498.406,
       "medicion_bruta": 8651.347,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b1"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b1")
     },
     {
-      "fecha": new Date("30-12-1999"),
+      "fecha": "30-12-1999",
       "medicion_neta": 9836.505,
       "medicion_bruta": 5898.617,
-      "producto": {
-        "$oid": "63839eaee8135414fa57c2b3"
-      }
+      "producto": ObjectId("63839eaee8135414fa57c2b3")
     }
   ],
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad52"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad52")
 }])
 
 db.Trabaja.insertMany([{
   "_id": ObjectId("6383a6454e694899bbe87a0f"),
   "fecha_inicio": new Date("23-12-2007"),
   "fecha_finalizacion": new Date("31-01-1998"),
-  "personal": {
-    "$oid": "6383a3a20a34b7480f7fa06a"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad49"
-  }
+  "personal": ObjectId("6383a3a20a34b7480f7fa06a"),
+  "instalacion": ObjectId("638649e878a041870fa5ad49")
 },{
   "_id": ObjectId("6383a6454e694899bbe87a10"),
   "fecha_inicio": new Date("27-07-2022"),
   "fecha_finalizacion": new Date("09-12-2019"),
-  "personal": {
-    "$oid": "6383a3a20a34b7480f7fa069"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4a"
-  }
+  "personal": ObjectId("6383a3a20a34b7480f7fa069"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4a")
 },{
   "_id": ObjectId("6383a6454e694899bbe87a11"),
   "fecha_inicio": new Date("17-12-2015"),
   "fecha_finalizacion": new Date("17-03-2002"),
-  "personal": {
-    "$oid": "6383a3a20a34b7480f7fa064"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4b"
-  }
+  "personal": ObjectId("6383a3a20a34b7480f7fa064"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4b")
 },{
   "_id": ObjectId("6383a6454e694899bbe87a12"),
   "fecha_inicio": new Date("03-06-2007"),
   "fecha_finalizacion": new Date("18-05-2001"),
-  "personal": {
-    "$oid": "6383a3a20a34b7480f7fa06a"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4c"
-  }
+  "personal": ObjectId("6383a3a20a34b7480f7fa06a"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4c")
 },{
   "_id": ObjectId("6383a6454e694899bbe87a13"),
   "fecha_inicio": new Date("15-06-1990"),
   "fecha_finalizacion": new Date("06-03-2005"),
-  "personal": {
-    "$oid": "6383a3a20a34b7480f7fa068"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4d"
-  }
+  "personal": ObjectId("6383a3a20a34b7480f7fa068"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4d")
 },{
   "_id": ObjectId("6383a6454e694899bbe87a14"),
   "fecha_inicio": new Date("09-12-2020"),
   "fecha_finalizacion": new Date("13-02-2011"),
-  "personal": {
-    "$oid": "6383a3a20a34b7480f7fa067"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4e"
-  }
+  "personal": ObjectId("6383a3a20a34b7480f7fa067"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4e")
 },{
   "_id": ObjectId("6383a6454e694899bbe87a15"),
   "fecha_inicio": new Date("27-09-2011"),
   "fecha_finalizacion": new Date("04-12-1990"),
-  "personal": {
-    "$oid": "6383a3a20a34b7480f7fa068"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4f"
-  }
+  "personal": ObjectId("6383a3a20a34b7480f7fa068"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4f")
 },{
   "_id": ObjectId("6383a6454e694899bbe87a16"),
   "fecha_inicio": new Date("17-08-2021"),
   "fecha_finalizacion": new Date("14-05-2005"),
-  "personal": {
-    "$oid": "6383a3a20a34b7480f7fa068"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad50"
-  }
+  "personal": ObjectId("6383a3a20a34b7480f7fa068"),
+  "instalacion": ObjectId("638649e878a041870fa5ad50")
 },{
   "_id": ObjectId("6383a6454e694899bbe87a17"),
   "fecha_inicio": new Date("24-06-2000"),
   "fecha_finalizacion": new Date("01-09-1991"),
-  "personal": {
-    "$oid": "6383a3a20a34b7480f7fa065"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad51"
-  }
+  "personal": ObjectId("6383a3a20a34b7480f7fa065"),
+  "instalacion": ObjectId("638649e878a041870fa5ad51")
 },{
   "_id": ObjectId("6383a6454e694899bbe87a18"),
   "fecha_inicio": new Date("09-03-1995"),
   "fecha_finalizacion": new Date("01-12-1994"),
-  "personal": {
-    "$oid": "6383a3a20a34b7480f7fa067"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad52"
-  }
+  "personal": ObjectId("6383a3a20a34b7480f7fa067"),
+  "instalacion": ObjectId("638649e878a041870fa5ad52")
 }])
 
 db.Almacena.insertMany([{
   "_id": ObjectId("6386997aa17abc1502d219be"),
   "cantidad": 9,
-  "fecha": new Date("26-07-2015"),
+  "fecha": "26-07-2015",
   "hora": "01:01",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8948"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad49"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a8948"),
+  "instalacion": ObjectId("638649e878a041870fa5ad49")
 },{
   "_id": ObjectId("6386997aa17abc1502d219bf"),
   "cantidad": 3,
-  "fecha": new Date("26-07-2019"),
+  "fecha": "26-07-2019",
   "hora": "09:59",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8947"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4a"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a8947"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4a")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c0"),
   "cantidad": 8,
-  "fecha": new Date("16-05-2018"),
+  "fecha": "16-05-2018",
   "hora": "02:17",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8949"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4b"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a8949"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4b")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c1"),
   "cantidad": 18,
-  "fecha": new Date("03-06-2000"),
+  "fecha": "03-06-2000",
   "hora": "02:21",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894a"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4c"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a894a"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4c")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c2"),
   "cantidad": 17,
-  "fecha": new Date("30-07-1997"),
+  "fecha": "30-07-1997",
   "hora": "03:37",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894b"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4d"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a894b"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4d")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c3"),
   "cantidad": 11,
-  "fecha": new Date("16-01-2018"),
+  "fecha": "16-01-2018",
   "hora": "11:45",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894c"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4e"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a894c"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4e")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c4"),
   "cantidad": 3,
-  "fecha": new Date("15-09-2017"),
+  "fecha": "15-09-2017",
   "hora": "09:54",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894d"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4f"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a894d"),
+  "instalacion": ObjectId("638649e878a041870fa5ad4f")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c5"),
   "cantidad": 16,
-  "fecha": new Date("02-09-2012"),
+  "fecha": "02-09-2012",
   "hora": "11:16",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894e"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad50"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a894e"),
+  "instalacion": ObjectId("638649e878a041870fa5ad50")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c6"),
   "cantidad": 12,
-  "fecha": new Date("06-07-1990"),
+  "fecha": "06-07-1990",
   "hora": "07:40",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894f"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad51"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a894f"),
+  "instalacion": ObjectId("638649e878a041870fa5ad51")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c7"),
   "cantidad": 20,
-  "fecha": new Date("30-04-2007"),
+  "fecha": "30-04-2007",
   "hora": "03:31",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8950"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad52"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a8950"),
+  "instalacion": ObjectId("638649e878a041870fa5ad52")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c8"),
   "cantidad": 17,
-  "fecha": new Date("04-10-2005"),
+  "fecha": "04-10-2005",
   "hora": "07:55",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894b"
-  },
-  "instalacion": {
-    "$oid": "638697443ec41448f4794802"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a894b"),
+  "instalacion": ObjectId("638697443ec41448f4794802")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c9"),
   "cantidad": 20,
-  "fecha": new Date("25-08-1993"),
+  "fecha": "25-08-1993",
   "hora": "02:00",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894c"
-  },
-  "instalacion": {
-    "$oid": "638697443ec41448f4794803"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a894c"),
+  "instalacion": ObjectId("638697443ec41448f4794803")
 },{
   "_id": ObjectId("6386997aa17abc1502d219ca"),
   "cantidad": 4,
-  "fecha": new Date("12-08-2006"),
+  "fecha": "12-08-2006",
   "hora": "06:19",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8948"
-  },
-  "instalacion": {
-    "$oid": "638697443ec41448f4794804"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a8948"),
+  "instalacion": ObjectId("638697443ec41448f4794804")
 },{
   "_id": ObjectId("6386997aa17abc1502d219cb"),
   "cantidad": 20,
-  "fecha": new Date("29-11-2002"),
+  "fecha": "29-11-2002",
   "hora": "12:33",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8947"
-  },
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad49"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a8947"),
+  "instalacion": ObjectId("638649e878a041870fa5ad49")
 },{
   "_id": ObjectId("6386997aa17abc1502d219cc"),
   "cantidad": 18,
-  "fecha": new Date("12-01-2018"),
+  "fecha": "12-01-2018",
   "hora": "08:38",
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894c"
-  },
-  "instalacion": {
-    "$oid": "638697443ec41448f4794805"
-  }
+  "tanque": ObjectId("63864366fe7157ccc94a894c"),
+  "instalacion": ObjectId("638697443ec41448f4794805")
 }])
 
 db.Almacena_Tipo.insertMany([{
   "_id": ObjectId("6383c5ae62100d559c6edd56"),
-  "fecha_inicio": new Date("01-06-2009"),
-  "fecha_fin": new Date("02-01-2019"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8947"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2ab"
-  }
+  "fecha_inicio": "01-06-2009",
+  "fecha_fin": "02-01-2019",
+  "tanque": ObjectId("63864366fe7157ccc94a8947"),
+  "producto": ObjectId("63839eaee8135414fa57c2ab")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd57"),
-  "fecha_inicio": new Date("06-11-1995"),
-  "fecha_fin": new Date("11-05-2012"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894d"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b3"
-  }
+  "fecha_inicio": "06-11-1995",
+  "fecha_fin": "11-05-2012",
+  "tanque": ObjectId("63864366fe7157ccc94a894d"),
+  "producto": ObjectId("63839eaee8135414fa57c2b3")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd58"),
-  "fecha_inicio": new Date("19-07-2011"),
-  "fecha_fin": new Date("06-05-1990"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894f"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2ad"
-  }
+  "fecha_inicio": "19-07-2011",
+  "fecha_fin": "06-05-1990",
+  "tanque": ObjectId("63864366fe7157ccc94a894f"),
+  "producto": ObjectId("63839eaee8135414fa57c2ad")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd59"),
-  "fecha_inicio": new Date("09-02-1993"),
-  "fecha_fin": new Date("22-05-2012"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8949"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b4"
-  }
+  "fecha_inicio": "09-02-1993",
+  "fecha_fin": "22-05-2012",
+  "tanque": ObjectId("63864366fe7157ccc94a8949"),
+  "producto": ObjectId("63839eaee8135414fa57c2b4")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5a"),
-  "fecha_inicio": new Date("23-06-2019"),
-  "fecha_fin": new Date("11-10-2021"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8948"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b0"
-  }
+  "fecha_inicio": "23-06-2019",
+  "fecha_fin": "11-10-2021",
+  "tanque": ObjectId("63864366fe7157ccc94a8948"),
+  "producto": ObjectId("63839eaee8135414fa57c2b0")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5b"),
-  "fecha_inicio": new Date("11-07-1996"),
-  "fecha_fin": new Date("22-04-2008"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894b"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2af"
-  }
+  "fecha_inicio": "11-07-1996",
+  "fecha_fin": "22-04-2008",
+  "tanque": ObjectId("63864366fe7157ccc94a894b"),
+  "producto": ObjectId("63839eaee8135414fa57c2af")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5c"),
-  "fecha_inicio": new Date("18-02-1999"),
-  "fecha_fin": new Date("09-02-1996"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8947"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b1"
-  }
+  "fecha_inicio": "18-02-1999",
+  "fecha_fin": "09-02-1996",
+  "tanque": ObjectId("63864366fe7157ccc94a8947"),
+  "producto": ObjectId("63839eaee8135414fa57c2b1")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5d"),
-  "fecha_inicio": new Date("03-08-2006"),
-  "fecha_fin": new Date("28-08-2010"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894d"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b2"
-  }
+  "fecha_inicio": "03-08-2006",
+  "fecha_fin": "28-08-2010",
+  "tanque": ObjectId("63864366fe7157ccc94a894d"),
+  "producto": ObjectId("63839eaee8135414fa57c2b2")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5e"),
-  "fecha_inicio": new Date("24-02-2020"),
-  "fecha_fin": new Date("02-06-2000"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8950"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2a8"
-  }
+  "fecha_inicio": "24-02-2020",
+  "fecha_fin": "02-06-2000",
+  "tanque": ObjectId("63864366fe7157ccc94a8950"),
+  "producto": ObjectId("63839eaee8135414fa57c2a8")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5f"),
-  "fecha_inicio": new Date("10-12-1999"),
-  "fecha_fin": new Date("24-05-2000"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894d"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2a8"
-  }
+  "fecha_inicio": "10-12-1999",
+  "fecha_fin": "24-05-2000",
+  "tanque": ObjectId("63864366fe7157ccc94a894d"),
+  "producto": ObjectId("63839eaee8135414fa57c2a8")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd60"),
-  "fecha_inicio": new Date("08-07-2021"),
-  "fecha_fin": new Date("02-07-2009"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894b"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2a8"
-  }
+  "fecha_inicio": "08-07-2021",
+  "fecha_fin": "02-07-2009",
+  "tanque": ObjectId("63864366fe7157ccc94a894b"),
+  "producto": ObjectId("63839eaee8135414fa57c2a8")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd61"),
-  "fecha_inicio": new Date("06-12-1992"),
-  "fecha_fin": new Date("27-04-1994"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8948"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2ae"
-  }
+  "fecha_inicio": "06-12-1992",
+  "fecha_fin": "27-04-1994",
+  "tanque": ObjectId("63864366fe7157ccc94a8948"),
+  "producto": ObjectId("63839eaee8135414fa57c2ae")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd62"),
-  "fecha_inicio": new Date("15-08-2002"),
-  "fecha_fin": new Date("03-06-2021"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a8949"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2ad"
-  }
+  "fecha_inicio": "15-08-2002",
+  "fecha_fin": "03-06-2021",
+  "tanque": ObjectId("63864366fe7157ccc94a8949"),
+  "producto": ObjectId("63839eaee8135414fa57c2ad")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd63"),
-  "fecha_inicio": new Date("13-10-1998"),
-  "fecha_fin": new Date("21-10-2011"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894b"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b3"
-  }
+  "fecha_inicio": "13-10-1998",
+  "fecha_fin": "21-10-2011",
+  "tanque": ObjectId("63864366fe7157ccc94a894b"),
+  "producto": ObjectId("63839eaee8135414fa57c2b3")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd64"),
-  "fecha_inicio": new Date("27-03-2011"),
-  "fecha_fin": new Date("04-03-2017"),
-  "tanque": {
-    "$oid": "63864366fe7157ccc94a894c"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2aa"
-  }
+  "fecha_inicio": "27-03-2011",
+  "fecha_fin": "04-03-2017",
+  "tanque": ObjectId("63864366fe7157ccc94a894c"),
+  "producto": ObjectId("63839eaee8135414fa57c2aa")
 }])
 
 db.Asocia.insertMany([{
   "_id": ObjectId("6383c5af62100d559c6edd65"),
   "fecha_inicio": new Date("22-04-1997"),
   "fecha_fin": new Date("02-09-1996"),
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad49"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b3"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad49"),
+  "producto": ObjectId("63839eaee8135414fa57c2b3")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd66"),
   "fecha_inicio": new Date("20-06-2022"),
   "fecha_fin": new Date("03-05-1997"),
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4a"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b1"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4a"),
+  "producto": ObjectId("63839eaee8135414fa57c2b1")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd67"),
   "fecha_inicio": new Date("12-07-2004"),
   "fecha_fin": new Date("25-11-1991"),
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4b"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b3"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4b"),
+  "producto": ObjectId("63839eaee8135414fa57c2b3")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd68"),
   "fecha_inicio": new Date("14-12-2012"),
   "fecha_fin": new Date("13-06-1991"),
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4c"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2af"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4c"),
+  "producto": ObjectId("63839eaee8135414fa57c2af")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd69"),
   "fecha_inicio": new Date("17-08-2021"),
   "fecha_fin": new Date("25-01-2022"),
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4d"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2ac"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4d"),
+  "producto": ObjectId("63839eaee8135414fa57c2ac")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd6a"),
   "fecha_inicio": new Date("28-06-2012"),
   "fecha_fin": new Date("22-02-2021"),
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4e"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b3"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4e"),
+  "producto": ObjectId("63839eaee8135414fa57c2b3")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd6b"),
   "fecha_inicio": new Date("28-11-2020"),
   "fecha_fin": new Date("21-02-2001"),
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad4f"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b6"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad4f"),
+  "producto": ObjectId("63839eaee8135414fa57c2b6")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd6c"),
   "fecha_inicio": new Date("27-10-2007"),
   "fecha_fin": new Date("24-06-2011"),
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad50"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b1"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad50"),
+  "producto": ObjectId("63839eaee8135414fa57c2b1")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd6d"),
   "fecha_inicio": new Date("04-11-2019"),
   "fecha_fin": new Date("10-05-1996"),
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad51"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2ae"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad51"),
+  "producto": ObjectId("63839eaee8135414fa57c2ae")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd6e"),
   "fecha_inicio": new Date("02-04-1991"),
   "fecha_fin": new Date("03-09-2006"),
-  "instalacion": {
-    "$oid": "638649e878a041870fa5ad52"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2ac"
-  }
+  "instalacion": ObjectId("638649e878a041870fa5ad52"),
+  "producto": ObjectId("63839eaee8135414fa57c2ac")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd6f"),
   "fecha_inicio": new Date("17-10-2000"),
   "fecha_fin": new Date("11-03-1993"),
-  "instalacion": {
-    "$oid": "638697443ec41448f4794802"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2ad"
-  }
+  "instalacion": ObjectId("638697443ec41448f4794802"),
+  "producto": ObjectId("63839eaee8135414fa57c2ad")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd70"),
   "fecha_inicio": new Date("02-03-1998"),
   "fecha_fin": new Date("24-01-2007"),
-  "instalacion": {
-    "$oid": "638697443ec41448f4794803"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2ae"
-  }
+  "instalacion": ObjectId("638697443ec41448f4794803"),
+  "producto": ObjectId("63839eaee8135414fa57c2ae")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd71"),
   "fecha_inicio": new Date("11-01-2007"),
   "fecha_fin": new Date("13-11-2002"),
-  "instalacion": {
-    "$oid": "638697443ec41448f4794804"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b0"
-  }
+  "instalacion": ObjectId("638697443ec41448f4794804"),
+  "producto": ObjectId("63839eaee8135414fa57c2b0")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd72"),
   "fecha_inicio": new Date("09-04-2012"),
   "fecha_fin": new Date("27-09-2010"),
-  "instalacion": {
-    "$oid": "638697443ec41448f4794805"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2b5"
-  }
+  "instalacion": ObjectId("638697443ec41448f4794805"),
+  "producto": ObjectId("63839eaee8135414fa57c2b5")
 },{
   "_id": ObjectId("6383c5af62100d559c6edd73"),
   "fecha_inicio": new Date("19-01-2017"),
   "fecha_fin": new Date("24-08-1990"),
-  "instalacion": {
-    "$oid": "638697443ec41448f4794806"
-  },
-  "producto": {
-    "$oid": "63839eaee8135414fa57c2ad"
-  }
+  "instalacion": ObjectId("638697443ec41448f4794806"),
+  "producto": ObjectId("63839eaee8135414fa57c2ad")
 }])
