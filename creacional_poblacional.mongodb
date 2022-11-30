@@ -1,19 +1,30 @@
 use('PetroFAI');
 
-// db.createCollection('Provincia')
-//  db.createCollection('Area')
-//  db.createCollection('Medidor')
-//  db.createCollection('Entrega')
-//  db.createCollection('Almacena')
-//  db.createCollection('Tanque')
-//  db.createCollection('Instalacion')
-//  db.createCollection('Producto')
-//  db.createCollection('Asocia')
-//  db.createCollection('Personal')
-//  db.createCollection('Trabaja')
-//  db.createCollection('Almacena_Tipo')
+db.Provincia.drop(); 
+db.Area.drop(); 
+db.Medidor.drop(); 
+db.Entrega.drop(); 
+db.Almacena.drop(); 
+db.Tanque.drop(); 
+db.Instalacion.drop(); 
+db.Producto.drop(); 
+db.Asocia.drop(); 
+db.Personal.drop(); 
+db.Trabaja.drop(); 
+db.Almacena_Tipo.drop(); 
 
-db.Area.find({ 'zona.nombre': 'Kansas' });
+db.createCollection('Provincia')
+db.createCollection('Area')
+db.createCollection('Medidor')
+db.createCollection('Entrega')
+db.createCollection('Almacena')
+db.createCollection('Tanque')
+db.createCollection('Instalacion')
+db.createCollection('Producto')
+db.createCollection('Asocia')
+db.createCollection('Personal')
+db.createCollection('Trabaja')
+db.createCollection('Almacena_Tipo')
 
 db.Provincia.insertMany([{
   "_id": ObjectId("6383a7f45c01da03a8e59c11"),
@@ -2148,7 +2159,8 @@ db.Entrega.insertMany([{
       "producto": [
            ObjectId("63839eaee8135414fa57c2aa")
       ]
-    
+    },
+    {
       "cantidad": 9,
       "porcentaje_impurezas": 54,
       "monto_final": 637323.74,
@@ -2231,31 +2243,31 @@ db.Instalacion.insertMany([{
     {
       "nombre": "consequat",
       "comentario": "ullamco Lorem amet eu exercitation",
-      "fecha": "04-03-2011",
+      "fecha": new Date( "2011-03-04"),
       "motivo": "aliqua et"
     },
     {
       "nombre": "ex",
       "comentario": "ad ut ut pariatur aliquip",
-      "fecha": "25-09-1999",
+      "fecha": new Date( "1999-09-25"),
       "motivo": "laboris velit"
     },
     {
       "nombre": "sit",
       "comentario": "aliquip nulla voluptate veniam pariatur",
-      "fecha": "24-05-2021",
+      "fecha": new Date( "2021-05-24"),
       "motivo": "labore sint"
     },
     {
       "nombre": "anim",
       "comentario": "do labore ex id commodo",
-      "fecha": "12-09-2005",
+      "fecha": new Date( "2005-09-12"),
       "motivo": "id cupidatat"
     },
     {
       "nombre": "non",
       "comentario": "proident sint enim ad minim",
-      "fecha": "14-06-2012",
+      "fecha": new Date( "2012-06-14"),
       "motivo": "enim non"
     }
   ],
@@ -2286,31 +2298,31 @@ db.Instalacion.insertMany([{
     {
       "nombre": "anim",
       "comentario": "est aute ad veniam nostrud",
-      "fecha": "07-07-2015",
+      "fecha": new Date( "2015-07-07"),
       "motivo": "non anim"
     },
     {
       "nombre": "Lorem",
       "comentario": "dolor mollit sint officia aliquip",
-      "fecha": "17-02-2020",
+      "fecha": new Date( "2020-02-17"),
       "motivo": "reprehenderit consectetur"
     },
     {
       "nombre": "voluptate",
       "comentario": "nostrud minim commodo consectetur incididunt",
-      "fecha": "20-02-2013",
+      "fecha": new Date( "2013-02-20"),
       "motivo": "minim qui"
     },
     {
       "nombre": "adipisicing",
       "comentario": "ea voluptate velit enim ad",
-      "fecha": "23-04-2012",
+      "fecha": new Date( "2012-04-23"),
       "motivo": "ullamco labore"
     },
     {
       "nombre": "eu",
       "comentario": "qui qui sunt sunt aute",
-      "fecha": "29-12-2002",
+      "fecha": new Date( "2002-12-29"),
       "motivo": "ex minim"
     }
   ],
@@ -2335,13 +2347,13 @@ db.Instalacion.insertMany([{
     {
       "nombre": "id",
       "comentario": "aliqua ad commodo ut anim",
-      "fecha": "28-06-2012",
+      "fecha": new Date( "2012-06-28"),
       "motivo": "consectetur aute"
     },
     {
       "nombre": "nulla",
       "comentario": "est esse officia amet ipsum",
-      "fecha": "30-08-1990",
+      "fecha": new Date( "1990-08-30"),
       "motivo": "proident laborum"
     }
   ],
@@ -2369,13 +2381,13 @@ db.Instalacion.insertMany([{
     {
       "nombre": "minim",
       "comentario": "ut magna ullamco tempor occaecat",
-      "fecha": "08-02-2004",
+      "fecha": new Date( "2004-02-08"),
       "motivo": "laboris qui"
     },
     {
       "nombre": "duis",
       "comentario": "reprehenderit culpa aliquip ad amet",
-      "fecha": "29-07-1996",
+      "fecha": new Date( "1996-07-29"),
       "motivo": "tempor anim"
     }
   ],
@@ -2397,19 +2409,19 @@ db.Instalacion.insertMany([{
     {
       "nombre": "voluptate",
       "comentario": "consectetur aute aliqua ea non",
-      "fecha": "27-11-2020",
+      "fecha": new Date( "2020-11-27"),
       "motivo": "amet et"
     },
     {
       "nombre": "reprehenderit",
       "comentario": "occaecat proident quis sint adipisicing",
-      "fecha": "01-10-2005",
+      "fecha": new Date( "2005-10-01"),
       "motivo": "est ullamco"
     },
     {
       "nombre": "amet",
       "comentario": "ut quis nulla nostrud sint",
-      "fecha": "29-12-2020",
+      "fecha": new Date( "2020-12-29"),
       "motivo": "nulla excepteur"
     }
   ],
@@ -2434,7 +2446,7 @@ db.Instalacion.insertMany([{
     {
       "nombre": "esse",
       "comentario": "quis excepteur ea labore velit",
-      "fecha": "15-03-2007",
+      "fecha": new Date( "2007-03-15"),
       "motivo": "est non"
     }
   ],
@@ -2459,19 +2471,19 @@ db.Instalacion.insertMany([{
     {
       "nombre": "velit",
       "comentario": "nisi duis eiusmod laborum elit",
-      "fecha": "01-06-1993",
+      "fecha": new Date( "1993-06-01"),
       "motivo": "occaecat reprehenderit"
     },
     {
       "nombre": "ut",
       "comentario": "reprehenderit officia do culpa ullamco",
-      "fecha": "10-01-2020",
+      "fecha": new Date( "2020-01-10"),
       "motivo": "duis ea"
     },
     {
       "nombre": "labore",
       "comentario": "magna esse ex Lorem esse",
-      "fecha": "26-09-2019",
+      "fecha": new Date( "2019-09-26"),
       "motivo": "labore aliqua"
     }
   ],
@@ -2496,31 +2508,31 @@ db.Instalacion.insertMany([{
     {
       "nombre": "aliquip",
       "comentario": "tempor anim irure deserunt tempor",
-      "fecha": "05-10-1997",
+      "fecha": new Date( "1997-10-05"),
       "motivo": "aliqua consequat"
     },
     {
       "nombre": "aute",
       "comentario": "non irure laborum commodo ullamco",
-      "fecha": "06-02-2015",
+      "fecha": new Date( "2015-02-06"),
       "motivo": "adipisicing incididunt"
     },
     {
       "nombre": "cillum",
       "comentario": "tempor ea occaecat pariatur excepteur",
-      "fecha": "07-02-2015",
+      "fecha": new Date( "2015-02-07"),
       "motivo": "occaecat incididunt"
     },
     {
       "nombre": "ut",
       "comentario": "ea nulla laboris labore anim",
-      "fecha": "07-06-2017",
+      "fecha": new Date( "2017-06-07"),
       "motivo": "consequat Lorem"
     },
     {
       "nombre": "irure",
       "comentario": "ea pariatur ad adipisicing anim",
-      "fecha": "09-01-2008",
+      "fecha": new Date( "2008-01-09"),
       "motivo": "nulla elit"
     }
   ],
@@ -2545,31 +2557,31 @@ db.Instalacion.insertMany([{
     {
       "nombre": "in",
       "comentario": "consequat excepteur occaecat in exercitation",
-      "fecha": "21-01-2014",
+      "fecha": new Date( "2014-01-21"),
       "motivo": "consequat excepteur"
     },
     {
       "nombre": "occaecat",
       "comentario": "non aliquip incididunt ullamco id",
-      "fecha": "09-10-2009",
+      "fecha": new Date( "2009-10-09"),
       "motivo": "ea labore"
     },
     {
       "nombre": "occaecat",
       "comentario": "et veniam quis aliqua et",
-      "fecha": "15-08-2022",
+      "fecha": new Date( "2022-08-15"),
       "motivo": "eu exercitation"
     },
     {
       "nombre": "consectetur",
       "comentario": "elit sint dolore officia amet",
-      "fecha": "26-02-2011",
+      "fecha": new Date( "2011-02-26"),
       "motivo": "Lorem et"
     },
     {
       "nombre": "reprehenderit",
       "comentario": "occaecat officia velit sit dolor",
-      "fecha": "26-12-1993",
+      "fecha": new Date( "1993-12-26"),
       "motivo": "dolor consectetur"
     }
   ],
@@ -2594,25 +2606,25 @@ db.Instalacion.insertMany([{
     {
       "nombre": "anim",
       "comentario": "mollit duis magna ea laboris",
-      "fecha": "30-03-2006",
+      "fecha": new Date( "2006-03-30"),
       "motivo": "esse reprehenderit"
     },
     {
       "nombre": "reprehenderit",
       "comentario": "eu veniam anim excepteur officia",
-      "fecha": "25-01-2018",
+      "fecha": new Date( "2018-01-25"),
       "motivo": "irure nulla"
     },
     {
       "nombre": "consequat",
       "comentario": "enim nisi quis cupidatat cillum",
-      "fecha": "29-09-2001",
+      "fecha": new Date( "2001-09-29"),
       "motivo": "est duis"
     },
     {
       "nombre": "eiusmod",
       "comentario": "esse commodo dolore nulla Lorem",
-      "fecha": "21-01-1998",
+      "fecha": new Date( "1998-01-21"),
       "motivo": "Lorem voluptate"
     }
   ],
@@ -2713,7 +2725,7 @@ db.Medidor.insertMany([{
   "porcentaje_precision": 81.59,
   "medicion": [
     {
-      "fecha": "06-07-2008",
+      "fecha": new Date( "2008-07-06"),
       "medicion_neta": 8445.657,
       "medicion_bruta": 7453.151,
       "producto": ObjectId("63839eaee8135414fa57c2ab")
@@ -2732,13 +2744,13 @@ db.Medidor.insertMany([{
   "porcentaje_precision": 0.02,
   "medicion": [
     {
-      "fecha": "26-07-2010",
+      "fecha": new Date( "2010-07-26"),
       "medicion_neta": 3629.562,
       "medicion_bruta": 3669.645,
       "producto": ObjectId("63839eaee8135414fa57c2b6")
     },
     {
-      "fecha": "31-12-2010",
+      "fecha": new Date( "2010-12-31"),
       "medicion_neta": 2107.735,
       "medicion_bruta": 4969.882,
       "producto": ObjectId("63839eaee8135414fa57c2a9")
@@ -2751,31 +2763,31 @@ db.Medidor.insertMany([{
   "porcentaje_precision": 99.16,
   "medicion": [
     {
-      "fecha": "08-03-1992",
+      "fecha": new Date( "1992-03-08"),
       "medicion_neta": 3373.275,
       "medicion_bruta": 5448.899,
       "producto": ObjectId("63839eaee8135414fa57c2ae")
     },
     {
-      "fecha": "29-07-2009",
+      "fecha": new Date( "2009-07-29"),
       "medicion_neta": 2709.816,
       "medicion_bruta": 1691.912,
       "producto": ObjectId("63839eaee8135414fa57c2a8")
     },
     {
-      "fecha": "27-12-2021",
+      "fecha": new Date( "2021-12-27"),
       "medicion_neta": 3463.894,
       "medicion_bruta": 3439.904,
       "producto": ObjectId("63839eaee8135414fa57c2ab")
     },
     {
-      "fecha": "06-05-1993",
+      "fecha": new Date( "1993-05-06"),
       "medicion_neta": 3252.778,
       "medicion_bruta": 6037.698,
       "producto": ObjectId("63839eaee8135414fa57c2ae")
     },
     {
-      "fecha": "29-10-2010",
+      "fecha": new Date( "2010-10-29"),
       "medicion_neta": 3780.663,
       "medicion_bruta": 979.39,
       "producto": ObjectId("63839eaee8135414fa57c2af")
@@ -2788,31 +2800,31 @@ db.Medidor.insertMany([{
   "porcentaje_precision": 30.64,
   "medicion": [
     {
-      "fecha": "16-05-1990",
+      "fecha": new Date( "1990-05-16"),
       "medicion_neta": 5745.349,
       "medicion_bruta": 6995.024,
       "producto": ObjectId("63839eaee8135414fa57c2b5")
     },
     {
-      "fecha": "21-11-2015",
+      "fecha": new Date( "2015-11-21"),
       "medicion_neta": 495.646,
       "medicion_bruta": 658.773,
       "producto": ObjectId("63839eaee8135414fa57c2b5")
     },
     {
-      "fecha": "06-08-2000",
+      "fecha": new Date( "2000-08-06"),
       "medicion_neta": 9169.37,
       "medicion_bruta": 5177.762,
       "producto": ObjectId("63839eaee8135414fa57c2ab")
     },
     {
-      "fecha": "05-08-2018",
+      "fecha": new Date( "2018-08-05"),
       "medicion_neta": 3684.899,
       "medicion_bruta": 2836.457,
       "producto": ObjectId("63839eaee8135414fa57c2ab")
     },
     {
-      "fecha": "14-11-2015",
+      "fecha": new Date( "2015-11-14"),
       "medicion_neta": 8667.244,
       "medicion_bruta": 3046.559,
       "producto": ObjectId("63839eaee8135414fa57c2b5")
@@ -2825,13 +2837,13 @@ db.Medidor.insertMany([{
   "porcentaje_precision": 87.25,
   "medicion": [
     {
-      "fecha": "24-12-2004",
+      "fecha": new Date( "2004-12-24"),
       "medicion_neta": 7958.865,
       "medicion_bruta": 3374.871,
       "producto": ObjectId("63839eaee8135414fa57c2b6")
     },
     {
-      "fecha": "11-05-2010",
+      "fecha": new Date( "2010-05-11"),
       "medicion_neta": 5471.803,
       "medicion_bruta": 2533.07,
       "producto": ObjectId("63839eaee8135414fa57c2aa")
@@ -2844,25 +2856,25 @@ db.Medidor.insertMany([{
   "porcentaje_precision": 88.9,
   "medicion": [
     {
-      "fecha": "11-05-2006",
+      "fecha": new Date( "2006-05-11"),
       "medicion_neta": 4228.289,
       "medicion_bruta": 9339.226,
       "producto": ObjectId("63839eaee8135414fa57c2b6")
     },
     {
-      "fecha": "05-01-1992",
+      "fecha": new Date( "1992-01-05"),
       "medicion_neta": 4561.405,
       "medicion_bruta": 6591.655,
       "producto": ObjectId("63839eaee8135414fa57c2b4")
     },
     {
-      "fecha": "17-12-2005",
+      "fecha": new Date( "2005-12-17"),
       "medicion_neta": 4640.317,
       "medicion_bruta": 2100.877,
       "producto": ObjectId("63839eaee8135414fa57c2b6")
     },
     {
-      "fecha": "06-02-2021",
+      "fecha": new Date( "2021-02-06"),
       "medicion_neta": 7425.761,
       "medicion_bruta": 7485.796,
       "producto": ObjectId("63839eaee8135414fa57c2b3")
@@ -2875,7 +2887,7 @@ db.Medidor.insertMany([{
   "porcentaje_precision": 12.42,
   "medicion": [
     {
-      "fecha": "11-12-2011",
+      "fecha": new Date( "2011-12-11"),
       "medicion_neta": 5433.886,
       "medicion_bruta": 2483.383,
       "producto": ObjectId("63839eaee8135414fa57c2aa")
@@ -2888,31 +2900,31 @@ db.Medidor.insertMany([{
   "porcentaje_precision": 47.46,
   "medicion": [
     {
-      "fecha": "03-01-2021",
+      "fecha": new Date( "2021-01-03"),
       "medicion_neta": 6644.405,
       "medicion_bruta": 4805.521,
       "producto": ObjectId("63839eaee8135414fa57c2b2")
     },
     {
-      "fecha": "16-06-1995",
+      "fecha": new Date( "1995-06-16"),
       "medicion_neta": 469.221,
       "medicion_bruta": 1420.637,
       "producto": ObjectId("63839eaee8135414fa57c2b0")
     },
     {
-      "fecha": "24-02-2000",
+      "fecha": new Date( "2000-02-24"),
       "medicion_neta": 7179.688,
       "medicion_bruta": 5626.282,
       "producto": ObjectId("63839eaee8135414fa57c2ad")
     },
     {
-      "fecha": "24-08-2020",
+      "fecha": new Date( "2020-08-24"),
       "medicion_neta": 4545.585,
       "medicion_bruta": 9381.834,
       "producto": ObjectId("63839eaee8135414fa57c2aa")
     },
     {
-      "fecha": "24-09-2003",
+      "fecha": new Date( "2003-09-24"),
       "medicion_neta": 7647.081,
       "medicion_bruta": 3811.411,
       "producto": ObjectId("63839eaee8135414fa57c2b6")
@@ -2925,19 +2937,19 @@ db.Medidor.insertMany([{
   "porcentaje_precision": 26.97,
   "medicion": [
     {
-      "fecha": "05-11-1995",
+      "fecha": new Date( "1995-11-05"),
       "medicion_neta": 6673.924,
       "medicion_bruta": 6502.755,
       "producto": ObjectId("63839eaee8135414fa57c2b0")
     },
     {
-      "fecha": "30-07-2020",
+      "fecha": new Date( "2020-07-30"),
       "medicion_neta": 6498.406,
       "medicion_bruta": 8651.347,
       "producto": ObjectId("63839eaee8135414fa57c2b1")
     },
     {
-      "fecha": "30-12-1999",
+      "fecha": new Date( "1999-12-30"),
       "medicion_neta": 9836.505,
       "medicion_bruta": 5898.617,
       "producto": ObjectId("63839eaee8135414fa57c2b3")
@@ -3011,105 +3023,105 @@ db.Trabaja.insertMany([{
 db.Almacena.insertMany([{
   "_id": ObjectId("6386997aa17abc1502d219be"),
   "cantidad": 9,
-  "fecha": "26-07-2015",
+  "fecha": new Date("2015-07-26"),
   "hora": "01:01",
   "tanque": ObjectId("63864366fe7157ccc94a8948"),
   "instalacion": ObjectId("638649e878a041870fa5ad49")
 },{
   "_id": ObjectId("6386997aa17abc1502d219bf"),
   "cantidad": 3,
-  "fecha": "26-07-2019",
+  "fecha": new Date("2019-07-26"),
   "hora": "09:59",
   "tanque": ObjectId("63864366fe7157ccc94a8947"),
   "instalacion": ObjectId("638649e878a041870fa5ad4a")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c0"),
   "cantidad": 8,
-  "fecha": "16-05-2018",
+  "fecha": new Date("2018-05-16"),
   "hora": "02:17",
   "tanque": ObjectId("63864366fe7157ccc94a8949"),
   "instalacion": ObjectId("638649e878a041870fa5ad4b")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c1"),
   "cantidad": 18,
-  "fecha": "03-06-2000",
+  "fecha": new Date("2000-06-03"),
   "hora": "02:21",
   "tanque": ObjectId("63864366fe7157ccc94a894a"),
   "instalacion": ObjectId("638649e878a041870fa5ad4c")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c2"),
   "cantidad": 17,
-  "fecha": "30-07-1997",
+  "fecha": new Date("1997-07-30"),
   "hora": "03:37",
   "tanque": ObjectId("63864366fe7157ccc94a894b"),
   "instalacion": ObjectId("638649e878a041870fa5ad4d")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c3"),
   "cantidad": 11,
-  "fecha": "16-01-2018",
+  "fecha": new Date("2018-01-16"),
   "hora": "11:45",
   "tanque": ObjectId("63864366fe7157ccc94a894c"),
   "instalacion": ObjectId("638649e878a041870fa5ad4e")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c4"),
   "cantidad": 3,
-  "fecha": "15-09-2017",
+  "fecha": new Date("2017-09-15"),
   "hora": "09:54",
   "tanque": ObjectId("63864366fe7157ccc94a894d"),
   "instalacion": ObjectId("638649e878a041870fa5ad4f")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c5"),
   "cantidad": 16,
-  "fecha": "02-09-2012",
+  "fecha": new Date("2012-09-02"),
   "hora": "11:16",
   "tanque": ObjectId("63864366fe7157ccc94a894e"),
   "instalacion": ObjectId("638649e878a041870fa5ad50")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c6"),
   "cantidad": 12,
-  "fecha": "06-07-1990",
+  "fecha": new Date("1990-07-06"),
   "hora": "07:40",
   "tanque": ObjectId("63864366fe7157ccc94a894f"),
   "instalacion": ObjectId("638649e878a041870fa5ad51")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c7"),
   "cantidad": 20,
-  "fecha": "30-04-2007",
+  "fecha": new Date("2007-04-30"),
   "hora": "03:31",
   "tanque": ObjectId("63864366fe7157ccc94a8950"),
   "instalacion": ObjectId("638649e878a041870fa5ad52")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c8"),
   "cantidad": 17,
-  "fecha": "04-10-2005",
+  "fecha": new Date("2005-10-04"),
   "hora": "07:55",
   "tanque": ObjectId("63864366fe7157ccc94a894b"),
   "instalacion": ObjectId("638697443ec41448f4794802")
 },{
   "_id": ObjectId("6386997aa17abc1502d219c9"),
   "cantidad": 20,
-  "fecha": "25-08-1993",
+  "fecha": new Date("1993-08-25"),
   "hora": "02:00",
   "tanque": ObjectId("63864366fe7157ccc94a894c"),
   "instalacion": ObjectId("638697443ec41448f4794803")
 },{
   "_id": ObjectId("6386997aa17abc1502d219ca"),
   "cantidad": 4,
-  "fecha": "12-08-2006",
+  "fecha": new Date("2006-08-12"),
   "hora": "06:19",
   "tanque": ObjectId("63864366fe7157ccc94a8948"),
   "instalacion": ObjectId("638697443ec41448f4794804")
 },{
   "_id": ObjectId("6386997aa17abc1502d219cb"),
   "cantidad": 20,
-  "fecha": "29-11-2002",
+  "fecha": new Date("2002-11-29"),
   "hora": "12:33",
   "tanque": ObjectId("63864366fe7157ccc94a8947"),
   "instalacion": ObjectId("638649e878a041870fa5ad49")
 },{
   "_id": ObjectId("6386997aa17abc1502d219cc"),
   "cantidad": 18,
-  "fecha": "12-01-2018",
+  "fecha": new Date("2018-01-12"),
   "hora": "08:38",
   "tanque": ObjectId("63864366fe7157ccc94a894c"),
   "instalacion": ObjectId("638697443ec41448f4794805")
@@ -3117,92 +3129,92 @@ db.Almacena.insertMany([{
 
 db.Almacena_Tipo.insertMany([{
   "_id": ObjectId("6383c5ae62100d559c6edd56"),
-  "fecha_inicio": "01-06-2009",
-  "fecha_fin": "02-01-2019",
+  "fecha_inicio": new Date( "2009-06-01"),
+  "fecha_fin": new Date( "2019-01-02"),
   "tanque": ObjectId("63864366fe7157ccc94a8947"),
   "producto": ObjectId("63839eaee8135414fa57c2ab")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd57"),
-  "fecha_inicio": "06-11-1995",
-  "fecha_fin": "11-05-2012",
+  "fecha_inicio": new Date( "1995-11-06"),
+  "fecha_fin": new Date( "2012-05-11"),
   "tanque": ObjectId("63864366fe7157ccc94a894d"),
   "producto": ObjectId("63839eaee8135414fa57c2b3")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd58"),
-  "fecha_inicio": "19-07-2011",
-  "fecha_fin": "06-05-1990",
+  "fecha_inicio": new Date( "2011-07-19"),
+  "fecha_fin": new Date( "1990-05-06"),
   "tanque": ObjectId("63864366fe7157ccc94a894f"),
   "producto": ObjectId("63839eaee8135414fa57c2ad")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd59"),
-  "fecha_inicio": "09-02-1993",
-  "fecha_fin": "22-05-2012",
+  "fecha_inicio": new Date( "1993-02-09"),
+  "fecha_fin": new Date( "2012-05-22"),
   "tanque": ObjectId("63864366fe7157ccc94a8949"),
   "producto": ObjectId("63839eaee8135414fa57c2b4")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5a"),
-  "fecha_inicio": "23-06-2019",
-  "fecha_fin": "11-10-2021",
+  "fecha_inicio": new Date( "2019-06-23"),
+  "fecha_fin": new Date( "2021-10-11"),
   "tanque": ObjectId("63864366fe7157ccc94a8948"),
   "producto": ObjectId("63839eaee8135414fa57c2b0")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5b"),
-  "fecha_inicio": "11-07-1996",
-  "fecha_fin": "22-04-2008",
+  "fecha_inicio": new Date( "1996-07-11"),
+  "fecha_fin": new Date( "2008-04-22"),
   "tanque": ObjectId("63864366fe7157ccc94a894b"),
   "producto": ObjectId("63839eaee8135414fa57c2af")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5c"),
-  "fecha_inicio": "18-02-1999",
-  "fecha_fin": "09-02-1996",
+  "fecha_inicio": new Date( "1999-02-18"),
+  "fecha_fin": new Date( "1996-02-09"),
   "tanque": ObjectId("63864366fe7157ccc94a8947"),
   "producto": ObjectId("63839eaee8135414fa57c2b1")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5d"),
-  "fecha_inicio": "03-08-2006",
-  "fecha_fin": "28-08-2010",
+  "fecha_inicio": new Date( "2006-08-03"),
+  "fecha_fin": new Date( "2010-08-28"),
   "tanque": ObjectId("63864366fe7157ccc94a894d"),
   "producto": ObjectId("63839eaee8135414fa57c2b2")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5e"),
-  "fecha_inicio": "24-02-2020",
-  "fecha_fin": "02-06-2000",
+  "fecha_inicio": new Date( "2020-02-24"),
+  "fecha_fin": new Date( "2000-06-02"),
   "tanque": ObjectId("63864366fe7157ccc94a8950"),
   "producto": ObjectId("63839eaee8135414fa57c2a8")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd5f"),
-  "fecha_inicio": "10-12-1999",
-  "fecha_fin": "24-05-2000",
+  "fecha_inicio": new Date( "1999-12-10"),
+  "fecha_fin": new Date( "2000-05-24"),
   "tanque": ObjectId("63864366fe7157ccc94a894d"),
   "producto": ObjectId("63839eaee8135414fa57c2a8")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd60"),
-  "fecha_inicio": "08-07-2021",
-  "fecha_fin": "02-07-2009",
+  "fecha_inicio": new Date( "2021-07-08"),
+  "fecha_fin": new Date( "2009-07-02"),
   "tanque": ObjectId("63864366fe7157ccc94a894b"),
   "producto": ObjectId("63839eaee8135414fa57c2a8")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd61"),
-  "fecha_inicio": "06-12-1992",
-  "fecha_fin": "27-04-1994",
+  "fecha_inicio": new Date( "1992-12-06"),
+  "fecha_fin": new Date( "1994-04-27"),
   "tanque": ObjectId("63864366fe7157ccc94a8948"),
   "producto": ObjectId("63839eaee8135414fa57c2ae")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd62"),
-  "fecha_inicio": "15-08-2002",
-  "fecha_fin": "03-06-2021",
+  "fecha_inicio": new Date( "2002-08-15"),
+  "fecha_fin": new Date( "2021-06-03"),
   "tanque": ObjectId("63864366fe7157ccc94a8949"),
   "producto": ObjectId("63839eaee8135414fa57c2ad")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd63"),
-  "fecha_inicio": "13-10-1998",
-  "fecha_fin": "21-10-2011",
+  "fecha_inicio": new Date( "1998-10-13"),
+  "fecha_fin": new Date( "2011-10-21"),
   "tanque": ObjectId("63864366fe7157ccc94a894b"),
   "producto": ObjectId("63839eaee8135414fa57c2b3")
 },{
   "_id": ObjectId("6383c5ae62100d559c6edd64"),
-  "fecha_inicio": "27-03-2011",
-  "fecha_fin": "04-03-2017",
+  "fecha_inicio": new Date( "2011-03-27"),
+  "fecha_fin": new Date( "2017-03-04"),
   "tanque": ObjectId("63864366fe7157ccc94a894c"),
   "producto": ObjectId("63839eaee8135414fa57c2aa")
 }])
