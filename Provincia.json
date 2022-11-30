@@ -1,0 +1,176 @@
+[
+  {
+    "nombre": "Oneida",
+    "ciudad": [
+      {
+        "codigo_postal": 2268,
+        "nombre": "Marshall Islands"
+      },
+      {
+        "codigo_postal": 6463,
+        "nombre": "Puerto Rico"
+      },
+      {
+        "codigo_postal": 835,
+        "nombre": "Iowa"
+      },
+      {
+        "codigo_postal": 9416,
+        "nombre": "New York"
+      },
+      {
+        "codigo_postal": 4085,
+        "nombre": "Oklahoma"
+      }
+    ]
+  },
+  {
+    "nombre": "Interlochen",
+    "ciudad": [
+      {
+        "codigo_postal": 5120,
+        "nombre": "Palau"
+      },
+      {
+        "codigo_postal": 8195,
+        "nombre": "American Samoa"
+      },
+      {
+        "codigo_postal": 186,
+        "nombre": "Oregon"
+      }
+    ]
+  },
+  {
+    "nombre": "Wakulla",
+    "ciudad": [
+      {
+        "codigo_postal": 3505,
+        "nombre": "Connecticut"
+      },
+      {
+        "codigo_postal": 1904,
+        "nombre": "Virginia"
+      }
+    ]
+  },
+  {
+    "nombre": "Snyderville",
+    "ciudad": [
+      {
+        "codigo_postal": 9869,
+        "nombre": "South Dakota"
+      },
+      {
+        "codigo_postal": 4514,
+        "nombre": "Guam"
+      },
+      {
+        "codigo_postal": 5394,
+        "nombre": "California"
+      }
+    ]
+  },
+  {
+    "nombre": "Emory",
+    "ciudad": [
+      {
+        "codigo_postal": 7756,
+        "nombre": "Pennsylvania"
+      },
+      {
+        "codigo_postal": 4112,
+        "nombre": "Massachusetts"
+      }
+    ]
+  },
+  {
+    "nombre": "Blanford",
+    "ciudad": [
+      {
+        "codigo_postal": 8723,
+        "nombre": "Arkansas"
+      }
+    ]
+  },
+  {
+    "nombre": "Santel",
+    "ciudad": [
+      {
+        "codigo_postal": 9333,
+        "nombre": "South Carolina"
+      },
+      {
+        "codigo_postal": 7365,
+        "nombre": "Wisconsin"
+      },
+      {
+        "codigo_postal": 7447,
+        "nombre": "Kansas"
+      }
+    ]
+  },
+  {
+    "nombre": "Munjor",
+    "ciudad": [
+      {
+        "codigo_postal": 8558,
+        "nombre": "Texas"
+      },
+      {
+        "codigo_postal": 2881,
+        "nombre": "Arizona"
+      },
+      {
+        "codigo_postal": 7279,
+        "nombre": "Federated States Of Micronesia"
+      },
+      {
+        "codigo_postal": 5595,
+        "nombre": "Nebraska"
+      },
+      {
+        "codigo_postal": 4540,
+        "nombre": "Montana"
+      }
+    ]
+  },
+  {
+    "nombre": "Carbonville",
+    "ciudad": [
+      {
+        "codigo_postal": 3899,
+        "nombre": "Idaho"
+      },
+      {
+        "codigo_postal": 2285,
+        "nombre": "Delaware"
+      }
+    ]
+  },
+  {
+    "nombre": "Hiko",
+    "ciudad": [
+      {
+        "codigo_postal": 4510,
+        "nombre": "Florida"
+      },
+      {
+        "codigo_postal": 7634,
+        "nombre": "Northern Mariana Islands"
+      },
+      {
+        "codigo_postal": 1692,
+        "nombre": "Ohio"
+      },
+      {
+        "codigo_postal": 9523,
+        "nombre": "New Hampshire"
+      },
+      {
+        "codigo_postal": 2816,
+        "nombre": "New Mexico"
+      }
+    ]
+  }
+]

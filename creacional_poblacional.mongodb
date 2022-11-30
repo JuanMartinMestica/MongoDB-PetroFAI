@@ -1,3234 +1,3405 @@
 use('PetroFAI');
 
-// db.createCollection('Provincia')
-// db.createCollection('Area')
-// db.createCollection('Medidor')
-// db.createCollection('Entrega')
-// db.createCollection('Almacena')
-// db.createCollection('Tanque')
-// db.createCollection('Instalacion')
-// db.createCollection('Producto')
-// db.createCollection('Asocia')
-// db.createCollection('Personal')
-// db.createCollection('Trabaja')
-// db.createCollection('Almacena_Tipo')
+ db.createCollection('Provincia')
+ db.createCollection('Area')
+ db.createCollection('Medidor')
+ db.createCollection('Entrega')
+ db.createCollection('Almacena')
+ db.createCollection('Tanque')
+ db.createCollection('Instalacion')
+ db.createCollection('Producto')
+ db.createCollection('Asocia')
+ db.createCollection('Personal')
+ db.createCollection('Trabaja')
+ db.createCollection('Almacena_Tipo')
 
-// db.Provincia.insertMany(
-//     [
-//     {
-//     "nombre": "Oneida",
-//     "ciudad": [
-//       {
-//         "codigo_postal": 2268,
-//         "nombre": "Marshall Islands"
-//       },
-//       {
-//         "codigo_postal": 6463,
-//         "nombre": "Puerto Rico"
-//       },
-//       {
-//         "codigo_postal": 835,
-//         "nombre": "Iowa"
-//       },
-//       {
-//         "codigo_postal": 9416,
-//         "nombre": "New York"
-//       },
-//       {
-//         "codigo_postal": 4085,
-//         "nombre": "Oklahoma"
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "Interlochen",
-//     "ciudad": [
-//       {
-//         "codigo_postal": 5120,
-//         "nombre": "Palau"
-//       },
-//       {
-//         "codigo_postal": 8195,
-//         "nombre": "American Samoa"
-//       },
-//       {
-//         "codigo_postal": 186,
-//         "nombre": "Oregon"
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "Wakulla",
-//     "ciudad": [
-//       {
-//         "codigo_postal": 3505,
-//         "nombre": "Connecticut"
-//       },
-//       {
-//         "codigo_postal": 1904,
-//         "nombre": "Virginia"
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "Snyderville",
-//     "ciudad": [
-//       {
-//         "codigo_postal": 9869,
-//         "nombre": "South Dakota"
-//       },
-//       {
-//         "codigo_postal": 4514,
-//         "nombre": "Guam"
-//       },
-//       {
-//         "codigo_postal": 5394,
-//         "nombre": "California"
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "Emory",
-//     "ciudad": [
-//       {
-//         "codigo_postal": 7756,
-//         "nombre": "Pennsylvania"
-//       },
-//       {
-//         "codigo_postal": 4112,
-//         "nombre": "Massachusetts"
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "Blanford",
-//     "ciudad": [
-//       {
-//         "codigo_postal": 8723,
-//         "nombre": "Arkansas"
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "Santel",
-//     "ciudad": [
-//       {
-//         "codigo_postal": 9333,
-//         "nombre": "South Carolina"
-//       },
-//       {
-//         "codigo_postal": 7365,
-//         "nombre": "Wisconsin"
-//       },
-//       {
-//         "codigo_postal": 7447,
-//         "nombre": "Kansas"
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "Munjor",
-//     "ciudad": [
-//       {
-//         "codigo_postal": 8558,
-//         "nombre": "Texas"
-//       },
-//       {
-//         "codigo_postal": 2881,
-//         "nombre": "Arizona"
-//       },
-//       {
-//         "codigo_postal": 7279,
-//         "nombre": "Federated States Of Micronesia"
-//       },
-//       {
-//         "codigo_postal": 5595,
-//         "nombre": "Nebraska"
-//       },
-//       {
-//         "codigo_postal": 4540,
-//         "nombre": "Montana"
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "Carbonville",
-//     "ciudad": [
-//       {
-//         "codigo_postal": 3899,
-//         "nombre": "Idaho"
-//       },
-//       {
-//         "codigo_postal": 2285,
-//         "nombre": "Delaware"
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "Hiko",
-//     "ciudad": [
-//       {
-//         "codigo_postal": 4510,
-//         "nombre": "Florida"
-//       },
-//       {
-//         "codigo_postal": 7634,
-//         "nombre": "Northern Mariana Islands"
-//       },
-//       {
-//         "codigo_postal": 1692,
-//         "nombre": "Ohio"
-//       },
-//       {
-//         "codigo_postal": 9523,
-//         "nombre": "New Hampshire"
-//       },
-//       {
-//         "codigo_postal": 2816,
-//         "nombre": "New Mexico"
-//       }
-//     ]
-//   }
-// ]
-// )
+db.Provincia.insertMany([
+  {
+    "nombre": "Oneida",
+    "ciudad": [
+      {
+        "codigo_postal": 2268,
+        "nombre": "Marshall Islands"
+      },
+      {
+        "codigo_postal": 6463,
+        "nombre": "Puerto Rico"
+      },
+      {
+        "codigo_postal": 835,
+        "nombre": "Iowa"
+      },
+      {
+        "codigo_postal": 9416,
+        "nombre": "New York"
+      },
+      {
+        "codigo_postal": 4085,
+        "nombre": "Oklahoma"
+      }
+    ]
+  },
+  {
+    "nombre": "Interlochen",
+    "ciudad": [
+      {
+        "codigo_postal": 5120,
+        "nombre": "Palau"
+      },
+      {
+        "codigo_postal": 8195,
+        "nombre": "American Samoa"
+      },
+      {
+        "codigo_postal": 186,
+        "nombre": "Oregon"
+      }
+    ]
+  },
+  {
+    "nombre": "Wakulla",
+    "ciudad": [
+      {
+        "codigo_postal": 3505,
+        "nombre": "Connecticut"
+      },
+      {
+        "codigo_postal": 1904,
+        "nombre": "Virginia"
+      }
+    ]
+  },
+  {
+    "nombre": "Snyderville",
+    "ciudad": [
+      {
+        "codigo_postal": 9869,
+        "nombre": "South Dakota"
+      },
+      {
+        "codigo_postal": 4514,
+        "nombre": "Guam"
+      },
+      {
+        "codigo_postal": 5394,
+        "nombre": "California"
+      }
+    ]
+  },
+  {
+    "nombre": "Emory",
+    "ciudad": [
+      {
+        "codigo_postal": 7756,
+        "nombre": "Pennsylvania"
+      },
+      {
+        "codigo_postal": 4112,
+        "nombre": "Massachusetts"
+      }
+    ]
+  },
+  {
+    "nombre": "Blanford",
+    "ciudad": [
+      {
+        "codigo_postal": 8723,
+        "nombre": "Arkansas"
+      }
+    ]
+  },
+  {
+    "nombre": "Santel",
+    "ciudad": [
+      {
+        "codigo_postal": 9333,
+        "nombre": "South Carolina"
+      },
+      {
+        "codigo_postal": 7365,
+        "nombre": "Wisconsin"
+      },
+      {
+        "codigo_postal": 7447,
+        "nombre": "Kansas"
+      }
+    ]
+  },
+  {
+    "nombre": "Munjor",
+    "ciudad": [
+      {
+        "codigo_postal": 8558,
+        "nombre": "Texas"
+      },
+      {
+        "codigo_postal": 2881,
+        "nombre": "Arizona"
+      },
+      {
+        "codigo_postal": 7279,
+        "nombre": "Federated States Of Micronesia"
+      },
+      {
+        "codigo_postal": 5595,
+        "nombre": "Nebraska"
+      },
+      {
+        "codigo_postal": 4540,
+        "nombre": "Montana"
+      }
+    ]
+  },
+  {
+    "nombre": "Carbonville",
+    "ciudad": [
+      {
+        "codigo_postal": 3899,
+        "nombre": "Idaho"
+      },
+      {
+        "codigo_postal": 2285,
+        "nombre": "Delaware"
+      }
+    ]
+  },
+  {
+    "nombre": "Hiko",
+    "ciudad": [
+      {
+        "codigo_postal": 4510,
+        "nombre": "Florida"
+      },
+      {
+        "codigo_postal": 7634,
+        "nombre": "Northern Mariana Islands"
+      },
+      {
+        "codigo_postal": 1692,
+        "nombre": "Ohio"
+      },
+      {
+        "codigo_postal": 9523,
+        "nombre": "New Hampshire"
+      },
+      {
+        "codigo_postal": 2816,
+        "nombre": "New Mexico"
+      }
+    ]
+  }
+])
 
-//Inserción en personal
+db.Personal.insertMany([{
+  "numero_documento": 19293828,
+  "tipo_documento": "DNI",
+  "nombre": "Mercedes",
+  "apellido": "Blevins",
+  "estado_civil": "soltero/a",
+  "legajo": 436,
+  "fecha_ingreso": {
+    "$date": {
+      "$numberLong": "946695600000"
+    }
+  },
+  "fecha_baja": new Date(null,
+  "fec)ha_nacimiento": {
+    "$date": {
+      "$numberLong": "315543600000"
+    }
+  },
+  "domicilio": "641 Berry Street",
+  "es_encargado": true,
+  "codigo_postal": 7365,
+  "asistencia": [
+    {
+      "fecha": new Date("25-06-2013"),
+      "hora_entrada": "11:50",
+      "hora_salida": "06:29",
+      "nombre_actividad": "occaecat minim nisi eiusmod"
+    },
+    {
+      "fecha": new Date("04-07-2021"),
+      "hora_entrada": "07:45",
+      "hora_salida": "07:27",
+      "nombre_actividad": "irure aute anim cillum"
+    },
+    {
+      "fecha": new Date("30-01-2017"),
+      "hora_entrada": "07:02",
+      "hora_salida": "06:10",
+      "nombre_actividad": "incididunt adipisicing anim elit"
+    },
+    {
+      "fecha": new Date("27-04-1999"),
+      "hora_entrada": "01:25",
+      "hora_salida": "05:13",
+      "nombre_actividad": "do eu consequat deserunt"
+    },
+    {
+      "fecha": new Date("15-08-1999"),
+      "hora_entrada": "10:36",
+      "hora_salida": "04:02",
+      "nombre_actividad": "cupidatat duis ad nisi"
+    },
+    {
+      "fecha": new Date("12-06-1994"),
+      "hora_entrada": "12:49",
+      "hora_salida": "01:14",
+      "nombre_actividad": "ipsum aliquip aute nisi"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "nulla occaecat ipsum"
+    },
+    {
+      "nombre_titulo": "irure et ut"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "02:54",
+      "hora_salida": "12:04",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("19-05-2022"),
+      "fecha_baja": new Date("23-08-2022")
+    },
+    {
+      "hora_ingreso": "12:40",
+      "hora_salida": "05:22",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("14-10-2022"),
+      "fecha_baja": new Date("15-11-2022")
+    },
+    {
+      "hora_ingreso": "07:26",
+      "hora_salida": "05:44",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("23-04-2022"),
+      "fecha_baja": new Date("27-03-2022")
+    },
+    {
+      "hora_ingreso": "04:05",
+      "hora_salida": "04:53",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("24-09-2022"),
+      "fecha_baja": new Date("28-10-2022")
+    },
+    {
+      "hora_ingreso": "09:42",
+      "hora_salida": "12:15",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("08-09-2022"),
+      "fecha_baja": new Date("03-10-2022")
+    },
+    {
+      "hora_ingreso": "08:50",
+      "hora_salida": "12:25",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("10-07-2022"),
+      "fecha_baja": new Date("31-05-2022")
+    },
+    {
+      "hora_ingreso": "04:36",
+      "hora_salida": "10:19",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("15-01-2022"),
+      "fecha_baja": new Date("15-07-2022")
+    },
+    {
+      "hora_ingreso": "10:20",
+      "hora_salida": "08:12",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("03-11-2022"),
+      "fecha_baja": new Date("04-04-2022")
+    },
+    {
+      "hora_ingreso": "07:24",
+      "hora_salida": "05:06",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("24-09-2022"),
+      "fecha_baja": new Date("20-03-2022")
+    },
+    {
+      "hora_ingreso": "11:06",
+      "hora_salida": "05:20",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("25-07-2022"),
+      "fecha_baja": new Date("29-05-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 1,
+      "descripcion": "Do fugiat aliqua magna duis ea Lorem.",
+      "fecha_inicio": new Date("05-11-2022")
+    },
+    {
+      "cantidad_dias": 6,
+      "descripcion": "Ipsum commodo voluptate occaecat esse in cillum sunt incididunt.",
+      "fecha_inicio": new Date("01-06-2022")
+    },
+    {
+      "cantidad_dias": 2,
+      "descripcion": "Quis sint deserunt velit anim pariatur irure.",
+      "fecha_inicio": new Date("18-01-2022")
+    }
+  ],
+  "telefono": [
+    {
+      "numero": "(948) 539-3937"
+    },
+    {
+      "numero": "(806) 440-2261"
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c17"
+  }
+},{
+  "numero_documento": 35921169,
+  "tipo_documento": "LE",
+  "nombre": "Estelle",
+  "apellido": "Gordon",
+  "estado_civil": "viudo/a",
+  "legajo": 325,
+  "fecha_ingreso": {
+    "$date": {
+      "$numberLong": "1230778800000"
+    }
+  },
+  "fecha_baja": new Date({
+    "$date)": {
+      "$numberLong": "1672542000000"
+    }
+  },
+  "fecha_nacimiento": {
+    "$date": {
+      "$numberLong": "473396400000"
+    }
+  },
+  "domicilio": "744 Bath Avenue",
+  "es_encargado": false,
+  "codigo_postal": 2816,
+  "asistencia": [
+    {
+      "fecha": new Date("10-04-1997"),
+      "hora_entrada": "06:16",
+      "hora_salida": "09:42",
+      "nombre_actividad": "sit aliquip proident voluptate"
+    },
+    {
+      "fecha": new Date("10-07-2014"),
+      "hora_entrada": "01:08",
+      "hora_salida": "02:42",
+      "nombre_actividad": "excepteur deserunt sint mollit"
+    },
+    {
+      "fecha": new Date("22-08-1994"),
+      "hora_entrada": "02:30",
+      "hora_salida": "08:33",
+      "nombre_actividad": "velit sunt cillum excepteur"
+    }
+  ],
+  "actividad": [
+    {
+      "nombre": "incididunt aliqua eiusmod pariatur",
+      "descripcion": "labore elit magna occaecat",
+      "fecha": new Date("16-10-1998")
+    },
+    {
+      "nombre": "cupidatat quis commodo voluptate",
+      "descripcion": "do sint dolor nostrud",
+      "fecha": new Date("13-02-1997")
+    },
+    {
+      "nombre": "enim veniam ut proident",
+      "descripcion": "commodo in aliquip ea",
+      "fecha": new Date("07-12-2007")
+    }
+  ],
+  "titulo_universitario": [],
+  "turno": [
+    {
+      "hora_ingreso": "12:38",
+      "hora_salida": "03:47",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("11-07-2022"),
+      "fecha_baja": new Date("12-03-2022")
+    },
+    {
+      "hora_ingreso": "04:14",
+      "hora_salida": "11:35",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("25-09-2022"),
+      "fecha_baja": new Date("16-05-2022")
+    },
+    {
+      "hora_ingreso": "06:38",
+      "hora_salida": "08:59",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("25-06-2022"),
+      "fecha_baja": new Date("11-08-2022")
+    },
+    {
+      "hora_ingreso": "09:11",
+      "hora_salida": "12:46",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("03-08-2022"),
+      "fecha_baja": new Date("29-05-2022")
+    },
+    {
+      "hora_ingreso": "05:37",
+      "hora_salida": "11:56",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("03-03-2022"),
+      "fecha_baja": new Date("26-10-2022")
+    },
+    {
+      "hora_ingreso": "05:57",
+      "hora_salida": "04:35",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("02-02-2022"),
+      "fecha_baja": new Date("24-10-2022")
+    },
+    {
+      "hora_ingreso": "08:45",
+      "hora_salida": "02:36",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("28-02-2022"),
+      "fecha_baja": new Date("22-08-2022")
+    }
+  ],
+  "certificado": [],
+  "telefono": [
+    {
+      "numero": "(910) 507-3036"
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c1a"
+  }
+},{
+  "numero_documento": 37291278,
+  "tipo_documento": "PASAPORTE",
+  "nombre": "Strickland",
+  "apellido": "Kelley",
+  "estado_civil": "soltero/a",
+  "legajo": 360,
+  "fecha_ingreso": {
+    "$date": {
+      "$numberLong": "1514775600000"
+    }
+  },
+  "fecha_baja": new Date(null,
+  "fec)ha_nacimiento": {
+    "$date": {
+      "$numberLong": "800334000000"
+    }
+  },
+  "domicilio": "799 Scott Avenue",
+  "es_encargado": true,
+  "codigo_postal": 9333,
+  "asistencia": [
+    {
+      "fecha": new Date("23-06-2021"),
+      "hora_entrada": "10:43",
+      "hora_salida": "03:24",
+      "nombre_actividad": "adipisicing enim consectetur cupidatat"
+    },
+    {
+      "fecha": new Date("23-01-2015"),
+      "hora_entrada": "01:45",
+      "hora_salida": "04:05",
+      "nombre_actividad": "qui aliqua nulla et"
+    },
+    {
+      "fecha": new Date("12-12-2007"),
+      "hora_entrada": "05:37",
+      "hora_salida": "07:44",
+      "nombre_actividad": "quis esse proident quis"
+    },
+    {
+      "fecha": new Date("14-09-2001"),
+      "hora_entrada": "06:47",
+      "hora_salida": "02:35",
+      "nombre_actividad": "ex aliquip amet occaecat"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "magna sunt minim"
+    },
+    {
+      "nombre_titulo": "minim sit consectetur"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "09:30",
+      "hora_salida": "12:43",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("25-04-2022"),
+      "fecha_baja": new Date("14-11-2022")
+    },
+    {
+      "hora_ingreso": "06:39",
+      "hora_salida": "12:19",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("29-06-2022"),
+      "fecha_baja": new Date("11-03-2022")
+    },
+    {
+      "hora_ingreso": "01:37",
+      "hora_salida": "06:25",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("12-02-2022"),
+      "fecha_baja": new Date("18-08-2022")
+    },
+    {
+      "hora_ingreso": "01:40",
+      "hora_salida": "03:48",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("08-10-2022"),
+      "fecha_baja": new Date("18-02-2022")
+    },
+    {
+      "hora_ingreso": "04:27",
+      "hora_salida": "04:27",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("27-08-2022"),
+      "fecha_baja": new Date("02-02-2022")
+    },
+    {
+      "hora_ingreso": "07:28",
+      "hora_salida": "12:17",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("19-05-2022"),
+      "fecha_baja": new Date("01-09-2022")
+    },
+    {
+      "hora_ingreso": "05:52",
+      "hora_salida": "07:15",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("20-02-2022"),
+      "fecha_baja": new Date("30-04-2022")
+    },
+    {
+      "hora_ingreso": "12:40",
+      "hora_salida": "02:45",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("08-10-2022"),
+      "fecha_baja": new Date("27-03-2022")
+    },
+    {
+      "hora_ingreso": "05:27",
+      "hora_salida": "04:26",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("14-08-2022"),
+      "fecha_baja": new Date("15-03-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 3,
+      "descripcion": "Consectetur ea est non enim.",
+      "fecha_inicio": new Date("22-06-2022")
+    }
+  ],
+  "telefono": [],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c17"
+  }
+},{
+  "numero_documento": 22173533,
+  "tipo_documento": "DNI",
+  "nombre": "Mcdonald",
+  "apellido": "Singleton",
+  "estado_civil": "casado/a",
+  "legajo": 171,
+  "fecha_ingreso": {
+    "$date": {
+      "$numberLong": "1546311600000"
+    }
+  },
+  "fecha_baja": new Date(null,
+  "fec)ha_nacimiento": {
+    "$date": {
+      "$numberLong": "905655600000"
+    }
+  },
+  "domicilio": "313 Madison Place",
+  "es_encargado": true,
+  "codigo_postal": 1904,
+  "asistencia": [
+    {
+      "fecha": new Date("19-05-2020"),
+      "hora_entrada": "04:19",
+      "hora_salida": "11:41",
+      "nombre_actividad": "anim id mollit fugiat"
+    },
+    {
+      "fecha": new Date("27-03-2002"),
+      "hora_entrada": "08:14",
+      "hora_salida": "07:19",
+      "nombre_actividad": "aute anim nostrud laborum"
+    },
+    {
+      "fecha": new Date("26-04-2016"),
+      "hora_entrada": "01:37",
+      "hora_salida": "02:49",
+      "nombre_actividad": "nostrud proident ipsum eu"
+    },
+    {
+      "fecha": new Date("27-07-2020"),
+      "hora_entrada": "06:17",
+      "hora_salida": "02:09",
+      "nombre_actividad": "anim esse amet aliquip"
+    },
+    {
+      "fecha": new Date("29-11-2005"),
+      "hora_entrada": "08:51",
+      "hora_salida": "08:00",
+      "nombre_actividad": "magna consequat consequat consectetur"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "sit esse mollit"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "04:57",
+      "hora_salida": "09:21",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("27-02-2022"),
+      "fecha_baja": new Date("28-04-2022")
+    },
+    {
+      "hora_ingreso": "08:08",
+      "hora_salida": "07:58",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("03-01-2022"),
+      "fecha_baja": new Date("20-08-2022")
+    },
+    {
+      "hora_ingreso": "04:59",
+      "hora_salida": "07:38",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("09-04-2022"),
+      "fecha_baja": new Date("21-03-2022")
+    },
+    {
+      "hora_ingreso": "10:25",
+      "hora_salida": "04:23",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("08-02-2022"),
+      "fecha_baja": new Date("25-09-2022")
+    },
+    {
+      "hora_ingreso": "12:56",
+      "hora_salida": "08:08",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("10-08-2022"),
+      "fecha_baja": new Date("07-10-2022")
+    },
+    {
+      "hora_ingreso": "08:16",
+      "hora_salida": "08:31",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("17-03-2022"),
+      "fecha_baja": new Date("24-07-2022")
+    },
+    {
+      "hora_ingreso": "08:03",
+      "hora_salida": "04:03",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("08-03-2022"),
+      "fecha_baja": new Date("02-10-2022")
+    },
+    {
+      "hora_ingreso": "05:39",
+      "hora_salida": "08:40",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("07-02-2022"),
+      "fecha_baja": new Date("16-09-2022")
+    },
+    {
+      "hora_ingreso": "01:50",
+      "hora_salida": "06:38",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("21-10-2022"),
+      "fecha_baja": new Date("15-06-2022")
+    },
+    {
+      "hora_ingreso": "08:19",
+      "hora_salida": "10:42",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("21-10-2022"),
+      "fecha_baja": new Date("02-09-2022")
+    }
+  ],
+  "certificado": [],
+  "telefono": [],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c13"
+  }
+},{
+  "numero_documento": 21129805,
+  "tipo_documento": "PASAPORTE",
+  "nombre": "Lilia",
+  "apellido": "George",
+  "estado_civil": "casado/a",
+  "legajo": 257,
+  "fecha_ingreso": {
+    "$date": {
+      "$numberLong": "1599879600000"
+    }
+  },
+  "fecha_baja": new Date({
+    "$date)": {
+      "$numberLong": "1641006000000"
+    }
+  },
+  "fecha_nacimiento": {
+    "$date": {
+      "$numberLong": "949546800000"
+    }
+  },
+  "domicilio": "431 Matthews Place",
+  "es_encargado": false,
+  "codigo_postal": 1904,
+  "asistencia": [
+    {
+      "fecha": new Date("02-04-2020"),
+      "hora_entrada": "02:35",
+      "hora_salida": "09:16",
+      "nombre_actividad": "laborum eu ut aliquip"
+    },
+    {
+      "fecha": new Date("08-05-2018"),
+      "hora_entrada": "05:37",
+      "hora_salida": "04:30",
+      "nombre_actividad": "occaecat adipisicing mollit adipisicing"
+    },
+    {
+      "fecha": new Date("10-03-2016"),
+      "hora_entrada": "06:57",
+      "hora_salida": "09:56",
+      "nombre_actividad": "culpa eu deserunt est"
+    }
+  ],
+  "actividad": [
+    {
+      "nombre": "reprehenderit reprehenderit exercitation irure",
+      "descripcion": "dolor sunt ut reprehenderit",
+      "fecha": new Date("09-07-2006")
+    },
+    {
+      "nombre": "eu ad in laborum",
+      "descripcion": "aliquip nulla do voluptate",
+      "fecha": new Date("26-12-2011")
+    },
+    {
+      "nombre": "culpa nulla laboris commodo",
+      "descripcion": "aliqua et dolore et",
+      "fecha": new Date("29-08-1995")
+    },
+    {
+      "nombre": "commodo incididunt in dolor",
+      "descripcion": "commodo cupidatat esse in",
+      "fecha": new Date("26-03-1998")
+    }
+  ],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "sint dolor commodo"
+    },
+    {
+      "nombre_titulo": "irure veniam exercitation"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "09:45",
+      "hora_salida": "11:14",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("28-05-2022"),
+      "fecha_baja": new Date("10-11-2022")
+    },
+    {
+      "hora_ingreso": "07:08",
+      "hora_salida": "03:39",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("06-01-2022"),
+      "fecha_baja": new Date("30-05-2022")
+    },
+    {
+      "hora_ingreso": "08:39",
+      "hora_salida": "01:57",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("12-02-2022"),
+      "fecha_baja": new Date("15-01-2022")
+    },
+    {
+      "hora_ingreso": "08:29",
+      "hora_salida": "06:09",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("15-07-2022"),
+      "fecha_baja": new Date("02-09-2022")
+    },
+    {
+      "hora_ingreso": "06:23",
+      "hora_salida": "04:51",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("20-08-2022"),
+      "fecha_baja": new Date("13-02-2022")
+    }
+  ],
+  "certificado": [],
+  "telefono": [
+    {
+      "numero": "(876) 579-3731"
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c13"
+  }
+},{
+  "numero_documento": 38332092,
+  "tipo_documento": "LE",
+  "nombre": "Pamela",
+  "apellido": "Vaughn",
+  "estado_civil": "casado/a",
+  "legajo": 358,
+  "fecha_ingreso": {
+    "$date": {
+      "$numberLong": "1096686000000"
+    }
+  },
+  "fecha_baja": new Date({
+    "$date)": {
+      "$numberLong": "1577847600000"
+    }
+  },
+  "fecha_nacimiento": {
+    "$date": {
+      "$numberLong": "370839600000"
+    }
+  },
+  "domicilio": "625 Moultrie Street",
+  "es_encargado": false,
+  "codigo_postal": 2881,
+  "asistencia": [
+    {
+      "fecha": new Date("28-07-1999"),
+      "hora_entrada": "09:35",
+      "hora_salida": "03:35",
+      "nombre_actividad": "minim dolor velit cillum"
+    },
+    {
+      "fecha": new Date("25-04-2017"),
+      "hora_entrada": "05:35",
+      "hora_salida": "03:08",
+      "nombre_actividad": "nostrud ad exercitation Lorem"
+    },
+    {
+      "fecha": new Date("16-04-2007"),
+      "hora_entrada": "03:07",
+      "hora_salida": "11:49",
+      "nombre_actividad": "mollit do laborum nisi"
+    },
+    {
+      "fecha": new Date("20-08-1999"),
+      "hora_entrada": "07:21",
+      "hora_salida": "04:20",
+      "nombre_actividad": "non dolore culpa reprehenderit"
+    },
+    {
+      "fecha": new Date("21-05-2022"),
+      "hora_entrada": "04:33",
+      "hora_salida": "06:37",
+      "nombre_actividad": "nulla quis irure proident"
+    },
+    {
+      "fecha": new Date("01-05-1990"),
+      "hora_entrada": "09:19",
+      "hora_salida": "03:19",
+      "nombre_actividad": "in ipsum anim officia"
+    }
+  ],
+  "actividad": [
+    {
+      "nombre": "cillum consectetur occaecat excepteur",
+      "descripcion": "nulla aliqua irure amet",
+      "fecha": new Date("14-04-1997")
+    },
+    {
+      "nombre": "quis minim culpa dolore",
+      "descripcion": "nostrud cillum labore exercitation",
+      "fecha": new Date("31-12-1996")
+    },
+    {
+      "nombre": "duis consequat ad eu",
+      "descripcion": "cillum non culpa sint",
+      "fecha": new Date("24-06-2004")
+    },
+    {
+      "nombre": "consequat consectetur eu dolore",
+      "descripcion": "veniam quis exercitation ullamco",
+      "fecha": new Date("08-05-1990")
+    }
+  ],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "eiusmod proident cillum"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "06:21",
+      "hora_salida": "02:44",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("19-02-2022"),
+      "fecha_baja": new Date("03-03-2022")
+    },
+    {
+      "hora_ingreso": "04:13",
+      "hora_salida": "09:12",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("28-03-2022"),
+      "fecha_baja": new Date("19-02-2022")
+    },
+    {
+      "hora_ingreso": "11:03",
+      "hora_salida": "03:19",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("28-04-2022"),
+      "fecha_baja": new Date("10-04-2022")
+    },
+    {
+      "hora_ingreso": "11:33",
+      "hora_salida": "01:32",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("11-06-2022"),
+      "fecha_baja": new Date("19-03-2022")
+    },
+    {
+      "hora_ingreso": "10:57",
+      "hora_salida": "08:47",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("03-04-2022"),
+      "fecha_baja": new Date("10-10-2022")
+    },
+    {
+      "hora_ingreso": "05:37",
+      "hora_salida": "08:45",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("21-05-2022"),
+      "fecha_baja": new Date("04-05-2022")
+    },
+    {
+      "hora_ingreso": "05:33",
+      "hora_salida": "04:25",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("09-05-2022"),
+      "fecha_baja": new Date("09-07-2022")
+    },
+    {
+      "hora_ingreso": "05:05",
+      "hora_salida": "02:48",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("28-01-2022"),
+      "fecha_baja": new Date("20-04-2022")
+    },
+    {
+      "hora_ingreso": "04:18",
+      "hora_salida": "04:48",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("06-08-2022"),
+      "fecha_baja": new Date("23-02-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 0,
+      "descripcion": "Tempor reprehenderit voluptate nostrud proident ad amet et magna anim elit est pariatur sint.",
+      "fecha_inicio": new Date("29-03-2022")
+    },
+    {
+      "cantidad_dias": 3,
+      "descripcion": "Magna exercitation officia ea tempor fugiat qui tempor cillum.",
+      "fecha_inicio": new Date("14-01-2022")
+    }
+  ],
+  "telefono": [],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c18"
+  }
+},{
+  "numero_documento": 28487128,
+  "tipo_documento": "DNI",
+  "nombre": "Rodriquez",
+  "apellido": "Stephens",
+  "estado_civil": "casado/a",
+  "legajo": 185,
+  "fecha_ingreso": {
+    "$date": {
+      "$numberLong": "1573351200000"
+    }
+  },
+  "fecha_baja": new Date({
+    "$date)": {
+      "$numberLong": "1669863600000"
+    }
+  },
+  "fecha_nacimiento": {
+    "$date": {
+      "$numberLong": "946090800000"
+    }
+  },
+  "domicilio": "877 Hoyts Lane",
+  "es_encargado": true,
+  "codigo_postal": 4085,
+  "asistencia": [
+    {
+      "fecha": new Date("19-12-2016"),
+      "hora_entrada": "02:19",
+      "hora_salida": "01:21",
+      "nombre_actividad": "mollit cillum velit excepteur"
+    },
+    {
+      "fecha": new Date("05-01-2009"),
+      "hora_entrada": "03:12",
+      "hora_salida": "03:29",
+      "nombre_actividad": "aliqua do nostrud sit"
+    },
+    {
+      "fecha": new Date("24-01-2000"),
+      "hora_entrada": "09:02",
+      "hora_salida": "09:13",
+      "nombre_actividad": "Lorem proident est dolore"
+    },
+    {
+      "fecha": new Date("21-07-1994"),
+      "hora_entrada": "11:15",
+      "hora_salida": "12:47",
+      "nombre_actividad": "laboris eu cupidatat ut"
+    },
+    {
+      "fecha": new Date("12-06-2019"),
+      "hora_entrada": "09:36",
+      "hora_salida": "12:34",
+      "nombre_actividad": "cillum quis duis nostrud"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "cupidatat culpa fugiat"
+    },
+    {
+      "nombre_titulo": "consectetur quis ad"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "03:20",
+      "hora_salida": "10:29",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("15-05-2022"),
+      "fecha_baja": new Date("25-06-2022")
+    },
+    {
+      "hora_ingreso": "01:15",
+      "hora_salida": "03:55",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("17-07-2022"),
+      "fecha_baja": new Date("18-11-2022")
+    },
+    {
+      "hora_ingreso": "04:56",
+      "hora_salida": "02:18",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("28-08-2022"),
+      "fecha_baja": new Date("30-10-2022")
+    }
+  ],
+  "certificado": [],
+  "telefono": [
+    {
+      "numero": "(886) 446-2621"
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c11"
+  }
+},{
+  "numero_documento": 40724490,
+  "tipo_documento": "",
+  "nombre": "Neva",
+  "apellido": "Morales",
+  "estado_civil": "soltero/a",
+  "legajo": 395,
+  "fecha_ingreso": {
+    "$date": {
+      "$numberLong": "1546311600000"
+    }
+  },
+  "fecha_baja": new Date(null,
+  "fec)ha_nacimiento": {
+    "$date": {
+      "$numberLong": "770266800000"
+    }
+  },
+  "domicilio": "621 Seeley Street",
+  "es_encargado": true,
+  "codigo_postal": 7756,
+  "asistencia": [
+    {
+      "fecha": new Date("10-01-2016"),
+      "hora_entrada": "07:14",
+      "hora_salida": "11:49",
+      "nombre_actividad": "do nisi in fugiat"
+    },
+    {
+      "fecha": new Date("08-04-1994"),
+      "hora_entrada": "02:13",
+      "hora_salida": "05:55",
+      "nombre_actividad": "ut nostrud anim cillum"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "fugiat non Lorem"
+    },
+    {
+      "nombre_titulo": "ut culpa laboris"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "09:29",
+      "hora_salida": "03:54",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("11-04-2022"),
+      "fecha_baja": new Date("08-09-2022")
+    },
+    {
+      "hora_ingreso": "11:45",
+      "hora_salida": "05:51",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("17-06-2022"),
+      "fecha_baja": new Date("18-11-2022")
+    },
+    {
+      "hora_ingreso": "06:37",
+      "hora_salida": "12:14",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("02-07-2022"),
+      "fecha_baja": new Date("05-01-2022")
+    },
+    {
+      "hora_ingreso": "11:38",
+      "hora_salida": "08:02",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("25-08-2022"),
+      "fecha_baja": new Date("13-01-2022")
+    },
+    {
+      "hora_ingreso": "02:38",
+      "hora_salida": "10:40",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("26-04-2022"),
+      "fecha_baja": new Date("15-06-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 5,
+      "descripcion": "Incididunt eiusmod consequat cupidatat et ut mollit aliquip aliqua eiusmod fugiat laborum consectetur.",
+      "fecha_inicio": new Date("18-01-2022")
+    },
+    {
+      "cantidad_dias": 6,
+      "descripcion": "Esse non commodo minim ea do.",
+      "fecha_inicio": new Date("22-06-2022")
+    }
+  ],
+  "telefono": [
+    {
+      "numero": "(872) 455-2482"
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c15"
+  }
+},{
+  "numero_documento": 12348990,
+  "tipo_documento": "DNI",
+  "nombre": "Byers",
+  "apellido": "Noel",
+  "estado_civil": "soltero/a",
+  "legajo": 233,
+  "fecha_ingreso": {
+    "$date": {
+      "$numberLong": "1368154800000"
+    }
+  },
+  "fecha_baja": new Date(null,
+  "fec)ha_nacimiento": {
+    "$date": {
+      "$numberLong": "610772400000"
+    }
+  },
+  "domicilio": "788 Kane Street",
+  "es_encargado": true,
+  "codigo_postal": 9416,
+  "asistencia": [
+    {
+      "fecha": new Date("29-04-1998"),
+      "hora_entrada": "12:44",
+      "hora_salida": "05:20",
+      "nombre_actividad": "deserunt do consectetur laboris"
+    },
+    {
+      "fecha": new Date("24-04-2007"),
+      "hora_entrada": "11:11",
+      "hora_salida": "02:19",
+      "nombre_actividad": "ad reprehenderit consectetur sint"
+    },
+    {
+      "fecha": new Date("22-05-2003"),
+      "hora_entrada": "02:25",
+      "hora_salida": "11:34",
+      "nombre_actividad": "elit qui sint ad"
+    },
+    {
+      "fecha": new Date("16-11-1995"),
+      "hora_entrada": "02:20",
+      "hora_salida": "05:19",
+      "nombre_actividad": "laboris esse Lorem amet"
+    },
+    {
+      "fecha": new Date("09-03-2018"),
+      "hora_entrada": "05:20",
+      "hora_salida": "07:33",
+      "nombre_actividad": "minim sunt ea consectetur"
+    },
+    {
+      "fecha": new Date("20-12-2009"),
+      "hora_entrada": "03:10",
+      "hora_salida": "01:36",
+      "nombre_actividad": "ipsum veniam nisi est"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "occaecat voluptate dolor"
+    },
+    {
+      "nombre_titulo": "cupidatat irure in"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "03:37",
+      "hora_salida": "12:30",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("08-05-2022"),
+      "fecha_baja": new Date("05-10-2022")
+    },
+    {
+      "hora_ingreso": "01:15",
+      "hora_salida": "07:16",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("27-02-2022"),
+      "fecha_baja": new Date("22-04-2022")
+    },
+    {
+      "hora_ingreso": "11:02",
+      "hora_salida": "05:14",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("31-05-2022"),
+      "fecha_baja": new Date("20-05-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 4,
+      "descripcion": "Velit dolor dolore minim tempor Lorem culpa anim officia eiusmod voluptate sunt.",
+      "fecha_inicio": new Date("23-02-2022")
+    },
+    {
+      "cantidad_dias": 1,
+      "descripcion": "Consequat culpa elit incididunt cupidatat fugiat ex.",
+      "fecha_inicio": new Date("17-02-2022")
+    },
+    {
+      "cantidad_dias": 7,
+      "descripcion": "Do ad incididunt adipisicing sit amet cupidatat sint ullamco do qui.",
+      "fecha_inicio": new Date("13-06-2022")
+    },
+    {
+      "cantidad_dias": 5,
+      "descripcion": "Quis sint eiusmod quis pariatur est non irure esse tempor proident incididunt sit.",
+      "fecha_inicio": new Date("15-06-2022")
+    },
+    {
+      "cantidad_dias": 2,
+      "descripcion": "Dolore mollit deserunt in mollit ea.",
+      "fecha_inicio": new Date("11-10-2022")
+    }
+  ],
+  "telefono": [
+    {
+      "numero": "(850) 534-2522"
+    }
+  ],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c11"
+  }
+},{
+  "numero_documento": 41647047,
+  "tipo_documento": "DNI",
+  "nombre": "Wiggins",
+  "apellido": "Estrada",
+  "estado_civil": "soltero/a",
+  "legajo": 284,
+  "fecha_ingreso": {
+    "$date": {
+      "$numberLong": "1291172400000"
+    }
+  },
+  "fecha_baja": new Date(null,
+  "fec)ha_nacimiento": {
+    "$date": {
+      "$numberLong": "267073200000"
+    }
+  },
+  "domicilio": "515 Johnson Street",
+  "es_encargado": true,
+  "codigo_postal": 2285,
+  "asistencia": [
+    {
+      "fecha": new Date("20-12-2001"),
+      "hora_entrada": "11:49",
+      "hora_salida": "11:11",
+      "nombre_actividad": "veniam quis id irure"
+    },
+    {
+      "fecha": new Date("04-01-2008"),
+      "hora_entrada": "08:33",
+      "hora_salida": "01:37",
+      "nombre_actividad": "incididunt elit aliquip culpa"
+    },
+    {
+      "fecha": new Date("21-10-2018"),
+      "hora_entrada": "06:40",
+      "hora_salida": "08:57",
+      "nombre_actividad": "mollit veniam velit aute"
+    },
+    {
+      "fecha": new Date("05-08-2000"),
+      "hora_entrada": "07:03",
+      "hora_salida": "03:17",
+      "nombre_actividad": "ipsum nisi sit ea"
+    },
+    {
+      "fecha": new Date("23-06-2006"),
+      "hora_entrada": "11:50",
+      "hora_salida": "02:40",
+      "nombre_actividad": "cillum laboris magna eiusmod"
+    }
+  ],
+  "actividad": [],
+  "titulo_universitario": [
+    {
+      "nombre_titulo": "quis exercitation dolor"
+    },
+    {
+      "nombre_titulo": "nisi enim in"
+    }
+  ],
+  "turno": [
+    {
+      "hora_ingreso": "03:32",
+      "hora_salida": "06:15",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("03-10-2022"),
+      "fecha_baja": new Date("19-04-2022")
+    },
+    {
+      "hora_ingreso": "03:39",
+      "hora_salida": "07:51",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("15-06-2022"),
+      "fecha_baja": new Date("02-01-2022")
+    },
+    {
+      "hora_ingreso": "11:41",
+      "hora_salida": "08:29",
+      "nombre_turno": "Tarde",
+      "fecha_ingreso": new Date("10-04-2022"),
+      "fecha_baja": new Date("11-04-2022")
+    },
+    {
+      "hora_ingreso": "11:31",
+      "hora_salida": "09:06",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("17-10-2022"),
+      "fecha_baja": new Date("31-10-2022")
+    },
+    {
+      "hora_ingreso": "05:42",
+      "hora_salida": "02:24",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("07-03-2022"),
+      "fecha_baja": new Date("28-08-2022")
+    },
+    {
+      "hora_ingreso": "07:36",
+      "hora_salida": "09:44",
+      "nombre_turno": "Noche",
+      "fecha_ingreso": new Date("14-09-2022"),
+      "fecha_baja": new Date("10-07-2022")
+    },
+    {
+      "hora_ingreso": "10:36",
+      "hora_salida": "05:45",
+      "nombre_turno": "Mañana",
+      "fecha_ingreso": new Date("13-11-2022"),
+      "fecha_baja": new Date("14-03-2022")
+    }
+  ],
+  "certificado": [
+    {
+      "cantidad_dias": 3,
+      "descripcion": "Ad minim duis cupidatat exercitation dolor laboris ut labore.",
+      "fecha_inicio": new Date("24-10-2022")
+    },
+    {
+      "cantidad_dias": 6,
+      "descripcion": "Velit incididunt ea non sint et sunt nostrud pariatur laborum excepteur aliquip.",
+      "fecha_inicio": new Date("11-11-2022")
+    },
+    {
+      "cantidad_dias": 7,
+      "descripcion": "Ex qui ad officia irure labore qui occaecat eiusmod eu eu sint.",
+      "fecha_inicio": new Date("18-09-2022")
+    },
+    {
+      "cantidad_dias": 7,
+      "descripcion": "In reprehenderit adipisicing commodo tempor dolor fugiat officia nostrud excepteur consectetur duis dolor aute.",
+      "fecha_inicio": new Date("17-07-2022")
+    }
+  ],
+  "telefono": [],
+  "provincia": {
+    "$oid": "6383a7f45c01da03a8e59c19"
+  }
+}]);
 
-// db.Personal.insertMany([
-//   {
-//     "numero_documento": 19293828,
-//     "tipo_documento": "DNI",
-//     "nombre": "Mercedes",
-//     "apellido": "Blevins",
-//     "estado_civil": "soltero/a",
-//     "legajo": 436,
-//     "fecha_ingreso": "31-07-2011",
-//     "fecha_baja": "24-12-1996",
-//     "fecha_nacimiento": "04-03-2020",
-//     "domicilio": "641 Berry Street",
-//     "es_encargado": true,
-//     "codigo_postal": 7365,
-//     "asistencia": [
-//       {
-//         "fecha": "25-06-2013",
-//         "hora_entrada": "11:50",
-//         "hora_salida": "06:29",
-//         "nombre_actividad": "occaecat minim nisi eiusmod"
-//       },
-//       {
-//         "fecha": "04-07-2021",
-//         "hora_entrada": "07:45",
-//         "hora_salida": "07:27",
-//         "nombre_actividad": "irure aute anim cillum"
-//       },
-//       {
-//         "fecha": "30-01-2017",
-//         "hora_entrada": "07:02",
-//         "hora_salida": "06:10",
-//         "nombre_actividad": "incididunt adipisicing anim elit"
-//       },
-//       {
-//         "fecha": "27-04-1999",
-//         "hora_entrada": "01:25",
-//         "hora_salida": "05:13",
-//         "nombre_actividad": "do eu consequat deserunt"
-//       },
-//       {
-//         "fecha": "15-08-1999",
-//         "hora_entrada": "10:36",
-//         "hora_salida": "04:02",
-//         "nombre_actividad": "cupidatat duis ad nisi"
-//       },
-//       {
-//         "fecha": "12-06-1994",
-//         "hora_entrada": "12:49",
-//         "hora_salida": "01:14",
-//         "nombre_actividad": "ipsum aliquip aute nisi"
-//       }
-//     ],
-//     "actividad": [],
-//     "titulo_universitario": [
-//       {
-//         "nombre_titulo": "nulla occaecat ipsum"
-//       },
-//       {
-//         "nombre_titulo": "irure et ut"
-//       }
-//     ],
-//     "turno": [
-//       {
-//         "hora_ingreso": "02:54",
-//         "hora_salida": "12:04",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "19-05-2022",
-//         "fecha_baja": "23-08-2022"
-//       },
-//       {
-//         "hora_ingreso": "12:40",
-//         "hora_salida": "05:22",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "14-10-2022",
-//         "fecha_baja": "15-11-2022"
-//       },
-//       {
-//         "hora_ingreso": "07:26",
-//         "hora_salida": "05:44",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "23-04-2022",
-//         "fecha_baja": "27-03-2022"
-//       },
-//       {
-//         "hora_ingreso": "04:05",
-//         "hora_salida": "04:53",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "24-09-2022",
-//         "fecha_baja": "28-10-2022"
-//       },
-//       {
-//         "hora_ingreso": "09:42",
-//         "hora_salida": "12:15",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "08-09-2022",
-//         "fecha_baja": "03-10-2022"
-//       },
-//       {
-//         "hora_ingreso": "08:50",
-//         "hora_salida": "12:25",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "10-07-2022",
-//         "fecha_baja": "31-05-2022"
-//       },
-//       {
-//         "hora_ingreso": "04:36",
-//         "hora_salida": "10:19",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "15-01-2022",
-//         "fecha_baja": "15-07-2022"
-//       },
-//       {
-//         "hora_ingreso": "10:20",
-//         "hora_salida": "08:12",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "03-11-2022",
-//         "fecha_baja": "04-04-2022"
-//       },
-//       {
-//         "hora_ingreso": "07:24",
-//         "hora_salida": "05:06",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "24-09-2022",
-//         "fecha_baja": "20-03-2022"
-//       },
-//       {
-//         "hora_ingreso": "11:06",
-//         "hora_salida": "05:20",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "25-07-2022",
-//         "fecha_baja": "29-05-2022"
-//       }
-//     ],
-//     "certificado": [
-//       {
-//         "cantidad_dias": 1,
-//         "descripcion": "Do fugiat aliqua magna duis ea Lorem.",
-//         "fecha_inicio": "05-11-2022"
-//       },
-//       {
-//         "cantidad_dias": 6,
-//         "descripcion": "Ipsum commodo voluptate occaecat esse in cillum sunt incididunt.",
-//         "fecha_inicio": "01-06-2022"
-//       },
-//       {
-//         "cantidad_dias": 2,
-//         "descripcion": "Quis sint deserunt velit anim pariatur irure.",
-//         "fecha_inicio": "18-01-2022"
-//       }
-//     ],
-//     "telefono": [
-//       {
-//         "numero": "(948) 539-3937"
-//       },
-//       {
-//         "numero": "(806) 440-2261"
-//       }
-//     ]
-//   },
-//   {
-//     "numero_documento": 35921169,
-//     "tipo_documento": "LE",
-//     "nombre": "Estelle",
-//     "apellido": "Gordon",
-//     "estado_civil": "viudo/a",
-//     "legajo": 325,
-//     "fecha_ingreso": "29-03-2009",
-//     "fecha_baja": "21-11-2004",
-//     "fecha_nacimiento": "25-03-2011",
-//     "domicilio": "744 Bath Avenue",
-//     "es_encargado": false,
-//     "codigo_postal": 2816,
-//     "asistencia": [
-//       {
-//         "fecha": "10-04-1997",
-//         "hora_entrada": "06:16",
-//         "hora_salida": "09:42",
-//         "nombre_actividad": "sit aliquip proident voluptate"
-//       },
-//       {
-//         "fecha": "10-07-2014",
-//         "hora_entrada": "01:08",
-//         "hora_salida": "02:42",
-//         "nombre_actividad": "excepteur deserunt sint mollit"
-//       },
-//       {
-//         "fecha": "22-08-1994",
-//         "hora_entrada": "02:30",
-//         "hora_salida": "08:33",
-//         "nombre_actividad": "velit sunt cillum excepteur"
-//       }
-//     ],
-//     "actividad": [
-//       {
-//         "nombre": "incididunt aliqua eiusmod pariatur",
-//         "descripcion": "labore elit magna occaecat",
-//         "fecha": "16-10-1998"
-//       },
-//       {
-//         "nombre": "cupidatat quis commodo voluptate",
-//         "descripcion": "do sint dolor nostrud",
-//         "fecha": "13-02-1997"
-//       },
-//       {
-//         "nombre": "enim veniam ut proident",
-//         "descripcion": "commodo in aliquip ea",
-//         "fecha": "07-12-2007"
-//       }
-//     ],
-//     "titulo_universitario": [],
-//     "turno": [
-//       {
-//         "hora_ingreso": "12:38",
-//         "hora_salida": "03:47",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "11-07-2022",
-//         "fecha_baja": "12-03-2022"
-//       },
-//       {
-//         "hora_ingreso": "04:14",
-//         "hora_salida": "11:35",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "25-09-2022",
-//         "fecha_baja": "16-05-2022"
-//       },
-//       {
-//         "hora_ingreso": "06:38",
-//         "hora_salida": "08:59",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "25-06-2022",
-//         "fecha_baja": "11-08-2022"
-//       },
-//       {
-//         "hora_ingreso": "09:11",
-//         "hora_salida": "12:46",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "03-08-2022",
-//         "fecha_baja": "29-05-2022"
-//       },
-//       {
-//         "hora_ingreso": "05:37",
-//         "hora_salida": "11:56",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "03-03-2022",
-//         "fecha_baja": "26-10-2022"
-//       },
-//       {
-//         "hora_ingreso": "05:57",
-//         "hora_salida": "04:35",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "02-02-2022",
-//         "fecha_baja": "24-10-2022"
-//       },
-//       {
-//         "hora_ingreso": "08:45",
-//         "hora_salida": "02:36",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "28-02-2022",
-//         "fecha_baja": "22-08-2022"
-//       }
-//     ],
-//     "certificado": [],
-//     "telefono": []
-//   },
-//   {
-//     "numero_documento": 37291278,
-//     "tipo_documento": "PASAPORTE",
-//     "nombre": "Strickland",
-//     "apellido": "Kelley",
-//     "estado_civil": "soltero/a",
-//     "legajo": 360,
-//     "fecha_ingreso": "19-11-1994",
-//     "fecha_baja": "01-08-2021",
-//     "fecha_nacimiento": "22-06-1995",
-//     "domicilio": "799 Scott Avenue",
-//     "es_encargado": true,
-//     "codigo_postal": 9333,
-//     "asistencia": [
-//       {
-//         "fecha": "23-06-2021",
-//         "hora_entrada": "10:43",
-//         "hora_salida": "03:24",
-//         "nombre_actividad": "adipisicing enim consectetur cupidatat"
-//       },
-//       {
-//         "fecha": "23-01-2015",
-//         "hora_entrada": "01:45",
-//         "hora_salida": "04:05",
-//         "nombre_actividad": "qui aliqua nulla et"
-//       },
-//       {
-//         "fecha": "12-12-2007",
-//         "hora_entrada": "05:37",
-//         "hora_salida": "07:44",
-//         "nombre_actividad": "quis esse proident quis"
-//       },
-//       {
-//         "fecha": "14-09-2001",
-//         "hora_entrada": "06:47",
-//         "hora_salida": "02:35",
-//         "nombre_actividad": "ex aliquip amet occaecat"
-//       }
-//     ],
-//     "actividad": [],
-//     "titulo_universitario": [
-//       {
-//         "nombre_titulo": "magna sunt minim"
-//       },
-//       {
-//         "nombre_titulo": "minim sit consectetur"
-//       }
-//     ],
-//     "turno": [
-//       {
-//         "hora_ingreso": "09:30",
-//         "hora_salida": "12:43",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "25-04-2022",
-//         "fecha_baja": "14-11-2022"
-//       },
-//       {
-//         "hora_ingreso": "06:39",
-//         "hora_salida": "12:19",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "29-06-2022",
-//         "fecha_baja": "11-03-2022"
-//       },
-//       {
-//         "hora_ingreso": "01:37",
-//         "hora_salida": "06:25",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "12-02-2022",
-//         "fecha_baja": "18-08-2022"
-//       },
-//       {
-//         "hora_ingreso": "01:40",
-//         "hora_salida": "03:48",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "08-10-2022",
-//         "fecha_baja": "18-02-2022"
-//       },
-//       {
-//         "hora_ingreso": "04:27",
-//         "hora_salida": "04:27",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "27-08-2022",
-//         "fecha_baja": "02-02-2022"
-//       },
-//       {
-//         "hora_ingreso": "07:28",
-//         "hora_salida": "12:17",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "19-05-2022",
-//         "fecha_baja": "01-09-2022"
-//       },
-//       {
-//         "hora_ingreso": "05:52",
-//         "hora_salida": "07:15",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "20-02-2022",
-//         "fecha_baja": "30-04-2022"
-//       },
-//       {
-//         "hora_ingreso": "12:40",
-//         "hora_salida": "02:45",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "08-10-2022",
-//         "fecha_baja": "27-03-2022"
-//       },
-//       {
-//         "hora_ingreso": "05:27",
-//         "hora_salida": "04:26",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "14-08-2022",
-//         "fecha_baja": "15-03-2022"
-//       }
-//     ],
-//     "certificado": [
-//       {
-//         "cantidad_dias": 3,
-//         "descripcion": "Consectetur ea est non enim.",
-//         "fecha_inicio": "22-06-2022"
-//       }
-//     ],
-//     "telefono": []
-//   },
-//   {
-//     "numero_documento": 22173533,
-//     "tipo_documento": "",
-//     "nombre": "Mcdonald",
-//     "apellido": "Singleton",
-//     "estado_civil": "casado/a",
-//     "legajo": 171,
-//     "fecha_ingreso": "23-11-1995",
-//     "fecha_baja": "04-07-1990",
-//     "fecha_nacimiento": "26-08-1998",
-//     "domicilio": "313 Madison Place",
-//     "es_encargado": true,
-//     "codigo_postal": 1904,
-//     "asistencia": [
-//       {
-//         "fecha": "19-05-2020",
-//         "hora_entrada": "04:19",
-//         "hora_salida": "11:41",
-//         "nombre_actividad": "anim id mollit fugiat"
-//       },
-//       {
-//         "fecha": "27-03-2002",
-//         "hora_entrada": "08:14",
-//         "hora_salida": "07:19",
-//         "nombre_actividad": "aute anim nostrud laborum"
-//       },
-//       {
-//         "fecha": "26-04-2016",
-//         "hora_entrada": "01:37",
-//         "hora_salida": "02:49",
-//         "nombre_actividad": "nostrud proident ipsum eu"
-//       },
-//       {
-//         "fecha": "27-07-2020",
-//         "hora_entrada": "06:17",
-//         "hora_salida": "02:09",
-//         "nombre_actividad": "anim esse amet aliquip"
-//       },
-//       {
-//         "fecha": "29-11-2005",
-//         "hora_entrada": "08:51",
-//         "hora_salida": "08:00",
-//         "nombre_actividad": "magna consequat consequat consectetur"
-//       }
-//     ],
-//     "actividad": [],
-//     "titulo_universitario": [
-//       {
-//         "nombre_titulo": "sit esse mollit"
-//       }
-//     ],
-//     "turno": [
-//       {
-//         "hora_ingreso": "04:57",
-//         "hora_salida": "09:21",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "27-02-2022",
-//         "fecha_baja": "28-04-2022"
-//       },
-//       {
-//         "hora_ingreso": "08:08",
-//         "hora_salida": "07:58",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "03-01-2022",
-//         "fecha_baja": "20-08-2022"
-//       },
-//       {
-//         "hora_ingreso": "04:59",
-//         "hora_salida": "07:38",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "09-04-2022",
-//         "fecha_baja": "21-03-2022"
-//       },
-//       {
-//         "hora_ingreso": "10:25",
-//         "hora_salida": "04:23",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "08-02-2022",
-//         "fecha_baja": "25-09-2022"
-//       },
-//       {
-//         "hora_ingreso": "12:56",
-//         "hora_salida": "08:08",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "10-08-2022",
-//         "fecha_baja": "07-10-2022"
-//       },
-//       {
-//         "hora_ingreso": "08:16",
-//         "hora_salida": "08:31",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "17-03-2022",
-//         "fecha_baja": "24-07-2022"
-//       },
-//       {
-//         "hora_ingreso": "08:03",
-//         "hora_salida": "04:03",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "08-03-2022",
-//         "fecha_baja": "02-10-2022"
-//       },
-//       {
-//         "hora_ingreso": "05:39",
-//         "hora_salida": "08:40",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "07-02-2022",
-//         "fecha_baja": "16-09-2022"
-//       },
-//       {
-//         "hora_ingreso": "01:50",
-//         "hora_salida": "06:38",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "21-10-2022",
-//         "fecha_baja": "15-06-2022"
-//       },
-//       {
-//         "hora_ingreso": "08:19",
-//         "hora_salida": "10:42",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "21-10-2022",
-//         "fecha_baja": "02-09-2022"
-//       }
-//     ],
-//     "certificado": [],
-//     "telefono": []
-//   },
-//   {
-//     "numero_documento": 21129805,
-//     "tipo_documento": "PASAPORTE",
-//     "nombre": "Lilia",
-//     "apellido": "George",
-//     "estado_civil": "casado/a",
-//     "legajo": 257,
-//     "fecha_ingreso": "09-12-2008",
-//     "fecha_baja": "27-11-2019",
-//     "fecha_nacimiento": "02-03-2012",
-//     "domicilio": "431 Matthews Place",
-//     "es_encargado": false,
-//     "codigo_postal": 1904,
-//     "asistencia": [
-//       {
-//         "fecha": "02-04-2020",
-//         "hora_entrada": "02:35",
-//         "hora_salida": "09:16",
-//         "nombre_actividad": "laborum eu ut aliquip"
-//       },
-//       {
-//         "fecha": "08-05-2018",
-//         "hora_entrada": "05:37",
-//         "hora_salida": "04:30",
-//         "nombre_actividad": "occaecat adipisicing mollit adipisicing"
-//       },
-//       {
-//         "fecha": "10-03-2016",
-//         "hora_entrada": "06:57",
-//         "hora_salida": "09:56",
-//         "nombre_actividad": "culpa eu deserunt est"
-//       }
-//     ],
-//     "actividad": [
-//       {
-//         "nombre": "reprehenderit reprehenderit exercitation irure",
-//         "descripcion": "dolor sunt ut reprehenderit",
-//         "fecha": "09-07-2006"
-//       },
-//       {
-//         "nombre": "eu ad in laborum",
-//         "descripcion": "aliquip nulla do voluptate",
-//         "fecha": "26-12-2011"
-//       },
-//       {
-//         "nombre": "culpa nulla laboris commodo",
-//         "descripcion": "aliqua et dolore et",
-//         "fecha": "29-08-1995"
-//       },
-//       {
-//         "nombre": "commodo incididunt in dolor",
-//         "descripcion": "commodo cupidatat esse in",
-//         "fecha": "26-03-1998"
-//       }
-//     ],
-//     "titulo_universitario": [
-//       {
-//         "nombre_titulo": "sint dolor commodo"
-//       },
-//       {
-//         "nombre_titulo": "irure veniam exercitation"
-//       }
-//     ],
-//     "turno": [
-//       {
-//         "hora_ingreso": "09:45",
-//         "hora_salida": "11:14",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "28-05-2022",
-//         "fecha_baja": "10-11-2022"
-//       },
-//       {
-//         "hora_ingreso": "07:08",
-//         "hora_salida": "03:39",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "06-01-2022",
-//         "fecha_baja": "30-05-2022"
-//       },
-//       {
-//         "hora_ingreso": "08:39",
-//         "hora_salida": "01:57",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "12-02-2022",
-//         "fecha_baja": "15-01-2022"
-//       },
-//       {
-//         "hora_ingreso": "08:29",
-//         "hora_salida": "06:09",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "15-07-2022",
-//         "fecha_baja": "02-09-2022"
-//       },
-//       {
-//         "hora_ingreso": "06:23",
-//         "hora_salida": "04:51",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "20-08-2022",
-//         "fecha_baja": "13-02-2022"
-//       }
-//     ],
-//     "certificado": [],
-//     "telefono": []
-//   },
-//   {
-//     "numero_documento": 38332092,
-//     "tipo_documento": "LE",
-//     "nombre": "Pamela",
-//     "apellido": "Vaughn",
-//     "estado_civil": "casado/a",
-//     "legajo": 358,
-//     "fecha_ingreso": "10-02-1993",
-//     "fecha_baja": "16-08-2007",
-//     "fecha_nacimiento": "10-02-2007",
-//     "domicilio": "625 Moultrie Street",
-//     "es_encargado": false,
-//     "codigo_postal": 2881,
-//     "asistencia": [
-//       {
-//         "fecha": "28-07-1999",
-//         "hora_entrada": "09:35",
-//         "hora_salida": "03:35",
-//         "nombre_actividad": "minim dolor velit cillum"
-//       },
-//       {
-//         "fecha": "25-04-2017",
-//         "hora_entrada": "05:35",
-//         "hora_salida": "03:08",
-//         "nombre_actividad": "nostrud ad exercitation Lorem"
-//       },
-//       {
-//         "fecha": "16-04-2007",
-//         "hora_entrada": "03:07",
-//         "hora_salida": "11:49",
-//         "nombre_actividad": "mollit do laborum nisi"
-//       },
-//       {
-//         "fecha": "20-08-1999",
-//         "hora_entrada": "07:21",
-//         "hora_salida": "04:20",
-//         "nombre_actividad": "non dolore culpa reprehenderit"
-//       },
-//       {
-//         "fecha": "21-05-2022",
-//         "hora_entrada": "04:33",
-//         "hora_salida": "06:37",
-//         "nombre_actividad": "nulla quis irure proident"
-//       },
-//       {
-//         "fecha": "01-05-1990",
-//         "hora_entrada": "09:19",
-//         "hora_salida": "03:19",
-//         "nombre_actividad": "in ipsum anim officia"
-//       }
-//     ],
-//     "actividad": [
-//       {
-//         "nombre": "cillum consectetur occaecat excepteur",
-//         "descripcion": "nulla aliqua irure amet",
-//         "fecha": "14-04-1997"
-//       },
-//       {
-//         "nombre": "quis minim culpa dolore",
-//         "descripcion": "nostrud cillum labore exercitation",
-//         "fecha": "31-12-1996"
-//       },
-//       {
-//         "nombre": "duis consequat ad eu",
-//         "descripcion": "cillum non culpa sint",
-//         "fecha": "24-06-2004"
-//       },
-//       {
-//         "nombre": "consequat consectetur eu dolore",
-//         "descripcion": "veniam quis exercitation ullamco",
-//         "fecha": "08-05-1990"
-//       }
-//     ],
-//     "titulo_universitario": [
-//       {
-//         "nombre_titulo": "eiusmod proident cillum"
-//       }
-//     ],
-//     "turno": [
-//       {
-//         "hora_ingreso": "06:21",
-//         "hora_salida": "02:44",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "19-02-2022",
-//         "fecha_baja": "03-03-2022"
-//       },
-//       {
-//         "hora_ingreso": "04:13",
-//         "hora_salida": "09:12",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "28-03-2022",
-//         "fecha_baja": "19-02-2022"
-//       },
-//       {
-//         "hora_ingreso": "11:03",
-//         "hora_salida": "03:19",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "28-04-2022",
-//         "fecha_baja": "10-04-2022"
-//       },
-//       {
-//         "hora_ingreso": "11:33",
-//         "hora_salida": "01:32",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "11-06-2022",
-//         "fecha_baja": "19-03-2022"
-//       },
-//       {
-//         "hora_ingreso": "10:57",
-//         "hora_salida": "08:47",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "03-04-2022",
-//         "fecha_baja": "10-10-2022"
-//       },
-//       {
-//         "hora_ingreso": "05:37",
-//         "hora_salida": "08:45",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "21-05-2022",
-//         "fecha_baja": "04-05-2022"
-//       },
-//       {
-//         "hora_ingreso": "05:33",
-//         "hora_salida": "04:25",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "09-05-2022",
-//         "fecha_baja": "09-07-2022"
-//       },
-//       {
-//         "hora_ingreso": "05:05",
-//         "hora_salida": "02:48",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "28-01-2022",
-//         "fecha_baja": "20-04-2022"
-//       },
-//       {
-//         "hora_ingreso": "04:18",
-//         "hora_salida": "04:48",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "06-08-2022",
-//         "fecha_baja": "23-02-2022"
-//       }
-//     ],
-//     "certificado": [
-//       {
-//         "cantidad_dias": 0,
-//         "descripcion": "Tempor reprehenderit voluptate nostrud proident ad amet et magna anim elit est pariatur sint.",
-//         "fecha_inicio": "29-03-2022"
-//       },
-//       {
-//         "cantidad_dias": 3,
-//         "descripcion": "Magna exercitation officia ea tempor fugiat qui tempor cillum.",
-//         "fecha_inicio": "14-01-2022"
-//       }
-//     ],
-//     "telefono": []
-//   },
-//   {
-//     "numero_documento": 28487128,
-//     "tipo_documento": "DNI",
-//     "nombre": "Rodriquez",
-//     "apellido": "Stephens",
-//     "estado_civil": "casado/a",
-//     "legajo": 185,
-//     "fecha_ingreso": "11-10-1991",
-//     "fecha_baja": "25-12-1997",
-//     "fecha_nacimiento": "29-09-1993",
-//     "domicilio": "877 Hoyts Lane",
-//     "es_encargado": true,
-//     "codigo_postal": 4085,
-//     "asistencia": [
-//       {
-//         "fecha": "19-12-2016",
-//         "hora_entrada": "02:19",
-//         "hora_salida": "01:21",
-//         "nombre_actividad": "mollit cillum velit excepteur"
-//       },
-//       {
-//         "fecha": "05-01-2009",
-//         "hora_entrada": "03:12",
-//         "hora_salida": "03:29",
-//         "nombre_actividad": "aliqua do nostrud sit"
-//       },
-//       {
-//         "fecha": "24-01-2000",
-//         "hora_entrada": "09:02",
-//         "hora_salida": "09:13",
-//         "nombre_actividad": "Lorem proident est dolore"
-//       },
-//       {
-//         "fecha": "21-07-1994",
-//         "hora_entrada": "11:15",
-//         "hora_salida": "12:47",
-//         "nombre_actividad": "laboris eu cupidatat ut"
-//       },
-//       {
-//         "fecha": "12-06-2019",
-//         "hora_entrada": "09:36",
-//         "hora_salida": "12:34",
-//         "nombre_actividad": "cillum quis duis nostrud"
-//       }
-//     ],
-//     "actividad": [],
-//     "titulo_universitario": [
-//       {
-//         "nombre_titulo": "cupidatat culpa fugiat"
-//       },
-//       {
-//         "nombre_titulo": "consectetur quis ad"
-//       }
-//     ],
-//     "turno": [
-//       {
-//         "hora_ingreso": "03:20",
-//         "hora_salida": "10:29",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "15-05-2022",
-//         "fecha_baja": "25-06-2022"
-//       },
-//       {
-//         "hora_ingreso": "01:15",
-//         "hora_salida": "03:55",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "17-07-2022",
-//         "fecha_baja": "18-11-2022"
-//       },
-//       {
-//         "hora_ingreso": "04:56",
-//         "hora_salida": "02:18",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "28-08-2022",
-//         "fecha_baja": "30-10-2022"
-//       }
-//     ],
-//     "certificado": [],
-//     "telefono": [
-//       {
-//         "numero": "(886) 446-2621"
-//       }
-//     ]
-//   },
-//   {
-//     "numero_documento": 40724490,
-//     "tipo_documento": "",
-//     "nombre": "Neva",
-//     "apellido": "Morales",
-//     "estado_civil": "soltero/a",
-//     "legajo": 395,
-//     "fecha_ingreso": "24-11-2011",
-//     "fecha_baja": "02-03-2011",
-//     "fecha_nacimiento": "25-02-2007",
-//     "domicilio": "621 Seeley Street",
-//     "es_encargado": true,
-//     "codigo_postal": 7756,
-//     "asistencia": [
-//       {
-//         "fecha": "10-01-2016",
-//         "hora_entrada": "07:14",
-//         "hora_salida": "11:49",
-//         "nombre_actividad": "do nisi in fugiat"
-//       },
-//       {
-//         "fecha": "08-04-1994",
-//         "hora_entrada": "02:13",
-//         "hora_salida": "05:55",
-//         "nombre_actividad": "ut nostrud anim cillum"
-//       }
-//     ],
-//     "actividad": [],
-//     "titulo_universitario": [
-//       {
-//         "nombre_titulo": "fugiat non Lorem"
-//       },
-//       {
-//         "nombre_titulo": "ut culpa laboris"
-//       }
-//     ],
-//     "turno": [
-//       {
-//         "hora_ingreso": "09:29",
-//         "hora_salida": "03:54",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "11-04-2022",
-//         "fecha_baja": "08-09-2022"
-//       },
-//       {
-//         "hora_ingreso": "11:45",
-//         "hora_salida": "05:51",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "17-06-2022",
-//         "fecha_baja": "18-11-2022"
-//       },
-//       {
-//         "hora_ingreso": "06:37",
-//         "hora_salida": "12:14",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "02-07-2022",
-//         "fecha_baja": "05-01-2022"
-//       },
-//       {
-//         "hora_ingreso": "11:38",
-//         "hora_salida": "08:02",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "25-08-2022",
-//         "fecha_baja": "13-01-2022"
-//       },
-//       {
-//         "hora_ingreso": "02:38",
-//         "hora_salida": "10:40",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "26-04-2022",
-//         "fecha_baja": "15-06-2022"
-//       }
-//     ],
-//     "certificado": [
-//       {
-//         "cantidad_dias": 5,
-//         "descripcion": "Incididunt eiusmod consequat cupidatat et ut mollit aliquip aliqua eiusmod fugiat laborum consectetur.",
-//         "fecha_inicio": "18-01-2022"
-//       },
-//       {
-//         "cantidad_dias": 6,
-//         "descripcion": "Esse non commodo minim ea do.",
-//         "fecha_inicio": "22-06-2022"
-//       }
-//     ],
-//     "telefono": [
-//       {
-//         "numero": "(872) 455-2482"
-//       }
-//     ]
-//   },
-//   {
-//     "numero_documento": 12348990,
-//     "tipo_documento": "DNI",
-//     "nombre": "Byers",
-//     "apellido": "Noel",
-//     "estado_civil": "soltero/a",
-//     "legajo": 233,
-//     "fecha_ingreso": "05-10-2013",
-//     "fecha_baja": "13-03-2001",
-//     "fecha_nacimiento": "07-01-2002",
-//     "domicilio": "788 Kane Street",
-//     "es_encargado": true,
-//     "codigo_postal": 9416,
-//     "asistencia": [
-//       {
-//         "fecha": "29-04-1998",
-//         "hora_entrada": "12:44",
-//         "hora_salida": "05:20",
-//         "nombre_actividad": "deserunt do consectetur laboris"
-//       },
-//       {
-//         "fecha": "24-04-2007",
-//         "hora_entrada": "11:11",
-//         "hora_salida": "02:19",
-//         "nombre_actividad": "ad reprehenderit consectetur sint"
-//       },
-//       {
-//         "fecha": "22-05-2003",
-//         "hora_entrada": "02:25",
-//         "hora_salida": "11:34",
-//         "nombre_actividad": "elit qui sint ad"
-//       },
-//       {
-//         "fecha": "16-11-1995",
-//         "hora_entrada": "02:20",
-//         "hora_salida": "05:19",
-//         "nombre_actividad": "laboris esse Lorem amet"
-//       },
-//       {
-//         "fecha": "09-03-2018",
-//         "hora_entrada": "05:20",
-//         "hora_salida": "07:33",
-//         "nombre_actividad": "minim sunt ea consectetur"
-//       },
-//       {
-//         "fecha": "20-12-2009",
-//         "hora_entrada": "03:10",
-//         "hora_salida": "01:36",
-//         "nombre_actividad": "ipsum veniam nisi est"
-//       }
-//     ],
-//     "actividad": [],
-//     "titulo_universitario": [
-//       {
-//         "nombre_titulo": "occaecat voluptate dolor"
-//       },
-//       {
-//         "nombre_titulo": "cupidatat irure in"
-//       }
-//     ],
-//     "turno": [
-//       {
-//         "hora_ingreso": "03:37",
-//         "hora_salida": "12:30",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "08-05-2022",
-//         "fecha_baja": "05-10-2022"
-//       },
-//       {
-//         "hora_ingreso": "01:15",
-//         "hora_salida": "07:16",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "27-02-2022",
-//         "fecha_baja": "22-04-2022"
-//       },
-//       {
-//         "hora_ingreso": "11:02",
-//         "hora_salida": "05:14",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "31-05-2022",
-//         "fecha_baja": "20-05-2022"
-//       }
-//     ],
-//     "certificado": [
-//       {
-//         "cantidad_dias": 4,
-//         "descripcion": "Velit dolor dolore minim tempor Lorem culpa anim officia eiusmod voluptate sunt.",
-//         "fecha_inicio": "23-02-2022"
-//       },
-//       {
-//         "cantidad_dias": 1,
-//         "descripcion": "Consequat culpa elit incididunt cupidatat fugiat ex.",
-//         "fecha_inicio": "17-02-2022"
-//       },
-//       {
-//         "cantidad_dias": 7,
-//         "descripcion": "Do ad incididunt adipisicing sit amet cupidatat sint ullamco do qui.",
-//         "fecha_inicio": "13-06-2022"
-//       },
-//       {
-//         "cantidad_dias": 5,
-//         "descripcion": "Quis sint eiusmod quis pariatur est non irure esse tempor proident incididunt sit.",
-//         "fecha_inicio": "15-06-2022"
-//       },
-//       {
-//         "cantidad_dias": 2,
-//         "descripcion": "Dolore mollit deserunt in mollit ea.",
-//         "fecha_inicio": "11-10-2022"
-//       }
-//     ],
-//     "telefono": [
-//       {
-//         "numero": "(850) 534-2522"
-//       }
-//     ]
-//   },
-//   {
-//     "numero_documento": 41647047,
-//     "tipo_documento": "DNI",
-//     "nombre": "Wiggins",
-//     "apellido": "Estrada",
-//     "estado_civil": "soltero/a",
-//     "legajo": 284,
-//     "fecha_ingreso": "12-01-2021",
-//     "fecha_baja": "16-06-2006",
-//     "fecha_nacimiento": "20-02-1990",
-//     "domicilio": "515 Johnson Street",
-//     "es_encargado": true,
-//     "codigo_postal": 2285,
-//     "asistencia": [
-//       {
-//         "fecha": "20-12-2001",
-//         "hora_entrada": "11:49",
-//         "hora_salida": "11:11",
-//         "nombre_actividad": "veniam quis id irure"
-//       },
-//       {
-//         "fecha": "04-01-2008",
-//         "hora_entrada": "08:33",
-//         "hora_salida": "01:37",
-//         "nombre_actividad": "incididunt elit aliquip culpa"
-//       },
-//       {
-//         "fecha": "21-10-2018",
-//         "hora_entrada": "06:40",
-//         "hora_salida": "08:57",
-//         "nombre_actividad": "mollit veniam velit aute"
-//       },
-//       {
-//         "fecha": "05-08-2000",
-//         "hora_entrada": "07:03",
-//         "hora_salida": "03:17",
-//         "nombre_actividad": "ipsum nisi sit ea"
-//       },
-//       {
-//         "fecha": "23-06-2006",
-//         "hora_entrada": "11:50",
-//         "hora_salida": "02:40",
-//         "nombre_actividad": "cillum laboris magna eiusmod"
-//       }
-//     ],
-//     "actividad": [],
-//     "titulo_universitario": [
-//       {
-//         "nombre_titulo": "quis exercitation dolor"
-//       },
-//       {
-//         "nombre_titulo": "nisi enim in"
-//       }
-//     ],
-//     "turno": [
-//       {
-//         "hora_ingreso": "03:32",
-//         "hora_salida": "06:15",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "03-10-2022",
-//         "fecha_baja": "19-04-2022"
-//       },
-//       {
-//         "hora_ingreso": "03:39",
-//         "hora_salida": "07:51",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "15-06-2022",
-//         "fecha_baja": "02-01-2022"
-//       },
-//       {
-//         "hora_ingreso": "11:41",
-//         "hora_salida": "08:29",
-//         "nombre_turno": "Tarde",
-//         "fecha_ingreso": "10-04-2022",
-//         "fecha_baja": "11-04-2022"
-//       },
-//       {
-//         "hora_ingreso": "11:31",
-//         "hora_salida": "09:06",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "17-10-2022",
-//         "fecha_baja": "31-10-2022"
-//       },
-//       {
-//         "hora_ingreso": "05:42",
-//         "hora_salida": "02:24",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "07-03-2022",
-//         "fecha_baja": "28-08-2022"
-//       },
-//       {
-//         "hora_ingreso": "07:36",
-//         "hora_salida": "09:44",
-//         "nombre_turno": "Noche",
-//         "fecha_ingreso": "14-09-2022",
-//         "fecha_baja": "10-07-2022"
-//       },
-//       {
-//         "hora_ingreso": "10:36",
-//         "hora_salida": "05:45",
-//         "nombre_turno": "Mañana",
-//         "fecha_ingreso": "13-11-2022",
-//         "fecha_baja": "14-03-2022"
-//       }
-//     ],
-//     "certificado": [
-//       {
-//         "cantidad_dias": 3,
-//         "descripcion": "Ad minim duis cupidatat exercitation dolor laboris ut labore.",
-//         "fecha_inicio": "24-10-2022"
-//       },
-//       {
-//         "cantidad_dias": 6,
-//         "descripcion": "Velit incididunt ea non sint et sunt nostrud pariatur laborum excepteur aliquip.",
-//         "fecha_inicio": "11-11-2022"
-//       },
-//       {
-//         "cantidad_dias": 7,
-//         "descripcion": "Ex qui ad officia irure labore qui occaecat eiusmod eu eu sint.",
-//         "fecha_inicio": "18-09-2022"
-//       },
-//       {
-//         "cantidad_dias": 7,
-//         "descripcion": "In reprehenderit adipisicing commodo tempor dolor fugiat officia nostrud excepteur consectetur duis dolor aute.",
-//         "fecha_inicio": "17-07-2022"
-//       }
-//     ],
-//     "telefono": []
-//   }
-// ]);
+db.Area.insertMany([{
+  "latitud": -75.115951,
+  "longitud": 96.528982,
+  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
+  "profundidad": 528,
+  "es_productor": false,
+  "nombre_zona": "New York",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  },
+  "estado": [
+    {
+      "nombre": "consequat",
+      "comentario": "ullamco Lorem amet eu exercitation",
+      "fecha": new Date("04-03-2011"),
+      "motivo": "aliqua et"
+    },
+    {
+      "nombre": "ex",
+      "comentario": "ad ut ut pariatur aliquip",
+      "fecha": new Date("25-09-1999"),
+      "motivo": "laboris velit"
+    },
+    {
+      "nombre": "sit",
+      "comentario": "aliquip nulla voluptate veniam pariatur",
+      "fecha": new Date("24-05-2021"),
+      "motivo": "labore sint"
+    },
+    {
+      "nombre": "anim",
+      "comentario": "do labore ex id commodo",
+      "fecha": new Date("12-09-2005"),
+      "motivo": "id cupidatat"
+    },
+    {
+      "nombre": "non",
+      "comentario": "proident sint enim ad minim",
+      "fecha": new Date("14-06-2012"),
+      "motivo": "enim non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "ex"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "dolore"
+    },
+    {
+      "nombre": "anim"
+    }
+  ]
+},{
+  "latitud": -82.61231,
+  "longitud": 87.707962,
+  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
+  "profundidad": 250,
+  "es_productor": true,
+  "nombre_zona": "Minnesota",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc1"
+  },
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "est aute ad veniam nostrud",
+      "fecha": new Date("07-07-2015"),
+      "motivo": "non anim"
+    },
+    {
+      "nombre": "Lorem",
+      "comentario": "dolor mollit sint officia aliquip",
+      "fecha": new Date("17-02-2020"),
+      "motivo": "reprehenderit consectetur"
+    },
+    {
+      "nombre": "voluptate",
+      "comentario": "nostrud minim commodo consectetur incididunt",
+      "fecha": new Date("20-02-2013"),
+      "motivo": "minim qui"
+    },
+    {
+      "nombre": "adipisicing",
+      "comentario": "ea voluptate velit enim ad",
+      "fecha": new Date("23-04-2012"),
+      "motivo": "ullamco labore"
+    },
+    {
+      "nombre": "eu",
+      "comentario": "qui qui sunt sunt aute",
+      "fecha": new Date("29-12-2002"),
+      "motivo": "ex minim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "id"
+    }
+  ]
+},{
+  "latitud": -62.827566,
+  "longitud": -81.417786,
+  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
+  "profundidad": 873,
+  "es_productor": false,
+  "nombre_zona": "Kansas",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  },
+  "estado": [
+    {
+      "nombre": "id",
+      "comentario": "aliqua ad commodo ut anim",
+      "fecha": new Date("28-06-2012"),
+      "motivo": "consectetur aute"
+    },
+    {
+      "nombre": "nulla",
+      "comentario": "est esse officia amet ipsum",
+      "fecha": new Date("30-08-1990"),
+      "motivo": "proident laborum"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "nisi"
+    }
+  ]
+},{
+  "latitud": -26.14198,
+  "longitud": -102.885429,
+  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
+  "profundidad": 259,
+  "es_productor": true,
+  "nombre_zona": "Maine",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "minim",
+      "comentario": "ut magna ullamco tempor occaecat",
+      "fecha": new Date("08-02-2004"),
+      "motivo": "laboris qui"
+    },
+    {
+      "nombre": "duis",
+      "comentario": "reprehenderit culpa aliquip ad amet",
+      "fecha": new Date("29-07-1996"),
+      "motivo": "tempor anim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "sit"
+    }
+  ]
+},{
+  "latitud": 83.830126,
+  "longitud": 67.357681,
+  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
+  "profundidad": 146,
+  "es_productor": false,
+  "nombre_zona": "Alabama",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "voluptate",
+      "comentario": "consectetur aute aliqua ea non",
+      "fecha": new Date("27-11-2020"),
+      "motivo": "amet et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat proident quis sint adipisicing",
+      "fecha": new Date("01-10-2005"),
+      "motivo": "est ullamco"
+    },
+    {
+      "nombre": "amet",
+      "comentario": "ut quis nulla nostrud sint",
+      "fecha": new Date("29-12-2020"),
+      "motivo": "nulla excepteur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "cillum"
+    },
+    {
+      "nombre": "Lorem"
+    }
+  ]
+},{
+  "latitud": -57.850042,
+  "longitud": 79.677488,
+  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
+  "profundidad": 834,
+  "es_productor": true,
+  "nombre_zona": "Alabama",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "esse",
+      "comentario": "quis excepteur ea labore velit",
+      "fecha": new Date("15-03-2007"),
+      "motivo": "est non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "occaecat"
+    },
+    {
+      "nombre": "fugiat"
+    }
+  ]
+},{
+  "latitud": 89.418417,
+  "longitud": -155.982361,
+  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
+  "profundidad": 449,
+  "es_productor": true,
+  "nombre_zona": "Ohio",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  },
+  "estado": [
+    {
+      "nombre": "velit",
+      "comentario": "nisi duis eiusmod laborum elit",
+      "fecha": new Date("01-06-1993"),
+      "motivo": "occaecat reprehenderit"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "reprehenderit officia do culpa ullamco",
+      "fecha": new Date("10-01-2020"),
+      "motivo": "duis ea"
+    },
+    {
+      "nombre": "labore",
+      "comentario": "magna esse ex Lorem esse",
+      "fecha": new Date("26-09-2019"),
+      "motivo": "labore aliqua"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "latitud": 17.116161,
+  "longitud": 173.382221,
+  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
+  "profundidad": 531,
+  "es_productor": true,
+  "nombre_zona": "Wyoming",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  },
+  "estado": [
+    {
+      "nombre": "aliquip",
+      "comentario": "tempor anim irure deserunt tempor",
+      "fecha": new Date("05-10-1997"),
+      "motivo": "aliqua consequat"
+    },
+    {
+      "nombre": "aute",
+      "comentario": "non irure laborum commodo ullamco",
+      "fecha": new Date("06-02-2015"),
+      "motivo": "adipisicing incididunt"
+    },
+    {
+      "nombre": "cillum",
+      "comentario": "tempor ea occaecat pariatur excepteur",
+      "fecha": new Date("07-02-2015"),
+      "motivo": "occaecat incididunt"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "ea nulla laboris labore anim",
+      "fecha": new Date("07-06-2017"),
+      "motivo": "consequat Lorem"
+    },
+    {
+      "nombre": "irure",
+      "comentario": "ea pariatur ad adipisicing anim",
+      "fecha": new Date("09-01-2008"),
+      "motivo": "nulla elit"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "eiusmod"
+    }
+  ]
+},{
+  "latitud": -51.815494,
+  "longitud": 119.898034,
+  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
+  "profundidad": 505,
+  "es_productor": true,
+  "nombre_zona": "Massachusetts",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  },
+  "estado": [
+    {
+      "nombre": "in",
+      "comentario": "consequat excepteur occaecat in exercitation",
+      "fecha": new Date("21-01-2014"),
+      "motivo": "consequat excepteur"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "non aliquip incididunt ullamco id",
+      "fecha": new Date("09-10-2009"),
+      "motivo": "ea labore"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "et veniam quis aliqua et",
+      "fecha": new Date("15-08-2022"),
+      "motivo": "eu exercitation"
+    },
+    {
+      "nombre": "consectetur",
+      "comentario": "elit sint dolore officia amet",
+      "fecha": new Date("26-02-2011"),
+      "motivo": "Lorem et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat officia velit sit dolor",
+      "fecha": new Date("26-12-1993"),
+      "motivo": "dolor consectetur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "latitud": -87.480671,
+  "longitud": -166.420003,
+  "descripcion": "Aliquip exercitation proident cillum nisi duis deserunt cillum sit veniam et incididunt. Aliqua incididunt et duis adipisicing dolore cupidatat dolor anim sint eu aliquip aliquip. Incididunt ex aliquip aliqua mollit proident cupidatat. Mollit eiusmod sunt nostrud nisi proident velit magna. Irure officia eu amet esse sit magna pariatur est magna officia amet eu reprehenderit.\r\n",
+  "profundidad": 605,
+  "es_productor": false,
+  "nombre_zona": "Washington",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "mollit duis magna ea laboris",
+      "fecha": new Date("30-03-2006"),
+      "motivo": "esse reprehenderit"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "eu veniam anim excepteur officia",
+      "fecha": new Date("25-01-2018"),
+      "motivo": "irure nulla"
+    },
+    {
+      "nombre": "consequat",
+      "comentario": "enim nisi quis cupidatat cillum",
+      "fecha": new Date("29-09-2001"),
+      "motivo": "est duis"
+    },
+    {
+      "nombre": "eiusmod",
+      "comentario": "esse commodo dolore nulla Lorem",
+      "fecha": new Date("21-01-1998"),
+      "motivo": "Lorem voluptate"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "sunt"
+    },
+    {
+      "nombre": "esse"
+    },
+    {
+      "nombre": "non"
+    },
+    {
+      "nombre": "aute"
+    }
+  ]
+}])
 
+db.Producto.insertMany([{
+  "nombre": "est eiusmod",
+  "detalle": "Consequat pariatur velit exercitation cillum nostrud dolore reprehenderit exercitation adipisicing.",
+  "tipo": "ipsum id ipsum do"
+},{
+  "nombre": "qui ea cillum ipsum qui",
+  "detalle": "Ea ullamco sunt pariatur dolore anim enim nostrud.",
+  "tipo": "non reprehenderit eu sunt"
+},{
+  "nombre": "sint adipisicing anim",
+  "detalle": "Mollit nulla esse quis in consequat sint ut consectetur adipisicing aliquip fugiat.",
+  "tipo": "ex"
+},{
+  "nombre": "voluptate nulla et veniam ad",
+  "detalle": "Ut ut aliqua adipisicing elit consequat fugiat.",
+  "tipo": "sint et sit dolore aliqua"
+},{
+  "nombre": "enim sint occaecat cillum",
+  "detalle": "Irure culpa ad eu ex ea duis culpa reprehenderit.",
+  "tipo": "sunt exercitation anim ex"
+},{
+  "nombre": "nulla Lorem",
+  "detalle": "Ipsum voluptate mollit consequat dolore nisi aute pariatur.",
+  "tipo": "consequat in excepteur Lorem proident"
+},{
+  "nombre": "enim",
+  "detalle": "Ut mollit pariatur aliquip veniam minim aliqua magna labore non nisi.",
+  "tipo": "culpa veniam labore aliqua incididunt"
+},{
+  "nombre": "ea",
+  "detalle": "Et commodo eiusmod laboris laboris cupidatat irure.",
+  "tipo": "aliqua ad eiusmod"
+},{
+  "nombre": "non deserunt nisi velit dolore",
+  "detalle": "Ullamco excepteur elit sit exercitation deserunt sint ipsum ullamco commodo.",
+  "tipo": "ut aliqua adipisicing"
+},{
+  "nombre": "consectetur ex aute",
+  "detalle": "Magna veniam veniam duis excepteur labore minim occaecat.",
+  "tipo": "tempor cupidatat ipsum commodo"
+},{
+  "nombre": "occaecat",
+  "detalle": "Amet sint anim magna et exercitation ullamco eiusmod consectetur sunt nostrud proident in enim.",
+  "tipo": "duis fugiat"
+},{
+  "nombre": "nisi",
+  "detalle": "Sunt ullamco nisi fugiat duis excepteur velit ex veniam.",
+  "tipo": "enim esse culpa voluptate"
+},{
+  "nombre": "dolor exercitation nostrud esse",
+  "detalle": "Sunt id id aliquip enim in.",
+  "tipo": "voluptate fugiat laboris est dolore"
+},{
+  "nombre": "eiusmod sit officia in",
+  "detalle": "Incididunt aliquip nisi enim dolor proident anim fugiat cillum pariatur do.",
+  "tipo": "in commodo elit mollit"
+},{
+  "nombre": "nulla non minim",
+  "detalle": "Sit proident deserunt cupidatat deserunt exercitation nisi aute velit ea velit mollit laboris irure occaecat.",
+  "tipo": "culpa labore duis"
+}])
 
-// db.Area.insertMany([
-//   {
-//     "nombre": "eu elit incididunt",
-//     "tamanio": 2070,
-//     "codigo_area": 1318,
-//     "latitud": 9369,
-//     "longitud": 9296,
-//     "zona": [
-//       {
-//         "nombre": "South Carolina",
-//         "superficie": 3213
-//       },
-//       {
-//         "nombre": "Northern Mariana Islands",
-//         "superficie": 1045
-//       },
-//       {
-//         "nombre": "North Carolina",
-//         "superficie": 678
-//       },
-//       {
-//         "nombre": "California",
-//         "superficie": 3253
-//       },
-//       {
-//         "nombre": "Maryland",
-//         "superficie": 4057
-//       },
-//       {
-//         "nombre": "Palau",
-//         "superficie": 983
-//       },
-//       {
-//         "nombre": "Wisconsin",
-//         "superficie": 4178
-//       },
-//       {
-//         "nombre": "South Dakota",
-//         "superficie": 261
-//       },
-//       {
-//         "nombre": "Michigan",
-//         "superficie": 563
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "cupidatat",
-//     "tamanio": 7719,
-//     "codigo_area": 6625,
-//     "latitud": 1052,
-//     "longitud": 5048,
-//     "zona": [
-//       {
-//         "nombre": "Wyoming",
-//         "superficie": 3935
-//       },
-//       {
-//         "nombre": "Alabama",
-//         "superficie": 2572
-//       },
-//       {
-//         "nombre": "Oregon",
-//         "superficie": 1197
-//       },
-//       {
-//         "nombre": "Arizona",
-//         "superficie": 8933
-//       },
-//       {
-//         "nombre": "American Samoa",
-//         "superficie": 2357
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "esse ea nulla",
-//     "tamanio": 6487,
-//     "codigo_area": 9835,
-//     "latitud": 3135,
-//     "longitud": 2096,
-//     "zona": [
-//       {
-//         "nombre": "Indiana",
-//         "superficie": 6245
-//       },
-//       {
-//         "nombre": "Pennsylvania",
-//         "superficie": 6875
-//       },
-//       {
-//         "nombre": "Puerto Rico",
-//         "superficie": 8679
-//       },
-//       {
-//         "nombre": "Guam",
-//         "superficie": 5454
-//       },
-//       {
-//         "nombre": "Ohio",
-//         "superficie": 4349
-//       },
-//       {
-//         "nombre": "Illinois",
-//         "superficie": 328
-//       },
-//       {
-//         "nombre": "Delaware",
-//         "superficie": 4878
-//       },
-//       {
-//         "nombre": "New Mexico",
-//         "superficie": 2250
-//       },
-//       {
-//         "nombre": "North Dakota",
-//         "superficie": 379
-//       },
-//       {
-//         "nombre": "Massachusetts",
-//         "superficie": 3595
-//       },
-//       {
-//         "nombre": "Kansas",
-//         "superficie": 7249
-//       },
-//       {
-//         "nombre": "Colorado",
-//         "superficie": 8569
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "pariatur",
-//     "tamanio": 1068,
-//     "codigo_area": 4441,
-//     "latitud": 1105,
-//     "longitud": 3514,
-//     "zona": [
-//       {
-//         "nombre": "Connecticut",
-//         "superficie": 3744
-//       },
-//       {
-//         "nombre": "District Of Columbia",
-//         "superficie": 7833
-//       },
-//       {
-//         "nombre": "Arkansas",
-//         "superficie": 6165
-//       },
-//       {
-//         "nombre": "Montana",
-//         "superficie": 4180
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "sit reprehenderit",
-//     "tamanio": 1100,
-//     "codigo_area": 3464,
-//     "latitud": 7972,
-//     "longitud": 4038,
-//     "zona": [
-//       {
-//         "nombre": "Hawaii",
-//         "superficie": 6224
-//       },
-//       {
-//         "nombre": "Washington",
-//         "superficie": 9740
-//       },
-//       {
-//         "nombre": "Louisiana",
-//         "superficie": 7467
-//       },
-//       {
-//         "nombre": "Idaho",
-//         "superficie": 3590
-//       },
-//       {
-//         "nombre": "Vermont",
-//         "superficie": 7708
-//       },
-//       {
-//         "nombre": "Maine",
-//         "superficie": 8519
-//       },
-//       {
-//         "nombre": "Minnesota",
-//         "superficie": 7442
-//       },
-//       {
-//         "nombre": "Missouri",
-//         "superficie": 1105
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "mollit adipisicing",
-//     "tamanio": 5283,
-//     "codigo_area": 9618,
-//     "latitud": 9808,
-//     "longitud": 6668,
-//     "zona": [
-//       {
-//         "nombre": "New Jersey",
-//         "superficie": 5503
-//       },
-//       {
-//         "nombre": "Kentucky",
-//         "superficie": 4234
-//       },
-//       {
-//         "nombre": "Virginia",
-//         "superficie": 9423
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "ipsum ullamco adipisicing dolore",
-//     "tamanio": 9627,
-//     "codigo_area": 9503,
-//     "latitud": 4118,
-//     "longitud": 5763,
-//     "zona": [
-//       {
-//         "nombre": "New York",
-//         "superficie": 4616
-//       },
-//       {
-//         "nombre": "Rhode Island",
-//         "superficie": 8220
-//       },
-//       {
-//         "nombre": "Utah",
-//         "superficie": 9074
-//       },
-//       {
-//         "nombre": "Nevada",
-//         "superficie": 1987
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "fugiat ipsum",
-//     "tamanio": 9849,
-//     "codigo_area": 5048,
-//     "latitud": 1389,
-//     "longitud": 5895,
-//     "zona": [
-//       {
-//         "nombre": "Oklahoma",
-//         "superficie": 8469
-//       },
-//       {
-//         "nombre": "West Virginia",
-//         "superficie": 7168
-//       },
-//       {
-//         "nombre": "Mississippi",
-//         "superficie": 9195
-//       },
-//       {
-//         "nombre": "Marshall Islands",
-//         "superficie": 7693
-//       },
-//       {
-//         "nombre": "New Hampshire",
-//         "superficie": 8335
-//       },
-//       {
-//         "nombre": "Georgia",
-//         "superficie": 5807
-//       },
-//       {
-//         "nombre": "Virgin Islands",
-//         "superficie": 6405
-//       },
-//       {
-//         "nombre": "Florida",
-//         "superficie": 1925
-//       },
-//       {
-//         "nombre": "Federated States Of Micronesia",
-//         "superficie": 3495
-//       },
-//       {
-//         "nombre": "Nebraska",
-//         "superficie": 9596
-//       },
-//       {
-//         "nombre": "Texas",
-//         "superficie": 8304
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "sint reprehenderit",
-//     "tamanio": 2892,
-//     "codigo_area": 9757,
-//     "latitud": 6403,
-//     "longitud": 543,
-//     "zona": [
-//       {
-//         "nombre": "Tennessee",
-//         "superficie": 8864
-//       },
-//       {
-//         "nombre": "Iowa",
-//         "superficie": 8983
-//       },
-//       {
-//         "nombre": "South Carolina",
-//         "superficie": 9955
-//       },
-//       {
-//         "nombre": "Northern Mariana Islands",
-//         "superficie": 9491
-//       },
-//       {
-//         "nombre": "North Carolina",
-//         "superficie": 1412
-//       },
-//       {
-//         "nombre": "California",
-//         "superficie": 2590
-//       },
-//       {
-//         "nombre": "Maryland",
-//         "superficie": 1310
-//       },
-//       {
-//         "nombre": "Palau",
-//         "superficie": 8156
-//       },
-//       {
-//         "nombre": "Wisconsin",
-//         "superficie": 1296
-//       },
-//       {
-//         "nombre": "South Dakota",
-//         "superficie": 8012
-//       },
-//       {
-//         "nombre": "Michigan",
-//         "superficie": 3373
-//       }
-//     ]
-//   },
-//   {
-//     "nombre": "proident in eiusmod do",
-//     "tamanio": 8986,
-//     "codigo_area": 9042,
-//     "latitud": 1818,
-//     "longitud": 7434,
-//     "zona": [
-//       {
-//         "nombre": "Wyoming",
-//         "superficie": 7140
-//       },
-//       {
-//         "nombre": "Alabama",
-//         "superficie": 8772
-//       },
-//       {
-//         "nombre": "Oregon",
-//         "superficie": 4747
-//       }
-//     ]
-//   }
-// ])
+db.Entrega.insertMany([
+  {
+    "fecha": new Date("08-07-1995"),
+    "nombre_cliente": "Lessie Alvarado",
+    "detalle_entrega": [
+      {
+        "cantidad": 8,
+        "porcentaje_impurezas": 27,
+        "monto_final": 386982.75,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b5")
+        ]
+      },
+      {
+        "cantidad": 10,
+        "porcentaje_impurezas": 100,
+        "monto_final": 255042.14,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b6"),
+          ObjectId("63839eaee8135414fa57c2b0"),
+          ObjectId("63839eaee8135414fa57c2b2"),
+          ObjectId("63839eaee8135414fa57c2ad")
+        ]
+      }
+    ],
+    "area": ObjectId("638393100a34b7480f7fa017")
+  },
+  {
+    "fecha": new Date("08-12-1998"),
+    "nombre_cliente": "Mai Singleton",
+    "detalle_entrega": [
+      {
+        "cantidad": 7,
+        "porcentaje_impurezas": 88,
+        "monto_final": 132115.35,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b4"),
+          ObjectId("63839eaee8135414fa57c2b0"),
+          ObjectId("63839eaee8135414fa57c2b3"),
+          ObjectId("63839eaee8135414fa57c2b3"),
+          ObjectId("63839eaee8135414fa57c2b6")
+        ]
+      },
+      {
+        "cantidad": 9,
+        "porcentaje_impurezas": 52,
+        "monto_final": 793565.42,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b6"),
+          ObjectId("63839eaee8135414fa57c2aa"),
+          ObjectId("63839eaee8135414fa57c2ab"),
+          ObjectId("63839eaee8135414fa57c2a9")
+        ]
+      },
+      {
+        "cantidad": 9,
+        "porcentaje_impurezas": 52,
+        "monto_final": 279321.71,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2ac"),
+          ObjectId("63839eaee8135414fa57c2ab")
+        ]
+      }
+    ],
+    "area": ObjectId("638393100a34b7480f7fa017")
+  },
+  {
+    "fecha": new Date("19-08-1999"),
+    "nombre_cliente": "Sherman Kramer",
+    "detalle_entrega": [
+      {
+        "cantidad": 8,
+        "porcentaje_impurezas": 96,
+        "monto_final": 250723.7,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2ac")
+        ]
+      },
+      {
+        "cantidad": 6,
+        "porcentaje_impurezas": 66,
+        "monto_final": 162606.98,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2af")
+        ]
+      }
+    ],
+    "area": ObjectId("638393100a34b7480f7fa011")
+  },
+  {
+    "fecha": new Date("26-05-2007"),
+    "nombre_cliente": "Mayo Thomas",
+    "detalle_entrega": [
+      {
+        "cantidad": 4,
+        "porcentaje_impurezas": 65,
+        "monto_final": 711531.83,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b3"),
+          ObjectId("63839eaee8135414fa57c2a9"),
+          ObjectId("63839eaee8135414fa57c2b0"),
+          ObjectId("63839eaee8135414fa57c2b1"),
+          ObjectId("63839eaee8135414fa57c2b3")
+        ]
+      },
+      {
+        "cantidad": 9,
+        "porcentaje_impurezas": 74,
+        "monto_final": 320952.38,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2a8"),
+          ObjectId("63839eaee8135414fa57c2b2"),
+          ObjectId("63839eaee8135414fa57c2b1"),
+          ObjectId("63839eaee8135414fa57c2b1")
+        ]
+      },
+      {
+        "cantidad": 10,
+        "porcentaje_impurezas": 55,
+        "monto_final": 624274.45,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b2")
+        ]
+      }
+    ],
+    "area": ObjectId("638393100a34b7480f7fa012")
+  },
+  {
+    "fecha": new Date("12-11-2020"),
+    "nombre_cliente": "Tamara Coleman",
+    "detalle_entrega": [
+      {
+        "cantidad": 2,
+        "porcentaje_impurezas": 91,
+        "monto_final": 356312.22,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2ad"),
+          ObjectId("63839eaee8135414fa57c2ad"),
+          ObjectId("63839eaee8135414fa57c2a9")
+        ]
+      },
+      {
+        "cantidad": 10,
+        "porcentaje_impurezas": 49,
+        "monto_final": 950104.67,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b3"),
+          ObjectId("63839eaee8135414fa57c2b6")
+        ]
+      },
+      {
+        "cantidad": 8,
+        "porcentaje_impurezas": 51,
+        "monto_final": 76546.65,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b0")
+        ]
+      },
+      {
+        "cantidad": 6,
+        "porcentaje_impurezas": 88,
+        "monto_final": 135394.04,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2a8"),
+          ObjectId("63839eaee8135414fa57c2af"),
+          ObjectId("63839eaee8135414fa57c2ad"),
+          ObjectId("63839eaee8135414fa57c2a8")
+        ]
+      }
+    ],
+    "area": ObjectId("638393100a34b7480f7fa012")
+  },
+  {
+    "fecha": new Date("14-09-2001"),
+    "nombre_cliente": "Belinda Madden",
+    "detalle_entrega": [
+      {
+        "cantidad": 5,
+        "porcentaje_impurezas": 51,
+        "monto_final": 423132.98,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b3"),
+          ObjectId("63839eaee8135414fa57c2b1"),
+          ObjectId("63839eaee8135414fa57c2a8"),
+          ObjectId("63839eaee8135414fa57c2a8"),
+          ObjectId("63839eaee8135414fa57c2ab")
+        ]
+      }
+    ],
+    "area": ObjectId("638393100a34b7480f7fa013")
+  },
+  {
+    "fecha": new Date("12-03-2002"),
+    "nombre_cliente": "Emily Ross",
+    "detalle_entrega": [
+      {
+        "cantidad": 10,
+        "porcentaje_impurezas": 22,
+        "monto_final": 10539.45,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2ae"),
+          ObjectId("63839eaee8135414fa57c2b4"),
+          ObjectId("63839eaee8135414fa57c2ac")
+        ]
+      },
+      {
+        "cantidad": 10,
+        "porcentaje_impurezas": 100,
+        "monto_final": 365190.61,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2a8"),
+          ObjectId("63839eaee8135414fa57c2a8")
+        ]
+      },
+      {
+        "cantidad": 5,
+        "porcentaje_impurezas": 58,
+        "monto_final": 721473.45,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b2"),
+          ObjectId("63839eaee8135414fa57c2ae")
+        ]
+      },
+      {
+        "cantidad": 7,
+        "porcentaje_impurezas": 3,
+        "monto_final": 655580.6,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2aa")
+        ]
+      },
+      {
+        "cantidad": 9,
+        "porcentaje_impurezas": 54,
+        "monto_final": 637323.74,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2aa")
+        ]
+      }
+    ],
+    "area": ObjectId("638393100a34b7480f7fa016")
+  },
+  {
+    "fecha": new Date("10-06-1993"),
+    "nombre_cliente": "Pennington Perkins",
+    "detalle_entrega": [
+      {
+        "cantidad": 10,
+        "porcentaje_impurezas": 77,
+        "monto_final": 899092.44,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b0"),
+          ObjectId("63839eaee8135414fa57c2a8")
+        ]
+      }
+    ],
+    "area": ObjectId("638393100a34b7480f7fa016")
+  },
+  {
+    "fecha": new Date("12-09-2003"),
+    "nombre_cliente": "Matthews Garrett",
+    "detalle_entrega": [
+      {
+        "cantidad": 4,
+        "porcentaje_impurezas": 78,
+        "monto_final": 804003.91,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2ae")
+        ]
+      }
+    ],
+    "area": ObjectId("638393100a34b7480f7fa015")
+  },
+  {
+    "fecha": new Date("03-06-2022"),
+    "nombre_cliente": "Leona Walters",
+    "detalle_entrega": [
+      {
+        "cantidad": 10,
+        "porcentaje_impurezas": 76,
+        "monto_final": 805855.77,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2ad"),
+          ObjectId("63839eaee8135414fa57c2ad"),
+          ObjectId("63839eaee8135414fa57c2ad"),
+          ObjectId("63839eaee8135414fa57c2a9")
+        ]
+      },
+      {
+        "cantidad": 1,
+        "porcentaje_impurezas": 97,
+        "monto_final": 877169.05,
+        "producto": [
+          ObjectId("63839eaee8135414fa57c2b3"),
+          ObjectId("63839eaee8135414fa57c2ac")
+        ]
+      }
+    ],
+    "area": ObjectId("638393100a34b7480f7fa014")
+  }
+])
 
+db.Instalacion.insertMany([{
+  "latitud": -75.115951,
+  "longitud": 96.528982,
+  "descripcion": "Laboris sint laborum id laborum id occaecat adipisicing anim cillum. Reprehenderit quis irure sint ullamco qui labore consequat. Non reprehenderit cillum ullamco cillum aliquip. Sit aliquip est sint commodo nisi incididunt cillum. Sunt commodo dolor cupidatat voluptate non irure deserunt officia consectetur voluptate est.\r\n",
+  "profundidad": 528,
+  "es_productor": false,
+  "nombre_zona": "New York",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  },
+  "estado": [
+    {
+      "nombre": "consequat",
+      "comentario": "ullamco Lorem amet eu exercitation",
+      "fecha": new Date("04-03-2011"),
+      "motivo": "aliqua et"
+    },
+    {
+      "nombre": "ex",
+      "comentario": "ad ut ut pariatur aliquip",
+      "fecha": new Date("25-09-1999"),
+      "motivo": "laboris velit"
+    },
+    {
+      "nombre": "sit",
+      "comentario": "aliquip nulla voluptate veniam pariatur",
+      "fecha": new Date("24-05-2021"),
+      "motivo": "labore sint"
+    },
+    {
+      "nombre": "anim",
+      "comentario": "do labore ex id commodo",
+      "fecha": new Date("12-09-2005"),
+      "motivo": "id cupidatat"
+    },
+    {
+      "nombre": "non",
+      "comentario": "proident sint enim ad minim",
+      "fecha": new Date("14-06-2012"),
+      "motivo": "enim non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "ex"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "dolore"
+    },
+    {
+      "nombre": "anim"
+    }
+  ]
+},{
+  "latitud": -82.61231,
+  "longitud": 87.707962,
+  "descripcion": "Aliquip do deserunt fugiat laborum. Cupidatat elit occaecat mollit cupidatat id consequat id. Adipisicing sunt sint fugiat quis est consectetur laborum. Dolor sunt magna non est nulla labore eu. Occaecat id veniam aliquip commodo exercitation sit consectetur. Officia aute amet enim adipisicing officia excepteur excepteur Lorem non reprehenderit.\r\n",
+  "profundidad": 250,
+  "es_productor": true,
+  "nombre_zona": "Minnesota",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc1"
+  },
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "est aute ad veniam nostrud",
+      "fecha": new Date("07-07-2015"),
+      "motivo": "non anim"
+    },
+    {
+      "nombre": "Lorem",
+      "comentario": "dolor mollit sint officia aliquip",
+      "fecha": new Date("17-02-2020"),
+      "motivo": "reprehenderit consectetur"
+    },
+    {
+      "nombre": "voluptate",
+      "comentario": "nostrud minim commodo consectetur incididunt",
+      "fecha": new Date("20-02-2013"),
+      "motivo": "minim qui"
+    },
+    {
+      "nombre": "adipisicing",
+      "comentario": "ea voluptate velit enim ad",
+      "fecha": new Date("23-04-2012"),
+      "motivo": "ullamco labore"
+    },
+    {
+      "nombre": "eu",
+      "comentario": "qui qui sunt sunt aute",
+      "fecha": new Date("29-12-2002"),
+      "motivo": "ex minim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "id"
+    }
+  ]
+},{
+  "latitud": -62.827566,
+  "longitud": -81.417786,
+  "descripcion": "Excepteur ipsum in et laboris fugiat eu commodo consectetur veniam aute. Tempor duis amet ea cupidatat sunt minim reprehenderit eu nulla est. Incididunt occaecat velit occaecat veniam culpa consequat excepteur aute irure eu reprehenderit. Laboris dolor voluptate excepteur veniam voluptate. Ex ex pariatur dolor Lorem sint aute nisi exercitation ut consectetur reprehenderit fugiat. Cillum qui ex est aliqua et aliquip fugiat do adipisicing ipsum quis anim.\r\n",
+  "profundidad": 873,
+  "es_productor": false,
+  "nombre_zona": "Kansas",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  },
+  "estado": [
+    {
+      "nombre": "id",
+      "comentario": "aliqua ad commodo ut anim",
+      "fecha": new Date("28-06-2012"),
+      "motivo": "consectetur aute"
+    },
+    {
+      "nombre": "nulla",
+      "comentario": "est esse officia amet ipsum",
+      "fecha": new Date("30-08-1990"),
+      "motivo": "proident laborum"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "aute"
+    },
+    {
+      "nombre": "irure"
+    },
+    {
+      "nombre": "nisi"
+    }
+  ]
+},{
+  "latitud": -26.14198,
+  "longitud": -102.885429,
+  "descripcion": "Esse laboris ullamco duis irure eu exercitation nulla. Est consequat enim et aute quis non tempor ullamco magna minim eu consequat reprehenderit cillum. Esse laboris velit exercitation commodo voluptate mollit dolore deserunt cupidatat esse. Tempor sint nisi ex proident occaecat eu dolore tempor eu adipisicing elit adipisicing eiusmod.\r\n",
+  "profundidad": 259,
+  "es_productor": true,
+  "nombre_zona": "Maine",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "minim",
+      "comentario": "ut magna ullamco tempor occaecat",
+      "fecha": new Date("08-02-2004"),
+      "motivo": "laboris qui"
+    },
+    {
+      "nombre": "duis",
+      "comentario": "reprehenderit culpa aliquip ad amet",
+      "fecha": new Date("29-07-1996"),
+      "motivo": "tempor anim"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "sit"
+    }
+  ]
+},{
+  "latitud": 83.830126,
+  "longitud": 67.357681,
+  "descripcion": "Minim elit proident Lorem velit irure nisi irure. Consequat cillum consectetur fugiat ex amet anim ullamco mollit nostrud dolor cillum reprehenderit esse. Elit officia elit aliquip reprehenderit laboris laborum irure dolor. Consequat Lorem ad nisi laborum.\r\n",
+  "profundidad": 146,
+  "es_productor": false,
+  "nombre_zona": "Alabama",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "voluptate",
+      "comentario": "consectetur aute aliqua ea non",
+      "fecha": new Date("27-11-2020"),
+      "motivo": "amet et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat proident quis sint adipisicing",
+      "fecha": new Date("01-10-2005"),
+      "motivo": "est ullamco"
+    },
+    {
+      "nombre": "amet",
+      "comentario": "ut quis nulla nostrud sint",
+      "fecha": new Date("29-12-2020"),
+      "motivo": "nulla excepteur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "cillum"
+    },
+    {
+      "nombre": "Lorem"
+    }
+  ]
+},{
+  "latitud": -57.850042,
+  "longitud": 79.677488,
+  "descripcion": "Aliqua commodo officia et nulla ad non cupidatat voluptate reprehenderit nisi ut ex cillum. Irure qui et ut Lorem et in minim sint adipisicing sunt est. Cupidatat culpa in consequat elit sint magna magna sunt est. Consectetur et deserunt in ullamco anim do in aliquip. Laborum qui est magna adipisicing nisi amet consequat amet deserunt exercitation eu duis.\r\n",
+  "profundidad": 834,
+  "es_productor": true,
+  "nombre_zona": "Alabama",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "esse",
+      "comentario": "quis excepteur ea labore velit",
+      "fecha": new Date("15-03-2007"),
+      "motivo": "est non"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "occaecat"
+    },
+    {
+      "nombre": "fugiat"
+    }
+  ]
+},{
+  "latitud": 89.418417,
+  "longitud": -155.982361,
+  "descripcion": "Velit id ad officia excepteur incididunt. Occaecat sint consequat culpa occaecat amet. Quis aliquip tempor aliqua anim excepteur et dolore culpa ad sint fugiat esse minim in. Esse minim ea enim exercitation fugiat velit sint non. Qui minim laborum deserunt esse occaecat cillum enim anim voluptate voluptate sint anim nulla. Ea do et adipisicing commodo aute magna laborum sint. Eu cupidatat elit esse id incididunt nostrud pariatur occaecat culpa aliquip est.\r\n",
+  "profundidad": 449,
+  "es_productor": true,
+  "nombre_zona": "Ohio",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  },
+  "estado": [
+    {
+      "nombre": "velit",
+      "comentario": "nisi duis eiusmod laborum elit",
+      "fecha": new Date("01-06-1993"),
+      "motivo": "occaecat reprehenderit"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "reprehenderit officia do culpa ullamco",
+      "fecha": new Date("10-01-2020"),
+      "motivo": "duis ea"
+    },
+    {
+      "nombre": "labore",
+      "comentario": "magna esse ex Lorem esse",
+      "fecha": new Date("26-09-2019"),
+      "motivo": "labore aliqua"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "latitud": 17.116161,
+  "longitud": 173.382221,
+  "descripcion": "Dolor culpa adipisicing non pariatur ex consectetur in nostrud sint ut eu. Tempor adipisicing nulla qui consequat fugiat sit irure proident. Mollit Lorem ea nisi irure aute enim est do ex sint ut aliqua ut irure.\r\n",
+  "profundidad": 531,
+  "es_productor": true,
+  "nombre_zona": "Wyoming",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  },
+  "estado": [
+    {
+      "nombre": "aliquip",
+      "comentario": "tempor anim irure deserunt tempor",
+      "fecha": new Date("05-10-1997"),
+      "motivo": "aliqua consequat"
+    },
+    {
+      "nombre": "aute",
+      "comentario": "non irure laborum commodo ullamco",
+      "fecha": new Date("06-02-2015"),
+      "motivo": "adipisicing incididunt"
+    },
+    {
+      "nombre": "cillum",
+      "comentario": "tempor ea occaecat pariatur excepteur",
+      "fecha": new Date("07-02-2015"),
+      "motivo": "occaecat incididunt"
+    },
+    {
+      "nombre": "ut",
+      "comentario": "ea nulla laboris labore anim",
+      "fecha": new Date("07-06-2017"),
+      "motivo": "consequat Lorem"
+    },
+    {
+      "nombre": "irure",
+      "comentario": "ea pariatur ad adipisicing anim",
+      "fecha": new Date("09-01-2008"),
+      "motivo": "nulla elit"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "eiusmod"
+    }
+  ]
+},{
+  "latitud": -51.815494,
+  "longitud": 119.898034,
+  "descripcion": "In duis occaecat et reprehenderit ea est. Velit sint deserunt deserunt voluptate labore et enim culpa laborum nostrud nostrud commodo et aliquip. Magna tempor consequat fugiat reprehenderit consequat aute velit sint aliqua do. Excepteur fugiat adipisicing proident consectetur reprehenderit Lorem dolore eiusmod sit sunt labore. Ipsum et dolor veniam ut reprehenderit mollit.\r\n",
+  "profundidad": 505,
+  "es_productor": true,
+  "nombre_zona": "Massachusetts",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  },
+  "estado": [
+    {
+      "nombre": "in",
+      "comentario": "consequat excepteur occaecat in exercitation",
+      "fecha": new Date("21-01-2014"),
+      "motivo": "consequat excepteur"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "non aliquip incididunt ullamco id",
+      "fecha": new Date("09-10-2009"),
+      "motivo": "ea labore"
+    },
+    {
+      "nombre": "occaecat",
+      "comentario": "et veniam quis aliqua et",
+      "fecha": new Date("15-08-2022"),
+      "motivo": "eu exercitation"
+    },
+    {
+      "nombre": "consectetur",
+      "comentario": "elit sint dolore officia amet",
+      "fecha": new Date("26-02-2011"),
+      "motivo": "Lorem et"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "occaecat officia velit sit dolor",
+      "fecha": new Date("26-12-1993"),
+      "motivo": "dolor consectetur"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "Lorem"
+    },
+    {
+      "nombre": "ullamco"
+    }
+  ]
+},{
+  "latitud": -87.480671,
+  "longitud": -166.420003,
+  "descripcion": "Aliquip exercitation proident cillum nisi duis deserunt cillum sit veniam et incididunt. Aliqua incididunt et duis adipisicing dolore cupidatat dolor anim sint eu aliquip aliquip. Incididunt ex aliquip aliqua mollit proident cupidatat. Mollit eiusmod sunt nostrud nisi proident velit magna. Irure officia eu amet esse sit magna pariatur est magna officia amet eu reprehenderit.\r\n",
+  "profundidad": 605,
+  "es_productor": false,
+  "nombre_zona": "Washington",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  },
+  "estado": [
+    {
+      "nombre": "anim",
+      "comentario": "mollit duis magna ea laboris",
+      "fecha": new Date("30-03-2006"),
+      "motivo": "esse reprehenderit"
+    },
+    {
+      "nombre": "reprehenderit",
+      "comentario": "eu veniam anim excepteur officia",
+      "fecha": new Date("25-01-2018"),
+      "motivo": "irure nulla"
+    },
+    {
+      "nombre": "consequat",
+      "comentario": "enim nisi quis cupidatat cillum",
+      "fecha": new Date("29-09-2001"),
+      "motivo": "est duis"
+    },
+    {
+      "nombre": "eiusmod",
+      "comentario": "esse commodo dolore nulla Lorem",
+      "fecha": new Date("21-01-1998"),
+      "motivo": "Lorem voluptate"
+    }
+  ],
+  "sistema_de_extraccion": [
+    {
+      "nombre": "fugiat"
+    },
+    {
+      "nombre": "sunt"
+    },
+    {
+      "nombre": "esse"
+    },
+    {
+      "nombre": "non"
+    },
+    {
+      "nombre": "aute"
+    }
+  ]
+}])
 
-// db.Producto.insertMany([
-//   {
-//     "nombre": "est eiusmod",
-//     "detalle": "Consequat pariatur velit exercitation cillum nostrud dolore reprehenderit exercitation adipisicing.",
-//     "tipo": "ipsum id ipsum do"
-//   },
-//   {
-//     "nombre": "qui ea cillum ipsum qui",
-//     "detalle": "Ea ullamco sunt pariatur dolore anim enim nostrud.",
-//     "tipo": "non reprehenderit eu sunt"
-//   },
-//   {
-//     "nombre": "sint adipisicing anim",
-//     "detalle": "Mollit nulla esse quis in consequat sint ut consectetur adipisicing aliquip fugiat.",
-//     "tipo": "ex"
-//   },
-//   {
-//     "nombre": "voluptate nulla et veniam ad",
-//     "detalle": "Ut ut aliqua adipisicing elit consequat fugiat.",
-//     "tipo": "sint et sit dolore aliqua"
-//   },
-//   {
-//     "nombre": "enim sint occaecat cillum",
-//     "detalle": "Irure culpa ad eu ex ea duis culpa reprehenderit.",
-//     "tipo": "sunt exercitation anim ex"
-//   },
-//   {
-//     "nombre": "nulla Lorem",
-//     "detalle": "Ipsum voluptate mollit consequat dolore nisi aute pariatur.",
-//     "tipo": "consequat in excepteur Lorem proident"
-//   },
-//   {
-//     "nombre": "enim",
-//     "detalle": "Ut mollit pariatur aliquip veniam minim aliqua magna labore non nisi.",
-//     "tipo": "culpa veniam labore aliqua incididunt"
-//   },
-//   {
-//     "nombre": "ea",
-//     "detalle": "Et commodo eiusmod laboris laboris cupidatat irure.",
-//     "tipo": "aliqua ad eiusmod"
-//   },
-//   {
-//     "nombre": "non deserunt nisi velit dolore",
-//     "detalle": "Ullamco excepteur elit sit exercitation deserunt sint ipsum ullamco commodo.",
-//     "tipo": "ut aliqua adipisicing"
-//   },
-//   {
-//     "nombre": "consectetur ex aute",
-//     "detalle": "Magna veniam veniam duis excepteur labore minim occaecat.",
-//     "tipo": "tempor cupidatat ipsum commodo"
-//   },
-//   {
-//     "nombre": "occaecat",
-//     "detalle": "Amet sint anim magna et exercitation ullamco eiusmod consectetur sunt nostrud proident in enim.",
-//     "tipo": "duis fugiat"
-//   },
-//   {
-//     "nombre": "nisi",
-//     "detalle": "Sunt ullamco nisi fugiat duis excepteur velit ex veniam.",
-//     "tipo": "enim esse culpa voluptate"
-//   },
-//   {
-//     "nombre": "dolor exercitation nostrud esse",
-//     "detalle": "Sunt id id aliquip enim in.",
-//     "tipo": "voluptate fugiat laboris est dolore"
-//   },
-//   {
-//     "nombre": "eiusmod sit officia in",
-//     "detalle": "Incididunt aliquip nisi enim dolor proident anim fugiat cillum pariatur do.",
-//     "tipo": "in commodo elit mollit"
-//   },
-//   {
-//     "nombre": "nulla non minim",
-//     "detalle": "Sit proident deserunt cupidatat deserunt exercitation nisi aute velit ea velit mollit laboris irure occaecat.",
-//     "tipo": "culpa labore duis"
-//   }
-// ])
+db.Tanque.insertMany([{
+  "tag": "230reprehenderit",
+  "capacidad_total": 4575.1459,
+  "capacidad_disponible": 5115.2601,
+  "nombre_zona": "Florida",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+},{
+  "tag": "967qui",
+  "capacidad_total": 4950.2794,
+  "capacidad_disponible": 5508.6722,
+  "nombre_zona": "Kentucky",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+},{
+  "tag": "402amet",
+  "capacidad_total": 3338.7829,
+  "capacidad_disponible": 7766.3344,
+  "nombre_zona": "New Hampshire",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  }
+},{
+  "tag": "593veniam",
+  "capacidad_total": 7060.0103,
+  "capacidad_disponible": 369.6027,
+  "nombre_zona": "Washington",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "tag": "42pariatur",
+  "capacidad_total": 8410.0891,
+  "capacidad_disponible": 4278.5031,
+  "nombre_zona": "Tennessee",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  }
+},{
+  "tag": "677nisi",
+  "capacidad_total": 890.4184,
+  "capacidad_disponible": 7602.9176,
+  "nombre_zona": "Washington",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "tag": "209nulla",
+  "capacidad_total": 3353.2439,
+  "capacidad_disponible": 4592.7663,
+  "nombre_zona": "Mississippi",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  }
+},{
+  "tag": "31occaecat",
+  "capacidad_total": 3384.3476,
+  "capacidad_disponible": 7248.9109,
+  "nombre_zona": "Puerto Rico",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  }
+},{
+  "tag": "948Lorem",
+  "capacidad_total": 7941.3922,
+  "capacidad_disponible": 9416.8432,
+  "nombre_zona": "South Carolina",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "tag": "560ea",
+  "capacidad_total": 4094.7862,
+  "capacidad_disponible": 1684.3963,
+  "nombre_zona": "Arkansas",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+}])
 
-// db.Entrega.insertMany([
-//   {
-//     "fecha": "08-07-1995",
-//     "nombre_cliente": "Lessie Alvarado",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 8,
-//         "porcentaje_impurezas": 27,
-//         "monto_final": 386982.75,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b5")
-//         ]
-//       },
-//       {
-//         "cantidad": 10,
-//         "porcentaje_impurezas": 100,
-//         "monto_final": 255042.14,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b6"),
-//           ObjectId("63839eaee8135414fa57c2b0"),
-//           ObjectId("63839eaee8135414fa57c2b2"),
-//           ObjectId("63839eaee8135414fa57c2ad")
-//         ]
-//       }
-//     ],
-//     "area": ObjectId("638393100a34b7480f7fa017")
-//   },
-//   {
-//     "fecha": "08-12-1998",
-//     "nombre_cliente": "Mai Singleton",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 7,
-//         "porcentaje_impurezas": 88,
-//         "monto_final": 132115.35,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b4"),
-//           ObjectId("63839eaee8135414fa57c2b0"),
-//           ObjectId("63839eaee8135414fa57c2b3"),
-//           ObjectId("63839eaee8135414fa57c2b3"),
-//           ObjectId("63839eaee8135414fa57c2b6")
-//         ]
-//       },
-//       {
-//         "cantidad": 9,
-//         "porcentaje_impurezas": 52,
-//         "monto_final": 793565.42,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b6"),
-//           ObjectId("63839eaee8135414fa57c2aa"),
-//           ObjectId("63839eaee8135414fa57c2ab"),
-//           ObjectId("63839eaee8135414fa57c2a9")
-//         ]
-//       },
-//       {
-//         "cantidad": 9,
-//         "porcentaje_impurezas": 52,
-//         "monto_final": 279321.71,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2ac"),
-//           ObjectId("63839eaee8135414fa57c2ab")
-//         ]
-//       }
-//     ],
-//     "area": ObjectId("638393100a34b7480f7fa017")
-//   },
-//   {
-//     "fecha": "19-08-1999",
-//     "nombre_cliente": "Sherman Kramer",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 8,
-//         "porcentaje_impurezas": 96,
-//         "monto_final": 250723.7,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2ac")
-//         ]
-//       },
-//       {
-//         "cantidad": 6,
-//         "porcentaje_impurezas": 66,
-//         "monto_final": 162606.98,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2af")
-//         ]
-//       }
-//     ],
-//     "area": ObjectId("638393100a34b7480f7fa011")
-//   },
-//   {
-//     "fecha": "26-05-2007",
-//     "nombre_cliente": "Mayo Thomas",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 4,
-//         "porcentaje_impurezas": 65,
-//         "monto_final": 711531.83,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b3"),
-//           ObjectId("63839eaee8135414fa57c2a9"),
-//           ObjectId("63839eaee8135414fa57c2b0"),
-//           ObjectId("63839eaee8135414fa57c2b1"),
-//           ObjectId("63839eaee8135414fa57c2b3")
-//         ]
-//       },
-//       {
-//         "cantidad": 9,
-//         "porcentaje_impurezas": 74,
-//         "monto_final": 320952.38,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2a8"),
-//           ObjectId("63839eaee8135414fa57c2b2"),
-//           ObjectId("63839eaee8135414fa57c2b1"),
-//           ObjectId("63839eaee8135414fa57c2b1")
-//         ]
-//       },
-//       {
-//         "cantidad": 10,
-//         "porcentaje_impurezas": 55,
-//         "monto_final": 624274.45,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b2")
-//         ]
-//       }
-//     ],
-//     "area": ObjectId("638393100a34b7480f7fa012")
-//   },
-//   {
-//     "fecha": "12-11-2020",
-//     "nombre_cliente": "Tamara Coleman",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 2,
-//         "porcentaje_impurezas": 91,
-//         "monto_final": 356312.22,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2ad"),
-//           ObjectId("63839eaee8135414fa57c2ad"),
-//           ObjectId("63839eaee8135414fa57c2a9")
-//         ]
-//       },
-//       {
-//         "cantidad": 10,
-//         "porcentaje_impurezas": 49,
-//         "monto_final": 950104.67,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b3"),
-//           ObjectId("63839eaee8135414fa57c2b6")
-//         ]
-//       },
-//       {
-//         "cantidad": 8,
-//         "porcentaje_impurezas": 51,
-//         "monto_final": 76546.65,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b0")
-//         ]
-//       },
-//       {
-//         "cantidad": 6,
-//         "porcentaje_impurezas": 88,
-//         "monto_final": 135394.04,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2a8"),
-//           ObjectId("63839eaee8135414fa57c2af"),
-//           ObjectId("63839eaee8135414fa57c2ad"),
-//           ObjectId("63839eaee8135414fa57c2a8")
-//         ]
-//       }
-//     ],
-//     "area": ObjectId("638393100a34b7480f7fa012")
-//   },
-//   {
-//     "fecha": "14-09-2001",
-//     "nombre_cliente": "Belinda Madden",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 5,
-//         "porcentaje_impurezas": 51,
-//         "monto_final": 423132.98,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b3"),
-//           ObjectId("63839eaee8135414fa57c2b1"),
-//           ObjectId("63839eaee8135414fa57c2a8"),
-//           ObjectId("63839eaee8135414fa57c2a8"),
-//           ObjectId("63839eaee8135414fa57c2ab")
-//         ]
-//       }
-//     ],
-//     "area": ObjectId("638393100a34b7480f7fa013")
-//   },
-//   {
-//     "fecha": "12-03-2002",
-//     "nombre_cliente": "Emily Ross",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 10,
-//         "porcentaje_impurezas": 22,
-//         "monto_final": 10539.45,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2ae"),
-//           ObjectId("63839eaee8135414fa57c2b4"),
-//           ObjectId("63839eaee8135414fa57c2ac")
-//         ]
-//       },
-//       {
-//         "cantidad": 10,
-//         "porcentaje_impurezas": 100,
-//         "monto_final": 365190.61,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2a8"),
-//           ObjectId("63839eaee8135414fa57c2a8")
-//         ]
-//       },
-//       {
-//         "cantidad": 5,
-//         "porcentaje_impurezas": 58,
-//         "monto_final": 721473.45,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b2"),
-//           ObjectId("63839eaee8135414fa57c2ae")
-//         ]
-//       },
-//       {
-//         "cantidad": 7,
-//         "porcentaje_impurezas": 3,
-//         "monto_final": 655580.6,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2aa")
-//         ]
-//       },
-//       {
-//         "cantidad": 9,
-//         "porcentaje_impurezas": 54,
-//         "monto_final": 637323.74,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2aa")
-//         ]
-//       }
-//     ],
-//     "area": ObjectId("638393100a34b7480f7fa016")
-//   },
-//   {
-//     "fecha": "10-06-1993",
-//     "nombre_cliente": "Pennington Perkins",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 10,
-//         "porcentaje_impurezas": 77,
-//         "monto_final": 899092.44,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b0"),
-//           ObjectId("63839eaee8135414fa57c2a8")
-//         ]
-//       }
-//     ],
-//     "area": ObjectId("638393100a34b7480f7fa016")
-//   },
-//   {
-//     "fecha": "12-09-2003",
-//     "nombre_cliente": "Matthews Garrett",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 4,
-//         "porcentaje_impurezas": 78,
-//         "monto_final": 804003.91,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2ae")
-//         ]
-//       }
-//     ],
-//     "area": ObjectId("638393100a34b7480f7fa015")
-//   },
-//   {
-//     "fecha": "03-06-2022",
-//     "nombre_cliente": "Leona Walters",
-//     "detalle_entrega": [
-//       {
-//         "cantidad": 10,
-//         "porcentaje_impurezas": 76,
-//         "monto_final": 805855.77,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2ad"),
-//           ObjectId("63839eaee8135414fa57c2ad"),
-//           ObjectId("63839eaee8135414fa57c2ad"),
-//           ObjectId("63839eaee8135414fa57c2a9")
-//         ]
-//       },
-//       {
-//         "cantidad": 1,
-//         "porcentaje_impurezas": 97,
-//         "monto_final": 877169.05,
-//         "producto": [
-//           ObjectId("63839eaee8135414fa57c2b3"),
-//           ObjectId("63839eaee8135414fa57c2ac")
-//         ]
-//       }
-//     ],
-//     "area": ObjectId("638393100a34b7480f7fa014")
-//   }
-// ])
+db.Medidor.insertMany([
+  {
+    "nombre": "proident cupidatat laborum esse magna",
+    "porcentaje_precision": 79.11,
+    "medicion": [
+      {
+        "fecha": new Date("14-06-2002"),
+        "medicion_neta": 9657.704,
+        "medicion_bruta": 1924.681,
+        "producto": ObjectId("63839eaee8135414fa57c2ab")
+      },
+      {
+        "fecha": new Date("11-05-2017"),
+        "medicion_neta": 1801.935,
+        "medicion_bruta": 8768.995,
+        "producto": ObjectId("63839eaee8135414fa57c2b5")
+      }
+    ],
+    "instalacion": ObjectId("638531b75dfa0234eef5cb0f")
+  },
+  {
+    "nombre": "culpa amet",
+    "porcentaje_precision": 93.76,
+    "medicion": [
+      {
+        "fecha": new Date("30-03-2010"),
+        "medicion_neta": 636.564,
+        "medicion_bruta": 2837.818,
+        "producto": ObjectId("63839eaee8135414fa57c2ac")
+      },
+      {
+        "fecha": new Date("12-03-2011"),
+        "medicion_neta": 4933.859,
+        "medicion_bruta": 5622.222,
+        "producto": ObjectId("63839eaee8135414fa57c2b1")
+      },
+      {
+        "fecha": new Date("22-04-2014"),
+        "medicion_neta": 938.305,
+        "medicion_bruta": 9815.747,
+        "producto": ObjectId("63839eaee8135414fa57c2a9")
+      }
+    ],
+    "instalacion": ObjectId("638531b76b06e1cfe4271913")
+  },
+  {
+    "nombre": "fugiat aliquip",
+    "porcentaje_precision": 44.37,
+    "medicion": [
+      {
+        "fecha": new Date("15-08-2016"),
+        "medicion_neta": 8255.405,
+        "medicion_bruta": 4580.211,
+        "producto": ObjectId("63839eaee8135414fa57c2b5")
+      },
+      {
+        "fecha": new Date("07-01-2007"),
+        "medicion_neta": 9074.106,
+        "medicion_bruta": 2670.42,
+        "producto": ObjectId("63839eaee8135414fa57c2b2")
+      }
+    ],
+    "instalacion": ObjectId("638531b7ca219b88801dcb2e")
+  },
+  {
+    "nombre": "in culpa adipisicing culpa nisi",
+    "porcentaje_precision": 10.04,
+    "medicion": [
+      {
+        "fecha": new Date("23-02-2003"),
+        "medicion_neta": 7856.065,
+        "medicion_bruta": 2678.958,
+        "producto": ObjectId("63839eaee8135414fa57c2ab")
+      },
+      {
+        "fecha": new Date("06-06-1993"),
+        "medicion_neta": 2485.734,
+        "medicion_bruta": 8918.538,
+        "producto": ObjectId("63839eaee8135414fa57c2a9")
+      },
+      {
+        "fecha": new Date("10-12-1990"),
+        "medicion_neta": 2048.492,
+        "medicion_bruta": 7363.209,
+        "producto": ObjectId("63839eaee8135414fa57c2a8")
+      }
+    ],
+    "instalacion": ObjectId("638531b7453d0a5229f71a36")
+  },
+  {
+    "nombre": "incididunt fugiat",
+    "porcentaje_precision": 36.16,
+    "medicion": [],
+    "instalacion": ObjectId("638531b7d098abcdf40b2da1")
+  },
+  {
+    "nombre": "eu ipsum nostrud",
+    "porcentaje_precision": 46.59,
+    "medicion": [
+      {
+        "fecha": new Date("22-04-2013"),
+        "medicion_neta": 7603.545,
+        "medicion_bruta": 2583.836,
+        "producto": ObjectId("63839eaee8135414fa57c2b6")
+      }
+    ],
+    "instalacion": ObjectId("638531b7fe7c6d9391c93705")
+  },
+  {
+    "nombre": "deserunt cupidatat fugiat ullamco",
+    "porcentaje_precision": 90.77,
+    "medicion": [
+      {
+        "fecha": new Date("05-09-2010"),
+        "medicion_neta": 4311.655,
+        "medicion_bruta": 4852.484,
+        "producto": ObjectId("63839eaee8135414fa57c2ad")
+      },
+      {
+        "fecha": new Date("05-05-2019"),
+        "medicion_neta": 9187.242,
+        "medicion_bruta": 9035.203,
+        "producto": ObjectId("63839eaee8135414fa57c2ad")
+      },
+      {
+        "fecha": new Date("25-09-2002"),
+        "medicion_neta": 8977.819,
+        "medicion_bruta": 2261.369,
+        "producto": ObjectId("63839eaee8135414fa57c2aa")
+      },
+      {
+        "fecha": new Date("20-06-1999"),
+        "medicion_neta": 4675.361,
+        "medicion_bruta": 3703.684,
+        "producto": ObjectId("63839eaee8135414fa57c2ad")
+      },
+      {
+        "fecha": new Date("08-12-2013"),
+        "medicion_neta": 6703.473,
+        "medicion_bruta": 4473.293,
+        "producto": ObjectId("63839eaee8135414fa57c2ac")
+      }
+    ],
+    "instalacion": ObjectId("638531b7a8075cabbb4e733f")
+  },
+  {
+    "nombre": "dolor non labore",
+    "porcentaje_precision": 68.15,
+    "medicion": [
+      {
+        "fecha": new Date("21-09-1992"),
+        "medicion_neta": 4116.898,
+        "medicion_bruta": 4917.523,
+        "producto": ObjectId("63839eaee8135414fa57c2b0")
+      },
+      {
+        "fecha": new Date("13-09-1991"),
+        "medicion_neta": 7493.29,
+        "medicion_bruta": 9679.797,
+        "producto": ObjectId("63839eaee8135414fa57c2b0")
+      }
+    ],
+    "instalacion": ObjectId("638531b74f2218ab0f19712f")
+  },
+  {
+    "nombre": "sunt cupidatat sunt anim cillum",
+    "porcentaje_precision": 60.05,
+    "medicion": [
+      {
+        "fecha": new Date("28-09-2014"),
+        "medicion_neta": 6273.195,
+        "medicion_bruta": 6720.332,
+        "producto": ObjectId("63839eaee8135414fa57c2ae")
+      },
+      {
+        "fecha": new Date("15-10-2010"),
+        "medicion_neta": 3643.598,
+        "medicion_bruta": 3397.072,
+        "producto": ObjectId("63839eaee8135414fa57c2b0")
+      },
+      {
+        "fecha": new Date("12-11-1996"),
+        "medicion_neta": 279.371,
+        "medicion_bruta": 2658.489,
+        "producto": ObjectId("63839eaee8135414fa57c2a9")
+      },
+      {
+        "fecha": new Date("06-03-1991"),
+        "medicion_neta": 6302.526,
+        "medicion_bruta": 9901.094,
+        "producto": ObjectId("63839eaee8135414fa57c2ab")
+      },
+      {
+        "fecha": new Date("23-02-2018"),
+        "medicion_neta": 358.5,
+        "medicion_bruta": 2502.49,
+        "producto": ObjectId("63839eaee8135414fa57c2a9")
+      }
+    ],
+    "instalacion": ObjectId("638531b7d4e6c8c0bb91091e")
+  },
+  {
+    "nombre": "fugiat mollit nisi eu in",
+    "porcentaje_precision": 66.06,
+    "medicion": [
+      {
+        "fecha": new Date("20-10-2010"),
+        "medicion_neta": 762.038,
+        "medicion_bruta": 135.845,
+        "producto": ObjectId("63839eaee8135414fa57c2ae")
+      },
+      {
+        "fecha": new Date("23-01-1999"),
+        "medicion_neta": 736.843,
+        "medicion_bruta": 6144.885,
+        "producto": ObjectId("63839eaee8135414fa57c2b4")
+      },
+      {
+        "fecha": new Date("11-08-1997"),
+        "medicion_neta": 7876.925,
+        "medicion_bruta": 1551.176,
+        "producto": ObjectId("63839eaee8135414fa57c2a9")
+      },
+      {
+        "fecha": new Date("26-11-2017"),
+        "medicion_neta": 3710.838,
+        "medicion_bruta": 8709.864,
+        "producto": ObjectId("63839eaee8135414fa57c2a8")
+      },
+      {
+        "fecha": new Date("14-12-2019"),
+        "medicion_neta": 1795.369,
+        "medicion_bruta": 3659.763,
+        "producto": ObjectId("63839eaee8135414fa57c2ac")
+      }
+    ],
+    "instalacion": ObjectId("638531b73e234a59a0647cd4")
+  }
+])
 
+db.Trabaja.insertMany([
+  {
+    "fecha_inicio": new Date("23-12-2007"),
+    "fecha_finalizacion": new Date("31-01-1998"),
+    "personal": "6383a3a20a34b7480f7fa06a",
+    "instalacion": "63839e6ae8135414fa57c29b"
+  },
+  {
+    "fecha_inicio": new Date("27-07-2022"),
+    "fecha_finalizacion": new Date("09-12-2019"),
+    "personal": "6383a3a20a34b7480f7fa069",
+    "instalacion": "63839e6ae8135414fa57c299"
+  },
+  {
+    "fecha_inicio": new Date("17-12-2015"),
+    "fecha_finalizacion": new Date("17-03-2002"),
+    "personal": "6383a3a20a34b7480f7fa064",
+    "instalacion": "63839e6ae8135414fa57c29b"
+  },
+  {
+    "fecha_inicio": new Date("03-06-2007"),
+    "fecha_finalizacion": new Date("18-05-2001"),
+    "personal": "6383a3a20a34b7480f7fa06a",
+    "instalacion": "63839e6ae8135414fa57c29a"
+  },
+  {
+    "fecha_inicio": new Date("15-06-1990"),
+    "fecha_finalizacion": new Date("06-03-2005"),
+    "personal": "6383a3a20a34b7480f7fa068",
+    "instalacion": "63839e6ae8135414fa57c2a2"
+  },
+  {
+    "fecha_inicio": new Date("09-12-2020"),
+    "fecha_finalizacion": new Date("13-02-2011"),
+    "personal": "6383a3a20a34b7480f7fa067",
+    "instalacion": "63839e6ae8135414fa57c2a0"
+  },
+  {
+    "fecha_inicio": new Date("27-09-2011"),
+    "fecha_finalizacion": new Date("04-12-1990"),
+    "personal": "6383a3a20a34b7480f7fa068",
+    "instalacion": "63839e6ae8135414fa57c29c"
+  },
+  {
+    "fecha_inicio": new Date("17-08-2021"),
+    "fecha_finalizacion": new Date("14-05-2005"),
+    "personal": "6383a3a20a34b7480f7fa068",
+    "instalacion": "63839e6ae8135414fa57c2a2"
+  },
+  {
+    "fecha_inicio": new Date("24-06-2000"),
+    "fecha_finalizacion": new Date("01-09-1991"),
+    "personal": "6383a3a20a34b7480f7fa065",
+    "instalacion": "63839e6ae8135414fa57c29b"
+  },
+  {
+    "fecha_inicio": new Date("09-03-1995"),
+    "fecha_finalizacion": new Date("01-12-1994"),
+    "personal": "6383a3a20a34b7480f7fa067",
+    "instalacion": "63839e6ae8135414fa57c2a1"
+  }
+])
 
-// db.Instalacion.insertMany([
-//   {
-//     "latitud": 7.001186,
-//     "longitud": 129.207804,
-//     "descripcion": "Tempor excepteur amet excepteur sunt sunt. Nulla cupidatat aliquip eiusmod irure enim non irure excepteur. Ad id deserunt mollit in nostrud voluptate veniam anim. Elit eiusmod id est consectetur consectetur pariatur aute minim reprehenderit pariatur incididunt nisi.\r\n",
-//     "profundidad": 167,
-//     "es_productor": false,
-//     "estado": [
-//       {
-//         "nombre": "pariatur",
-//         "comentario": "cupidatat adipisicing Lorem ea et",
-//         "fecha": "19-02-2006",
-//         "motivo": "dolor culpa"
-//       },
-//       {
-//         "nombre": "fugiat",
-//         "comentario": "in nisi consequat id irure",
-//         "fecha": "06-06-2012",
-//         "motivo": "adipisicing aliqua"
-//       },
-//       {
-//         "nombre": "est",
-//         "comentario": "dolore ea nostrud nulla deserunt",
-//         "fecha": "02-04-2008",
-//         "motivo": "sit commodo"
-//       },
-//       {
-//         "nombre": "ut",
-//         "comentario": "cupidatat adipisicing ullamco labore occaecat",
-//         "fecha": "08-01-2003",
-//         "motivo": "ut dolore"
-//       },
-//       {
-//         "nombre": "elit",
-//         "comentario": "in laborum laboris laborum excepteur",
-//         "fecha": "13-11-1990",
-//         "motivo": "fugiat culpa"
-//       }
-//     ],
-//     "sistema_de_extraccion": [
-//       {
-//         "nombre": "Lorem"
-//       },
-//       {
-//         "nombre": "elit"
-//       }
-//     ]
-//   },
-//   {
-//     "latitud": 53.888288,
-//     "longitud": 102.20943,
-//     "descripcion": "Est veniam enim occaecat laborum excepteur et ad eiusmod sunt exercitation nisi incididunt. Deserunt incididunt pariatur ea nulla et ullamco aliqua sunt enim non proident. Enim commodo est sint ipsum labore velit qui duis elit proident reprehenderit. Et officia quis irure eu nulla dolore excepteur labore tempor aute.\r\n",
-//     "profundidad": 617,
-//     "es_productor": true,
-//     "estado": [
-//       {
-//         "nombre": "occaecat",
-//         "comentario": "mollit quis irure incididunt ea",
-//         "fecha": "08-12-1997",
-//         "motivo": "pariatur Lorem"
-//       },
-//       {
-//         "nombre": "eu",
-//         "comentario": "laborum veniam sunt non laboris",
-//         "fecha": "12-05-2020",
-//         "motivo": "laboris aute"
-//       }
-//     ],
-//     "sistema_de_extraccion": [
-//       {
-//         "nombre": "nisi"
-//       },
-//       {
-//         "nombre": "incididunt"
-//       },
-//       {
-//         "nombre": "incididunt"
-//       }
-//     ]
-//   },
-//   {
-//     "latitud": -48.859524,
-//     "longitud": -134.350238,
-//     "descripcion": "Incididunt adipisicing deserunt ut sunt magna. In dolore labore ullamco voluptate est cillum qui commodo esse nulla. Ut sunt incididunt non do consectetur tempor aliqua. Ad excepteur qui ut commodo ut enim excepteur anim exercitation ullamco. Quis eu eiusmod dolore sit nisi aliquip magna esse irure exercitation excepteur cillum. Enim duis officia mollit eu ipsum quis.\r\n",
-//     "profundidad": 732,
-//     "es_productor": true,
-//     "estado": [
-//       {
-//         "nombre": "ut",
-//         "comentario": "veniam minim nisi velit cillum",
-//         "fecha": "26-06-1999",
-//         "motivo": "eu dolore"
-//       },
-//       {
-//         "nombre": "deserunt",
-//         "comentario": "fugiat reprehenderit magna est irure",
-//         "fecha": "27-04-2011",
-//         "motivo": "est ad"
-//       },
-//       {
-//         "nombre": "culpa",
-//         "comentario": "sunt in sint aliqua pariatur",
-//         "fecha": "23-11-1995",
-//         "motivo": "amet elit"
-//       },
-//       {
-//         "nombre": "in",
-//         "comentario": "qui quis deserunt consectetur excepteur",
-//         "fecha": "05-04-1998",
-//         "motivo": "voluptate enim"
-//       }
-//     ],
-//     "sistema_de_extraccion": [
-//       {
-//         "nombre": "aliquip"
-//       }
-//     ]
-//   },
-//   {
-//     "latitud": 47.315345,
-//     "longitud": -118.42155,
-//     "descripcion": "Est culpa veniam sint aliquip sit tempor dolor tempor proident deserunt pariatur. Ex ad sunt voluptate labore ipsum nulla voluptate deserunt cillum mollit velit laborum nisi voluptate. Velit ullamco aliqua labore incididunt ipsum. Consequat duis quis ad commodo. Sit in consectetur nisi proident dolore enim elit occaecat veniam. Consectetur incididunt minim aliqua cupidatat eu labore exercitation cillum laborum sint reprehenderit laborum sunt aliqua. Eiusmod commodo nulla et tempor culpa amet consequat est nisi tempor eiusmod magna.\r\n",
-//     "profundidad": 950,
-//     "es_productor": true,
-//     "estado": [
-//       {
-//         "nombre": "aliqua",
-//         "comentario": "est laborum magna duis eu",
-//         "fecha": "14-08-2002",
-//         "motivo": "tempor officia"
-//       },
-//       {
-//         "nombre": "in",
-//         "comentario": "enim irure excepteur nostrud esse",
-//         "fecha": "17-01-1991",
-//         "motivo": "ea dolor"
-//       }
-//     ],
-//     "sistema_de_extraccion": [
-//       {
-//         "nombre": "pariatur"
-//       },
-//       {
-//         "nombre": "amet"
-//       },
-//       {
-//         "nombre": "ut"
-//       }
-//     ]
-//   },
-//   {
-//     "latitud": 27.297233,
-//     "longitud": -72.242271,
-//     "descripcion": "Velit consectetur consectetur do cupidatat ea ad deserunt sit ipsum duis tempor. Amet est quis deserunt qui consectetur nisi proident deserunt ea. Elit cupidatat reprehenderit commodo laborum mollit eiusmod consectetur culpa qui esse cillum. Deserunt eu cupidatat amet fugiat dolor irure quis.\r\n",
-//     "profundidad": 881,
-//     "es_productor": false,
-//     "estado": [
-//       {
-//         "nombre": "qui",
-//         "comentario": "consectetur laborum id commodo est",
-//         "fecha": "28-03-2005",
-//         "motivo": "do consectetur"
-//       },
-//       {
-//         "nombre": "magna",
-//         "comentario": "do aliqua commodo qui sunt",
-//         "fecha": "20-11-2012",
-//         "motivo": "sint officia"
-//       },
-//       {
-//         "nombre": "do",
-//         "comentario": "adipisicing nostrud occaecat velit ea",
-//         "fecha": "29-01-2015",
-//         "motivo": "duis consequat"
-//       }
-//     ],
-//     "sistema_de_extraccion": [
-//       {
-//         "nombre": "tempor"
-//       },
-//       {
-//         "nombre": "anim"
-//       },
-//       {
-//         "nombre": "ad"
-//       },
-//       {
-//         "nombre": "voluptate"
-//       },
-//       {
-//         "nombre": "ex"
-//       }
-//     ]
-//   },
-//   {
-//     "latitud": 63.421128,
-//     "longitud": 58.842156,
-//     "descripcion": "Commodo ex sit incididunt mollit nostrud magna enim aliqua officia pariatur magna aliqua nulla ad. Consectetur laborum deserunt consectetur consectetur laboris nostrud ullamco magna. Veniam eu aliquip laborum enim nulla enim quis irure sit aliquip. Qui aute id quis eu ea et aute incididunt sit voluptate consectetur.\r\n",
-//     "profundidad": 755,
-//     "es_productor": true,
-//     "estado": [
-//       {
-//         "nombre": "labore",
-//         "comentario": "laborum sunt incididunt cupidatat cillum",
-//         "fecha": "13-10-2014",
-//         "motivo": "irure ullamco"
-//       },
-//       {
-//         "nombre": "non",
-//         "comentario": "laborum velit ipsum eiusmod consectetur",
-//         "fecha": "27-07-2000",
-//         "motivo": "eu cillum"
-//       },
-//       {
-//         "nombre": "eiusmod",
-//         "comentario": "magna consectetur laborum ipsum nisi",
-//         "fecha": "04-12-1991",
-//         "motivo": "fugiat nisi"
-//       },
-//       {
-//         "nombre": "quis",
-//         "comentario": "velit nulla ex dolor dolore",
-//         "fecha": "16-05-1996",
-//         "motivo": "Lorem cillum"
-//       }
-//     ],
-//     "sistema_de_extraccion": [
-//       {
-//         "nombre": "eu"
-//       },
-//       {
-//         "nombre": "ea"
-//       },
-//       {
-//         "nombre": "eu"
-//       },
-//       {
-//         "nombre": "amet"
-//       },
-//       {
-//         "nombre": "dolor"
-//       }
-//     ]
-//   },
-//   {
-//     "latitud": 77.647092,
-//     "longitud": 157.86852,
-//     "descripcion": "Magna Lorem cillum laborum consequat cillum non culpa excepteur consectetur sunt pariatur. Ad sunt dolor consectetur eiusmod deserunt. Ea laborum non velit ut minim. Eiusmod non ea velit reprehenderit. Fugiat fugiat ea cillum fugiat irure officia ipsum adipisicing nulla consequat culpa id adipisicing id. Exercitation aliquip tempor ex fugiat fugiat. Ullamco consectetur officia qui ex pariatur elit cupidatat laborum et do.\r\n",
-//     "profundidad": 398,
-//     "es_productor": true,
-//     "estado": [
-//       {
-//         "nombre": "aute",
-//         "comentario": "consectetur occaecat aliquip anim non",
-//         "fecha": "31-07-2010",
-//         "motivo": "adipisicing duis"
-//       },
-//       {
-//         "nombre": "aliqua",
-//         "comentario": "dolor commodo sunt Lorem mollit",
-//         "fecha": "31-03-1998",
-//         "motivo": "in id"
-//       },
-//       {
-//         "nombre": "aute",
-//         "comentario": "ad anim sunt id dolore",
-//         "fecha": "15-09-2005",
-//         "motivo": "fugiat voluptate"
-//       },
-//       {
-//         "nombre": "velit",
-//         "comentario": "ut est non culpa velit",
-//         "fecha": "15-02-2007",
-//         "motivo": "quis dolore"
-//       }
-//     ],
-//     "sistema_de_extraccion": [
-//       {
-//         "nombre": "laborum"
-//       },
-//       {
-//         "nombre": "laborum"
-//       }
-//     ]
-//   },
-//   {
-//     "latitud": -59.246068,
-//     "longitud": -174.121427,
-//     "descripcion": "Aliquip est enim commodo ut nisi. Sint aliqua proident ut consequat quis. Commodo in esse amet esse laborum.\r\n",
-//     "profundidad": 723,
-//     "es_productor": true,
-//     "estado": [
-//       {
-//         "nombre": "esse",
-//         "comentario": "qui non occaecat et duis",
-//         "fecha": "06-02-2012",
-//         "motivo": "aliquip laboris"
-//       },
-//       {
-//         "nombre": "do",
-//         "comentario": "ea exercitation fugiat labore tempor",
-//         "fecha": "27-12-2006",
-//         "motivo": "anim duis"
-//       }
-//     ],
-//     "sistema_de_extraccion": [
-//       {
-//         "nombre": "deserunt"
-//       },
-//       {
-//         "nombre": "ullamco"
-//       },
-//       {
-//         "nombre": "magna"
-//       },
-//       {
-//         "nombre": "dolore"
-//       },
-//       {
-//         "nombre": "nisi"
-//       }
-//     ]
-//   },
-//   {
-//     "latitud": -85.233009,
-//     "longitud": 110.79671,
-//     "descripcion": "Cupidatat consectetur qui fugiat commodo. Laboris eu veniam fugiat voluptate fugiat occaecat esse consectetur adipisicing est amet anim non. Deserunt Lorem dolore aliqua laboris pariatur cillum consectetur ipsum do elit sint consectetur consectetur. In adipisicing et cupidatat ut veniam veniam.\r\n",
-//     "profundidad": 856,
-//     "es_productor": false,
-//     "estado": [
-//       {
-//         "nombre": "adipisicing",
-//         "comentario": "nisi commodo dolor in labore",
-//         "fecha": "22-03-2017",
-//         "motivo": "proident minim"
-//       }
-//     ],
-//     "sistema_de_extraccion": [
-//       {
-//         "nombre": "elit"
-//       },
-//       {
-//         "nombre": "incididunt"
-//       },
-//       {
-//         "nombre": "labore"
-//       },
-//       {
-//         "nombre": "est"
-//       }
-//     ]
-//   },
-//   {
-//     "latitud": 19.540545,
-//     "longitud": -24.150242,
-//     "descripcion": "Adipisicing officia cillum eu aute occaecat labore et ut consequat ut est consequat minim. Quis nisi incididunt et velit id sit ipsum deserunt qui dolor in reprehenderit qui. Nulla proident culpa est deserunt aliqua aute sint id anim consectetur magna cillum. Mollit cupidatat non anim anim sint minim ea enim adipisicing ad nisi. Eiusmod duis irure cupidatat laboris id quis adipisicing sunt ut adipisicing labore nostrud.\r\n",
-//     "profundidad": 616,
-//     "es_productor": true,
-//     "estado": [
-//       {
-//         "nombre": "sunt",
-//         "comentario": "excepteur laborum proident magna excepteur",
-//         "fecha": "12-03-2019",
-//         "motivo": "adipisicing ad"
-//       },
-//       {
-//         "nombre": "commodo",
-//         "comentario": "aliqua adipisicing laborum cillum laboris",
-//         "fecha": "01-01-1994",
-//         "motivo": "duis nisi"
-//       },
-//       {
-//         "nombre": "consequat",
-//         "comentario": "excepteur et sit incididunt Lorem",
-//         "fecha": "18-09-1995",
-//         "motivo": "labore in"
-//       },
-//       {
-//         "nombre": "exercitation",
-//         "comentario": "reprehenderit fugiat adipisicing ad irure",
-//         "fecha": "26-02-2014",
-//         "motivo": "nostrud duis"
-//       },
-//       {
-//         "nombre": "sit",
-//         "comentario": "cillum consectetur sunt cupidatat id",
-//         "fecha": "19-01-2004",
-//         "motivo": "minim non"
-//       }
-//     ],
-//     "sistema_de_extraccion": [
-//       {
-//         "nombre": "irure"
-//       },
-//       {
-//         "nombre": "eiusmod"
-//       },
-//       {
-//         "nombre": "labore"
-//       }
-//     ]
-//   }
-// ])
+db.Almacena.insertMany([
+  {
+    "cantidad": 9,
+    "fecha": new Date("02-06-1992"),
+    "hora": "01:01",
+    "tanque": "63839f36e8135414fa57c2bf",
+    "instalacion": "63839e6ae8135414fa57c2a1"
+  },
+  {
+    "cantidad": 3,
+    "fecha": new Date("26-07-2019"),
+    "hora": "09:59",
+    "tanque": "63839f36e8135414fa57c2c3",
+    "instalacion": "63839e6ae8135414fa57c299"
+  },
+  {
+    "cantidad": 8,
+    "fecha": new Date("16-05-2018"),
+    "hora": "02:17",
+    "tanque": "63839f36e8135414fa57c2bd",
+    "instalacion": "63839e6ae8135414fa57c2a1"
+  },
+  {
+    "cantidad": 18,
+    "fecha": new Date("03-06-2000"),
+    "hora": "02:21",
+    "tanque": "63839f36e8135414fa57c2c5",
+    "instalacion": "63839e6ae8135414fa57c29e"
+  },
+  {
+    "cantidad": 17,
+    "fecha": new Date("30-07-1997"),
+    "hora": "03:37",
+    "tanque": "63839f36e8135414fa57c2c2",
+    "instalacion": "63839e6ae8135414fa57c29e"
+  },
+  {
+    "cantidad": 11,
+    "fecha": new Date("16-01-2018"),
+    "hora": "11:45",
+    "tanque": "63839f36e8135414fa57c2bd",
+    "instalacion": "63839e6ae8135414fa57c2a1"
+  },
+  {
+    "cantidad": 3,
+    "fecha": new Date("15-09-2017"),
+    "hora": "09:54",
+    "tanque": "63839f36e8135414fa57c2bd",
+    "instalacion": "63839e6ae8135414fa57c299"
+  },
+  {
+    "cantidad": 16,
+    "fecha": new Date("02-09-2012"),
+    "hora": "11:16",
+    "tanque": "63839f36e8135414fa57c2c0",
+    "instalacion": "63839e6ae8135414fa57c29b"
+  },
+  {
+    "cantidad": 12,
+    "fecha": new Date("06-07-1990"),
+    "hora": "07:40",
+    "tanque": "63839f36e8135414fa57c2be",
+    "instalacion": "63839e6ae8135414fa57c29b"
+  },
+  {
+    "cantidad": 20,
+    "fecha": new Date("30-04-2007"),
+    "hora": "03:31",
+    "tanque": "63839f36e8135414fa57c2c3",
+    "instalacion": "63839e6ae8135414fa57c29f"
+  },
+  {
+    "cantidad": 17,
+    "fecha": new Date("04-10-2005"),
+    "hora": "07:55",
+    "tanque": "63839f36e8135414fa57c2bf",
+    "instalacion": "63839e6ae8135414fa57c29d"
+  },
+  {
+    "cantidad": 20,
+    "fecha": new Date("25-08-1993"),
+    "hora": "02:00",
+    "tanque": "63839f36e8135414fa57c2c3",
+    "instalacion": "63839e6ae8135414fa57c29e"
+  },
+  {
+    "cantidad": 4,
+    "fecha": new Date("12-08-2006"),
+    "hora": "06:19",
+    "tanque": "63839f36e8135414fa57c2c1",
+    "instalacion": "63839e6ae8135414fa57c2a2"
+  },
+  {
+    "cantidad": 20,
+    "fecha": new Date("29-11-2002"),
+    "hora": "12:33",
+    "tanque": "63839f36e8135414fa57c2bd",
+    "instalacion": "63839e6ae8135414fa57c2a1"
+  },
+  {
+    "cantidad": 18,
+    "fecha": new Date("12-01-2018"),
+    "hora": "08:38",
+    "tanque": "63839f36e8135414fa57c2c1",
+    "instalacion": "63839e6ae8135414fa57c2a1"
+  }
+])
 
+db.Almacena_Tipo.insertMany([
+  {
+    "fecha_inicio": new Date("01-06-2009"),
+    "fecha_fin": new Date("02-01-2019"),
+    "tanque": "63839f36e8135414fa57c2be",
+    "producto": "63839eaee8135414fa57c2ab"
+  },
+  {
+    "fecha_inicio": new Date("06-11-1995"),
+    "fecha_fin": new Date("11-05-2012"),
+    "tanque": "63839f36e8135414fa57c2bf",
+    "producto": "63839eaee8135414fa57c2b3"
+  },
+  {
+    "fecha_inicio": new Date("19-07-2011"),
+    "fecha_fin": new Date("06-05-1990"),
+    "tanque": "63839f36e8135414fa57c2bd",
+    "producto": "63839eaee8135414fa57c2ad"
+  },
+  {
+    "fecha_inicio": new Date("09-02-1993"),
+    "fecha_fin": new Date("22-05-2012"),
+    "tanque": "63839f36e8135414fa57c2c5",
+    "producto": "63839eaee8135414fa57c2b4"
+  },
+  {
+    "fecha_inicio": new Date("23-06-2019"),
+    "fecha_fin": new Date("11-10-2021"),
+    "tanque": "63839f36e8135414fa57c2c5",
+    "producto": "63839eaee8135414fa57c2b0"
+  },
+  {
+    "fecha_inicio": new Date("11-07-1996"),
+    "fecha_fin": new Date("22-04-2008"),
+    "tanque": "63839f36e8135414fa57c2bc",
+    "producto": "63839eaee8135414fa57c2af"
+  },
+  {
+    "fecha_inicio": new Date("18-02-1999"),
+    "fecha_fin": new Date("09-02-1996"),
+    "tanque": "63839f36e8135414fa57c2be",
+    "producto": "63839eaee8135414fa57c2b1"
+  },
+  {
+    "fecha_inicio": new Date("03-08-2006"),
+    "fecha_fin": new Date("28-08-2010"),
+    "tanque": "63839f36e8135414fa57c2bd",
+    "producto": "63839eaee8135414fa57c2b2"
+  },
+  {
+    "fecha_inicio": new Date("24-02-2020"),
+    "fecha_fin": new Date("02-06-2000"),
+    "tanque": "63839f36e8135414fa57c2c4",
+    "producto": "63839eaee8135414fa57c2a8"
+  },
+  {
+    "fecha_inicio": new Date("10-12-1999"),
+    "fecha_fin": new Date("24-05-2000"),
+    "tanque": "63839f36e8135414fa57c2c1",
+    "producto": "63839eaee8135414fa57c2a8"
+  },
+  {
+    "fecha_inicio": new Date("08-07-2021"),
+    "fecha_fin": new Date("02-07-2009"),
+    "tanque": "63839f36e8135414fa57c2bf",
+    "producto": "63839eaee8135414fa57c2a8"
+  },
+  {
+    "fecha_inicio": new Date("06-12-1992"),
+    "fecha_fin": new Date("27-04-1994"),
+    "tanque": "63839f36e8135414fa57c2bc",
+    "producto": "63839eaee8135414fa57c2ae"
+  },
+  {
+    "fecha_inicio": new Date("15-08-2002"),
+    "fecha_fin": new Date("03-06-2021"),
+    "tanque": "63839f36e8135414fa57c2c5",
+    "producto": "63839eaee8135414fa57c2ad"
+  },
+  {
+    "fecha_inicio": new Date("13-10-1998"),
+    "fecha_fin": new Date("21-10-2011"),
+    "tanque": "63839f36e8135414fa57c2bc",
+    "producto": "63839eaee8135414fa57c2b3"
+  },
+  {
+    "fecha_inicio": new Date("27-03-2011"),
+    "fecha_fin": new Date("04-03-2017"),
+    "tanque": "63839f36e8135414fa57c2bc",
+    "producto": "63839eaee8135414fa57c2aa"
+  }
+])
 
-// db.Tanque.insertMany([[
-//   {
-//     "tag": "591amet",
-//     "capacidad_total": 7414.11,
-//     "capacidad_disponible": 5637.1215
-//   },
-//   {
-//     "tag": "485ad",
-//     "capacidad_total": 9422.1086,
-//     "capacidad_disponible": 5763.6802
-//   },
-//   {
-//     "tag": "25voluptate",
-//     "capacidad_total": 3156.5078,
-//     "capacidad_disponible": 9850.4571
-//   },
-//   {
-//     "tag": "622ullamco",
-//     "capacidad_total": 8309.6703,
-//     "capacidad_disponible": 6161.2995
-//   },
-//   {
-//     "tag": "245velit",
-//     "capacidad_total": 967.7884,
-//     "capacidad_disponible": 1611.1836
-//   },
-//   {
-//     "tag": "536reprehenderit",
-//     "capacidad_total": 4391.4975,
-//     "capacidad_disponible": 336.8921
-//   },
-//   {
-//     "tag": "230deserunt",
-//     "capacidad_total": 6801.9672,
-//     "capacidad_disponible": 6074.3034
-//   },
-//   {
-//     "tag": "960consectetur",
-//     "capacidad_total": 1562.7741,
-//     "capacidad_disponible": 2656.2372
-//   },
-//   {
-//     "tag": "53officia",
-//     "capacidad_total": 172.641,
-//     "capacidad_disponible": 4294.699
-//   },
-//   {
-//     "tag": "771consectetur",
-//     "capacidad_total": 8711.4504,
-//     "capacidad_disponible": 3030.4953
-//   }
-// ]])
-
-//  db.Medidor.insertMany([
-//   {
-//     "nombre": "ea voluptate ipsum sit",
-//     "porcentaje_precision": 81.59,
-//     "medicion": [
-//       {
-//         "fecha": "06-07-2008",
-//         "medicion_neta": 8445.657,
-//         "medicion_bruta": 7453.151,
-//         "producto": ObjectId("63839eaee8135414fa57c2ab")
-//       }
-//     ],
-//     "instalacion": ObjectId("63839e6ae8135414fa57c299")
-//   },
-//   {
-//     "nombre": "cupidatat qui culpa reprehenderit ut",
-//     "porcentaje_precision": 16.46,
-//     "medicion": [
-//       {
-//         "fecha": "03-07-2008",
-//         "medicion_neta": 9765.086,
-//         "medicion_bruta": 5771.005,
-//         "producto": ObjectId("63839eaee8135414fa57c2b6")
-//       },
-//       {
-//         "fecha": "17-04-2017",
-//         "medicion_neta": 8424.857,
-//         "medicion_bruta": 740.821,
-//         "producto": ObjectId("63839eaee8135414fa57c2b0")
-//       },
-//       {
-//         "fecha": "08-04-2020",
-//         "medicion_neta": 2781.876,
-//         "medicion_bruta": 9758.204,
-//         "producto": ObjectId("63839eaee8135414fa57c2ad")
-//       },
-//       {
-//         "fecha": "15-04-1997",
-//         "medicion_neta": 2912.477,
-//         "medicion_bruta": 5767.966,
-//         "producto": ObjectId("63839eaee8135414fa57c2b6")
-//       },
-//       {
-//         "fecha": "06-08-2006",
-//         "medicion_neta": 7407.308,
-//         "medicion_bruta": 4729.04,
-//         "producto": ObjectId("63839eaee8135414fa57c2aa")
-//       }
-//     ],
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29a")
-//   },
-//   {
-//     "nombre": "deserunt Lorem nostrud duis",
-//     "porcentaje_precision": 0.02,
-//     "medicion": [
-//       {
-//         "fecha": "26-07-2010",
-//         "medicion_neta": 3629.562,
-//         "medicion_bruta": 3669.645,
-//         "producto": ObjectId("63839eaee8135414fa57c2b6")
-//       },
-//       {
-//         "fecha": "31-12-2010",
-//         "medicion_neta": 2107.735,
-//         "medicion_bruta": 4969.882,
-//         "producto": ObjectId("63839eaee8135414fa57c2a9")
-//       }
-//     ],
-//     "instalacion": ObjectId("63839e6ae8135414fa57c299")
-//   },
-//   {
-//     "nombre": "amet est est",
-//     "porcentaje_precision": 99.16,
-//     "medicion": [
-//       {
-//         "fecha": "08-03-1992",
-//         "medicion_neta": 3373.275,
-//         "medicion_bruta": 5448.899,
-//         "producto": ObjectId("63839eaee8135414fa57c2ae")
-//       },
-//       {
-//         "fecha": "29-07-2009",
-//         "medicion_neta": 2709.816,
-//         "medicion_bruta": 1691.912,
-//         "producto": ObjectId("63839eaee8135414fa57c2a8")
-//       },
-//       {
-//         "fecha": "27-12-2021",
-//         "medicion_neta": 3463.894,
-//         "medicion_bruta": 3439.904,
-//         "producto": ObjectId("63839eaee8135414fa57c2ab")
-//       },
-//       {
-//         "fecha": "06-05-1993",
-//         "medicion_neta": 3252.778,
-//         "medicion_bruta": 6037.698,
-//         "producto": ObjectId("63839eaee8135414fa57c2ae")
-//       },
-//       {
-//         "fecha": "29-10-2010",
-//         "medicion_neta": 3780.663,
-//         "medicion_bruta": 979.39,
-//         "producto": ObjectId("63839eaee8135414fa57c2af")
-//       }
-//     ],
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29d")
-//   },
-//   {
-//     "nombre": "consequat nostrud irure velit ipsum",
-//     "porcentaje_precision": 30.64,
-//     "medicion": [
-//       {
-//         "fecha": "16-05-1990",
-//         "medicion_neta": 5745.349,
-//         "medicion_bruta": 6995.024,
-//         "producto": ObjectId("63839eaee8135414fa57c2b5")
-//       },
-//       {
-//         "fecha": "21-11-2015",
-//         "medicion_neta": 495.646,
-//         "medicion_bruta": 658.773,
-//         "producto": ObjectId("63839eaee8135414fa57c2b5")
-//       },
-//       {
-//         "fecha": "06-08-2000",
-//         "medicion_neta": 9169.37,
-//         "medicion_bruta": 5177.762,
-//         "producto": ObjectId("63839eaee8135414fa57c2ab")
-//       },
-//       {
-//         "fecha": "05-08-2018",
-//         "medicion_neta": 3684.899,
-//         "medicion_bruta": 2836.457,
-//         "producto": ObjectId("63839eaee8135414fa57c2ab")
-//       },
-//       {
-//         "fecha": "14-11-2015",
-//         "medicion_neta": 8667.244,
-//         "medicion_bruta": 3046.559,
-//         "producto": ObjectId("63839eaee8135414fa57c2b5")
-//       }
-//     ],
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a0")
-//   },
-//   {
-//     "nombre": "consequat sint",
-//     "porcentaje_precision": 87.25,
-//     "medicion": [
-//       {
-//         "fecha": "24-12-2004",
-//         "medicion_neta": 7958.865,
-//         "medicion_bruta": 3374.871,
-//         "producto": ObjectId("63839eaee8135414fa57c2b6")
-//       },
-//       {
-//         "fecha": "11-05-2010",
-//         "medicion_neta": 5471.803,
-//         "medicion_bruta": 2533.07,
-//         "producto": ObjectId("63839eaee8135414fa57c2aa")
-//       }
-//     ],
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
-//   },
-//   {
-//     "nombre": "nostrud ullamco",
-//     "porcentaje_precision": 88.9,
-//     "medicion": [
-//       {
-//         "fecha": "11-05-2006",
-//         "medicion_neta": 4228.289,
-//         "medicion_bruta": 9339.226,
-//         "producto": ObjectId("63839eaee8135414fa57c2b6")
-//       },
-//       {
-//         "fecha": "05-01-1992",
-//         "medicion_neta": 4561.405,
-//         "medicion_bruta": 6591.655,
-//         "producto": ObjectId("63839eaee8135414fa57c2b4")
-//       },
-//       {
-//         "fecha": "17-12-2005",
-//         "medicion_neta": 4640.317,
-//         "medicion_bruta": 2100.877,
-//         "producto": ObjectId("63839eaee8135414fa57c2b6")
-//       },
-//       {
-//         "fecha": "06-02-2021",
-//         "medicion_neta": 7425.761,
-//         "medicion_bruta": 7485.796,
-//         "producto": ObjectId("63839eaee8135414fa57c2b3")
-//       }
-//     ],
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
-//   },
-//   {
-//     "nombre": "elit non do",
-//     "porcentaje_precision": 12.42,
-//     "medicion": [
-//       {
-//         "fecha": "11-12-2011",
-//         "medicion_neta": 5433.886,
-//         "medicion_bruta": 2483.383,
-//         "producto": ObjectId("63839eaee8135414fa57c2aa")
-//       }
-//     ],
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
-//   },
-//   {
-//     "nombre": "ipsum non ad deserunt",
-//     "porcentaje_precision": 47.46,
-//     "medicion": [
-//       {
-//         "fecha": "03-01-2021",
-//         "medicion_neta": 6644.405,
-//         "medicion_bruta": 4805.521,
-//         "producto": ObjectId("63839eaee8135414fa57c2b2")
-//       },
-//       {
-//         "fecha": "16-06-1995",
-//         "medicion_neta": 469.221,
-//         "medicion_bruta": 1420.637,
-//         "producto": ObjectId("63839eaee8135414fa57c2b0")
-//       },
-//       {
-//         "fecha": "24-02-2000",
-//         "medicion_neta": 7179.688,
-//         "medicion_bruta": 5626.282,
-//         "producto": ObjectId("63839eaee8135414fa57c2ad")
-//       },
-//       {
-//         "fecha": "24-08-2020",
-//         "medicion_neta": 4545.585,
-//         "medicion_bruta": 9381.834,
-//         "producto": ObjectId("63839eaee8135414fa57c2aa")
-//       },
-//       {
-//         "fecha": "24-09-2003",
-//         "medicion_neta": 7647.081,
-//         "medicion_bruta": 3811.411,
-//         "producto": ObjectId("63839eaee8135414fa57c2b6")
-//       }
-//     ],
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29d")
-//   },
-//   {
-//     "nombre": "irure enim tempor eiusmod amet",
-//     "porcentaje_precision": 26.97,
-//     "medicion": [
-//       {
-//         "fecha": "05-11-1995",
-//         "medicion_neta": 6673.924,
-//         "medicion_bruta": 6502.755,
-//         "producto": ObjectId("63839eaee8135414fa57c2b0")
-//       },
-//       {
-//         "fecha": "30-07-2020",
-//         "medicion_neta": 6498.406,
-//         "medicion_bruta": 8651.347,
-//         "producto": ObjectId("63839eaee8135414fa57c2b1")
-//       },
-//       {
-//         "fecha": "30-12-1999",
-//         "medicion_neta": 9836.505,
-//         "medicion_bruta": 5898.617,
-//         "producto": ObjectId("63839eaee8135414fa57c2b3")
-//       }
-//     ],
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
-//   }
-// ])
-
-
-// db.Trabaja.insertMany([
-//   {
-//     "fecha_inicio": "23-12-2007",
-//     "fecha_finalizacion": "31-01-1998",
-//     "personal": ObjectId("6383a3a20a34b7480f7fa06a"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
-//   },
-//   {
-//     "fecha_inicio": "27-07-2022",
-//     "fecha_finalizacion": "09-12-2019",
-//     "personal": ObjectId("6383a3a20a34b7480f7fa069"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c299")
-//   },
-//   {
-//     "fecha_inicio": "17-12-2015",
-//     "fecha_finalizacion": "17-03-2002",
-//     "personal": ObjectId("6383a3a20a34b7480f7fa064"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
-//   },
-//   {
-//     "fecha_inicio": "03-06-2007",
-//     "fecha_finalizacion": "18-05-2001",
-//     "personal": ObjectId("6383a3a20a34b7480f7fa06a"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29a")
-//   },
-//   {
-//     "fecha_inicio": "15-06-1990",
-//     "fecha_finalizacion": "06-03-2005",
-//     "personal": ObjectId("6383a3a20a34b7480f7fa068"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a2")
-//   },
-//   {
-//     "fecha_inicio": "09-12-2020",
-//     "fecha_finalizacion": "13-02-2011",
-//     "personal": ObjectId("6383a3a20a34b7480f7fa067"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a0")
-//   },
-//   {
-//     "fecha_inicio": "27-09-2011",
-//     "fecha_finalizacion": "04-12-1990",
-//     "personal": ObjectId("6383a3a20a34b7480f7fa068"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29c")
-//   },
-//   {
-//     "fecha_inicio": "17-08-2021",
-//     "fecha_finalizacion": "14-05-2005",
-//     "personal": ObjectId("6383a3a20a34b7480f7fa068"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a2")
-//   },
-//   {
-//     "fecha_inicio": "24-06-2000",
-//     "fecha_finalizacion": "01-09-1991",
-//     "personal": ObjectId("6383a3a20a34b7480f7fa065"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
-//   },
-//   {
-//     "fecha_inicio": "09-03-1995",
-//     "fecha_finalizacion": "01-12-1994",
-//     "personal": ObjectId("6383a3a20a34b7480f7fa067"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
-//   }
-// ])
-
-// db.Almacena.insertMany([
-//   {
-//     "cantidad": 9,
-//     "fecha": "02-06-1992",
-//     "hora": "01:01",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bf"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
-//   },
-//   {
-//     "cantidad": 3,
-//     "fecha": "26-07-2019",
-//     "hora": "09:59",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c3"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c299")
-//   },
-//   {
-//     "cantidad": 8,
-//     "fecha": "16-05-2018",
-//     "hora": "02:17",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
-//   },
-//   {
-//     "cantidad": 18,
-//     "fecha": "03-06-2000",
-//     "hora": "02:21",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c5"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29e")
-//   },
-//   {
-//     "cantidad": 17,
-//     "fecha": "30-07-1997",
-//     "hora": "03:37",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c2"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29e")
-//   },
-//   {
-//     "cantidad": 11,
-//     "fecha": "16-01-2018",
-//     "hora": "11:45",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
-//   },
-//   {
-//     "cantidad": 3,
-//     "fecha": "15-09-2017",
-//     "hora": "09:54",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c299")
-//   },
-//   {
-//     "cantidad": 16,
-//     "fecha": "02-09-2012",
-//     "hora": "11:16",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c0"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
-//   },
-//   {
-//     "cantidad": 12,
-//     "fecha": "06-07-1990",
-//     "hora": "07:40",
-//     "tanque": ObjectId("63839f36e8135414fa57c2be"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29b")
-//   },
-//   {
-//     "cantidad": 20,
-//     "fecha": "30-04-2007",
-//     "hora": "03:31",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c3"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29f")
-//   },
-//   {
-//     "cantidad": 17,
-//     "fecha": "04-10-2005",
-//     "hora": "07:55",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bf"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29d")
-//   },
-//   {
-//     "cantidad": 20,
-//     "fecha": "25-08-1993",
-//     "hora": "02:00",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c3"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29e")
-//   },
-//   {
-//     "cantidad": 4,
-//     "fecha": "12-08-2006",
-//     "hora": "06:19",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c1"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a2")
-//   },
-//   {
-//     "cantidad": 20,
-//     "fecha": "29-11-2002",
-//     "hora": "12:33",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
-//   },
-//   {
-//     "cantidad": 18,
-//     "fecha": "12-01-2018",
-//     "hora": "08:38",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c1"),
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1")
-//   }
-// ])
-
-// db.Almacena_Tipo.insertMany([
-//   {
-//     "fecha_inicio": "01-06-2009",
-//     "fecha_fin": "02-01-2019",
-//     "tanque": ObjectId("63839f36e8135414fa57c2be"),
-//     "producto": ObjectId("63839eaee8135414fa57c2ab")
-//   },
-//   {
-//     "fecha_inicio": "06-11-1995",
-//     "fecha_fin": "11-05-2012",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bf"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b3")
-//   },
-//   {
-//     "fecha_inicio": "19-07-2011",
-//     "fecha_fin": "06-05-1990",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
-//     "producto": ObjectId("63839eaee8135414fa57c2ad")
-//   },
-//   {
-//     "fecha_inicio": "09-02-1993",
-//     "fecha_fin": "22-05-2012",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c5"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b4")
-//   },
-//   {
-//     "fecha_inicio": "23-06-2019",
-//     "fecha_fin": "11-10-2021",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c5"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b0")
-//   },
-//   {
-//     "fecha_inicio": "11-07-1996",
-//     "fecha_fin": "22-04-2008",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bc"),
-//     "producto": ObjectId("63839eaee8135414fa57c2af")
-//   },
-//   {
-//     "fecha_inicio": "18-02-1999",
-//     "fecha_fin": "09-02-1996",
-//     "tanque": ObjectId("63839f36e8135414fa57c2be"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b1")
-//   },
-//   {
-//     "fecha_inicio": "03-08-2006",
-//     "fecha_fin": "28-08-2010",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bd"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b2")
-//   },
-//   {
-//     "fecha_inicio": "24-02-2020",
-//     "fecha_fin": "02-06-2000",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c4"),
-//     "producto": ObjectId("63839eaee8135414fa57c2a8")
-//   },
-//   {
-//     "fecha_inicio": "10-12-1999",
-//     "fecha_fin": "24-05-2000",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c1"),
-//     "producto": ObjectId("63839eaee8135414fa57c2a8")
-//   },
-//   {
-//     "fecha_inicio": "08-07-2021",
-//     "fecha_fin": "02-07-2009",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bf"),
-//     "producto": ObjectId("63839eaee8135414fa57c2a8")
-//   },
-//   {
-//     "fecha_inicio": "06-12-1992",
-//     "fecha_fin": "27-04-1994",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bc"),
-//     "producto": ObjectId("63839eaee8135414fa57c2ae")
-//   },
-//   {
-//     "fecha_inicio": "15-08-2002",
-//     "fecha_fin": "03-06-2021",
-//     "tanque": ObjectId("63839f36e8135414fa57c2c5"),
-//     "producto": ObjectId("63839eaee8135414fa57c2ad")
-//   },
-//   {
-//     "fecha_inicio": "13-10-1998",
-//     "fecha_fin": "21-10-2011",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bc"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b3")
-//   },
-//   {
-//     "fecha_inicio": "27-03-2011",
-//     "fecha_fin": "04-03-2017",
-//     "tanque": ObjectId("63839f36e8135414fa57c2bc"),
-//     "producto": ObjectId("63839eaee8135414fa57c2aa")
-//   }
-// ])
-
-// db.Asocia.insertMany([
-//   {
-//     "fecha_inicio": "22-04-1997",
-//     "fecha_fin": "02-09-1996",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a2"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b3")
-//   },
-//   {
-//     "fecha_inicio": "20-06-2022",
-//     "fecha_fin": "03-05-1997",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c299"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b1")
-//   },
-//   {
-//     "fecha_inicio": "12-07-2004",
-//     "fecha_fin": "25-11-1991",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29c"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b3")
-//   },
-//   {
-//     "fecha_inicio": "14-12-2012",
-//     "fecha_fin": "13-06-1991",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a1"),
-//     "producto": ObjectId("63839eaee8135414fa57c2af")
-//   },
-//   {
-//     "fecha_inicio": "17-08-2021",
-//     "fecha_fin": "25-01-2022",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c2a2"),
-//     "producto": ObjectId("63839eaee8135414fa57c2ac")
-//   },
-//   {
-//     "fecha_inicio": "28-06-2012",
-//     "fecha_fin": "22-02-2021",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29f"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b3")
-//   },
-//   {
-//     "fecha_inicio": "28-11-2020",
-//     "fecha_fin": "21-02-2001",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29d"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b6")
-//   },
-//   {
-//     "fecha_inicio": "27-10-2007",
-//     "fecha_fin": "24-06-2011",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29a"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b1")
-//   },
-//   {
-//     "fecha_inicio": "04-11-2019",
-//     "fecha_fin": "10-05-1996",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29e"),
-//     "producto": ObjectId("63839eaee8135414fa57c2ae")
-//   },
-//   {
-//     "fecha_inicio": "02-04-1991",
-//     "fecha_fin": "03-09-2006",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29b"),
-//     "producto": ObjectId("63839eaee8135414fa57c2ac")
-//   },
-//   {
-//     "fecha_inicio": "17-10-2000",
-//     "fecha_fin": "11-03-1993",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29a"),
-//     "producto": ObjectId("63839eaee8135414fa57c2ad")
-//   },
-//   {
-//     "fecha_inicio": "02-03-1998",
-//     "fecha_fin": "24-01-2007",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29a"),
-//     "producto": ObjectId("63839eaee8135414fa57c2ae")
-//   },
-//   {
-//     "fecha_inicio": "11-01-2007",
-//     "fecha_fin": "13-11-2002",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29e"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b0")
-//   },
-//   {
-//     "fecha_inicio": "09-04-2012",
-//     "fecha_fin": "27-09-2010",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29c"),
-//     "producto": ObjectId("63839eaee8135414fa57c2b5")
-//   },
-//   {
-//     "fecha_inicio": "19-01-2017",
-//     "fecha_fin": "24-08-1990",
-//     "instalacion": ObjectId("63839e6ae8135414fa57c29d"),
-//     "producto": ObjectId("63839eaee8135414fa57c2ad")
-//   }
-// ])
-
-// db.Producto.distinct("_id");
+db.Asocia.insertMany([
+  {
+    "fecha_inicio": new Date("22-04-1997"),
+    "fecha_fin": new Date("02-09-1996"),
+    "instalacion": "63839e6ae8135414fa57c2a2",
+    "producto": "63839eaee8135414fa57c2b3"
+  },
+  {
+    "fecha_inicio": new Date("20-06-2022"),
+    "fecha_fin": new Date("03-05-1997"),
+    "instalacion": "63839e6ae8135414fa57c299",
+    "producto": "63839eaee8135414fa57c2b1"
+  },
+  {
+    "fecha_inicio": new Date("12-07-2004"),
+    "fecha_fin": new Date("25-11-1991"),
+    "instalacion": "63839e6ae8135414fa57c29c",
+    "producto": "63839eaee8135414fa57c2b3"
+  },
+  {
+    "fecha_inicio": new Date("14-12-2012"),
+    "fecha_fin": new Date("13-06-1991"),
+    "instalacion": "63839e6ae8135414fa57c2a1",
+    "producto": "63839eaee8135414fa57c2af"
+  },
+  {
+    "fecha_inicio": new Date("17-08-2021"),
+    "fecha_fin": new Date("25-01-2022"),
+    "instalacion": "63839e6ae8135414fa57c2a2",
+    "producto": "63839eaee8135414fa57c2ac"
+  },
+  {
+    "fecha_inicio": new Date("28-06-2012"),
+    "fecha_fin": new Date("22-02-2021"),
+    "instalacion": "63839e6ae8135414fa57c29f",
+    "producto": "63839eaee8135414fa57c2b3"
+  },
+  {
+    "fecha_inicio": new Date("28-11-2020"),
+    "fecha_fin": new Date("21-02-2001"),
+    "instalacion": "63839e6ae8135414fa57c29d",
+    "producto": "63839eaee8135414fa57c2b6"
+  },
+  {
+    "fecha_inicio": new Date("27-10-2007"),
+    "fecha_fin": new Date("24-06-2011"),
+    "instalacion": "63839e6ae8135414fa57c29a",
+    "producto": "63839eaee8135414fa57c2b1"
+  },
+  {
+    "fecha_inicio": new Date("04-11-2019"),
+    "fecha_fin": new Date("10-05-1996"),
+    "instalacion": "63839e6ae8135414fa57c29e",
+    "producto": "63839eaee8135414fa57c2ae"
+  },
+  {
+    "fecha_inicio": new Date("02-04-1991"),
+    "fecha_fin": new Date("03-09-2006"),
+    "instalacion": "63839e6ae8135414fa57c29b",
+    "producto": "63839eaee8135414fa57c2ac"
+  },
+  {
+    "fecha_inicio": new Date("17-10-2000"),
+    "fecha_fin": new Date("11-03-1993"),
+    "instalacion": "63839e6ae8135414fa57c29a",
+    "producto": "63839eaee8135414fa57c2ad"
+  },
+  {
+    "fecha_inicio": new Date("02-03-1998"),
+    "fecha_fin": new Date("24-01-2007"),
+    "instalacion": "63839e6ae8135414fa57c29a",
+    "producto": "63839eaee8135414fa57c2ae"
+  },
+  {
+    "fecha_inicio": new Date("11-01-2007"),
+    "fecha_fin": new Date("13-11-2002"),
+    "instalacion": "63839e6ae8135414fa57c29e",
+    "producto": "63839eaee8135414fa57c2b0"
+  },
+  {
+    "fecha_inicio": new Date("09-04-2012"),
+    "fecha_fin": new Date("27-09-2010"),
+    "instalacion": "63839e6ae8135414fa57c29c",
+    "producto": "63839eaee8135414fa57c2b5"
+  },
+  {
+    "fecha_inicio": new Date("19-01-2017"),
+    "fecha_fin": new Date("24-08-1990"),
+    "instalacion": "63839e6ae8135414fa57c29d",
+    "producto": "63839eaee8135414fa57c2ad"
+  }
+])

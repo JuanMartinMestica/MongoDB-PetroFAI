@@ -1,0 +1,81 @@
+[{
+  "tag": "230reprehenderit",
+  "capacidad_total": 4575.1459,
+  "capacidad_disponible": 5115.2601,
+  "nombre_zona": "Florida",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+},{
+  "tag": "967qui",
+  "capacidad_total": 4950.2794,
+  "capacidad_disponible": 5508.6722,
+  "nombre_zona": "Kentucky",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+},{
+  "tag": "402amet",
+  "capacidad_total": 3338.7829,
+  "capacidad_disponible": 7766.3344,
+  "nombre_zona": "New Hampshire",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  }
+},{
+  "tag": "593veniam",
+  "capacidad_total": 7060.0103,
+  "capacidad_disponible": 369.6027,
+  "nombre_zona": "Washington",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "tag": "42pariatur",
+  "capacidad_total": 8410.0891,
+  "capacidad_disponible": 4278.5031,
+  "nombre_zona": "Tennessee",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  }
+},{
+  "tag": "677nisi",
+  "capacidad_total": 890.4184,
+  "capacidad_disponible": 7602.9176,
+  "nombre_zona": "Washington",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "tag": "209nulla",
+  "capacidad_total": 3353.2439,
+  "capacidad_disponible": 4592.7663,
+  "nombre_zona": "Mississippi",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc5"
+  }
+},{
+  "tag": "31occaecat",
+  "capacidad_total": 3384.3476,
+  "capacidad_disponible": 7248.9109,
+  "nombre_zona": "Puerto Rico",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc4"
+  }
+},{
+  "tag": "948Lorem",
+  "capacidad_total": 7941.3922,
+  "capacidad_disponible": 9416.8432,
+  "nombre_zona": "South Carolina",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc3"
+  }
+},{
+  "tag": "560ea",
+  "capacidad_total": 4094.7862,
+  "capacidad_disponible": 1684.3963,
+  "nombre_zona": "Arkansas",
+  "area": {
+    "$oid": "63863c498afc52e9b8648fc2"
+  }
+}]

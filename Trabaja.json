@@ -1,0 +1,62 @@
+[
+  {
+    "fecha_inicio": new Date("23-12-2007"),
+    "fecha_finalizacion": new Date("31-01-1998"),
+    "personal": "6383a3a20a34b7480f7fa06a",
+    "instalacion": "63839e6ae8135414fa57c29b"
+  },
+  {
+    "fecha_inicio": new Date("27-07-2022"),
+    "fecha_finalizacion": new Date("09-12-2019"),
+    "personal": "6383a3a20a34b7480f7fa069",
+    "instalacion": "63839e6ae8135414fa57c299"
+  },
+  {
+    "fecha_inicio": new Date("17-12-2015"),
+    "fecha_finalizacion": new Date("17-03-2002"),
+    "personal": "6383a3a20a34b7480f7fa064",
+    "instalacion": "63839e6ae8135414fa57c29b"
+  },
+  {
+    "fecha_inicio": new Date("03-06-2007"),
+    "fecha_finalizacion": new Date("18-05-2001"),
+    "personal": "6383a3a20a34b7480f7fa06a",
+    "instalacion": "63839e6ae8135414fa57c29a"
+  },
+  {
+    "fecha_inicio": new Date("15-06-1990"),
+    "fecha_finalizacion": new Date("06-03-2005"),
+    "personal": "6383a3a20a34b7480f7fa068",
+    "instalacion": "63839e6ae8135414fa57c2a2"
+  },
+  {
+    "fecha_inicio": new Date("09-12-2020"),
+    "fecha_finalizacion": new Date("13-02-2011"),
+    "personal": "6383a3a20a34b7480f7fa067",
+    "instalacion": "63839e6ae8135414fa57c2a0"
+  },
+  {
+    "fecha_inicio": new Date("27-09-2011"),
+    "fecha_finalizacion": new Date("04-12-1990"),
+    "personal": "6383a3a20a34b7480f7fa068",
+    "instalacion": "63839e6ae8135414fa57c29c"
+  },
+  {
+    "fecha_inicio": new Date("17-08-2021"),
+    "fecha_finalizacion": new Date("14-05-2005"),
+    "personal": "6383a3a20a34b7480f7fa068",
+    "instalacion": "63839e6ae8135414fa57c2a2"
+  },
+  {
+    "fecha_inicio": new Date("24-06-2000"),
+    "fecha_finalizacion": new Date("01-09-1991"),
+    "personal": "6383a3a20a34b7480f7fa065",
+    "instalacion": "63839e6ae8135414fa57c29b"
+  },
+  {
+    "fecha_inicio": new Date("09-03-1995"),
+    "fecha_finalizacion": new Date("01-12-1994"),
+    "personal": "6383a3a20a34b7480f7fa067",
+    "instalacion": "63839e6ae8135414fa57c2a1"
+  }
+]
