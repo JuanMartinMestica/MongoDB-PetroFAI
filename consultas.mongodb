@@ -1,0 +1,95 @@
+//EJERCICIO 5 A
+
+db.Trabaja.aggregate([
+ 
+  //JOIN DE PERSONAL CON TRABAJA
+  {
+    "$lookup": {
+      "from": "Personal",
+      "localField": "personal",
+      "foreignField": "_id",
+      "as": "idPersonal"
+    }
+  },
+  {
+    "$set": {
+      "nombre": {
+        "$first": ["$idPersonal.nombre"]
+      },
+      "fecha_nacimiento": {
+        "$first": ["$idPersonal.fecha_nacimiento"]
+      },
+      "provincia": {
+        "$first": ["$idPersonal.provincia"]
+      }
+    }
+  },
+  {
+    "$unset": ['fecha_inicio', 'fecha_finalizacion','idPersonal']
+  },
+ 
+  //FILTRADO MAYORES DE 40
+   {
+    "$match": {"fecha_nacimiento" : {"$lte" : new Date("1982-01-01")}},
+  },
+ 
+ 
+ 
+  //JOIN CON PROVINCIA
+  {
+    "$lookup": {
+      "from": "Provincia",
+      "localField": "provincia",
+      "foreignField": "_id",
+      "as": "idProvincia"
+    }
+  },
+  {
+    "$set": {
+      "nombreProvincia": {
+              "$first": ["$idProvincia.nombre"]
+            },
+    }
+  },
+  {
+    "$unset": 'idProvincia'
+  },
+ 
+  //FILTRADO DE PROVINCIAS
+  {
+    "$match": {"nombreProvincia" : "Neuquen"}
+  }
+])
+
+
+//EJERCICIO 5 B
+
+db.Entrega.aggregate([
+{
+  //FILTRADO DE ENTREGAS DE 2021 Y QUE TENGAN NOMBRE CLIENTE CON M
+  "$match":{
+    "$and":[
+      { fecha : {"$gte" : new Date("2021-01-01")} },
+      { fecha : {"$lte" : new Date("2021-12-31")} },
+      { nombre_cliente: {"$regex": /^M/i}},
+    ]
+ }
+}
+])
+
+//EJERCICIO 5 C
+
+db.Personal.deleteOne({es_encargado: true})
+
+//EJERCICIO 5 D
+
+db.Medidor.deleteOne({ medicion: { $size: 0} })
+
+//EJERCICIO 5 E
+
+db.Instalacion.updateOne({ _id: ObjectId("638697443ec41448f479480b") },
+{
+  $set: {
+    descripcion: "Descripción modificada",
+    profundidad: 123
+}})

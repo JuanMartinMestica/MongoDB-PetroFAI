@@ -13,8 +13,6 @@ use('PetroFAI');
 //  db.createCollection('Trabaja')
 //  db.createCollection('Almacena_Tipo')
 
-db.Area.find({ 'zona.nombre': 'Kansas' });
-
 db.Provincia.insertMany([{
   "_id": ObjectId("6383a7f45c01da03a8e59c11"),
   "nombre": "Oneida",
